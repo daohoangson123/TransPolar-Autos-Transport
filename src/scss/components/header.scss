@@ -1,2 +1,132 @@
-@import "../globals/base.scss";
 @import "../globals/variables.scss";
+
+/* HEADER */
+
+header {
+    height: 100vh;
+    background-image: url(/img/header-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* NAV */
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+
+/* LOGO */
+
+    &--logo {
+        display: flex;
+        align-items: center;
+        color: $color-logo;
+
+        h1, i {
+            font-size: 30px;
+        }
+    }
+/* NAVBAR */
+
+    &--navbar {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    background-color: $color-navbar;
+    border-radius: 10px;
+
+    li {
+        height: 54px;
+    }
+
+    a {
+    float: left;
+    color: $color-alt;
+    text-align: center;
+    padding: 20px;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+    color: $color-alt;
+    padding: 20px;
+    background-color: inherit;
+    }
+
+    a:hover, .dropdown:hover .dropbtn {
+    background-color: $color-navbar-hover;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    }
+}
+
+/* SLIDER */
+
+.header__slideshow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: $color-navbar;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    header {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__slideshow {
+        top: 40%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .header__nav--navbar {
+        display: none;
+    }
+
+    .header__slideshow {
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        background-size: cover;
+    }
+
+    .header__slideshow {
+        top: 50%;
+    }
+}
+
