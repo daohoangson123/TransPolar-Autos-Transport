@@ -2,11 +2,18 @@
 
 /* HEADER */
 
-header {
-    height: 100vh;
-    background-image: url(/img/header-bg);
+header::after {
+    content: "";
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/img/header-bg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
 
 /* NAV */
@@ -96,8 +103,8 @@ header {
 .topnav #myLinks {
     position: absolute;
     background-color: $color-navbar;
-    top: 0%;
-    right: 5%;
+    top: 7.5%;
+    right: 0%;
 }
 
 .topnav a {
@@ -107,7 +114,7 @@ header {
 }
 
 .topnav .menu-icon {
-    background-color: $color-alt;
+    background-color: $color-navbar;
     display: block;
     position: absolute;
     right: 0;
@@ -129,51 +136,49 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    background-color: $color-navbar;
-    text-align: center;
+    height: 50%;
+    opacity: 0.4;
+
+    &--content {
+        position: absolute;
+        color: $color-default;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 .gradient-text {
     background-image: linear-gradient( 90deg,
-        #ff3838 5%,
-        #ffaf40 15%,
+        #ff3838 0%,
+        #ff3838 10%,
+        #ffaf40 10%,
+        #ffaf40 20%,
+        #fffa65 20%, 
         #fffa65 30%, 
-        #32ff7e 45%, 
-        #18dcff 60%,
-        #ffcccc 75%,
-        #cd84f1 90%,
+        #32ff7e 30%, 
+        #32ff7e 40%, 
+        #18dcff 40%,
+        #18dcff 50%,
+        #ffcccc 50%,
+        #ffcccc 60%,
+        #cd84f1 60%,
+        #cd84f1 70%,
         
         );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow-text-simple-animation-rev 1s ease alternate;
+    animation: rainbow-animation 5s linear infinite alternate;
 }
 
-.gradient-text:hover{
-    animation: rainbow-text-simple-animation 1s ease alternate;
-}
-
-@keyframes rainbow-text-simple-animation-rev {
+@keyframes rainbow-animation {
     0% {
-        background-size: 650%;
+        background-size: 500%;
     }
     50% {
-        background-size: 100%;
+        background-size: 300%;
     }
     100% {
-        background-size: 100%;
-    }
-}
-
-@keyframes rainbow-text-simple-animation {
-    0% {
-        background-size: 100%;
-    }
-    50% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 650%;
+        background-size: 140%;
     }
 }
 
@@ -181,10 +186,6 @@ header {
 
 @media only screen and (max-width: 1024px) {
     
-    
-    .header__slideshow {
-        top: 40%;
-}
 }
 
 @media only screen and (max-width: 850px) {
@@ -204,9 +205,6 @@ header {
         display: block;
     }
 
-    .header__slideshow {
-        top: 30%;
-    }
 }
 
 @media only screen and (max-width: 425px) {
