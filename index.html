@@ -11,6 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/dist/index.css" />
     <title>Transporting Future</title>
   </head>
@@ -36,9 +42,9 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="#"></a>
-                  <a href="#"></a>
-                  <a href="#"></a>
+                  <a href="#">123</a>
+                  <a href="#">456</a>
+                  <a href="#">789</a>
                 </div>
               </div>
             </li>
@@ -51,8 +57,33 @@
           </ul>
         </div>
         <div class="header__nav--another">
-          <div class="darkmode">Dark</div>
-          <div class="search">Search</div>
+          <div class="mobile-container">
+            <div class="topnav">
+              <a href="#home" class="active"></a>
+              <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+              </div>
+              <a
+                href="javascript:void(0);"
+                class="menu-icon"
+                onclick="myFunction()"
+              >
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+            </script>
+          </div>
         </div>
       </div>
       <div class="header__slideshow">

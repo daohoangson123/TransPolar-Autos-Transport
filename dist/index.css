@@ -9,6 +9,10 @@ body {
   font-weight: 600;
 }
 
+h1 {
+  font-family: "Bubblegum Sans", cursive;
+}
+
 a {
   text-decoration: none;
 }
@@ -51,26 +55,24 @@ header {
 }
 .header__nav--logo {
   display: flex;
-  align-items: center;
-  color: #130f40;
+  background-color: rgba(0, 0, 238, 0.3019607843);
+  border-radius: 10px;
+  color: #ffffff;
 }
 .header__nav--logo h1, .header__nav--logo i {
-  font-size: 30px;
+  font-size: 60px;
 }
 .header__nav--navbar {
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  background-color: rgba(199, 236, 238, 0.4);
+  background-color: rgba(0, 0, 238, 0.3019607843);
   border-radius: 10px;
+  height: min-content;
 }
 .header__nav--navbar li {
   height: 54px;
 }
 .header__nav--navbar a {
   float: left;
-  color: #000000;
-  text-align: center;
+  color: #ffffff;
   padding: 20px;
 }
 .header__nav--navbar .dropdown {
@@ -78,32 +80,65 @@ header {
   overflow: hidden;
 }
 .header__nav--navbar .dropdown .dropbtn {
-  color: #000000;
-  padding: 20px;
   background-color: inherit;
+  color: #ffffff;
+  padding: 20px;
 }
 .header__nav--navbar a:hover, .header__nav--navbar .dropdown:hover .dropbtn {
-  background-color: #c7ecee;
+  background-color: rgba(7, 7, 76, 0.3019607843);
+  border-radius: 10px;
 }
 .header__nav--navbar .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: rgba(0, 0, 238, 0.3019607843);
+  border-radius: 10px;
+  width: 113px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 .header__nav--navbar .dropdown-content a {
   float: none;
-  color: black;
   display: block;
   text-align: left;
 }
 .header__nav--navbar .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgba(7, 7, 76, 0.3019607843);
 }
 .header__nav--navbar .dropdown:hover .dropdown-content {
   display: block;
+}
+.header__nav--another {
+  display: none;
+}
+
+.mobile-container {
+  color: white;
+}
+
+.topnav #myLinks {
+  position: absolute;
+  background-color: rgba(0, 0, 238, 0.3019607843);
+  top: 0%;
+  right: 5%;
+}
+
+.topnav a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.topnav .menu-icon {
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: rgba(7, 7, 76, 0.3019607843);
+  color: #ffffff;
 }
 
 /* SLIDER */
@@ -113,23 +148,61 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  background-color: rgba(199, 236, 238, 0.4);
+  background-color: rgba(0, 0, 238, 0.3019607843);
   text-align: center;
 }
 
-@media only screen and (max-width: 1300px) {
-  header {
-    background-size: contain;
+.gradient-text {
+  background-image: linear-gradient(90deg, #ff3838 5%, #ffaf40 15%, #fffa65 30%, #32ff7e 45%, #18dcff 60%, #ffcccc 75%, #cd84f1 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-simple-animation-rev 1s ease alternate;
+}
+
+.gradient-text:hover {
+  animation: rainbow-text-simple-animation 1s ease alternate;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  50% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 100%;
   }
 }
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+/* RESPONSIVE */
 @media only screen and (max-width: 1024px) {
   .header__slideshow {
     top: 40%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
+  header {
+    background-size: contain;
+  }
+  .header__nav--logo {
+    position: absolute;
+  }
   .header__nav--navbar {
     display: none;
+  }
+  .header__nav--another {
+    display: block;
   }
   .header__slideshow {
     top: 30%;
@@ -138,6 +211,9 @@ header {
 @media only screen and (max-width: 425px) {
   header {
     background-size: cover;
+  }
+  .header__nav--logo h1, .header__nav--logo i {
+    font-size: 35px;
   }
   .header__slideshow {
     top: 50%;
