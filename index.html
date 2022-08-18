@@ -25,15 +25,15 @@
       <div class="header__nav container">
         <div id="home" class="header__nav--logo">
           <i class="fa-solid fa-truck-plane"></i>
-          <h1>TranFutu</h1>
+          <h1 class="logo">TranFutu</h1>
         </div>
         <div class="header__nav--navbar">
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a class="link" href="#home">Home</a>
             </li>
             <li>
-              <a href="#news">About</a>
+              <a class="link" href="#news">About</a>
             </li>
             <li>
               <div class="dropdown">
@@ -42,28 +42,28 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="#">123</a>
-                  <a href="#">456</a>
-                  <a href="#">789</a>
+                  <a class="link" href="#">123</a>
+                  <a class="link" href="#">456</a>
+                  <a class="link" href="#">789</a>
                 </div>
               </div>
             </li>
             <li>
-              <a href="#home">Services</a>
+              <a class="link" href="#home">Services</a>
             </li>
             <li>
-              <a href="#home">Contact</a>
+              <a class="link" href="#home">Contact</a>
             </li>
           </ul>
         </div>
         <div class="header__nav--another">
           <div class="mobile-container">
             <div class="topnav">
-              <a href="#home" class="active"></a>
+              <a class="link" href="#home" class="active"></a>
               <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a class="link" href="#news">News</a>
+                <a class="link" href="#contact">Contact</a>
+                <a class="link" href="#about">About</a>
               </div>
               <a
                 href="javascript:void(0);"
@@ -86,18 +86,118 @@
           </div>
         </div>
       </div>
-      <div class="header__slideshow gradient-text"></div>
-      <div class="header__slideshow--content">
-        <span>MOVING, TRAVELING, WE ARE HERE FOR YOU</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut dolorum
-          vel tempore necessitatibus accusantium harum voluptatem? Officia
-          adipisci, magni odit commodi ab illo sit, culpa facere natus
-          blanditiis, eligendi id.
-        </p>
+      <div class="header__slideshow">
+        <div class="slideshow">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="/img/header/Picture1.png" />
+              <div class="text">House/ Properties Moving</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="/img/header/Picture2.png" />
+              <div class="text">Traveling Around The World</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="header__slideshow--content">
+                <span
+                  >MOVING, TRAVELING,
+                  <br />
+                  WE ARE HERE FOR YOU!</span
+                >
+                <br />
+                <a class="link" href="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1;
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 2000);
+            }
+          </script>
+        </div>
       </div>
     </header>
     <main></main>
-    <footer></footer>
+    <footer class="footer container">
+      <div class="footer__flex top-flex">
+        <div class="footer__flex--item">
+          <div class="footer__logo">
+            <a href="#home">
+              <i class="fa-solid fa-truck-plane"></i>
+              <span class="logo">TranFutu</span></a
+            >
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+            dignissimos expedita ea eius modi incidunt error, accusantium cum
+            totam quasi.
+          </div>
+          <div class="icon-list"></div>
+        </div>
+        <div class="footer__flex--item">
+          <h3>WHO WE ARE</h3>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+        </div>
+        <div class="footer__flex--item">
+          <h3>WHAT WE DO</h3>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+        </div>
+        <div class="footer__flex--item">
+          <h3>CONTACT US</h3>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+        </div>
+        <div class="footer__flex--item">
+          <h3>MORE INFO</h3>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__flex bot-flex">
+        <p>&#169; 2022 TranFuture. All rights reserved.</p>
+        <div class="footer__flex policy">
+          <p><a href="">Privacy Policy</a></p>
+          <p><a href="">Terms & Conditions</a></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
