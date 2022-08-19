@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -20,6 +24,7 @@ body::-webkit-scrollbar {
 }
 
 a {
+    font-size: 1.6rem;
     text-decoration: none;
     color: $color-default;
 }
@@ -33,7 +38,6 @@ li {
 }
 
 input, button {
-    font-size: 16px;
     font-weight: 600;
     border: none;
     cursor: pointer;
