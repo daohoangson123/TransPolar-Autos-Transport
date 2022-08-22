@@ -13,6 +13,7 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-size: 1.6rem;
 }
 
 body::-webkit-scrollbar {
@@ -45,6 +46,16 @@ input, button {
 
 .container {
     width: 100vw;
-    padding: 1% 2%;
-    margin: auto;
+    padding: 2% 2% 0;
+}
+
+.more__btn {
+    background-color: $color-more-btn;
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 1.5rem;
+
+    a {
+        font-size: 1.2rem;
+    }
 }

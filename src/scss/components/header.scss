@@ -7,14 +7,15 @@ header {
     url(/img/header/header-bg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 95vh;
 }
 
 /* NAV */
 .header__nav {
     display: flex;
     justify-content: space-between;
-
+    
 /* LOGO */
 
     &--logo {
@@ -22,10 +23,14 @@ header {
         background-color: $color-link;
         height: min-content;
         border-radius: 1rem;
-        color: $color-logo;
+        color: $color-default;
 
         h1, i {
             font-size: max(5vw, 4rem);
+        }
+
+        i {
+            color: $color-logo;
         }
     }
 
@@ -65,7 +70,7 @@ header {
         display: none;
         background-color: $color-link;
         border-radius: 10px;
-        width: min-content;
+        width: 11rem;
         box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem rgba(0,0,0,0.5);
     }
 
@@ -87,6 +92,8 @@ header {
         display: none;
     }
 }
+
+// HIDDENMENU
 
 .topnav #myLinks {
     position: absolute;
@@ -131,8 +138,7 @@ header {
 
         span {
             font-size: max(5vw, 3rem);
-            -webkit-text-stroke: 3px $color-alt;
-        
+            -webkit-text-stroke: 3px $color-alt;        
         }
 
         a {
@@ -148,6 +154,7 @@ header {
 
         a:hover {
             background-color: $color-hover;
+            color: $color-default;
         }
     }
 }
@@ -161,12 +168,13 @@ header {
 }
 
 img {
-    width: max(40vw, 15rem);
+    width: max(30vw, 20rem);
 }
 
 .text {
     color: $color-default;
     font-size: max(4vw, 2rem);
+    width: max-content;
     margin-top: 2rem;
 }
 

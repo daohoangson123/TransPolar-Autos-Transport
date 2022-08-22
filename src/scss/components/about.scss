@@ -1,1 +1,88 @@
 @import "../globals/variables.scss";
+
+// ABOUT
+
+.content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+// TOP
+
+.about-top {
+    justify-content: space-evenly;
+
+    img {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+// 2ND
+.about-snd {
+    justify-content: space-between;
+}
+
+.snd-item {
+    background-image: url(/img/about/shipping-process.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45vw;
+    height: 30rem;
+    margin: 1rem;
+}
+
+//3RD
+.about-trd {
+    justify-content: space-around;
+}
+
+.trd-left {
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.trd-right {
+    background-color: $color-services-top;
+    width: fit-content;
+    padding: 3rem;
+
+    i {
+        color: $color-more-btn;
+    }
+
+    span {
+
+    }
+
+    p {
+        
+    }
+}
+//BOT
+
+// RESPONSIVE
+@media only screen and (max-width: 666px) {
+    .about-snd {
+        margin-left: 5rem;
+    }
+
+    .snd-item {
+        background-size: contain;
+        width: 100%;
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .about-snd {
+        margin-left: 1rem;
+    }
+
+    .snd-item {
+        background-size: contain;
+        width: 100%;
+        height: 15rem;
+    }
+}

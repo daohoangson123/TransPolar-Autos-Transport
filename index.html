@@ -21,8 +21,8 @@
     <title>Transporting Future</title>
   </head>
   <body>
-    <header>
-      <div class="header__nav container">
+    <header class="header container">
+      <div class="header__nav">
         <div id="home" class="header__nav--logo">
           <i class="fa-solid fa-truck-plane"></i>
           <h1 class="logo">TranFutu</h1>
@@ -33,7 +33,10 @@
               <a class="link" href="#home">Home</a>
             </li>
             <li>
-              <a class="link" href="#news">About</a>
+              <a class="link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="link" href="#services">Services</a>
             </li>
             <li>
               <div class="dropdown">
@@ -42,17 +45,14 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a class="link" href="#">123123</a>
-                  <a class="link" href="#">456</a>
-                  <a class="link" href="#">789</a>
+                  <a class="link" href="">123123</a>
+                  <a class="link" href="">456</a>
+                  <a class="link" href="">789</a>
                 </div>
               </div>
             </li>
             <li>
-              <a class="link" href="#home">Services</a>
-            </li>
-            <li>
-              <a class="link" href="#home">Contact</a>
+              <a class="link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -61,9 +61,9 @@
             <div class="topnav">
               <a class="link" href="#home" class="active"></a>
               <div id="myLinks">
-                <a class="link" href="#news">News</a>
-                <a class="link" href="#contact">Contact</a>
                 <a class="link" href="#about">About</a>
+                <a class="link" href="#services">Services</a>
+                <a class="link" href="#contact">Contact</a>
               </div>
               <a
                 href="javascript:void(0);"
@@ -93,7 +93,6 @@
               <img src="/img/header/Picture1.png" />
               <div class="text">House/ Properties Moving</div>
             </div>
-
             <div class="mySlides fade">
               <img src="/img/header/Picture2.png" />
               <div class="text">Traveling Around The World</div>
@@ -111,17 +110,14 @@
             </div>
           </div>
           <br />
-
           <div>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
           </div>
-
           <script>
             let slideIndex = 0;
             showSlides();
-
             function showSlides() {
               let i;
               let slides = document.getElementsByClassName("mySlides");
@@ -144,10 +140,116 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section id="about" class="about container">
+        <div class="about__content content-flex about-top">
+          <img src="./img/about/shipping-process.webp" alt="" />
+          <div class="about-top-item">
+            <span>WE'RE SAFE MOVERS</span>
+            <h4>Fast And Reliable Shipping Services</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="more__btn about-btn"><a href="">Read More</a></div>
+          </div>
+        </div>
+        <div class="about__content content-flex about-snd">
+          <div class="snd-item">
+            <div>
+              <p>Global Logistic Service For Business</p>
+              <a href="">Explore Property</a>
+            </div>
+          </div>
+          <div class="snd-item">
+            <div>
+              <p>Global Logistic Service For Business</p>
+              <a href="">Explore Property</a>
+            </div>
+          </div>
+        </div>
+        <div class="about__content content-flex about-trd">
+          <div class="content-flex trd-left">
+            <span>WE'RE SAFE MOVERS</span>
+            <h4>Fast And Reliable Shipping Services</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="more__btn about-btn"><a href="">Read More</a></div>
+          </div>
+          <div>
+            <div class="content-flex trd-right">
+              <div><i class="fa-solid fa-dolly"></i></div>
+              <div>
+                <span>Tracking Is Easy</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="content-flex trd-right">
+              <div><i class="fa-solid fa-dolly"></i></div>
+              <div>
+                <span>Tracking Is Easy</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__content content-flex about-bot">
+          <div></div>
+        </div>
+      </section>
+      <section id="services" class="services container">
+        <div class="services__content--content-top">
+          <div class="services__title">
+            <span>WHAT WE DO</span>
+            <h2>OUR SERVICES</h2>
+          </div>
+          <div class="services__flex services-top">
+            <div class="services__flex--item-top">
+              <div class="item-icon"><i class="fa-solid fa-truck"></i></div>
+              <h3>Transportation</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="services__flex--item-top">
+              <div class="item-icon"><i class="fa-solid fa-display"></i></div>
+              <h3>Live Process Tracking</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="services__flex--item-top">
+              <div class="item-icon">
+                <i class="fa-solid fa-people-carry-box"></i>
+              </div>
+              <h3>Worldwide Service</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="services__content--content-bot">
+          <div class="services__flex services-bot">
+            <div class="services__flex--item-bot">
+              <img src="./img/services/shipping.webp" alt="" />
+              <h3>ASD</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="services__flex--item-bot">
+              <img src="./img/services/shipping.webp" alt="" />
+              <h3>ASD</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="services__flex--item-bot">
+              <img src="./img/services/shipping.webp" alt="" />
+              <h3>ASD</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="services__flex--item-bot">
+              <img src="./img/services/shipping.webp" alt="" />
+              <h3>ASD</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="more__btn services-btn"><a href="">More Services</a></div>
+        </div>
+      </section>
+      <section id="contact" class="contact container"></section>
+    </main>
     <footer class="footer container">
-      <div class="footer__flex top-flex">
-        <div class="footer__flex--item footer__logo">
+      <div class="footer__flex footer-top">
+        <div class="footer__logo">
           <a href="#home">
             <i class="fa-solid fa-truck-plane"></i>
             <span class="logo">TranFutu</span></a
@@ -160,68 +262,76 @@
           <div class="icon-list"></div>
         </div>
         <div class="footer__flex--item">
-          <h3>WHO WE ARE</h3>
-          <ul>
-            <a href="">123456</a>
-            <li>
+          <div class="item-content">
+            <h3>WHO WE ARE</h3>
+            <ul>
               <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-          </ul>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__flex--item">
-          <h3>WHAT WE DO</h3>
-          <ul>
-            <a href="">123456</a>
-            <li>
+          <div class="item-content">
+            <h3>WHO WE ARE</h3>
+            <ul>
               <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-          </ul>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__flex--item">
-          <h3>CONTACT US</h3>
-          <ul>
-            <a href="">123456</a>
-            <li>
+          <div class="item-content">
+            <h3>WHO WE ARE</h3>
+            <ul>
               <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-          </ul>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__flex--item">
-          <h3>MORE INFO</h3>
-          <ul>
-            <a href="">123456</a>
-            <li>
+          <div class="item-content">
+            <h3>WHO WE ARE</h3>
+            <ul>
               <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-            <li>
-              <a href="">123456</a>
-            </li>
-          </ul>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+              <li>
+                <a href="">123456</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <hr />
-      <div class="footer__flex bot-flex">
+      <div class="footer__flex footer-bot">
         <p>&#169; 2022 TranFuture. All rights reserved.</p>
         <div class="footer__flex policy">
           <a href="">Privacy Policy</a>
