@@ -108,8 +108,9 @@ header {
     position: absolute;
     background-color: $color-link;
     border-radius: 1rem;
-    top: 6rem;
-    right: 3rem;
+    top: 0rem;
+    right: 3.5rem;
+    z-index: 1;
 }
 
 .menu-icon {
