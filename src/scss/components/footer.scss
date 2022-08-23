@@ -5,6 +5,7 @@
 footer {
     background-color: $color-footer;
     color: $color-default;
+    margin-bottom: -130vh;
 }
 
 
@@ -22,6 +23,8 @@ footer {
             
             li {
                 display: block;
+                line-height: 3rem;
+                width: max-content;
             }
             
             h3 {
@@ -35,7 +38,7 @@ footer {
     }
 }
 
-.footer__logo {
+.footer__main {
     width: 20rem;
     padding: 2rem 0;
 
@@ -43,8 +46,41 @@ footer {
         font-size: max(2vw, 2rem);
     }
 
-    i {
+    span {
+        font-size: 2rem;
+    }
+
+    .fa-truck-plane {
         color: $color-logo;
+    }
+}
+
+.icon-list {
+    margin-top: 1rem;
+    display: flex;
+
+    i {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .fb {
+        color: #3c40c6;
+    }
+
+    .it {
+        background: linear-gradient(to right, #ff4757 20%, #5352ed 40%, #ffa502 60%, #ff6b81 80%, #000 100%);
+        background-clip: border-box;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+
+    .gg {
+        color: #ff3f34;
+    }
+
+    .tw {
+        color: #4bcffa;
     }
 }
 
@@ -75,8 +111,15 @@ footer {
         }
     }
     
-    .footer__logo {
-        width: 60%;
+    .footer__main {
+        display: flex;
+        width: 70%;
+
+        .icon-list {
+            flex-wrap: wrap;
+            width: 90%;
+            margin-left: 3rem;
+        }
     }
 
     .footer-bot {

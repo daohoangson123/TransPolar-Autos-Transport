@@ -59,7 +59,6 @@
         <div class="header__nav--another">
           <div class="mobile-container">
             <div class="topnav">
-              <a class="link" href="#home" class="active"></a>
               <div id="myLinks">
                 <a class="link" href="#about">About</a>
                 <a class="link" href="#services">Services</a>
@@ -88,55 +87,25 @@
       </div>
       <div class="header__slideshow">
         <div class="slideshow">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="/img/header/Picture1.png" />
-              <div class="text">House/ Properties Moving</div>
-            </div>
-            <div class="mySlides fade">
-              <img src="/img/header/Picture2.png" />
-              <div class="text">Traveling Around The World</div>
-            </div>
-            <div class="mySlides fade">
-              <div class="header__slideshow--content">
-                <span
-                  >MOVING, TRAVELING,
-                  <br />
-                  WE ARE HERE FOR YOU!</span
-                >
+          <div class="slide fade">
+            <img src="/img/header/Picture1.png" />
+            <div class="text">House/ Properties Moving</div>
+          </div>
+          <div class="slides-content">
+            <div class="header__slideshow--content">
+              <span
+                >MOVING, TRAVELING,
                 <br />
-                <a class="link" href="">Read More</a>
-              </div>
+                WE ARE HERE FOR YOU!</span
+              >
+              <br />
+              <a class="link" href="">Read More</a>
             </div>
           </div>
-          <br />
-          <div>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+          <div class="slide fade">
+            <img src="/img/header/Picture2.png" />
+            <div class="text">Traveling Around The World</div>
           </div>
-          <script>
-            let slideIndex = 0;
-            showSlides();
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {
-                slideIndex = 1;
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-              setTimeout(showSlides, 2000);
-            }
-          </script>
         </div>
       </div>
     </header>
@@ -145,9 +114,15 @@
         <div class="about__content content-flex about-top">
           <img src="./img/about/shipping-process.webp" alt="" />
           <div class="about-top-item">
-            <span>WE'RE SAFE MOVERS</span>
-            <h4>Fast And Reliable Shipping Services</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <span
+              >WE'RE SAFE MOVERS
+              <h4>Fast And Reliable Shipping Services</h4>
+            </span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+              optio nostrum facere explicabo placeat sequi, quia commodi labore
+              nulla repellat nihil!
+            </p>
             <div class="more__btn about-btn"><a href="">Read More</a></div>
           </div>
         </div>
@@ -167,8 +142,10 @@
         </div>
         <div class="about__content content-flex about-trd">
           <div class="content-flex trd-left">
-            <span>WE'RE SAFE MOVERS</span>
-            <h4>Fast And Reliable Shipping Services</h4>
+            <span
+              >WE'RE SAFE MOVERS
+              <h4>Fast And Reliable Shipping Services</h4>
+            </span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="more__btn about-btn"><a href="">Read More</a></div>
           </div>
@@ -176,21 +153,50 @@
             <div class="content-flex trd-right">
               <div><i class="fa-solid fa-dolly"></i></div>
               <div>
-                <span>Tracking Is Easy</span>
+                <h4>Tracking Is Easy</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
             <div class="content-flex trd-right">
               <div><i class="fa-solid fa-dolly"></i></div>
               <div>
-                <span>Tracking Is Easy</span>
+                <h4>Tracking Is Easy</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="about__content content-flex about-bot">
-          <div></div>
+          <div class="content">
+            <video autoplay muted loop id="myVideo">
+              <source src="/vid/Transportation.mp4" type="video/mp4" />
+            </video>
+            <button id="myBtn" onclick="mFunction()">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            function mFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "||";
+              } else {
+                video.pause();
+                btn.innerHTML = ">>";
+              }
+            }
+          </script>
+          <div class="video-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, nostrum quisquam non perferendis nisi animi fugit
+              doloribus veritatis saepe, consectetur eaque odit inventore
+              assumenda! Impedit eveniet perferendis culpa aperiam illum.
+            </p>
+            <div class="more__btn about-btn"><a href="">Read More</a></div>
+          </div>
         </div>
       </section>
       <section id="services" class="services container">
@@ -249,82 +255,117 @@
     </main>
     <footer class="footer container">
       <div class="footer__flex footer-top">
-        <div class="footer__logo">
-          <a href="#home">
-            <i class="fa-solid fa-truck-plane"></i>
-            <span class="logo">TranFutu</span></a
-          >
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-            dignissimos expedita ea eius modi incidunt error, accusantium cum
-            totam quasi.
+        <div class="footer__main">
+          <div class="footer__logo">
+            <a href="#home">
+              <i class="fa-solid fa-truck-plane"></i>
+              <span class="logo">TranFutu</span></a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+              dignissimos expedita ea eius modi incidunt error, accusantium cum
+              totam quasi.
+            </p>
           </div>
-          <div class="icon-list"></div>
+          <div class="icon-list">
+            <div>
+              <a href="">
+                <i class="fa-brands fa-square-facebook fb"></i>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-brands fa-square-instagram it"></i>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-brands fa-square-google-plus gg"></i>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-brands fa-square-twitter tw"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="footer__flex--item">
           <div class="item-content">
-            <h3>WHO WE ARE</h3>
+            <h3>Who we are</h3>
             <ul>
-              <a href="">123456</a>
               <li>
-                <a href="">123456</a>
+                <a href="">About Us</a>
               </li>
               <li>
-                <a href="">123456</a>
+                <a href="">Our Team</a>
               </li>
               <li>
-                <a href="">123456</a>
+                <a href="">New & Media</a>
+              </li>
+              <li>
+                <a href="">Work With Us</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer__flex--item">
           <div class="item-content">
-            <h3>WHO WE ARE</h3>
+            <h3>What we do</h3>
             <ul>
-              <a href="">123456</a>
               <li>
-                <a href="">123456</a>
+                <a href="">Road Freight</a>
               </li>
               <li>
-                <a href="">123456</a>
+                <a href="">Air Freight</a>
               </li>
               <li>
-                <a href="">123456</a>
+                <a href="">Ocean Freight</a>
+              </li>
+              <li>
+                <a href="">Vacation Freight</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer__flex--item">
           <div class="item-content">
-            <h3>WHO WE ARE</h3>
+            <h3>Company</h3>
             <ul>
-              <a href="">123456</a>
               <li>
-                <a href="">123456</a>
+                <a href="">Locations</a>
               </li>
               <li>
-                <a href="">123456</a>
+                <a href="">Tracking</a>
               </li>
               <li>
-                <a href="">123456</a>
+                <a href="">Jobs</a>
+              </li>
+              <li>
+                <a href="">Support</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer__flex--item">
           <div class="item-content">
-            <h3>WHO WE ARE</h3>
+            <h3>Contact us</h3>
             <ul>
-              <a href="">123456</a>
               <li>
-                <a href="">123456</a>
+                <a href=""><i class="fa-solid fa-phone"></i> :xxx-xxx-xxx</a>
               </li>
               <li>
-                <a href="">123456</a>
+                <a href=""
+                  ><i class="fa-solid fa-envelope"></i> :xxx@gmail.com</a
+                >
               </li>
               <li>
-                <a href="">123456</a>
+                <a href=""
+                  ><i class="fa-solid fa-map-location-dot"></i> :xxxxx</a
+                >
+              </li>
+              <li>
+                <a href=""></a>
               </li>
             </ul>
           </div>
@@ -339,5 +380,6 @@
         </div>
       </div>
     </footer>
+    <a href="#" class="top"><i class="fa-solid fa-angle-up"></i></a>
   </body>
 </html>

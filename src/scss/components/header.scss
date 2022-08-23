@@ -15,6 +15,7 @@ header {
 .header__nav {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
     
 /* LOGO */
 
@@ -31,6 +32,14 @@ header {
 
         i {
             color: $color-logo;
+            animation-name: change-color;
+            animation-duration: 2s;
+        }
+
+        i:hover {
+            @keyframes change-color {
+                from {}
+            }
         }
     }
 
@@ -95,28 +104,25 @@ header {
 
 // HIDDENMENU
 
-.topnav #myLinks {
+#myLinks {
     position: absolute;
     background-color: $color-link;
     border-radius: 1rem;
-    top: 4.3rem;
-    right: 2%;
+    top: 6rem;
+    right: 3rem;
 }
 
-.topnav a {
-    color: $color-default;
+.menu-icon {
+    display: block;
+    background-color: $color-link;
+    border-radius: 1rem;
     padding: 1rem;
+}
+.link {
     display: block;
+    padding: 1rem;
 }
 
-.topnav .menu-icon {
-    background-color: $color-link;
-    border-radius: 1rem;
-    display: block;
-    position: absolute;
-    top: 1%;
-    right: 2%;
-}
 
 .topnav a:hover {
     background-color: $color-hover;
@@ -160,10 +166,11 @@ header {
 }
 
 .slideshow {
+    display: flex;
     text-align: center;
 }
 
-.mySlides {
+.slide {
     display: none;
 }
 
@@ -178,19 +185,6 @@ img {
     margin-top: 2rem;
 }
 
-.active {
-    background-color: #717171;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 3s;
-}
-
-@keyframes fade {
-    from {opacity: 0.3} 
-    to {opacity: 1}
-}
 
 /* RESPONSIVE */
 

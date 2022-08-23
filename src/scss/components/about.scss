@@ -1,6 +1,14 @@
 @import "../globals/variables.scss";
 
 // ABOUT
+span {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
 
 .content-flex {
     display: flex;
@@ -11,23 +19,39 @@
 // TOP
 
 .about-top {
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     img {
-        width: 50%;
+        width: 60%;
         margin-bottom: 2rem;
+    }
+
+    .about-top-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+        padding: 0 2rem 2rem;
+
+        p {
+            padding-bottom: 1rem;
+        }
     }
 }
 // 2ND
 .about-snd {
     justify-content: space-between;
+    background-color: $color-services-top;
+    padding: 2rem;
+    margin: 0 -3rem 2rem;
 }
 
 .snd-item {
     background-image: url(/img/about/shipping-process.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 45vw;
+    background-position: center;
+    width: 43vw;
     height: 30rem;
     margin: 1rem;
 }
@@ -51,38 +75,128 @@
     i {
         color: $color-more-btn;
     }
-
-    span {
-
-    }
-
-    p {
-        
-    }
 }
 //BOT
 
-// RESPONSIVE
-@media only screen and (max-width: 666px) {
-    .about-snd {
-        margin-left: 5rem;
-    }
+.about-bot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
-    .snd-item {
-        background-size: contain;
-        width: 100%;
-        height: 20rem;
+#myVideo {
+    width: 100%; 
+    height: 100%;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.1);
+    color: $color-default;
+    width: 100%;
+    height: 100%;
+}
+
+#myBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background: $color-alt;
+    color: $color-default;
+    opacity: 0.5;
+    cursor: pointer;
+
+    i {
+        font-size: 4rem;
+        color: $color-default;
     }
 }
 
-@media only screen and (max-width: 425px) {
-    .about-snd {
-        margin-left: 1rem;
+#myBtn:hover {
+    background: $color-more-btn;
+    opacity: 0.8;
+}
+
+.video-content {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    background: rgba(0, 0, 0, 0.3);
+    color: $color-default;
+    width: 30%;
+    padding: 2rem;
+
+    .about-btn {
+        margin-top: 2rem;
+        opacity: 0.8;
+    }
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 768px) {
+    .content-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    
+    // TOP
+    
+    .about-top {
+        justify-content: space-around;
+    
+        img {
+            width: 100%;
+        }
+    
+        .about-top-item {
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+    .snd-item {
+        width: 100%;
+        height: 20rem;
     }
 
-    .snd-item {
-        background-size: contain;
-        width: 100%;
-        height: 15rem;
+// BOT
+
+    .video-content {
+        width: max-content;
+        top: 0%;
+        padding: 0%;
+
+        p {
+            display: none;
+        }
+
+        .about-btn {
+            margin: 2rem;
+            height: fit-content;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    #myBtn {
+        width: 4rem;
+        height: 4rem;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+    .video-content {
+        background-color: transparent;
+
+        .about-btn {
+            font-size: 0.5rem;
+            margin: 0;
+        }
     }
 }

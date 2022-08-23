@@ -4,11 +4,35 @@
 
 // HEADER
 
+
+
 // MAIN
+
+
 
 // FOOTER
 
+.footer__logo:hover {
+    i {
+        transition: 1.5s;
+        transform: scale(1.2);
+    }
+}
 
+.fa-brands:hover {
+    animation: rotate-center 1s alternate;
+}
+
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
 
 // SUB
 

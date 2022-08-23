@@ -46,7 +46,7 @@ input, button {
 
 .container {
     width: 100vw;
-    padding: 2% 2% 0;
+    padding: 2rem 3rem 0;
 }
 
 .more__btn {
@@ -54,8 +54,40 @@ input, button {
     border-radius: 1rem;
     width: fit-content;
     padding: 1.5rem;
+    transition: 0.2s ease-in-out 0s;
 
     a {
         font-size: 1.2rem;
     }
+}
+
+.more__btn:hover {
+    background-color: $color-morebtn-hover;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+//
+.top {
+    --offset: 5rem;
+    position: sticky;
+    display: inline-block;
+    left: 94%;
+    bottom: 6rem;
+    background-color: $color-link;
+    border-radius: 50%;
+    margin-top: calc(100vh + var(--offset));
+    width: 4rem;
+    height: 4rem;
+
+    i {
+        font-size: 3rem;
+        color: $color-default;
+        padding-top: 0.5rem;
+        padding-left: 0.85rem;
+    }
+}
+
+html, body {
+    scroll-behavior: smooth;
 }
