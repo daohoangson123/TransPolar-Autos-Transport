@@ -20,6 +20,16 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin: 1rem 0;
+    width: max-content;
+}
+
 .logo {
     font-family: 'Bubblegum Sans', cursive;
 }
@@ -74,7 +84,7 @@ input, button {
     display: inline-block;
     left: 94%;
     bottom: 6rem;
-    background-color: $color-link;
+    background-color: $color-hover;
     border-radius: 50%;
     margin-top: calc(100vh + var(--offset));
     width: 4rem;

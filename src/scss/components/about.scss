@@ -1,19 +1,21 @@
 @import "../globals/variables.scss";
 
 // ABOUT
-span {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-}
-
-h4 {
-    font-size: 1.6rem;
-}
 
 .content-flex {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+
+    span {
+        font-size: 1.3rem;
+        color: $color-morebtn-hover;
+    }
+    
+    h4 {
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
 }
 
 // TOP
@@ -47,13 +49,33 @@ h4 {
 }
 
 .snd-item {
+    display: flex;
+    justify-content: space-between;
     background-image: url(/img/about/shipping-process.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 1rem;
     width: 43vw;
     height: 30rem;
+    padding: 5%;
     margin: 1rem;
+
+    p {
+        font-size: 3rem;
+    }
+
+    a {
+        background: $color-hover;
+        width: min-content;
+        height: min-content;
+        display: inline-block;
+        font-size: 2rem;
+        border: 0.1rem solid $color-default;
+        border-radius: 0.1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
 }
 
 //3RD
@@ -64,7 +86,7 @@ h4 {
 .trd-left {
     flex-direction: column;
     justify-content: space-between;
-    width: fit-content;
+    width: 50%;
 }
 
 .trd-right {
@@ -74,6 +96,11 @@ h4 {
 
     i {
         color: $color-more-btn;
+        font-size: 3rem;
+    }
+
+    .trd-content {
+        margin-left: 1rem;
     }
 }
 //BOT
@@ -163,6 +190,12 @@ h4 {
         height: 20rem;
     }
 
+// 3RD
+
+.trd-left {
+    width: fit-content;
+}
+
 // BOT
 
     .video-content {
@@ -183,6 +216,7 @@ h4 {
 
 
 @media only screen and (max-width: 425px) {
+
     #myBtn {
         width: 4rem;
         height: 4rem;

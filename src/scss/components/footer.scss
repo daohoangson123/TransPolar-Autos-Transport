@@ -17,7 +17,7 @@
     &--item {
         display: flex;
         justify-content: center;
-        width: 18%;
+        width: 15%;
         padding: 2rem;
 
         .item-content {
@@ -28,12 +28,15 @@
                 width: max-content;
             }
             
-            h3 {
-                width: max-content;
-            }
-            
             a {
+                display: inline-block;
                 font-weight: 100;
+            }
+
+            a:hover {
+                transform: scale(1.2);
+                text-shadow: 0 0 5px $color-logo;
+                
             }
         }
     }
@@ -133,8 +136,4 @@
             }
         }
         }
-}
-
-@media only screen and (max-width: 450px) {
-    
 }

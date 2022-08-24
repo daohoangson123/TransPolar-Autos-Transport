@@ -15,19 +15,19 @@ header {
 .header__nav {
     display: flex;
     justify-content: space-between;
+    padding: 2rem;
     z-index: 1;
     
 /* LOGO */
 
     &--logo {
         display: flex;
-        background-color: $color-link;
         height: min-content;
         border-radius: 1rem;
         color: $color-default;
 
         h1, i {
-            font-size: max(5vw, 4rem);
+            font-size: max(3vw, 2rem);
         }
 
         i {
@@ -46,7 +46,6 @@ header {
 /* NAVBAR */
 
     &--navbar {
-        background-color: $color-link;
         border-radius: 1rem;
         height: min-content;
 
@@ -57,6 +56,10 @@ header {
     a {
         float: left;
         padding: 2rem;
+    }
+
+    #homepage {
+        color: $color-logo;
     }
 
     .dropdown {
@@ -72,12 +75,13 @@ header {
 
     .link:hover, .dropdown:hover .dropbtn {
         background-color: $color-hover;
+        color: $color-logo;
         border-radius: 1rem;
     }
 
     .dropdown-content {
         display: none;
-        background-color: $color-link;
+        background-color: $color-hover;
         border-radius: 10px;
         width: 11rem;
         box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem rgba(0,0,0,0.5);
@@ -106,16 +110,16 @@ header {
 
 #myLinks {
     position: absolute;
-    background-color: $color-link;
+    background-color: $color-hover;
     border-radius: 1rem;
-    top: 0rem;
-    right: 3.5rem;
+    top: 6rem;
+    right: 2rem;
     z-index: 1;
 }
 
 .menu-icon {
     display: block;
-    background-color: $color-link;
+    background-color: $color-hover;
     border-radius: 1rem;
     padding: 1rem;
 }
@@ -147,28 +151,15 @@ header {
             font-size: max(5vw, 3rem);
             -webkit-text-stroke: 3px $color-alt;        
         }
-
-        a {
-            display: inline-block;
-            background-color: $color-default;
-            color: $color-alt;
-            border: 5px solid $color-hover;
-            border-radius: 1rem;
-            font-size: max(1vw, 1rem);
-            padding: max(1vw, 1.5rem);
-            margin-top: 2rem;
-        }
-
-        a:hover {
-            background-color: $color-hover;
-            color: $color-default;
-        }
     }
+}
+
+.header-btn {
+    margin: 1rem auto;
 }
 
 .slideshow {
     display: flex;
-    text-align: center;
 }
 
 .slide {
@@ -202,3 +193,23 @@ img {
 
 // SUB
 
+@media only screen and (max-width: 425px) {
+    header {
+        height: 60vh;
+    }
+
+    .header__slideshow {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+
+        &--content {
+            text-align: left;
+        }
+    }
+
+    .header-btn {
+        margin-left: 45%;
+    }
+}
