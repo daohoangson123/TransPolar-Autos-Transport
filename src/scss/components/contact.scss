@@ -1,1 +1,53 @@
 @import "../globals/variables.scss";
+
+//CONTACT
+#contact {
+    padding: 0;
+    margin-top: 10rem;
+}
+
+.contact__form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(/img/contact/robson.jpg);
+    background-size: cover;
+    background-position: center ;
+    border-radius: 1rem;
+    width: 90vw;
+    height: fit-content;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    color: $color-default;
+    text-shadow: 0 0 2rem $color-logo;
+
+
+    input {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    label:hover {
+        display: inline-block;
+        transform: scale(1.1);
+    }
+
+    &--option {
+        margin-bottom: 2rem;
+        
+        span {
+            font-size: 3rem;
+        }
+    }
+
+    &--info {
+
+    }
+
+    .smt-btn {
+        color: $color-default;
+    }
+}

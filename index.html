@@ -64,11 +64,7 @@
                 <a class="link" href="#services">Services</a>
                 <a class="link" href="#contact">Contact</a>
               </div>
-              <a
-                href="javascript:void(0);"
-                class="menu-icon"
-                onclick="myFunction()"
-              >
+              <a href="#" class="menu-icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
             </div>
@@ -114,10 +110,8 @@
         <div class="about__content content-flex about-top">
           <img src="./img/about/shipping-process.webp" alt="" />
           <div class="about-top-item">
-            <span
-              >WE'RE SAFE MOVERS
-              <h4>Fast And Reliable Shipping Services</h4>
-            </span>
+            <span>WE'RE SAFE MOVERS </span>
+            <h4>Fast And Reliable Shipping Services</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
               optio nostrum facere explicabo placeat sequi, quia commodi labore
@@ -138,10 +132,8 @@
         </div>
         <div class="about__content content-flex about-trd">
           <div class="content-flex trd-left">
-            <span
-              >SECURE COURIER
-              <h4>Secure Courier For Small & Big Packages</h4>
-            </span>
+            <span>SECURE COURIER </span>
+            <h4>Secure Courier For Small & Big Packages</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
               nisi voluptas doloremque aliquam! <br />
@@ -174,7 +166,7 @@
               <source src="/vid/Transportation.mp4" type="video/mp4" />
             </video>
             <button id="myBtn" onclick="mFunction()">
-              <i class="fa-solid fa-play"></i>
+              <img class="icon" src="/img/icons8-play-30.png" alt="" />
             </button>
           </div>
           <script>
@@ -183,10 +175,12 @@
             function mFunction() {
               if (video.paused) {
                 video.play();
-                btn.innerHTML = "||";
+                btn.innerHTML =
+                  "<img class='icon' src='/img/icons8-pause-30.png' alt=''>";
               } else {
                 video.pause();
-                btn.innerHTML = ">>";
+                btn.innerHTML =
+                  "<img class='icon' src='/img/icons8-play-30.png' alt=''>";
               }
             }
           </script>
@@ -204,7 +198,6 @@
       <section id="services" class="services container">
         <div class="services__content--content-top">
           <div class="services__title">
-            <span>WHAT WE DO</span>
             <h2>OUR SERVICES</h2>
           </div>
           <div class="services__flex services-top">
@@ -230,23 +223,23 @@
         <div class="services__content--content-bot">
           <div class="services__flex services-bot">
             <div class="services__flex--item-bot">
-              <img src="./img/services/shipping.webp" alt="" />
-              <h3>ASD</h3>
+              <img src="./img/services/truck.jpeg" alt="" />
+              <h3>Road Freight</h3>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="services__flex--item-bot">
-              <img src="./img/services/shipping.webp" alt="" />
-              <h3>ASD</h3>
+              <img src="./img/services/Cargo-ship.webp" alt="" />
+              <h3>Ocean Freight</h3>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="services__flex--item-bot">
-              <img src="./img/services/shipping.webp" alt="" />
-              <h3>ASD</h3>
+              <img src="./img/services/shutterstock.webp" alt="" />
+              <h3>Ware House</h3>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="services__flex--item-bot">
-              <img src="./img/services/shipping.webp" alt="" />
-              <h3>ASD</h3>
+              <img src="./img/services/traveling.jpg" alt="" />
+              <h3>World Traveling</h3>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
@@ -254,8 +247,67 @@
         </div>
       </section>
       <section id="contact" class="contact container">
-        <h2>CONTACT</h2>
-        <div></div>
+        <h2>BUSINESS CONTACT</h2>
+        <div>
+          <form class="contact__form" action="">
+            <div class="contact__form--option">
+              <span>What can we do for you:</span>
+              <br />
+              <input
+                type="radio"
+                id="shipping"
+                name="services"
+                value="packagesshipping"
+              />
+              <label for="shipping">Packages Shipping</label><br />
+              <input
+                type="radio"
+                id="house"
+                name="services"
+                value="housemoving"
+              />
+              <label for="house">House Moving</label><br />
+              <input
+                type="radio"
+                id="travel"
+                name="services"
+                value="travling"
+              />
+              <label for="travel">Traveling</label>
+            </div>
+            <div class="contact__form--info">
+              <div>
+                <label for="name">Full name:</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value=""
+                  required
+                /><br />
+                <label for="addr">Address:</label><br />
+                <input
+                  type="text"
+                  id="addr"
+                  name="Address"
+                  value=""
+                  required
+                /><br />
+                <label for="phone">Phone number:</label><br />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                />
+                <br />
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required /><br />
+                <input class="more__btn smt-btn" type="submit" value="Submit" />
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer container">

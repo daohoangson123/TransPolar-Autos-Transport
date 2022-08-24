@@ -21,6 +21,10 @@
         padding: 2rem;
 
         .item-content {
+
+            h3 {
+                width: max-content;
+            }
             
             li {
                 display: block;

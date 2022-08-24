@@ -13,8 +13,8 @@
     }
     
     h4 {
-        font-size: 2rem;
-        padding-top: 1rem;
+        font-size: 3rem;
+        padding: 1rem 0;
     }
 }
 
@@ -24,8 +24,9 @@
     justify-content: space-around;
 
     img {
-        width: 60%;
+        width: 50%;
         margin-bottom: 2rem;
+        border-radius: 1rem;
     }
 
     .about-top-item {
@@ -51,18 +52,19 @@
 .snd-item {
     display: flex;
     justify-content: space-between;
-    background-image: url(/img/about/shipping-process.webp);
+    background-image: url(/img/about/seb.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 1rem;
     width: 43vw;
     height: 30rem;
-    padding: 5%;
+    padding: 2%;
     margin: 1rem;
 
     p {
         font-size: 3rem;
+        color: $color-default
     }
 
     a {
@@ -86,7 +88,11 @@
 .trd-left {
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
+
+    p {
+        padding-bottom: 1rem;
+    }
 }
 
 .trd-right {
@@ -96,7 +102,7 @@
 
     i {
         color: $color-more-btn;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .trd-content {
@@ -162,6 +168,10 @@
     }
 }
 
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
 // RESPONSIVE
 
 @media only screen and (max-width: 768px) {
@@ -177,7 +187,7 @@
         justify-content: space-around;
     
         img {
-            width: 100%;
+            width: 95%;
         }
     
         .about-top-item {

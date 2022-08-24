@@ -74,26 +74,20 @@ header {
     }
 
     .link:hover, .dropdown:hover .dropbtn {
-        background-color: $color-hover;
         color: $color-logo;
         border-radius: 1rem;
+        transform: scale(1.2);
+        text-shadow: 0 0 5px $color-logo;
     }
 
     .dropdown-content {
         display: none;
-        background-color: $color-hover;
-        border-radius: 10px;
         width: 11rem;
-        box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem rgba(0,0,0,0.5);
     }
 
     .dropdown-content a {
         float: none;
         display: block;
-    }
-
-    .dropdown-content a:hover {
-        background-color: $color-hover;
     }
 
     .dropdown:hover .dropdown-content {
@@ -109,9 +103,8 @@ header {
 // HIDDENMENU
 
 #myLinks {
+    display: none;
     position: absolute;
-    background-color: $color-hover;
-    border-radius: 1rem;
     top: 6rem;
     right: 2rem;
     z-index: 1;
@@ -119,8 +112,6 @@ header {
 
 .menu-icon {
     display: block;
-    background-color: $color-hover;
-    border-radius: 1rem;
     padding: 1rem;
 }
 .link {
@@ -130,8 +121,8 @@ header {
 
 
 .topnav a:hover {
-    background-color: $color-hover;
-    border-radius: 1rem;
+    transform: scale(1.2);
+    text-shadow: 0 0 5px $color-logo;
 }
 
 /* SLIDER */
@@ -149,7 +140,7 @@ header {
 
         span {
             font-size: max(5vw, 3rem);
-            -webkit-text-stroke: 3px $color-alt;        
+            -webkit-text-stroke: 0.1rem $color-alt;        
         }
     }
 }
@@ -164,10 +155,10 @@ header {
 
 .slide {
     display: none;
-}
-
-img {
-    width: max(30vw, 20rem);
+    
+    img {
+        width: max(30vw, 20rem);
+    }
 }
 
 .text {
