@@ -82,6 +82,23 @@
               animation-timing-function: ease-out;
     }
   }
+
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
 }
 
 .header__slideshow {
@@ -161,7 +178,7 @@
 //
 
 .fa-brands:hover {
-    animation: rotate-center 1s alternate;
+    animation: rotate-center 2s infinite linear alternate;
 }
 
 @keyframes rotate-center {

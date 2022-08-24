@@ -32,16 +32,23 @@ header {
 
         i {
             color: $color-logo;
-            animation-name: change-color;
-            animation-duration: 2s;
         }
 
         i:hover {
+            color: $color-logo;
+            animation: change-color 2s forwards;
+        }
+
             @keyframes change-color {
-                from {}
+                from {
+                    color: $color-logo;
+                }
+
+                to {
+                    color: $color-more-btn;
+                }
             }
         }
-    }
 
 /* NAVBAR */
 
@@ -60,6 +67,8 @@ header {
 
     #homepage {
         color: $color-logo;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 1rem;
     }
 
     .dropdown {
@@ -137,7 +146,7 @@ header {
         margin: 0 auto;
         text-align: center;
         color: $color-default;
-
+        
         span {
             font-size: max(5vw, 3rem);
             -webkit-text-stroke: 0.1rem $color-alt;        

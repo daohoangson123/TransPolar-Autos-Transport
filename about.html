@@ -30,7 +30,7 @@
         <div class="header__nav--navbar">
           <ul>
             <li>
-              <a id="homepage" class="link" href="#home">Home</a>
+              <a id="homepage" class="link" href="/index.html">Home</a>
             </li>
             <li>
               <a class="link" href="#about">About</a>
@@ -45,9 +45,9 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a class="link" href="">About</a>
-                  <a class="link" href="">Services</a>
-                  <a class="link" href="">Contact</a>
+                  <a class="link" href="/about.html">About</a>
+                  <a class="link" href="/services.html">Services</a>
+                  <a class="link" href="/contact.html">Contact</a>
                 </div>
               </div>
             </li>
@@ -104,7 +104,97 @@
         </div>
       </div>
     </header>
-  
+    <main>
+      <section id="about" class="about container">
+        <h2>ABOUT US</h2>
+        <div class="about__content content-flex about-top">
+          <img src="./img/about/shipping-process.webp" alt="" />
+          <div class="about-top-item">
+            <span>WE'RE SAFE MOVERS </span>
+            <h4>Fast And Reliable Shipping Services</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+              optio nostrum facere explicabo placeat sequi, quia commodi labore
+              nulla repellat nihil!
+            </p>
+            <div class="more__btn about-btn"><a href="">Read More</a></div>
+          </div>
+        </div>
+        <div class="about__content content-flex about-snd">
+          <div class="snd-item">
+            <p>Global Logistic Service For Business</p>
+            <a href="">Explore Property</a>
+          </div>
+          <div class="snd-item">
+            <p>Global Logistic Service For Business</p>
+            <a href="">Explore Property</a>
+          </div>
+        </div>
+        <div class="about__content content-flex about-trd">
+          <div class="content-flex trd-left">
+            <span>SECURE COURIER </span>
+            <h4>Secure Courier For Small & Big Packages</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+              nisi voluptas doloremque aliquam! <br />
+              Et at deserunt repudiandae iusto cupiditate facilis iste dolorum
+              asperiores repellendus consequatur velit eos, architecto, dolores
+              maxime.
+            </p>
+            <div class="more__btn about-btn"><a href="">Read More</a></div>
+          </div>
+          <div>
+            <div class="content-flex trd-right">
+              <div><i class="fa-solid fa-dolly"></i></div>
+              <div class="trd-content">
+                <h3>Tracking Is Easy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="content-flex trd-right">
+              <div><i class="fa-solid fa-dolly"></i></div>
+              <div class="trd-content">
+                <h3>Tracking Is Easy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__content content-flex about-bot">
+          <div class="content">
+            <video autoplay muted loop id="myVideo">
+              <source src="/vid/Transportation.mp4" type="video/mp4" />
+            </video>
+            <button id="myBtn" onclick="mFunction()">
+              <img class="icon" src="/img/icons8-play-30.png" alt="" />
+            </button>
+          </div>
+          <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            function mFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML =
+                  "<img class='icon' src='/img/icons8-pause-30.png' alt=''>";
+              } else {
+                video.pause();
+                btn.innerHTML =
+                  "<img class='icon' src='/img/icons8-play-30.png' alt=''>";
+              }
+            }
+          </script>
+          <div class="video-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, nostrum quisquam non perferendis nisi animi fugit
+              doloribus veritatis saepe, consectetur eaque odit inventore
+              assumenda! Impedit eveniet perferendis culpa aperiam illum.
+            </p>
+            <div class="more__btn about-btn"><a href="">Read More</a></div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer container">
       <div class="footer__flex footer-top">

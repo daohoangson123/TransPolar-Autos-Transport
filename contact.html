@@ -21,6 +21,8 @@
     <title>Transporting Future</title>
   </head>
   <body>
+  </head>
+  <body>
     <header class="header">
       <div class="header__nav">
         <div id="home" class="header__nav--logo">
@@ -30,7 +32,7 @@
         <div class="header__nav--navbar">
           <ul>
             <li>
-              <a id="homepage" class="link" href="#home">Home</a>
+              <a id="homepage" class="link" href="/index.html">Home</a>
             </li>
             <li>
               <a class="link" href="#about">About</a>
@@ -45,9 +47,9 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a class="link" href="">About</a>
-                  <a class="link" href="">Services</a>
-                  <a class="link" href="">Contact</a>
+                  <a class="link" href="/about.html">About</a>
+                  <a class="link" href="/services.html">Services</a>
+                  <a class="link" href="/contact.html">Contact</a>
                 </div>
               </div>
             </li>
@@ -104,8 +106,71 @@
         </div>
       </div>
     </header>
-  
-    </main>
+  <main>
+    <section id="contact" class="contact container">
+      <h2>BUSINESS CONTACT</h2>
+      <div>
+        <form class="contact__form" action="">
+          <div class="contact__form--option">
+            <span>What can we do for you:</span>
+            <br />
+            <input
+              type="radio"
+              id="shipping"
+              name="services"
+              value="packagesshipping"
+            />
+            <label for="shipping">Packages Shipping</label><br />
+            <input
+              type="radio"
+              id="house"
+              name="services"
+              value="housemoving"
+            />
+            <label for="house">House Moving</label><br />
+            <input
+              type="radio"
+              id="travel"
+              name="services"
+              value="travling"
+            />
+            <label for="travel">Traveling</label>
+          </div>
+          <div class="contact__form--info">
+            <div>
+              <label for="name">Full name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value=""
+                required
+              /><br />
+              <label for="addr">Address:</label><br />
+              <input
+                type="text"
+                id="addr"
+                name="Address"
+                value=""
+                required
+              /><br />
+              <label for="phone">Phone number:</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+              <br />
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" required /><br />
+              <input class="more__btn smt-btn" type="submit" value="Submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
     <footer class="footer container">
       <div class="footer__flex footer-top">
         <div class="footer__main">
