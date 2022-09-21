@@ -1,84 +1,10 @@
 @import "../globals/variables.scss";
 
-// SERVICES
 
-.services__content{
+//SERVICES
 
-    &--content-top{
-    background-color: $color-services-top;
-    margin: 0 -3rem;
-    }
-}
+//TOP
 
-.services__title {
-    text-align: center;
-    padding: 2rem 0;
-}
+//BOT
 
-.services__flex {
-    display: flex;
-    padding: 2rem;
-
-
-    &--item-top {
-        background-color: $color-default;
-        width: max-content;
-        border-radius: 1rem;
-        padding: 3rem 1rem;
-        margin: 0 2rem 2rem;
-        text-align: center;
-
-        .item-icon {
-            position: relative;
-            background-color: $color-services-top;
-            width: 6rem;
-            height: 6rem;
-            border-radius: 50%;
-            margin: auto;
-
-            i {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: $color-more-btn;
-                font-size: 3rem;
-            }
-        }
-    }
-
-    &--item-bot {
-        max-width: fit-content;
-        margin: 0 3rem 2rem;
-
-        img {
-            width: 25rem;
-            height: 15rem;
-        }
-
-        p {
-            width: 25rem;
-        }
-    }
-}
-
-.services-top {
-    justify-content: center;
-}
-
-.services-bot {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.services-btn {
-    margin: 0 auto;
-}
-
-// RESPONSIVE
-
-@media only screen and (max-width: 768px) {
-    .services__flex {
-        flex-wrap: wrap;
-    }
-}
+//TESTI

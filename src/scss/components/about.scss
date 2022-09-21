@@ -1,246 +1,207 @@
 @import "../globals/variables.scss";
 
-// ABOUT
-
-.content-flex {
+// //ABOUT
+.about-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
-
-    span {
-        font-size: 1.5rem;
-        color: $color-morebtn-hover;
-    }
-    
-    h4 {
-        font-size: 3rem;
-        padding: 1rem 0;
-    }
+    margin-bottom: 5rem;
 }
 
-// TOP
-
-.about-top {
-    justify-content: space-around;
-
-    img {
-        width: 50%;
-        margin-bottom: 2rem;
-        border-radius: 1rem;
-    }
-
-    .about-top-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 40%;
-        padding: 0 2rem 2rem;
-
-        p {
-            padding-bottom: 1rem;
-        }
-    }
-}
-// 2ND
-.about-snd {
-    justify-content: space-between;
-    background-color: $color-services-top;
-    padding: 2rem;
-    margin: 0 -3rem 2rem;
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem 0;
 }
 
-.snd-item {
+.about-flex-content {
     display: flex;
-    justify-content: space-between;
-    background-image: url(/img/about/seb.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 1rem;
-    width: 43vw;
-    height: 30rem;
-    padding: 2%;
-    margin: 1rem;
-
-    p {
-        font-size: 3rem;
-        color: $color-default
-    }
-
-    a {
-        background: $color-hover;
-        width: min-content;
-        height: min-content;
-        display: inline-block;
-        font-size: 2rem;
-        border: 0.1rem solid $color-default;
-        border-radius: 0.1rem;
-        padding: 1rem;
-        margin: 1rem;
-    }
-}
-
-//3RD
-.about-trd {
-    justify-content: space-around;
-}
-
-.trd-left {
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 45vw;
+
+    h6 {
+        font-size: 1.4rem;
+        color: gray;
+    }
+
+    h3 {
+        font-size: 4rem;
+        line-height: 1.5;
+    }
 
     p {
-        padding-bottom: 1rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: gray;
     }
 }
 
-.trd-right {
-    background-color: $color-services-top;
-    width: fit-content;
-    padding: 3rem;
+// //TOP
 
-    i {
-        color: $color-more-btn;
-        font-size: 4rem;
-    }
+.about-top {
+    justify-content: space-between;
 
-    .trd-content {
-        margin-left: 1rem;
+    img {
+        border-radius: 0.7rem;
+        width: 45vw;
+        height: auto;
     }
 }
-//BOT
 
-.about-bot {
+// //MID
+.about-mid-cover {
     position: relative;
+}
+
+.about-mid {
+    justify-content: space-between;
+}
+
+.mid-content-wrapper {
+    width: max(30rem, 45vw);
+    height: max(30rem, 20vh);
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.about-mid-content {
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100%;
+    transition: transform 1s ease-in-out;
 }
 
-#myVideo {
-    width: 100%; 
-    height: 100%;
+.mid-content-left {
+    background-image: url(/HTML-CSS-Course-Project/img/about/banner1.jpg);
 }
 
-.content {
-    background: rgba(0, 0, 0, 0.1);
-    color: $color-default;
-    width: 100%;
-    height: 100%;
+.mid-content-right {
+    background-image: url(/HTML-CSS-Course-Project/img/about/banner2.jpg);
 }
 
-#myBtn {
+.mid-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
-    background: $color-alt;
-    color: $color-default;
-    opacity: 0.5;
-    cursor: pointer;
+    top: 25%;
+    left: 10%;
+    z-index: 1;
 
-    i {
-        font-size: 4rem;
-        color: $color-default;
-    }
-}
-
-#myBtn:hover {
-    background: $color-more-btn;
-    opacity: 0.8;
-}
-
-.video-content {
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    background: rgba(0, 0, 0, 0.3);
-    color: $color-default;
-    width: 30%;
-    padding: 2rem;
-
-    .about-btn {
-        margin-top: 2rem;
-        opacity: 0.8;
-    }
-}
-
-.icon {
-    width: 2rem;
-    height: 2rem;
-}
-// RESPONSIVE
-
-@media only screen and (max-width: 768px) {
-    .content-flex {
-        display: flex;
-        flex-wrap: wrap;
+    p {
+        max-width: 90%;
+        height: fit-content;
+        font-size: 3.5rem;
+        color: white;
         margin-bottom: 2rem;
     }
-    
-    // TOP
-    
-    .about-top {
-        justify-content: space-around;
-    
-        img {
-            width: 95%;
-        }
-    
-        .about-top-item {
-            justify-content: space-between;
-            width: 100%;
-        }
-    }
-    .snd-item {
-        width: 100%;
-        height: 20rem;
-    }
 
-// 3RD
-
-.trd-left {
-    width: fit-content;
-}
-
-// BOT
-
-    .video-content {
-        width: max-content;
-        top: 0%;
-        padding: 0%;
-
-        p {
-            display: none;
-        }
-
-        .about-btn {
-            margin: 2rem;
-            height: fit-content;
-        }
-    }
-}
-
-
-@media only screen and (max-width: 425px) {
-
-    #myBtn {
-        width: 4rem;
-        height: 4rem;
-
-        i {
-            font-size: 2rem;
-        }
-    }
-    .video-content {
+    .about-mid-btn {
         background-color: transparent;
+        border: 0.1rem solid white;
+    }
+    
+}
+.about-mid-content:hover {
+    transform: scale(1.2);
+    border-radius: 0.7rem;
 
-        .about-btn {
-            font-size: 0.5rem;
-            margin: 0;
+    
+}
+
+.about-mid-btn:hover {
+    transform: scale(1);
+    background-color: orangered;
+}
+
+// //BOT
+.about-bot {
+    justify-content: space-between;
+}
+
+.about-bot-left {
+    height: 30rem;
+    margin-bottom: 3rem;
+}
+
+.about-bot-right {
+    height: 30rem;
+}
+
+.about-bot-content-right {
+    flex-wrap: nowrap;
+}
+
+.about-bot-right-icon {
+    color: red;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.about-bot-right-content {
+    a {
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}
+// //VIDEO
+
+.about-video {
+    background-image: url(/HTML-CSS-Course-Project/img/banner5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+    min-height: 60rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+
+    .about-video-left {
+        width: 50vw;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 50%;
+            background-color: white;
+            margin: 0 auto;
+
+                i {
+                    font-size: 2rem;
+                    color: red;
+                }
         }
     }
+
+    .about-video-right {
+        height: 60vh;
+
+        h6, p {
+            color: gainsboro;
+        }
+
+        h3 {
+            color: white;
+        }
+    }
+}
+
+//RESPONSIVE//
+@media only screen and (max-width: 900px) {
+    
+}
+    
+@media only screen and (max-width: 600px) {
+    
+}
+    
+@media only screen and (max-width: 425px) {
+    
 }

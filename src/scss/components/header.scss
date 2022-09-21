@@ -1,209 +1,297 @@
 @import "../globals/variables.scss";
 
-/* HEADER */
+//NAV
 
-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/header/header-bg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 40vw;
-}
-
-/* NAV */
-.header__nav {
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 2vh 4vw;
     z-index: 1;
-    
-/* LOGO */
+}
 
-    &--logo {
-        display: flex;
-        height: min-content;
-        border-radius: 1rem;
-        color: $color-default;
+h1 {
+    font-size: 3rem;
 
-        h1, i {
-            font-size: max(3vw, 2rem);
-        }
-
-        i {
-            color: $color-logo;
-        }
-
-        i:hover {
-            color: $color-logo;
-            animation: change-color 2s forwards;
-        }
-
-            @keyframes change-color {
-                from {
-                    color: $color-logo;
-                }
-
-                to {
-                    color: $color-more-btn;
-                }
-            }
-        }
+    i {
+        color: red;
+    }
+}
 
 /* NAVBAR */
 
-    &--navbar {
-        border-radius: 1rem;
-        height: min-content;
+#menu {
+    display: flex;
+    align-items: baseline;
 
-    li {
-        height: 5.6rem;
+    .home a {
+        color: red;
     }
 
-    a {
-        float: left;
-        padding: 2rem;
-    }
-
-    #homepage {
-        color: $color-logo;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 1rem;
-    }
-
-    .dropdown {
-        float: left;
-    }
-
-    .dropdown .dropbtn {
-        background: transparent;
+    .navbar-item {
+        display: inline-block;
         font-size: 1.6rem;
-        color: $color-default;
-        padding: 2rem;
+        padding: 1rem;
     }
 
-    .link:hover, .dropdown:hover .dropbtn {
-        color: $color-logo;
-        transform: scale(1.2);
-        text-shadow: 0 0 5px $color-logo;
+    .navbar-item:hover > a {
+        color: red;
+        transition: 1s ease;
     }
+}
 
-    .dropdown-content {
-        display: none;
-    }
+//DROPDOWN
 
-    .dropdown-content a {
-        display: block;
-    }
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    }
+/* Dropdown button on hover & focus */
 
-    &--another {
-        display: none;
+.dropbtn:hover,
+.dropbtn:focus,
+.dropdown-item:hover {
+    color: red;
+    transition: 1s ease;
+
+    i {
+        color: white;
     }
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    min-width: 15rem;
+    margin-top: 1rem;
+    margin-left: -4rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 1rem 1.5rem;
+}
+
+.drop-content-hidden {
+    font-size: 1.6rem;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
+
+//SEARCH+DARK
+.search-box {
+    height: 3rem;
+    display: none;
+}
+
+.head-btn {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.search-btn {
+    margin-left: 2rem;
+    border-radius: 50%;
+    color: red;
+}
+
+.dark-btn {
+    background-color: transparent;
+    color: white;
 }
 
 // HIDDENMENU
 
-#myLinks {
+.hidden-nav {
     display: none;
+}
+
+.hidden-menu i {
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.dropbtn-hidden {
     position: absolute;
-    top: 6rem;
-    right: 2rem;
-    text-align: center;
-    width: max-content;
-}
+    opacity: 0;
+    top: 1.5rem;
+    right: 2.7rem;
 
-.menu-icon {
-    display: block;
-    padding: 1rem;
-}
-.link {
-    display: block;
-    padding: 1rem 0 0;
-}
-
-.menu-icon:hover, .link:hover {
-        transform: scale(1.2);
-        text-shadow: 0 0 5px $color-logo;
-}
-
-/* SLIDER */
-
-.header__slideshow {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    &--content {
-    width: 80vw;
-        text-align: center;
-        color: $color-default;
-        margin: 0 auto;
-        
-        span {
-            font-size: max(4vw, 3rem);
-            -webkit-text-stroke: 0.1rem $color-alt;        
-        }
+    i {
+        color: white;
     }
 }
 
-.header-btn {
-    margin: -1.5rem auto 0;
+.drop-content-hidden {
+    top: 5rem;
+    right: 2rem;
 }
 
-.slideshow {
-    display: flex;
+//SLIDE
+
+.slideshow-container {
+    position: relative;
 }
 
-.fade {
-    margin-top: 0rem;
-    // display: none;
+.mySlides {
+    display: none;
+    position: relative;
 
     img {
-        width: max(20vw, 5rem);
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
-.text {
-    color: $color-default;
-    font-size: max(2vw, 2rem);
+/* Next & previous buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    background-color: rgba(233, 225, 225, 0.1);
+    cursor: pointer;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover, add background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* carousel icon hover */
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+    color: orangered;
+}
+
+/* The dots/bullets/indicators */
+.dot-mng {
+    position: relative;
+    text-align: center;
+    margin-top: -5rem;
+    z-index: 2;
+}
+
+.dot {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active,
+.dot:hover {
+    background-color: red;
+}
+
+//
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: fit-content;
-    margin-top: 2rem;
-}
+    text-align: center;
 
-/* RESPONSIVE */
-
-@media only screen and (max-width: 768px) {
-
-    header {
-        height: 60vh;
+    span {
+        font-size: 1.4rem;
+        color: gray;
     }
 
-    .header__nav--navbar {
-        display: none;
-    }
-
-    .header__nav--another {
-        display: block;
-    }
-
-    .header__slideshow {
-        top: 40%;       
-    }
-
-    .fade {
-        display: none;
+    p {
+        font-size: max(3rem, 5vw);
+        font-weight: 550;
+        color: white;
+        margin: 1rem 0 2rem;
     }
 }
 
-// SUB
+//RESPONSIVE//
+@media only screen and (max-width: 900px) {
+#menu {
+    display: none;
+}
 
-iframe {
-    width: 100%;
-    height: 50vh;
+.hidden-nav {
+    display: flex;
+    align-items: baseline;
+}
+
+.slide-content {
+    top: 35%;
+    left: 10%;
+    transform: translate(0%, 0%);
+    text-align: left;
+    
+    span {
+        font-size: 1.4rem;
+        color: gray;
+    }
+    
+    .slide-btn {
+        padding: 1.5rem;
+    }
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+.dropbtn-hidden {
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.prev,
+.next {
+    display: none;
+}
+
+.mySlides {
+
+    img {
+        max-width: 110%;
+        height: 80vh;
+    }
+}
+
 }

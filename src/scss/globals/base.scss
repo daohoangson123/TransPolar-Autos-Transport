@@ -6,97 +6,45 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
+html,
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 62.5%;
+    font-family: 'Sarabun', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-h3 {
-    margin: 1rem 0;
-}
-
-.logo {
-    font-family: 'Bubblegum Sans', cursive;
-}
-
-a {
-    font-size: 1.6rem;
+a, button {
+    font-family: 'Sarabun', sans-serif;
     text-decoration: none;
-    color: $color-default;
+    color: white;
 }
 
-ul {
-    list-style: none;
-}
-
+ul,
 li {
+list-style-type: none;
+}
+
+.button {
     display: inline-block;
-}
-
-input, button {
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-}
-
-.container {
-    width: 100vw;
-    padding: 10rem 3rem 0;
-}
-
-.more__btn {
-    background-color: $color-more-btn;
-    border-radius: 1rem;
-    width: fit-content;
-    padding: 1.5rem;
+    background-color: red;
+    font-size: 1.5rem;
+    border-radius: 0.7rem;
+    padding: 1.8rem 4rem;
     transition: 0.2s ease-in-out 0s;
-
-    a {
-        font-size: 1.2rem;
-    }
 }
 
-.more__btn:hover {
-    background-color: $color-morebtn-hover;
-    cursor: pointer;
+.button:hover {
+    background-color: orangered;
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 //
-.top {
-    --offset: 5rem;
-    position: sticky;
-    display: inline-block;
-    left: 95%;
-    bottom: 6rem;
-    background-color: $color-hover;
-    border-radius: 50%;
-    margin-top: calc(100vh + var(--offset));
-    width: 4rem;
-    height: 4rem;
 
-    i {
-        font-size: 3rem;
-        color: $color-default;
-        padding-top: 0.5rem;
-        padding-left: 0.85rem;
-    }
-}
-
-html, body {
-    scroll-behavior: smooth;
+.container {
+    margin: 0 3rem 5rem;
 }
