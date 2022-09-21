@@ -1,6 +1,6 @@
 @import "../globals/variables.scss";
 
-// //ABOUT
+// ABOUT
 .about-flex {
     display: flex;
     flex-wrap: wrap;
@@ -36,30 +36,30 @@ h2 {
     }
 }
 
-// //TOP
+// TOP
 
 .about-top {
-    justify-content: space-between;
+    justify-content: space-around;
 
     img {
         border-radius: 0.7rem;
-        width: 45vw;
+        max-width: 100%;
         height: auto;
     }
 }
 
-// //MID
+// MID
 .about-mid-cover {
     position: relative;
 }
 
 .about-mid {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .mid-content-wrapper {
     width: max(30rem, 45vw);
-    height: max(30rem, 20vh);
+    height: max(35rem, 20vh);
     border-radius: 0.7rem;
     overflow: hidden;
 }
@@ -89,7 +89,7 @@ h2 {
     p {
         max-width: 90%;
         height: fit-content;
-        font-size: 3.5rem;
+        font-size: clamp(1.6rem, 4vw, 4rem);
         color: white;
         margin-bottom: 2rem;
     }
@@ -112,7 +112,7 @@ h2 {
     background-color: orangered;
 }
 
-// //BOT
+// BOT
 .about-bot {
     justify-content: space-between;
 }
@@ -143,10 +143,10 @@ h2 {
         font-weight: 700;
     }
 }
-// //VIDEO
+// ABOUT-VIDEO
 
 .about-video {
-    background-image: url(/HTML-CSS-Course-Project/img/banner5.jpg);
+    background-image: url(/img/banner5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,9 +156,8 @@ h2 {
     align-items: center;
     z-index: 0;
     position: relative;
+    min-width: 32rem;
     min-height: 60rem;
-    margin-left: -3rem;
-    margin-right: -3rem;
 
     .about-video-left {
         width: 50vw;
@@ -193,7 +192,7 @@ h2 {
     }
 }
 
-//RESPONSIVE//
+//RESPONSIVE
 @media only screen and (max-width: 900px) {
     
 }

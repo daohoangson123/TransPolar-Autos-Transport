@@ -11,6 +11,8 @@ body {
     font-size: 62.5%;
     font-family: 'Sarabun', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -46,5 +48,5 @@ list-style-type: none;
 //
 
 .container {
-    margin: 0 3rem 5rem;
+    padding: 0 2.5rem 5rem;
 }
