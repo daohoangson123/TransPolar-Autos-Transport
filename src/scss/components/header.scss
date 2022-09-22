@@ -8,7 +8,7 @@ nav {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.7);
     min-width: 100%;
-    padding: 2vh 4vw;
+    padding: 1.5rem 2rem;
     z-index: 1;
 }
 
@@ -59,7 +59,7 @@ h1 {
 .dropbtn:focus,
 .dropdown-item:hover {
     color: red;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 
     i {
         color: white;
@@ -162,8 +162,30 @@ h1 {
     position: relative;
 
     img {
-        min-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 110vh;
+        object-fit: cover; // somewhat like bg-size
+    }
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0 auto;
+
+    span {
+        font-size: 1.4rem;
+        color: gray;
+    }
+
+    p {
+        font-size: clamp(3rem, 4vw, 7rem);
+        font-weight: 700;
+        color: white;
+        margin: 1.5rem 0 3rem;
     }
 }
 
@@ -177,7 +199,7 @@ h1 {
     padding: 1rem;
     color: white;
     font-size: 2rem;
-    transition: 0.6s ease;
+    transition: 1s ease;
     border-radius: 50%;
     background-color: rgba(233, 225, 225, 0.1);
     cursor: pointer;
@@ -215,7 +237,7 @@ h1 {
     margin: 0 0.5rem;
     background-color: white;
     border-radius: 50%;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.5s ease-in-out;
     cursor: pointer;
 }
 
@@ -225,26 +247,6 @@ h1 {
 }
 
 //
-.slide-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: fit-content;
-    text-align: center;
-
-    span {
-        font-size: 1.4rem;
-        color: gray;
-    }
-
-    p {
-        font-size: max(3rem, 5vw);
-        font-weight: 550;
-        color: white;
-        margin: 1rem 0 2rem;
-    }
-}
 
 //RESPONSIVE//
 @media only screen and (max-width: 900px) {
@@ -258,19 +260,10 @@ h1 {
 }
 
 .slide-content {
-    top: 35%;
-    left: 10%;
+    top: 40%;
+    left: 5%;
     transform: translate(0%, 0%);
     text-align: left;
-    
-    span {
-        font-size: 1.4rem;
-        color: gray;
-    }
-    
-    .slide-btn {
-        padding: 1.5rem;
-    }
 }
 }
 
@@ -289,9 +282,7 @@ h1 {
 .mySlides {
 
     img {
-        max-width: 110%;
-        height: 80vh;
+        height: 90vh;
     }
 }
-
 }
