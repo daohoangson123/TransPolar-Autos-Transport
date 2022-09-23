@@ -1,2 +1,172 @@
 @import "../globals/variables.scss";
 
+footer {
+    background-color: $footer-bg;
+    margin-top: 5rem;
+    margin-bottom: -120vh;
+
+}
+
+.footer-flex {
+    display: flex;
+}
+
+//TOP
+
+.footer-top {
+    padding: 5rem 6rem;
+}
+
+// TOP LEFT
+
+.footer-top-left {
+    width: 40rem;
+}
+
+//LEFT CONTENT
+
+.footer-top-left-content {
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+
+    i {
+        color: red;
+        font-size: 3rem;
+    }
+
+    a {
+        font-size: 3.2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: $font-color;
+        margin-top: 2rem;
+    }
+}
+
+// ICON
+
+// .footer-top-left-media{
+    
+// }
+
+.media-icons {
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: white;
+        font-size: 1.6rem;
+        color: red;
+        margin-right: 1rem;
+    }
+}
+
+//TOP RIGHT
+
+//RIGHT CONTENT
+
+.footer-top-right {
+    justify-content: space-evenly;
+}
+
+.footer-top-right-content {
+    min-width: 15vw;
+    margin-bottom: 2rem;
+
+    span {
+        font-size: 2rem;
+        color: white;
+    }
+
+    a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+}
+
+//BOT
+hr {
+    border: 0.1rem solid $hr-color;
+    margin: 0 6rem;
+}
+
+.footer-bot {
+    padding: 3rem 6rem 6rem;
+
+    p {
+        font-size: 1.6rem;
+        color: $border-color-light;
+
+        a {
+            color: red;
+            text-decoration: underline;
+        }
+    }
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 900px) {
+    //TOP
+
+.footer-top {
+    flex-wrap: wrap;
+}
+
+// TOP LEFT
+
+.footer-top-left {
+    min-width: 85vw;
+    margin-bottom: 5rem;
+}
+
+//LEFT CONTENT
+
+.footer-top-left-content {
+    margin-right: 0;
+}
+
+// ICON
+
+//TOP RIGHT
+
+//RIGHT CONTENT
+
+.footer-top-right {
+    flex-wrap: wrap;
+}
+
+.footer-top-right-content {
+    min-width: 35vw;
+
+    a {
+        display: inline-block;
+    }
+}
+
+//BOT
+
+.footer-bot {
+    text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 425px) {
+//TOP
+
+.footer-top {
+    padding-left: 2rem;
+}
+
+.footer-top-right {
+    justify-content: space-between;
+}
+
+}

@@ -6,17 +6,22 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     font-size: 62.5%;
-    font-family: 'Sarabun', sans-serif;
-    scroll-behavior: smooth;
     overflow-x: hidden;
-    max-width: 100%;
+
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -56,4 +61,26 @@ list-style-type: none;
 
 .container {
     padding: 0 2.5rem 5rem;
+}
+
+//
+
+.top {
+    --offset: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    left: 95%;
+    bottom: 5%;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: calc(100vh + var(--offset));
+    width: 4rem;
+    height: 4rem;
+
+    i {
+        font-size: 3rem;
+        color: white;
+    }
 }

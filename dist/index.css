@@ -4,17 +4,21 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   font-size: 62.5%;
-  font-family: "Sarabun", sans-serif;
-  scroll-behavior: smooth;
   overflow-x: hidden;
-  max-width: 100%;
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+html, body {
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -52,6 +56,25 @@ li {
 
 .container {
   padding: 0 2.5rem 5rem;
+}
+
+.top {
+  --offset: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  left: 95%;
+  bottom: 5%;
+  background-color: red;
+  border-radius: 50%;
+  margin-top: calc(100vh + var(--offset));
+  width: 4rem;
+  height: 4rem;
+}
+.top i {
+  font-size: 3rem;
+  color: white;
 }
 
 nav {
@@ -524,11 +547,14 @@ h1 i {
   }
 }
 .services {
-  text-align: center;
-  padding-top: 5rem;
   background-color: gainsboro;
 }
-.services span {
+
+.title {
+  text-align: center;
+  padding-top: 5rem;
+}
+.title span {
   font-size: 1.5rem;
   color: gray;
 }
@@ -670,6 +696,121 @@ h1 i {
   }
   .services-wrapper {
     height: 10rem;
+  }
+}
+footer {
+  background-color: #181d2e;
+  margin-top: 5rem;
+  margin-bottom: -120vh;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-top {
+  padding: 5rem 6rem;
+}
+
+.footer-top-left {
+  width: 40rem;
+}
+
+.footer-top-left-content {
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+.footer-top-left-content i {
+  color: red;
+  font-size: 3rem;
+}
+.footer-top-left-content a {
+  font-size: 3.2rem;
+}
+.footer-top-left-content p {
+  font-size: 1.8rem;
+  color: #636466;
+  margin-top: 2rem;
+}
+
+.media-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1.6rem;
+  color: red;
+  margin-right: 1rem;
+}
+
+.footer-top-right {
+  justify-content: space-evenly;
+}
+
+.footer-top-right-content {
+  min-width: 15vw;
+  margin-bottom: 2rem;
+}
+.footer-top-right-content span {
+  font-size: 2rem;
+  color: white;
+}
+.footer-top-right-content a {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+hr {
+  border: 0.1rem solid rgba(255, 255, 255, 0.07);
+  margin: 0 6rem;
+}
+
+.footer-bot {
+  padding: 3rem 6rem 6rem;
+}
+.footer-bot p {
+  font-size: 1.6rem;
+  color: #e4e6e5;
+}
+.footer-bot p a {
+  color: red;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-top-left {
+    min-width: 85vw;
+    margin-bottom: 5rem;
+  }
+  .footer-top-left-content {
+    margin-right: 0;
+  }
+  .footer-top-right {
+    flex-wrap: wrap;
+  }
+  .footer-top-right-content {
+    min-width: 35vw;
+  }
+  .footer-top-right-content a {
+    display: inline-block;
+  }
+  .footer-bot {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer-top {
+    padding-left: 2rem;
+  }
+  .footer-top-right {
+    justify-content: space-between;
   }
 }
 /* Fading animation */
