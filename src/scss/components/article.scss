@@ -2,6 +2,7 @@
 
 .article {
     background-color: $bg-lightgrey;
+    padding-bottom: 5rem;
 }
 
 .article-flex {
@@ -24,6 +25,8 @@
         transition: 0.6s ease-in-out;
     }
 }
+
+//TOP
 
 .article-top-items {
     justify-content: center;
@@ -112,14 +115,100 @@
     }
 }
 
+//BOT
+
+.article-bot-content {
+    background-image: url(/img/article/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: $border-radius;
+    max-width: 90vw;
+    min-height: 30rem;
+    margin: 5rem auto;
+    padding: 5rem 4rem;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        width: 55rem;
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-align: left;
+        color: $bg-color;
+        margin-bottom: 2rem;
+    }
+}
+
+.article-input {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.6rem;
+    max-width: 50rem;
+    margin: 0 2rem;
+
+    input {
+        font-size: 1.6rem;
+        color: $font-color;
+        border-radius: $border-radius;
+        padding: 0 1.5rem;
+        background: $bg-color;
+        height: 5.2rem;
+        border: 0.1rem solid $bg-color;
+    }
+
+    button {
+        max-width: 100%;
+        background-color: $primary-color;
+        padding: 1.8rem 3.6rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        font-weight: 600;
+        border: $primary-color;
+        border-radius: $border-radius;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: $button-hover-color;
+    }
+}
+
 
 //RESPONSIVE
 
+@media only screen and (max-width: 768px) {
 //TOP
 
-@media only screen and (max-width: 768px) {
-    .article-cover {
-        width: 80%;
+.article-cover {
+    width: 90%;
+    margin: 0;
+}
+
+//BOT
+
+.article-bot-content {
+
+    p {
+        width: 100%;
+        font-size: 2.4rem;
+    }
+}
+
+.article-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    input {
+        display: inline-block;
+        width: 100%;
         margin: 0;
     }
+
+    button {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
 }

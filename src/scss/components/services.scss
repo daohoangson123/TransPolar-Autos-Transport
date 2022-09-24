@@ -22,7 +22,7 @@
     text-align: center;
     background-color: $bg-color;
     border-radius: 0.8rem;
-    width: 28%;
+    width: 30%;
     margin: 1rem;
     padding: 6rem 4rem;
 
@@ -41,8 +41,11 @@
             font-size: 4rem;
         }
     }
+}
 
-    .services-icon:hover {
+.services-top-content:hover {
+
+    .services-icon {
         background-color: $primary-color;
         transition: 0.6s ease-in-out;
         cursor: pointer;
@@ -145,7 +148,7 @@
     //TOP
 
     .services-top-content {
-        min-width: 40%;
+        min-width: 43%;
     }
 
     //BOT
@@ -163,10 +166,6 @@
 
 @media only screen and (max-width: 768px) {
     //TOP
-    
-    .services-top-content {
-        min-width: 70%;
-    }
 
     //BOT
 
@@ -174,7 +173,7 @@
         width: 40vw;
         height: 15rem;
     }
-    }
+}
 
 @media only screen and (max-width: 425px) {
     //TOP

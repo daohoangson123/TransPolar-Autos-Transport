@@ -9,7 +9,6 @@
 .about-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5rem;
 }
 
 .about-flex-content {
@@ -66,6 +65,9 @@
 
 .about-mid {
     justify-content: space-around;
+    background: $bg-grey;
+    margin-top: 3rem;
+    padding-top: 5rem;
 }
 
 .mid-content-wrapper {
@@ -129,6 +131,7 @@
 // BOT
 .about-bot {
     justify-content: space-evenly;
+    margin-top: 5rem;
 }
 
 .about-bot-left {
@@ -145,7 +148,10 @@
 
 .about-bot-content-right {
     flex-wrap: nowrap;
+    background: $bg-grey;
     margin-top: 3rem;
+    padding: 4rem;
+    border-radius: $border-radius;
 }
 
 .about-bot-right-icon {
@@ -264,7 +270,7 @@
 
 .mid-content-wrapper {
     width: 90vw;
-    height: 25rem;
+    height: 30rem;
 }
 
 .wrapper-left {
@@ -277,11 +283,11 @@
 }
 
 .about-bot-left {
-    width: 80vw;
+    margin-right: 0;
 }
 
 .about-bot-right {
-    width: 80vw;
+    width: 95vw;
 }
 
 // VIDEO
