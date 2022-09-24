@@ -33,7 +33,7 @@ h2 {
 a, button {
     font-family: 'Sarabun', sans-serif;
     text-decoration: none;
-    color: white;
+    color: $dropdown-color;
 }
 
 ul,
@@ -41,9 +41,19 @@ li {
 list-style-type: none;
 }
 
+.title {
+    text-align: center;
+    padding-top: 5rem;
+
+    span {
+        font-size: 1.5rem;
+        color: $font-color;
+    }
+}
+
 .button {
     display: inline-block;
-    background-color: red;
+    background-color: $primary-color;
     font-size: 1.5rem;
     border-radius: 0.7rem;
     width: fit-content;
@@ -52,7 +62,7 @@ list-style-type: none;
 }
 
 .button:hover {
-    background-color: orangered;
+    background-color: $button-hover-color;
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -63,7 +73,7 @@ list-style-type: none;
     padding: 0 2.5rem 5rem;
 }
 
-//
+// BACK TO TOP BUTTON
 
 .top {
     --offset: 5rem;
@@ -71,16 +81,20 @@ list-style-type: none;
     justify-content: center;
     align-items: center;
     position: sticky;
-    left: 95%;
+    left: 90%;
     bottom: 5%;
-    background-color: red;
+    background-color: $primary-color;
     border-radius: 50%;
     margin-top: calc(100vh + var(--offset));
     width: 4rem;
     height: 4rem;
 
     i {
-        font-size: 3rem;
+        font-size: 1.5rem;
         color: white;
     }
+}
+
+.top:hover {
+    background-color: $button-hover-color;
 }

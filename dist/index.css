@@ -30,7 +30,7 @@ h2 {
 a, button {
   font-family: "Sarabun", sans-serif;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 ul,
@@ -38,9 +38,18 @@ li {
   list-style-type: none;
 }
 
+.title {
+  text-align: center;
+  padding-top: 5rem;
+}
+.title span {
+  font-size: 1.5rem;
+  color: #b5b4b4;
+}
+
 .button {
   display: inline-block;
-  background-color: red;
+  background-color: #f52029;
   font-size: 1.5rem;
   border-radius: 0.7rem;
   width: fit-content;
@@ -49,7 +58,7 @@ li {
 }
 
 .button:hover {
-  background-color: orangered;
+  background-color: #ff5252;
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -64,24 +73,28 @@ li {
   justify-content: center;
   align-items: center;
   position: sticky;
-  left: 95%;
+  left: 90%;
   bottom: 5%;
-  background-color: red;
+  background-color: #f52029;
   border-radius: 50%;
   margin-top: calc(100vh + var(--offset));
   width: 4rem;
   height: 4rem;
 }
 .top i {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: white;
+}
+
+.top:hover {
+  background-color: #ff5252;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.65);
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
   min-width: 100%;
   padding: 1.5rem 2rem;
   z-index: 1;
@@ -91,7 +104,7 @@ h1 {
   font-size: 3rem;
 }
 h1 i {
-  color: red;
+  color: #f52029;
 }
 
 /* NAVBAR */
@@ -100,7 +113,7 @@ h1 i {
   align-items: baseline;
 }
 #menu .home a {
-  color: red;
+  color: #f52029;
 }
 #menu .navbar-item {
   display: inline-block;
@@ -108,13 +121,13 @@ h1 i {
   padding: 1rem;
 }
 #menu .navbar-item:hover > a {
-  color: red;
+  color: #f52029;
   transition: 1s ease;
 }
 
 /* Dropdown Button */
 .dropbtn {
-  color: white;
+  color: #fff;
   border: none;
   background-color: transparent;
   font-size: 1.6rem;
@@ -125,13 +138,13 @@ h1 i {
 .dropbtn:hover,
 .dropbtn:focus,
 .dropdown-item:hover {
-  color: red;
+  color: #f52029;
   transition: 1s ease-in-out;
 }
 .dropbtn:hover i,
 .dropbtn:focus i,
 .dropdown-item:hover i {
-  color: white;
+  color: #fff;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -139,8 +152,8 @@ h1 i {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  border-radius: 0.5rem;
+  background-color: #fff;
+  border-radius: 6px;
   min-width: 15rem;
   margin-top: 1rem;
   margin-left: -4rem;
@@ -149,7 +162,7 @@ h1 i {
 /* Links inside the dropdown */
 .dropdown-content a {
   display: block;
-  color: black;
+  color: #181d2e;
   padding: 1rem 1.5rem;
 }
 
@@ -179,12 +192,12 @@ h1 i {
 .search-btn {
   margin-left: 2rem;
   border-radius: 50%;
-  color: red;
+  color: #f52029;
 }
 
 .dark-btn {
   background-color: transparent;
-  color: white;
+  color: #fff;
 }
 
 .hidden-nav {
@@ -192,11 +205,11 @@ h1 i {
 }
 
 .hidden-menu i {
-  background-color: red;
-  color: white;
+  background-color: #f52029;
+  color: #fff;
   font-size: 2rem;
   padding: 0.8rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 6px;
 }
 
 .dropbtn-hidden {
@@ -206,7 +219,7 @@ h1 i {
   right: 2.7rem;
 }
 .dropbtn-hidden i {
-  color: white;
+  color: #fff;
 }
 
 .drop-content-hidden {
@@ -238,12 +251,12 @@ h1 i {
 }
 .slide-content span {
   font-size: 1.4rem;
-  color: gray;
+  color: #b5b4b4;
 }
 .slide-content p {
   font-size: clamp(3rem, 4vw, 7rem);
   font-weight: 700;
-  color: white;
+  color: #fff;
   margin: 1.5rem 0 3rem;
 }
 
@@ -255,7 +268,7 @@ h1 i {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
-  color: white;
+  color: #fff;
   font-size: 2rem;
   transition: 1s ease;
   border-radius: 50%;
@@ -277,7 +290,7 @@ h1 i {
 /* carousel icon hover */
 .fa-angle-left:hover,
 .fa-angle-right:hover {
-  color: orangered;
+  color: #f52029;
 }
 
 /* The dots/bullets/indicators */
@@ -293,14 +306,14 @@ h1 i {
   width: 1.3rem;
   height: 1.3rem;
   margin: 0 0.5rem;
-  background-color: white;
+  background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .active,
 .dot:hover {
-  background-color: red;
+  background-color: #f52029;
 }
 
 @media only screen and (max-width: 900px) {
@@ -341,7 +354,7 @@ h1 i {
 }
 .about-flex-content h6 {
   font-size: 1.4rem;
-  color: gray;
+  color: #b5b4b4;
 }
 .about-flex-content h3 {
   font-size: clamp(3rem, 4vw, 4rem);
@@ -350,7 +363,7 @@ h1 i {
 .about-flex-content p {
   font-size: 1.8rem;
   line-height: 2.8rem;
-  color: gray;
+  color: #b5b4b4;
 }
 
 .about-top {
@@ -411,12 +424,12 @@ h1 i {
   height: fit-content;
   font-size: clamp(2.3rem, 4vw, 4rem);
   font-weight: 600;
-  color: white;
+  color: #fff;
   margin-bottom: 2rem;
 }
 .mid-content .about-mid-btn {
   background-color: transparent;
-  border: 0.1rem solid white;
+  border: 0.1rem solid #fff;
 }
 
 .about-mid-content:hover {
@@ -426,7 +439,7 @@ h1 i {
 
 .about-mid-cover:hover .about-mid-btn {
   transform: scale(1);
-  background-color: orangered;
+  background-color: #f52029;
   transition: 0.6s ease-in-out;
 }
 
@@ -435,14 +448,15 @@ h1 i {
 }
 
 .about-bot-left {
+  justify-content: space-evenly;
   width: 45vw;
   margin-right: 3rem;
   margin-bottom: 4rem;
 }
 
 .about-bot-right {
+  justify-content: space-around;
   width: 45vw;
-  height: 35rem;
 }
 
 .about-bot-content-right {
@@ -451,20 +465,24 @@ h1 i {
 }
 
 .about-bot-right-icon {
-  color: red;
+  color: #f52029;
   font-size: 3rem;
   margin-right: 2rem;
 }
 
 .about-bot-right-content a {
-  color: black;
+  color: #181d2e;
   font-size: 2.5rem;
   font-weight: 700;
 }
 .about-bot-right-content p {
   font-size: 1.8rem;
-  color: gray;
+  color: #b5b4b4;
   margin-top: 1.5rem;
+}
+.about-bot-right-content a:hover {
+  color: #f52029;
+  transition: 0.6s ease-in-out;
 }
 
 .about-video {
@@ -490,25 +508,26 @@ h1 i {
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: #fff;
   margin: 0 auto;
   cursor: pointer;
 }
 .about-video .about-video-left a i {
   font-size: 2rem;
-  color: red;
+  color: #f52029;
 }
 .about-video .about-video-right {
   margin-left: 1rem;
 }
 .about-video .about-video-right .about-video-right-content {
-  height: 35rem;
+  justify-content: space-between;
+  min-height: 30rem;
 }
 .about-video .about-video-right h6, .about-video .about-video-right p {
-  color: gainsboro;
+  color: #b5b4b4;
 }
 .about-video .about-video-right h3 {
-  color: white;
+  color: #fff;
 }
 
 @media only screen and (max-width: 900px) {
@@ -547,16 +566,7 @@ h1 i {
   }
 }
 .services {
-  background-color: gainsboro;
-}
-
-.title {
-  text-align: center;
-  padding-top: 5rem;
-}
-.title span {
-  font-size: 1.5rem;
-  color: gray;
+  background-color: #f7f7f9;
 }
 
 .services-flex {
@@ -570,7 +580,7 @@ h1 i {
 
 .services-top-content {
   text-align: center;
-  background-color: white;
+  background-color: #fff;
   border-radius: 0.8rem;
   width: 28%;
   margin: 1rem;
@@ -583,41 +593,43 @@ h1 i {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  background-color: ghostwhite;
+  background-color: #f7f7f9;
   margin: 0 auto;
 }
 .services-top-content .services-icon i {
-  color: red;
+  color: #f52029;
   font-size: 4rem;
 }
 .services-top-content .services-icon:hover {
-  background-color: red;
+  background-color: #f52029;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
 }
 .services-top-content .services-icon:hover i {
-  color: white;
+  color: #fff;
 }
 
 .services-content a {
   display: inline-block;
-  color: black;
+  color: #181d2e;
   font-size: 2.2rem;
   line-height: 2.6rem;
   font-weight: 700;
   margin: 1.5rem 0;
 }
 .services-content p {
-  color: gray;
+  color: #b5b4b4;
   font-size: 1.8rem;
 }
 .services-content a:hover {
-  color: red;
+  color: #f52029;
   transition: 0.6s ease-in-out;
 }
 
 .services-bot {
   justify-content: center;
   text-align: left;
-  background-color: white;
+  background-color: #fff;
   margin-top: 10rem;
   padding-top: 10rem;
 }
@@ -640,6 +652,11 @@ h1 i {
   width: 100%;
   height: 100%;
   transition: 0.6s ease-in-out;
+}
+.services-bot-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .services-content-1 {
@@ -664,7 +681,7 @@ h1 i {
 }
 
 .services-button {
-  background-color: white;
+  background-color: #fff;
   padding: 7rem;
 }
 
@@ -698,6 +715,116 @@ h1 i {
     height: 10rem;
   }
 }
+.article {
+  background-color: #f9f9f9;
+}
+
+.article-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-content a {
+  display: inline-block;
+  color: #181d2e;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  margin: 0 2rem;
+}
+.article-content a:hover {
+  color: #f52029;
+  transition: 0.6s ease-in-out;
+}
+
+.article-top-items {
+  justify-content: center;
+  text-align: left;
+}
+
+.article-cover {
+  width: 28%;
+  min-height: fit-content;
+  margin: 1.5rem;
+  padding-bottom: 3rem;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.date-relative {
+  position: relative;
+}
+
+.article-wrapper {
+  width: inherit;
+  height: 40vh;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  overflow: hidden;
+}
+
+.article-top-img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s ease-in-out;
+}
+.article-top-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.article-content-1 {
+  background-image: url(/img/article/g6.jpg);
+}
+
+.article-content-2 {
+  background-image: url(/img/article/g5.jpg);
+}
+
+.article-content-3 {
+  background-image: url(/img/article/g3.jpg);
+}
+
+.article-top-img:hover {
+  transform: scale(1.2);
+  border-radius: 0.7rem;
+}
+
+.article-date {
+  position: absolute;
+  background-color: #f52029;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 2rem;
+  bottom: -1rem;
+  left: 3rem;
+  padding: 1rem 1.5rem;
+}
+
+.article-link {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+.article-link a {
+  color: #b5b4b4;
+}
+.article-link a i {
+  color: #f52029;
+}
+.article-link a:hover {
+  color: #f52029;
+  transition: 0.6s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .article-cover {
+    width: 80%;
+    margin: 0;
+  }
+}
 footer {
   background-color: #181d2e;
   margin-top: 5rem;
@@ -709,7 +836,7 @@ footer {
 }
 
 .footer-top {
-  padding: 5rem 6rem;
+  padding: 7rem 9rem;
 }
 
 .footer-top-left {
@@ -721,15 +848,16 @@ footer {
   margin-bottom: 3rem;
 }
 .footer-top-left-content i {
-  color: red;
+  color: #f52029;
   font-size: 3rem;
 }
 .footer-top-left-content a {
+  font-weight: 700;
   font-size: 3.2rem;
 }
 .footer-top-left-content p {
   font-size: 1.8rem;
-  color: #636466;
+  color: #b5b4b4;
   margin-top: 2rem;
 }
 
@@ -740,10 +868,16 @@ footer {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: #fff;
   font-size: 1.6rem;
-  color: red;
+  color: #f52029;
   margin-right: 1rem;
+}
+
+.media-icons:hover a {
+  transition: 0.5s ease-in-out;
+  background-color: #f52029;
+  color: #fff;
 }
 
 .footer-top-right {
@@ -753,31 +887,40 @@ footer {
 .footer-top-right-content {
   min-width: 15vw;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 .footer-top-right-content span {
   font-size: 2rem;
-  color: white;
+  color: #fff;
 }
 .footer-top-right-content a {
   display: block;
   font-size: 1.5rem;
   margin: 1rem;
 }
+.footer-top-right-content a:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 5px #ff5252;
+}
 
 hr {
   border: 0.1rem solid rgba(255, 255, 255, 0.07);
-  margin: 0 6rem;
+  margin: 0 9rem;
 }
 
 .footer-bot {
-  padding: 3rem 6rem 6rem;
+  padding: 3rem 9rem 7rem;
 }
 .footer-bot p {
   font-size: 1.6rem;
-  color: #e4e6e5;
+  color: #b5b4b4;
 }
 .footer-bot p a {
-  color: red;
+  color: #f52029;
+  transition: 0.5s ease-in-out;
+}
+.footer-bot p a:hover {
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -811,6 +954,12 @@ hr {
   }
   .footer-top-right {
     justify-content: space-between;
+  }
+  hr {
+    margin: 0 2rem;
+  }
+  .footer-bot {
+    padding: 3rem 2rem 7rem;
   }
 }
 /* Fading animation */

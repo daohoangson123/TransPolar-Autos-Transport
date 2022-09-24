@@ -5,18 +5,19 @@
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: $layer1;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
     min-width: 100%;
     padding: 1.5rem 2rem;
     z-index: 1;
+
 }
 
 h1 {
     font-size: 3rem;
 
     i {
-        color: red;
+        color: $primary-color;
     }
 }
 
@@ -27,7 +28,7 @@ h1 {
     align-items: baseline;
 
     .home a {
-        color: red;
+        color: $primary-color;
     }
 
     .navbar-item {
@@ -37,7 +38,7 @@ h1 {
     }
 
     .navbar-item:hover > a {
-        color: red;
+        color: $primary-color;
         transition: 1s ease;
     }
 }
@@ -46,7 +47,7 @@ h1 {
 
 /* Dropdown Button */
 .dropbtn {
-    color: white;
+    color: $dropdown-color;
     border: none;
     background-color: transparent;
     font-size: 1.6rem;
@@ -58,11 +59,11 @@ h1 {
 .dropbtn:hover,
 .dropbtn:focus,
 .dropdown-item:hover {
-    color: red;
+    color: $primary-color;
     transition: 1s ease-in-out;
 
     i {
-        color: white;
+        color: $dropdown-color;
     }
 }
 
@@ -72,8 +73,8 @@ h1 {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    border-radius: 0.5rem;
+    background-color: $dropdown-color;
+    border-radius: $border-radius;
     min-width: 15rem;
     margin-top: 1rem;
     margin-left: -4rem;
@@ -82,7 +83,7 @@ h1 {
 /* Links inside the dropdown */
 .dropdown-content a {
     display: block;
-    color: black;
+    color: $heading-color;
     padding: 1rem 1.5rem;
 }
 
@@ -112,13 +113,13 @@ h1 {
 
 .search-btn {
     margin-left: 2rem;
-    border-radius: 50%;
-    color: red;
+    border-radius: $border-radius-full;
+    color: $primary-color;
 }
 
 .dark-btn {
     background-color: transparent;
-    color: white;
+    color: $dropdown-color;
 }
 
 // HIDDENMENU
@@ -128,11 +129,11 @@ h1 {
 }
 
 .hidden-menu i {
-    background-color: red;
-    color: white;
+    background-color: $primary-color;
+    color: $dropdown-color;
     font-size: 2rem;
     padding: 0.8rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: $border-radius;
 }
 
 .dropbtn-hidden {
@@ -142,7 +143,7 @@ h1 {
     right: 2.7rem;
 
     i {
-        color: white;
+        color: $bg-color;
     }
 }
 
@@ -178,13 +179,13 @@ h1 {
 
     span {
         font-size: 1.4rem;
-        color: gray;
+        color: $font-color;
     }
 
     p {
         font-size: clamp(3rem, 4vw, 7rem);
         font-weight: 700;
-        color: white;
+        color: $bg-color;
         margin: 1.5rem 0 3rem;
     }
 }
@@ -197,10 +198,10 @@ h1 {
     width: 5rem;
     height: 5rem;
     padding: 1rem;
-    color: white;
+    color: $bg-color;
     font-size: 2rem;
     transition: 1s ease;
-    border-radius: 50%;
+    border-radius: $border-radius-full;
     background-color: rgba(233, 225, 225, 0.1);
     cursor: pointer;
 }
@@ -219,7 +220,7 @@ h1 {
 /* carousel icon hover */
 .fa-angle-left:hover,
 .fa-angle-right:hover {
-    color: orangered;
+    color: $primary-color;
 }
 
 /* The dots/bullets/indicators */
@@ -235,14 +236,14 @@ h1 {
     width: 1.3rem;
     height: 1.3rem;
     margin: 0 0.5rem;
-    background-color: white;
-    border-radius: 50%;
+    background-color: $bg-color;
+    border-radius: $border-radius-full;
     cursor: pointer;
 }
 
 .active,
 .dot:hover {
-    background-color: red;
+    background-color: $primary-color;
 }
 
 //
