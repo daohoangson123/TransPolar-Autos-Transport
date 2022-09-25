@@ -70,15 +70,15 @@
 }
 
 .article-content-1 {
-    background-image: url(/img/article/g6.jpg);
+    background-image: url(../img/article/g6.jpg);
 }
 
 .article-content-2 {
-    background-image: url(/img/article/g5.jpg);
+    background-image: url(../img/article/g5.jpg);
 }
 
 .article-content-3 {
-    background-image: url(/img/article/g3.jpg);
+    background-image: url(../img/article/g3.jpg);
 }
 
 .article-top-img:hover {
@@ -118,7 +118,7 @@
 //BOT
 
 .article-bot-content {
-    background-image: url(/img/article/banner3.jpg);
+    background-image: url(../img/article/banner3.jpg);
     background-size: cover;
     background-position: center;
     border-radius: $border-radius;
