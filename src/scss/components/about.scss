@@ -38,13 +38,14 @@
 // TOP
 
 .about-top {
-    justify-content: center;
+    justify-content: space-around;
 
     .about-top-left {
+        min-width: 45vw;
 
         img {
-            max-width: 100%;
-            max-height: 40rem;
+            width: 100%;
+            max-height: 50rem;
             border-radius: 0.7rem;
         }
     }

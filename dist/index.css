@@ -368,11 +368,14 @@ h1 i {
 }
 
 .about-top {
-  justify-content: center;
+  justify-content: space-around;
+}
+.about-top .about-top-left {
+  min-width: 45vw;
 }
 .about-top .about-top-left img {
-  max-width: 100%;
-  max-height: 40rem;
+  width: 100%;
+  max-height: 50rem;
   border-radius: 0.7rem;
 }
 .about-top .about-top-right {
