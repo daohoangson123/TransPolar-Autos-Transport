@@ -14,7 +14,7 @@
 .about-flex-content {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 45vw;
 
     h6 {
         font-size: 1.4rem;
@@ -38,7 +38,7 @@
 // TOP
 
 .about-top {
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     .about-top-left {
         min-width: 45vw;
@@ -56,6 +56,7 @@
 
         .about-top-right-content {
             justify-content: space-between;
+            max-width: 90vw;
             min-height: 40rem;
         }
     }
@@ -239,7 +240,7 @@
 }
 
 //RESPONSIVE
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1310px) {
 
     .about-flex-content {
         width: 100%;

@@ -1,5 +1,17 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+// Dtiky Nav
+var navbar = document.querySelector('nav')
+
+window.onscroll = function() {
+
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}
+
+// Dropdown Btn on Full
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -18,8 +30,7 @@ function myFunction() {
     }
   }
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+// Dropdown Btn Hidden
 function mineFunction() {
   document.getElementById("mineDropdown").classList.toggle("show");
 }
@@ -96,3 +107,5 @@ function showSlides(n) {
 //     setTimeout(showSlides, 5000); // Change image every # seconds
 //     }
 // }
+
+//

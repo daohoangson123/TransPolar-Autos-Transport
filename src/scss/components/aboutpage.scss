@@ -1,0 +1,253 @@
+@import "../globals/variables.scss";
+
+header {
+    position: relative;
+    background-image: url(../img/about/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 35rem;
+    color: $bg-color;
+
+    .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        span {
+            color: $bg-color;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.about-grid {
+    display: grid;
+}
+
+//SECT1
+
+//SECT2
+
+.about-sect2-content {
+    grid-template-columns: repeat(auto-fit, 15rem);
+    gap: 3rem 0;
+    justify-content: space-around;
+    padding: 10rem 0 10rem 2rem;
+}
+
+.about-sect2-counter {
+    counter-reset: num var(--n);
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+
+.about-sect2-text {
+    font-size: 1.6rem;
+    color: $primary-color;
+}
+
+//COUNT-ANIMATION
+:root {
+    --from: 0;
+    --to2500: 2500;
+    --to1500: 1500;
+    --to1280: 1280;
+    --to3020: 3020;
+}
+
+
+@property --n {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+    
+}
+
+.counter-1 {
+    animation: animate1 1s forwards;
+}
+
+.counter-2 {
+    animation: animate2 1s forwards;
+}
+
+.counter-3 {
+    animation: animate3 1s forwards;
+}
+
+.counter-4 {
+    animation: animate4 1s forwards;
+}
+
+.about-sect2-counter::before {
+    content: counter(num);
+}
+
+@keyframes animate1 {
+    from {
+        --n: var(--from);
+    }
+    to {
+        --n: var(--to2500);
+    }
+}
+
+@keyframes animate2 {
+    from {
+        --n: var(--from);
+    }
+    to {
+        --n: var(--to1500);
+    }
+}
+
+@keyframes animate3 {
+    from {
+        --n: var(--from);
+    }
+    to {
+        --n: var(--to1280);
+    }
+}
+
+@keyframes animate4 {
+    from {
+        --n: var(--from);
+    }
+    to {
+        --n: var(--to3020);
+    }
+}
+
+//SECT3
+
+.about-sect3-content {
+    background-image: url(../img/about/banner1.jpg);
+    max-width: 100vw;
+    min-height: 35rem;
+    margin: 0 0;
+    padding: 5rem 4rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-sect3-left {
+    color: $bg-color;
+
+    span {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size:clamp(2.4rem, 4vw, 3.6rem);
+        font-weight: 600;
+        text-align: left;
+    }
+}
+
+.about-sect3-right {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+
+    .about-sect4-btn {
+        color: $primary-color;
+        background-color: $bg-color;
+    }
+
+    .about-sect3-btn:hover {
+        color: $bg-color;
+        background-color: $primary-color;
+        transform: scale(1);
+        cursor: pointer;
+    }
+
+    button {
+        max-width: 100%;
+        background-color: $primary-color;
+        padding: 1.8rem 3.6rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        font-weight: 600;
+        border: $primary-color;
+        border-radius: $border-radius;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: $button-hover-color;
+    }
+}
+
+//SECT4
+
+.about-sect4-content {
+    grid-template-columns: repeat(auto-fit, 37rem);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.sect4-items {
+    position: relative;
+    width: max(100%);
+    height: auto;
+
+    img {
+        width: 100%;
+        border-radius: $border-radius;
+    }
+}
+
+.sect4-hidden-icons {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    justify-content: center;
+    display: none;
+
+    .media-icons {
+
+        i {
+            color: $heading-color;
+        }
+    }
+}
+
+.sect4-items:hover {
+    .sect4-hidden-icons {
+        display: flex;
+        animation: appear 1s ease-in-out;
+
+        a {
+            background-color: $bg-color;            
+        }
+
+        a:hover {
+            i {
+                color: $primary-color;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+//SECT5

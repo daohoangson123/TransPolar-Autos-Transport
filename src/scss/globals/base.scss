@@ -7,9 +7,8 @@
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-
+    font-size: 62.5%; // 1rem = 10px
+    // overflow-x: hidden;
 }
 
 body {
@@ -17,7 +16,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    // display: none;
 }
 
 html, body {
@@ -50,6 +49,8 @@ list-style-type: none;
         color: $font-color;
     }
 }
+
+// BUTTON
 
 .button {
     display: inline-block;
@@ -85,9 +86,9 @@ list-style-type: none;
     bottom: 5%;
     background-color: $primary-color;
     border-radius: 50%;
-    margin-top: calc(100vh + var(--offset));
     width: 4rem;
     height: 4rem;
+    margin-top: calc(100vh + var(--offset));
 
     i {
         font-size: 1.5rem;
