@@ -161,11 +161,11 @@ h1 {
     display: none;
 }
 
-.hidden-menu i {
+.hidden-menu {
     background-color: $primary-color;
     color: $dropdown-color;
     font-size: 2rem;
-    padding: 0.8rem 1rem;
+    padding: .7rem 1.1rem;
     border-radius: $border-radius;
 }
 
@@ -173,7 +173,7 @@ h1 {
     position: absolute;
     opacity: 0;
     top: 1.5rem;
-    right: 2.7rem;
+    right: 2.1rem;
 
     i {
         color: $bg-color;
@@ -181,8 +181,13 @@ h1 {
 }
 
 .drop-content-hidden {
-    top: 5rem;
-    right: 2rem;
+    width: 100%;
+    right: 0;
+    text-align: center;
+
+    .search-btn {
+        margin: 1rem 0;
+    }
 }
 
 //SLIDE

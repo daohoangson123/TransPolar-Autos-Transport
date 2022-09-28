@@ -46,7 +46,7 @@ li {
   display: inline-block;
   background-color: #f52029;
   font-size: 1.5rem;
-  border-radius: 0.7rem;
+  border-radius: 6px;
   width: fit-content;
   padding: 1.8rem 4rem;
   transition: 0.2s ease-in-out 0s;
@@ -68,17 +68,19 @@ li {
   justify-content: center;
   align-items: center;
   position: sticky;
-  left: 90%;
+  left: 95%;
   bottom: 5%;
   background-color: #f52029;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   margin-top: calc(100vh + var(--offset));
+  margin-right: 0.5rem;
+  transition: 0.5s ease-in-out;
 }
 .top i {
   font-size: 1.5rem;
-  color: white;
+  color: #e4e6e5;
 }
 
 .top:hover {
@@ -229,11 +231,11 @@ h1 i {
   display: none;
 }
 
-.hidden-menu i {
+.hidden-menu {
   background-color: #f52029;
   color: #fff;
   font-size: 2rem;
-  padding: 0.8rem 1rem;
+  padding: 0.7rem 1.1rem;
   border-radius: 6px;
 }
 
@@ -241,15 +243,19 @@ h1 i {
   position: absolute;
   opacity: 0;
   top: 1.5rem;
-  right: 2.7rem;
+  right: 2.1rem;
 }
 .dropbtn-hidden i {
   color: #fff;
 }
 
 .drop-content-hidden {
-  top: 5rem;
-  right: 2rem;
+  width: 100%;
+  right: 0;
+  text-align: center;
+}
+.drop-content-hidden .search-btn {
+  margin: 1rem 0;
 }
 
 .slideshow-container {
@@ -1140,19 +1146,19 @@ header .header-content span {
   inherits: false;
 }
 .counter-1 {
-  animation: animate1 1s forwards;
+  animation: animate1 2s forwards;
 }
 
 .counter-2 {
-  animation: animate2 1s forwards;
+  animation: animate2 2s forwards;
 }
 
 .counter-3 {
-  animation: animate3 1s forwards;
+  animation: animate3 2s forwards;
 }
 
 .counter-4 {
-  animation: animate4 1s forwards;
+  animation: animate4 2s forwards;
 }
 
 .about-sect2-counter::before {
@@ -1217,7 +1223,7 @@ header .header-content span {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
 }
-.about-sect3-right .about-sect4-btn {
+.about-sect3-right .about-sect3-btn {
   color: #f52029;
   background-color: #fff;
 }
@@ -1243,35 +1249,52 @@ header .header-content span {
 }
 
 .about-sect4-content {
-  grid-template-columns: repeat(auto-fit, 37rem);
+  grid-template-columns: repeat(auto-fit, min(40vw, 37rem));
   gap: 3rem;
   justify-content: center;
 }
 
 .sect4-items {
-  position: relative;
-  width: 100%;
   height: auto;
+  margin: 0 auto;
 }
-.sect4-items img {
+.sect4-items .sect4-text a {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.sect4-items-img {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.sect4-items-img img {
   width: 100%;
   border-radius: 6px;
 }
 
 .sect4-hidden-icons {
   position: absolute;
-  top: 70%;
-  left: 30%;
   justify-content: center;
+  bottom: 0%;
+  flex-wrap: nowrap;
   display: none;
 }
-.sect4-hidden-icons .media-icons i {
+.sect4-hidden-icons .media-icons a {
+  width: clamp(2.5rem, 4vw, 4rem);
+  height: clamp(2.5rem, 4vw, 4rem);
+  margin: 0 0.5rem;
+}
+.sect4-hidden-icons .media-icons a i {
   color: #181d2e;
 }
 
+.sect4-items:hover a {
+  transition: 0.5s ease-in-out;
+  color: #f52029;
+}
 .sect4-items:hover .sect4-hidden-icons {
   display: flex;
-  animation: appear 1s ease-in-out;
+  animation: appear 0.5s ease-in-out both;
 }
 .sect4-items:hover .sect4-hidden-icons a {
   background-color: #fff;
@@ -1287,6 +1310,7 @@ header .header-content span {
   }
   to {
     opacity: 1;
+    transform: translateY(-50%);
   }
 }
 

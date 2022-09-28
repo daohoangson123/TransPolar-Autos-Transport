@@ -15,10 +15,6 @@ body {
     font-family: 'Sarabun', sans-serif;
 }
 
-body::-webkit-scrollbar {
-    // display: none;
-}
-
 html, body {
     scroll-behavior: smooth;
 }
@@ -56,10 +52,10 @@ list-style-type: none;
     display: inline-block;
     background-color: $primary-color;
     font-size: 1.5rem;
-    border-radius: 0.7rem;
+    border-radius: $border-radius;
     width: fit-content;
     padding: 1.8rem 4rem;
-    transition: 0.2s ease-in-out 0s;
+    transition: .2s ease-in-out 0s;
 }
 
 .button:hover {
@@ -82,17 +78,19 @@ list-style-type: none;
     justify-content: center;
     align-items: center;
     position: sticky;
-    left: 90%;
+    left: 95%;
     bottom: 5%;
     background-color: $primary-color;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
     margin-top: calc(100vh + var(--offset));
+    margin-right: .5rem;
+    transition: .5s ease-in-out;
 
     i {
         font-size: 1.5rem;
-        color: white;
+        color: $border-color-light;
     }
 }
 

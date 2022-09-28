@@ -74,19 +74,19 @@ header {
 }
 
 .counter-1 {
-    animation: animate1 1s forwards;
+    animation: animate1 2s forwards;
 }
 
 .counter-2 {
-    animation: animate2 1s forwards;
+    animation: animate2 2s forwards;
 }
 
 .counter-3 {
-    animation: animate3 1s forwards;
+    animation: animate3 2s forwards;
 }
 
 .counter-4 {
-    animation: animate4 1s forwards;
+    animation: animate4 2s forwards;
 }
 
 .about-sect2-counter::before {
@@ -159,7 +159,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
 
-    .about-sect4-btn {
+    .about-sect3-btn {
         color: $primary-color;
         background-color: $bg-color;
     }
@@ -191,15 +191,26 @@ header {
 //SECT4
 
 .about-sect4-content {
-    grid-template-columns: repeat(auto-fit, 37rem);
+    grid-template-columns: repeat(auto-fit, min(40vw, 37rem));
     gap: 3rem;
     justify-content: center;
 }
 
 .sect4-items {
-    position: relative;
-    width: max(100%);
     height: auto;
+    margin: 0 auto;
+
+    .sect4-text {
+        a {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+        }
+    }
+}
+
+.sect4-items-img {
+    display: flex;
+    position: relative;
+    justify-content: center;
 
     img {
         width: 100%;
@@ -209,23 +220,33 @@ header {
 
 .sect4-hidden-icons {
     position: absolute;
-    top: 70%;
-    left: 30%;
     justify-content: center;
+    bottom: 0%;
+    flex-wrap: nowrap;
     display: none;
 
     .media-icons {
-
-        i {
-            color: $heading-color;
+        a {
+            width: clamp(2.5rem, 4vw, 4rem);
+            height: clamp(2.5rem, 4vw, 4rem);
+            margin: 0 .5rem;
+            
+            i {
+                color: $heading-color;
+            }
         }
     }
 }
 
 .sect4-items:hover {
+    a {
+        transition: .5s ease-in-out;
+        color: $primary-color;
+    }
+
     .sect4-hidden-icons {
         display: flex;
-        animation: appear 1s ease-in-out;
+        animation: appear .5s ease-in-out both;
 
         a {
             background-color: $bg-color;            
@@ -246,6 +267,7 @@ header {
     }
     to {
         opacity: 1;
+        transform: translateY(-50%);
     }
 }
 
