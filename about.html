@@ -1,384 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Transpolar - Autos & Transport</title>
-<!-- Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
-    rel="stylesheet"
-/>
-<!-- Icon -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-/>
-<!-- Favicon -->
-<link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="img/favicon/apple-touch-icon.png"
-/>
-<link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="img/favicon/favicon-32x32.png"
-/>
-<link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="img/favicon/favicon-16x16.png"
-/>
-<link rel="manifest" href="img/favicon/site.webmanifest" />
-<!-- CSS -->
-<link rel="stylesheet" href="dist/index.css" />
-</head>
-<body>
-<header>
-    <!-- NAV -->
-    <nav id="navbar">
-    <div>
-        <h1>
-        <a href="index.html"><i class="fas fa-truck-moving logo"></i>Transpolar</a>
-        </h1>
-    </div>
-    <!-- NAV-BAR -->
-    <div id="menu" class="navbar">
-        <ul id="" class="">
-        <li id="" class="navbar-item home"><a href="index.html">Home</a></li>
-        <li id="" class="navbar-item"><a href="about.html">About</a></li>
-        <li id="" class="navbar-item"><a href="blogs.html">Services</a></li>
-        <li id="" class="navbar-item">
-            <!-- DROPDOWN MENU-->
-            <button class="dropbtn" onclick="myFunction()">
-            Pages &nbsp; <i class="fa fa-angle-down"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transpolar - Autos & Transport</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/index.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NAV -->
+      <nav id="navbar">
+        <div>
+          <h1>
+            <a href="index.html"
+              ><i class="fas fa-truck-moving logo"></i>Transpolar</a
+            >
+          </h1>
+        </div>
+        <!-- NAV-BAR -->
+        <div id="menu" class="navbar">
+          <ul id="" class="">
+            <li id="" class="navbar-item home">
+              <a href="index.html">Home</a>
+            </li>
+            <li id="" class="navbar-item"><a href="about.html">About</a></li>
+            <li id="" class="navbar-item"><a href="blogs.html">Services</a></li>
+            <li id="" class="navbar-item">
+              <!-- DROPDOWN MENU-->
+              <button class="dropbtn" onclick="myFunction()">
+                Pages &nbsp; <i class="fa fa-angle-down"></i>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="blog.html" class="dropdown-item">Blog page</a>
+                <a href="" class="dropdown-item">404 page</a>
+                <a href="" class="dropdown-item">Landing page</a>
+                <a href="" class="dropdown-item">Elements page</a>
+              </div>
+            </li>
+            <li id="" class="navbar-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- SEARCH-->
+          <div id="search">
+            <input class="search-box" type="text" />
+            <button class="head-btn search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <div id="myDropdown" class="dropdown-content">
-            <a href="blog.html" class="dropdown-item">Blog page</a>
-            <a href="" class="dropdown-item">404 page</a>
-            <a href="" class="dropdown-item">Landing page</a>
-            <a href="" class="dropdown-item">Elements page</a>
-            </div>
-        </li>
-        <li id="" class="navbar-item"><a href="contact.html">Contact</a></li>
-        </ul>
-        <!-- SEARCH-->
-        <div id="search">
-        <input class="search-box" type="text" />
-        <button class="head-btn search-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+          </div>
+          <!-- DARKMODE -->
+          <div id="darkmode">
+            <button class="head-btn dark-btn">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+          </div>
         </div>
-        <!-- DARKMODE -->
-        <div id="darkmode">
-        <button class="head-btn dark-btn">
-            <i class="fa-regular fa-moon"></i>
-        </button>
-        </div>
-    </div>
-    <div class="hidden-nav">
-        <!-- DARKMODE RES-->
-        <div id="darkmode1">
-        <button class="head-btn dark-btn">
-            <i class="fa-regular fa-moon"></i>
-        </button>
-        </div>
-        <!-- HIDDEN MENU-->
-        <div class="hidden-menu">
-        <button class="dropbtn dropbtn-hidden" onclick="mineFunction()">
-            |......| <br />
-            |......|
-        </button>
-        <i class="fa fa-bars"></i>
-        <div id="mineDropdown" class="dropdown-content drop-content-hidden">
-            <a href="about.html" class="dropdown-item">About</a>
-            <a href="services.html" class="dropdown-item">Services</a>
-            <a href="" class="dropdown-item">Pages</a>
-            <a href="contact.html" class="dropdown-item">Contact</a>
-            <div id="search">
+        <div class="hidden-nav">
+          <!-- DARKMODE RES-->
+          <div id="darkmode1">
+            <button class="head-btn dark-btn">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+          </div>
+          <!-- HIDDEN MENU-->
+          <div class="hidden-menu">
+            <button class="dropbtn dropbtn-hidden" onclick="mineFunction()">
+              |......| <br />
+              |......|
+            </button>
+            <i class="fa fa-bars"></i>
+            <div id="mineDropdown" class="dropdown-content drop-content-hidden">
+              <a href="about.html" class="dropdown-item">About</a>
+              <a href="services.html" class="dropdown-item">Services</a>
+              <a href="" class="dropdown-item">Pages</a>
+              <a href="contact.html" class="dropdown-item">Contact</a>
+              <div id="search">
                 <input class="search-box" type="text" />
                 <button class="head-btn search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-content">
+        <h2>About Us</h2>
+        <span> <a href="index.html">Home</a> >> About page</span>
+      </div>
+    </header>
+    <main>
+      <!-- SECT1 -->
+      <section class="about__sect1">
+        <div class="about-top about-flex about-sect1 container">
+          <div class="sect1-left">
+            <div
+              class="sect1-left-top about-top-right-content about-flex-content"
+            >
+              <h6>OUR INFO</h6>
+              <h3>We Give You Complete Control Of Your Shipments.</h3>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Non quae, fugiat.
+              </p>
+              <div class="sect1-left-bot about-bot-right about-flex">
+                <div
+                  class="about-flex about-bot-content-right sect1-left-bot-content"
+                >
+                  <div class="about-bot-right-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                  </div>
+                  <div class="about-bot-right-content">
+                    <a href="">Live Monitoring</a>
+                    <p>Lorem ipsum viverra feugiat libero.</p>
+                  </div>
                 </div>
+                <div
+                  class="about-flex about-bot-content-right sect1-left-bot-content"
+                >
+                  <div class="about-bot-right-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="sect1-left-bot-content about-bot-right-content">
+                    <a href="">Worldwide Service</a>
+                    <p>Lorem ipsum viverra feugiat libero.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sect1-right about-top-left relative">
+            <img src="img/about/ab.jpg" alt="" />
+            <div class="about-sect1-exyears absolute">
+              <span>16+</span>
+              <p>YEARS OF EXPERIENCE</p>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-    </nav>
-    <div class="header-content">
-    <h2>About Us</h2>
-    <span> <a href="index.html">Home</a> >> About page</span>
-    </div>
-</header>
-<main>
-    <!-- SECT1 -->
-    <section class="about__sect1"></section>
-    <!-- SECT2 -->
-    <section class="about__sect2">
-    <div class="about-sect2-content about-grid">
-        <div class="counter-items">
+      </section>
+      <!-- SECT2 -->
+      <section class="about__sect2">
+        <div class="about-sect2-content about-grid">
+          <div class="counter-items">
             <div class="about-sect2-counter counter-1"></div>
             <div class="about-sect2-text">Delivered Goods</div>
-        </div>
-        <div class="counter-items">
+          </div>
+          <div class="counter-items">
             <div class="about-sect2-counter counter-2"></div>
             <div class="about-sect2-text">Miles Driven</div>
-        </div>
-        <div class="counter-items">
+          </div>
+          <div class="counter-items">
             <div class="about-sect2-counter counter-3"></div>
             <div class="about-sect2-text">Business Success</div>
-        </div>
-        <div class="counter-items">
+          </div>
+          <div class="counter-items">
             <div class="about-sect2-counter counter-4"></div>
             <div class="about-sect2-text">Happy Clients</div>
+          </div>
         </div>
-    </div>
-    </section>
-    <!-- SECT3 -->
-    <section class="about__sect3">
-    <div class="about-sect3-content about-flex">
-        <div class="about-sect3-left">
-        <span> GET FREE ESTIMATE </span>
-        <p>Your Gateway To Any Destination In The World.</p>
+      </section>
+      <!-- SECT3 -->
+      <section class="about__sect3">
+        <div class="about-sect3-content about-flex">
+          <div class="about-sect3-left">
+            <span> GET FREE ESTIMATE </span>
+            <p>Your Gateway To Any Destination In The World.</p>
+          </div>
+          <div class="about-sect3-right about-grid">
+            <a class="button about-sect3-btn" href="">Read More</a>
+            <button>Contact us</button>
+          </div>
         </div>
-        <div class="about-sect3-right about-grid">
-        <a class="button about-sect3-btn" href="">Read More</a>
-        <button>Contact us</button>
-        </div>
-    </div>
-    </section>
-    <!-- SECT4 -->
-    <section class="about__sect4 title">
-    <span>OUR TEAM</span>
-    <h2>Who Worked With Us.</h2>
-    <div class="about-sect4-content about-grid">
-        <div class="sect4-items sect4-item-1">
+      </section>
+      <!-- SECT4 -->
+      <section class="about__sect4 title">
+        <span>OUR TEAM</span>
+        <h2>Who Worked With Us.</h2>
+        <div class="about-sect4-content about-grid">
+          <div class="sect4-items sect4-item-1">
             <div class="sect4-items-img">
-                <img src="img/about/team1.jpg" alt="" />
-                <div class="sect4-hidden-icons about-flex">
-                    <!--FB-->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    <!-- IN -->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <!-- TWITTER -->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
+              <img src="img/about/team1.jpg" alt="" />
+              <div class="sect4-hidden-icons about-flex">
+                <!--FB-->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
                 </div>
+                <!-- IN -->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                <!-- TWITTER -->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="sect4-text services-content">
-                <a href="">Lawrence Petrie</a>
-                <p>Selling Agent</p>
+              <a href="">Lawrence Petrie</a>
+              <p>Selling Agent</p>
             </div>
-        </div><div class="sect4-items sect4-item-1">
+          </div>
+          <div class="sect4-items sect4-item-1">
             <div class="sect4-items-img">
-                <img src="img/about/team2.jpg" alt="" />
-                <div class="sect4-hidden-icons about-flex">
-                    <!--FB-->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    <!-- IN -->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <!-- TWITTER -->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
+              <img src="img/about/team2.jpg" alt="" />
+              <div class="sect4-hidden-icons about-flex">
+                <!--FB-->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
                 </div>
+                <!-- IN -->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                <!-- TWITTER -->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="sect4-text services-content">
-                <a href="">Jack Peters</a>
-                <p>Selling Agent</p>
+              <a href="">Jack Peters</a>
+              <p>Selling Agent</p>
             </div>
-        </div><div class="sect4-items sect4-item-1">
+          </div>
+          <div class="sect4-items sect4-item-1">
             <div class="sect4-items-img">
-                <img src="img/about/team3.jpg" alt="" />
-                <div class="sect4-hidden-icons about-flex">
-                    <!--FB-->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    <!-- IN -->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <!-- TWITTER -->
-                    <div class="media-icons">
-                        <a href="">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
+              <img src="img/about/team3.jpg" alt="" />
+              <div class="sect4-hidden-icons about-flex">
+                <!--FB-->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
                 </div>
+                <!-- IN -->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                <!-- TWITTER -->
+                <div class="media-icons">
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="sect4-text services-content">
-                <a href="">Anna Phillips</a>
-                <p>Selling Agent</p>
+              <a href="">Anna Phillips</a>
+              <p>Selling Agent</p>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
-    </section>
-    <section class="about__sect5"></section>
-</main>
-<!-- FOOTER -->
-<footer>
-    <!-- FOOTER TOP -->
-    <div class="footer-top footer-flex">
-    <!-- TOP LEFT -->
-    <div class="footer-top-left">
-        <div class="footer-top-left-content">
-        <a href=""><i class="fas fa-truck-moving logo"></i>Transpolar</a>
+      </section>
+      <section class="about__sect5"></section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <!-- FOOTER TOP -->
+      <div class="footer-top footer-flex">
+        <!-- TOP LEFT -->
+        <div class="footer-top-left">
+          <div class="footer-top-left-content">
+            <a href=""><i class="fas fa-truck-moving logo"></i>Transpolar</a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ute dolor sit.
+            </p>
+          </div>
+          <!-- ICON -->
+          <div class="footer-top-left-media footer-flex">
+            <!--FB-->
+            <div class="media-icons">
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <!-- IN -->
+            <div class="media-icons">
+              <a href="">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+            <!-- TWITTER -->
+            <div class="media-icons">
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <!-- GG -->
+            <div class="media-icons">
+              <a href="">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- TOP RIGHT -->
+        <div class="footer-top-right footer-flex">
+          <div class="footer-top-right-content">
+            <span>Who We Are</span>
+            <ul>
+              <li>
+                <a href="">About Us</a>
+              </li>
+              <li>
+                <a href="">Our Team</a>
+              </li>
+              <li>
+                <a href="">New & Media</a>
+              </li>
+              <li>
+                <a href="">Work With Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top-right-content">
+            <span>What We Do</span>
+            <ul>
+              <li>
+                <a href="">Road Freight</a>
+              </li>
+              <li>
+                <a href="">Air Freight</a>
+              </li>
+              <li>
+                <a href="">Ocean Freight</a>
+              </li>
+              <li>
+                <a href="">Vacation Freight</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top-right-content">
+            <span>Company</span>
+            <ul>
+              <li>
+                <a href="">Locations</a>
+              </li>
+              <li>
+                <a href="">Tracking</a>
+              </li>
+              <li>
+                <a href="">Jobs</a>
+              </li>
+              <li>
+                <a href="">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top-right-content">
+            <span>More Info </span>
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-phone"></i> :+12 324-016-694</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-envelope"></i> :Office@example.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/dir//New+York+USA/@40.7127753,-74.0059728,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2m2!1d-74.0059728!2d40.7127753"
+                  ><i class="fa-solid fa-map-location-dot"></i> :New York -
+                  1060,Honey Avenue</a
+                >
+              </li>
+              <li>
+                <a href=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER BOT -->
+      <hr />
+      <div class="footer-bot">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ute dolor sit.
+          © 2022 Transpolar. All Rights Reserved | WordPress Theme by
+          <a href="">W3Layouts.</a>
         </p>
-        </div>
-        <!-- ICON -->
-        <div class="footer-top-left-media footer-flex">
-        <!--FB-->
-        <div class="media-icons">
-            <a href="">
-            <i class="fa-brands fa-facebook-f"></i>
-            </a>
-        </div>
-        <!-- IN -->
-        <div class="media-icons">
-            <a href="">
-            <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-        </div>
-        <!-- TWITTER -->
-        <div class="media-icons">
-            <a href="">
-            <i class="fa-brands fa-twitter"></i>
-            </a>
-        </div>
-        <!-- GG -->
-        <div class="media-icons">
-            <a href="">
-            <i class="fa-brands fa-google-plus-g"></i>
-            </a>
-        </div>
-        </div>
-    </div>
-    <!-- TOP RIGHT -->
-    <div class="footer-top-right footer-flex">
-        <div class="footer-top-right-content">
-        <span>Who We Are</span>
-        <ul>
-            <li>
-            <a href="">About Us</a>
-            </li>
-            <li>
-            <a href="">Our Team</a>
-            </li>
-            <li>
-            <a href="">New & Media</a>
-            </li>
-            <li>
-            <a href="">Work With Us</a>
-            </li>
-        </ul>
-        </div>
-        <div class="footer-top-right-content">
-        <span>What We Do</span>
-        <ul>
-            <li>
-            <a href="">Road Freight</a>
-            </li>
-            <li>
-            <a href="">Air Freight</a>
-            </li>
-            <li>
-            <a href="">Ocean Freight</a>
-            </li>
-            <li>
-            <a href="">Vacation Freight</a>
-            </li>
-        </ul>
-        </div>
-        <div class="footer-top-right-content">
-        <span>Company</span>
-        <ul>
-            <li>
-            <a href="">Locations</a>
-            </li>
-            <li>
-            <a href="">Tracking</a>
-            </li>
-            <li>
-            <a href="">Jobs</a>
-            </li>
-            <li>
-            <a href="">Support</a>
-            </li>
-        </ul>
-        </div>
-        <div class="footer-top-right-content">
-        <span>More Info </span>
-        <ul>
-            <li>
-            <a href=""><i class="fa-solid fa-phone"></i> :xxx-xxx-xxx</a>
-            </li>
-            <li>
-            <a href=""
-                ><i class="fa-solid fa-envelope"></i> :xxx@gmail.com</a
-            >
-            </li>
-            <li>
-            <a href=""
-                ><i class="fa-solid fa-map-location-dot"></i> :xxxxx</a
-            >
-            </li>
-            <li>
-            <a href=""></a>
-            </li>
-        </ul>
-        </div>
-    </div>
-    </div>
-    <!-- FOOTER BOT -->
-    <hr />
-    <div class="footer-bot">
-    <p>
-        © 2022 Transpolar. All Rights Reserved | WordPress Theme by
-        <a href="">W3Layouts.</a>
-    </p>
-    </div>
-</footer>
-<!-- BACK TO TOP -->
-<a href="#" class="top"><i class="fa-solid fa-turn-up"></i></a>
-<script src="index.js"></script>
-</body>
+      </div>
+    </footer>
+    <!-- BACK TO TOP -->
+    <a href="#" class="top"><i class="fa-solid fa-turn-up"></i></a>
+    <script src="index.js"></script>
+  </body>
 </html>

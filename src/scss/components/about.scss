@@ -2,10 +2,6 @@
 
 // ABOUT
 
-.about {
-    margin-top: 8rem;
-}
-
 .about-flex {
     display: flex;
     flex-wrap: wrap;
@@ -19,12 +15,6 @@
     h6 {
         font-size: 1.4rem;
         color: $font-color;
-    }
-
-    h3 {
-        font-size: clamp(3rem, 4vw, 4rem);
-        line-height: 1.5;
-        margin-bottom: 1rem;
     }
 
     p {
@@ -222,7 +212,7 @@
     }
 
     .about-video-right {
-        margin-left: 1rem;
+        margin-left: 2rem;
 
         .about-video-right-content{
             justify-content: space-between;
@@ -233,7 +223,7 @@
             color: $font-color;
         }
 
-        h3 {
+        h4 {
             color: $bg-color;
         }
     }

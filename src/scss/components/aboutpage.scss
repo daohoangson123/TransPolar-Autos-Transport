@@ -8,25 +8,7 @@ header {
     background-position: center;
     min-height: 35rem;
     color: $bg-color;
-
-    .header-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        margin: 0 auto;
-
-        h2 {
-            font-size: 4.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        span {
-            color: $bg-color;
-            font-size: 1.6rem;
-        }
-    }
+    margin-bottom: 10rem;
 }
 
 .about-grid {
@@ -34,6 +16,57 @@ header {
 }
 
 //SECT1
+
+.about-sect1 {
+    justify-content: space-around;
+}
+
+//LEFT
+
+.sect1-left-bot {
+    flex-wrap: nowrap;
+    //425 wrap - 90vw
+}
+
+.sect1-left-bot-content {
+    background: none;
+    margin-right: 2rem;
+    padding: 0;
+}
+
+//RIGHT
+
+.about-sect1-exyears {
+    background: $primary-color;
+    border-radius: $border-radius;
+    color: $bg-color;
+    text-align: center;
+    box-shadow: 3rem 3rem 3rem $layer2;
+    min-width: 3rem;
+    padding: 4rem 5rem;
+    left: -8.5rem;
+    top: 28rem;
+
+    span {
+        font-size: clamp(5rem, 4vw, 7rem);
+        line-height: 8rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: clamp(1.5rem, 4vw, 1.8rem);
+    }
+}
+
+.about-top {
+    .sect1-left {
+        margin-left: 2rem;
+    }
+
+    .sect1-right {
+        min-width: 0;
+    }
+}
 
 //SECT2
 
@@ -47,13 +80,15 @@ header {
 .about-sect2-counter {
     counter-reset: num var(--n);
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: clamp(4rem, 4vw, 5rem);
     line-height: 5rem;
 }
 
 .about-sect2-text {
     font-size: 1.6rem;
     color: $primary-color;
+    font-weight: bold;
+    line-height: 5rem;
 }
 
 //COUNT-ANIMATION
@@ -64,7 +99,6 @@ header {
     --to1280: 1280;
     --to3020: 3020;
 }
-
 
 @property --n {
     syntax: "<integer>";
@@ -273,3 +307,27 @@ header {
 
 
 //SECT5
+
+//RESPONSIVE
+
+
+@media only screen and (max-width: 768px) {
+
+//SECT1
+
+//LEFT
+
+.about-bot-right {
+    flex-wrap: wrap;
+}
+
+//RIGHT
+
+.about-sect1-exyears {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 1.5rem;
+}
+
+}

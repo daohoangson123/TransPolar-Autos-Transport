@@ -1,0 +1,122 @@
+@import "../globals/variables.scss";
+
+//INFO-FORM
+
+//INFO
+
+.contact-info-left-bot {
+    h5, p {
+        margin-bottom: 1rem;
+    }
+
+    i {
+        color: $primary-color;
+        margin-right: 1rem;
+    }
+
+    a {
+        color: $font-color;
+    }
+}
+
+//FORM
+
+
+//TOP
+
+.contact-form-top {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+
+    input {
+        outline: none;
+        border-radius: $border-radius;
+        min-height: 6rem;
+        padding: 1.3rem 2rem;
+        border: .1rem solid $border-color-light;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 2.2rem;
+        color: $heading-color;
+        background-color: $bg-lightgrey;
+    }
+}
+
+//MID
+
+.contact-form-mid {
+    textarea {
+        font-family: inherit;
+        outline: none;
+        outline: none;
+        resize: none;
+        width: 100%;
+        height: 12.5rem;
+        border-radius: $border-radius;
+        border: .1rem solid $border-color-light;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 2.2rem;
+        color: $heading-color;
+        background-color: $bg-lightgrey;
+        margin: 2.5rem 0;
+        padding: 1.3rem 2rem;
+    }
+}
+
+//SUBMIT
+
+//MAP
+
+.imap {
+    width: 100%;
+    height: 54rem;
+}
+
+.imap-content {
+    background: $bg-color;
+    border-radius: $border-radius;
+    padding: 4rem;
+    right: 10%;
+    top: 20%;
+    font-size: 1.8rem;
+
+    i{
+        color: $primary-color;
+        padding: 1rem;
+    }
+
+    a {
+        color: $font-color;
+    }
+
+    p {
+        color: $font-color;
+    }
+}
+
+//RESPONSIVE
+
+@media only screen and (max-width: 768px) {
+
+//FORM
+
+.contact-form-top {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media only screen and (max-width: 425px) {
+    
+//MAP
+
+.imap-content {
+    padding: 3rem;
+    left: 10%;
+    right: 10%;
+    top: 20%;
+    font-size: 1.6rem;
+}
+
+}

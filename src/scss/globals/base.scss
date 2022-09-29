@@ -20,9 +20,25 @@ html, body {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     margin: 0 0 5rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 0 5rem;
+}
+
+h4 {
+    font-size: clamp(3rem, 4vw, 4rem);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-size: 2rem;
 }
 
 a, button {
@@ -36,13 +52,53 @@ li {
 list-style-type: none;
 }
 
+//DISPLAY
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+//POSITION
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+// TITLE
+
 .title {
     text-align: center;
-    padding-top: 5rem;
+    margin: 5rem 0;
+    padding-top: 3rem;
 
     span {
         font-size: 1.5rem;
         color: $font-color;
+    }
+}
+
+//HEADER
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0 auto;
+    
+    span {
+        display: block;
+        color: $bg-color;
+        font-size: 1.6rem;
     }
 }
 
