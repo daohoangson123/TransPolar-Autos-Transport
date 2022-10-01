@@ -8,6 +8,7 @@ header {
     background-position: center;
     min-height: 35rem;
     color: $bg-color;
+    padding-bottom: 3rem;
     margin-bottom: 10rem;
 }
 
@@ -270,6 +271,10 @@ header {
             }
         }
     }
+}
+
+.sect4-items {
+    transition: .5s ease-in-out;
 }
 
 .sect4-items:hover {

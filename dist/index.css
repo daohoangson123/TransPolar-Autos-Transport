@@ -140,7 +140,7 @@ nav {
   position: fixed;
   width: 100%;
   padding: 1.5rem 2rem;
-  transition: background 0.5s;
+  transition: 0.5s;
   z-index: 3;
 }
 
@@ -1129,6 +1129,7 @@ header {
   background-position: center;
   min-height: 35rem;
   color: #fff;
+  padding-bottom: 3rem;
   margin-bottom: 10rem;
 }
 
@@ -1352,6 +1353,10 @@ header {
 }
 .sect4-hidden-icons .media-icons a i {
   color: #181d2e;
+}
+
+.sect4-items {
+  transition: 0.5s ease-in-out;
 }
 
 .sect4-items:hover a {

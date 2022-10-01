@@ -1,4 +1,4 @@
-// Dtiky Nav
+// Sticky Nav
 var navbar = document.querySelector('nav')
 
 window.onscroll = function() {
