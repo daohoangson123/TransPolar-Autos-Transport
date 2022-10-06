@@ -66,6 +66,18 @@
 
 //SUBMIT
 
+.contact-form-submit {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.contactpage-btn {
+    
+}
+
+//SUBMIT
+
 //MAP
 
 .imap {
@@ -99,24 +111,24 @@
 
 @media only screen and (max-width: 768px) {
 
-//FORM
+    //FORM
 
-.contact-form-top {
-    grid-template-columns: 1fr;
-}
+    .contact-form-top {
+        grid-template-columns: 1fr;
+    }
 
 }
 
 @media only screen and (max-width: 425px) {
     
-//MAP
+    //MAP
 
-.imap-content {
-    padding: 3rem;
-    left: 10%;
-    right: 10%;
-    top: 20%;
-    font-size: 1.6rem;
-}
+    .imap-content {
+        padding: 3rem;
+        left: 10%;
+        right: 10%;
+        top: 20%;
+        font-size: 1.6rem;
+    }
 
 }

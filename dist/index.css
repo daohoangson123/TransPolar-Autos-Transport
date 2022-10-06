@@ -16,122 +16,8 @@ html, body {
   scroll-behavior: smooth;
 }
 
-h2 {
-  font-size: 4rem;
-  text-align: center;
-  margin: 0 0 5rem;
-}
-
-h3 {
-  font-size: 3.5rem;
-  text-align: center;
-  margin: 0 0 5rem;
-}
-
-h4 {
-  font-size: clamp(3rem, 4vw, 4rem);
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-h5 {
-  font-size: 2rem;
-}
-
-a, button {
-  font-family: "Sarabun", sans-serif;
-  text-decoration: none;
-  color: #fff;
-}
-
-ul,
-li {
-  list-style-type: none;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.title {
-  text-align: center;
-  margin: 5rem 0;
-  padding-top: 3rem;
-}
-.title span {
-  font-size: 1.5rem;
-  color: #b5b4b4;
-}
-
-.header-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 0 auto;
-}
-.header-content span {
-  display: block;
-  color: #fff;
-  font-size: 1.6rem;
-}
-
-.button {
-  display: inline-block;
-  background-color: #f52029;
-  font-size: 1.5rem;
-  border-radius: 6px;
-  width: fit-content;
-  padding: 1.8rem 4rem;
-  transition: 0.2s ease-in-out 0s;
-}
-
-.button:hover {
-  background-color: #ff5252;
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
 .container {
   padding: 0 2.5rem 5rem;
-}
-
-.top {
-  --offset: 5rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  left: 95%;
-  bottom: 5%;
-  background-color: #f52029;
-  border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  margin-top: calc(100vh + var(--offset));
-  margin-right: 0.5rem;
-  transition: 0.5s ease-in-out;
-}
-.top i {
-  font-size: 1.5rem;
-  color: #e4e6e5;
-}
-
-.top:hover {
-  background-color: #ff5252;
 }
 
 nav {
@@ -166,13 +52,6 @@ nav.scrolled .dropbtn:hover i,
 nav.scrolled .dropbtn:focus i,
 nav.scrolled .dropdown-item:hover i {
   color: black;
-}
-
-h1 {
-  font-size: 3rem;
-}
-h1 i {
-  color: #f52029;
 }
 
 /* NAVBAR */
@@ -1107,6 +986,128 @@ hr {
     padding: 3rem 2rem 7rem;
   }
 }
+h1 {
+  font-size: 3rem;
+}
+h1 i {
+  color: #f52029;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 0 5rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0 0 5rem;
+}
+
+h4 {
+  font-size: clamp(3rem, 4vw, 4rem);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+a,
+button {
+  font-family: "Sarabun", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto;
+}
+.header-content span {
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.title {
+  text-align: center;
+  margin: 5rem 0;
+  padding-top: 3rem;
+}
+.title span {
+  font-size: 1.5rem;
+  color: #b5b4b4;
+}
+
+.button {
+  display: inline-block;
+  background-color: #f52029;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  width: fit-content;
+  padding: 1.8rem 4rem;
+  transition: 0.2s ease-in-out 0s;
+}
+
+.button:hover {
+  background-color: #ff5252;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.top {
+  --offset: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  left: 95%;
+  bottom: 5%;
+  background-color: #f52029;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin-top: calc(100vh + var(--offset));
+  margin-right: 0.5rem;
+  transition: 0.5s ease-in-out;
+}
+.top i {
+  font-size: 1.5rem;
+  color: #e4e6e5;
+}
+
+.top:hover {
+  background-color: #ff5252;
+}
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -1439,6 +1440,11 @@ header {
   background-color: #f9f9f9;
   margin: 2.5rem 0;
   padding: 1.3rem 2rem;
+}
+
+.contact-form-submit {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .imap {

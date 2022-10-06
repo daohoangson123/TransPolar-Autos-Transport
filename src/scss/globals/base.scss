@@ -1,5 +1,7 @@
 @import "variables";
 
+//RESET CSS
+
 * {
     margin: 0;
     padding: 0;
@@ -19,137 +21,8 @@ html, body {
     scroll-behavior: smooth;
 }
 
-h2 {
-    font-size: 4rem;
-    text-align: center;
-    margin: 0 0 5rem;
-}
-
-h3 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 0 0 5rem;
-}
-
-h4 {
-    font-size: clamp(3rem, 4vw, 4rem);
-    line-height: 1.5;
-    margin-bottom: 1rem;
-}
-
-h5 {
-    font-size: 2rem;
-}
-
-a, button {
-    font-family: 'Sarabun', sans-serif;
-    text-decoration: none;
-    color: $dropdown-color;
-}
-
-ul,
-li {
-list-style-type: none;
-}
-
-//DISPLAY
-
-.flex {
-    display: flex;
-}
-
-.grid {
-    display: grid;
-}
-
-//POSITION
-
-.relative {
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
-
-// TITLE
-
-.title {
-    text-align: center;
-    margin: 5rem 0;
-    padding-top: 3rem;
-
-    span {
-        font-size: 1.5rem;
-        color: $font-color;
-    }
-}
-
-//HEADER
-
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin: 0 auto;
-    
-    span {
-        display: block;
-        color: $bg-color;
-        font-size: 1.6rem;
-    }
-}
-
-// BUTTON
-
-.button {
-    display: inline-block;
-    background-color: $primary-color;
-    font-size: 1.5rem;
-    border-radius: $border-radius;
-    width: fit-content;
-    padding: 1.8rem 4rem;
-    transition: .2s ease-in-out 0s;
-}
-
-.button:hover {
-    background-color: $button-hover-color;
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
 //
 
 .container {
     padding: 0 2.5rem 5rem;
-}
-
-// BACK TO TOP BUTTON
-
-.top {
-    --offset: 5rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    left: 95%;
-    bottom: 5%;
-    background-color: $primary-color;
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    margin-top: calc(100vh + var(--offset));
-    margin-right: .5rem;
-    transition: .5s ease-in-out;
-
-    i {
-        font-size: 1.5rem;
-        color: $border-color-light;
-    }
-}
-
-.top:hover {
-    background-color: $button-hover-color;
 }
