@@ -214,7 +214,9 @@ nav.scrolled .dropdown-item:hover i {
   font-size: clamp(3rem, 4vw, 7rem);
   font-weight: 700;
   color: #fff;
+  width: 80%;
   margin: 1.5rem 0 3rem;
+  margin-inline: auto;
 }
 
 /* Next & previous buttons */
@@ -229,7 +231,7 @@ nav.scrolled .dropdown-item:hover i {
   font-size: 2rem;
   transition: 0.3s ease-in-out;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
@@ -241,15 +243,16 @@ nav.scrolled .dropdown-item:hover i {
 /* On hover, add background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
 }
-
-/* carousel icon hover */
-.fa-angle-left:hover,
-.fa-angle-right:hover {
+.prev:hover .fa-angle-left,
+.prev:hover .fa-angle-right,
+.next:hover .fa-angle-left,
+.next:hover .fa-angle-right {
   color: #f52029;
 }
 
+/* carousel icon hover */
 /* The dots/bullets/indicators */
 .dot-mng {
   position: relative;
@@ -282,10 +285,13 @@ nav.scrolled .dropdown-item:hover i {
     align-items: baseline;
   }
   .slide-content {
-    top: 40%;
+    top: 35%;
     left: 5%;
     transform: translate(0%, 0%);
     text-align: left;
+  }
+  .slide-content p {
+    width: fit-content;
   }
 }
 @media only screen and (max-width: 600px) {
