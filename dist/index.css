@@ -26,7 +26,7 @@ nav {
   position: fixed;
   width: 100%;
   padding: 1.5rem 2rem;
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
   z-index: 3;
 }
 
@@ -46,7 +46,7 @@ nav.scrolled .dropbtn:hover,
 nav.scrolled .dropbtn:focus,
 nav.scrolled .dropdown-item:hover {
   color: #f52029;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 nav.scrolled .dropbtn:hover i,
 nav.scrolled .dropbtn:focus i,
@@ -69,7 +69,7 @@ nav.scrolled .dropdown-item:hover i {
 }
 #menu .navbar-item:hover > a {
   color: #f52029;
-  transition: 1s ease;
+  transition: 0.3s ease-in-out;
 }
 
 /* Dropdown Button */
@@ -123,7 +123,7 @@ nav.scrolled .dropdown-item:hover i {
   font-size: 1.6rem;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu */
 .show {
   display: block;
 }
@@ -227,9 +227,9 @@ nav.scrolled .dropdown-item:hover i {
   padding: 1rem;
   color: #fff;
   font-size: 2rem;
-  transition: 1s ease;
+  transition: 0.3s ease-in-out;
   border-radius: 50%;
-  background-color: rgba(233, 225, 225, 0.1);
+  background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
@@ -551,6 +551,8 @@ nav.scrolled .dropdown-item:hover i {
   border-radius: 50%;
   background-color: #f7f7f9;
   margin: 0 auto;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
 }
 .services-top-content .services-icon i {
   color: #f52029;
@@ -559,8 +561,6 @@ nav.scrolled .dropdown-item:hover i {
 
 .services-top-content:hover .services-icon {
   background-color: #f52029;
-  transition: 0.6s ease-in-out;
-  cursor: pointer;
 }
 .services-top-content:hover .services-icon i {
   color: #fff;
@@ -1020,6 +1020,7 @@ button {
   font-family: "Sarabun", sans-serif;
   text-decoration: none;
   color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 ul,
@@ -1074,7 +1075,7 @@ li {
   border-radius: 6px;
   width: fit-content;
   padding: 1.8rem 4rem;
-  transition: 0.2s ease-in-out 0s;
+  transition: 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -1269,7 +1270,7 @@ header {
   background-image: url(../img/about/banner1.jpg);
   max-width: 100vw;
   min-height: 35rem;
-  margin: 0 0;
+  margin: 0;
   padding: 5rem 4rem;
   justify-content: space-around;
   align-items: center;
@@ -1343,17 +1344,19 @@ header {
 .sect4-hidden-icons {
   position: absolute;
   justify-content: center;
-  bottom: 0%;
+  bottom: 10%;
   flex-wrap: nowrap;
-  display: none;
+  opacity: 0;
+  animation: disappear 0.5s ease-in-out alternate both;
 }
 .sect4-hidden-icons .media-icons a {
-  width: clamp(2.5rem, 4vw, 4rem);
-  height: clamp(2.5rem, 4vw, 4rem);
-  margin: 0 0.5rem;
+  width: clamp(3.8rem, 4vw, 4.5rem);
+  height: clamp(3.8rem, 4vw, 4.5rem);
+  margin: 0 0.35rem;
 }
 .sect4-hidden-icons .media-icons a i {
   color: #181d2e;
+  transition: 0.5s ease-in-out;
 }
 
 .sect4-items {
@@ -1361,19 +1364,16 @@ header {
 }
 
 .sect4-items:hover a {
-  transition: 0.5s ease-in-out;
   color: #f52029;
 }
 .sect4-items:hover .sect4-hidden-icons {
-  display: flex;
-  animation: appear 0.5s ease-in-out both;
+  animation: appear 0.5s ease-in-out alternate both;
 }
 .sect4-items:hover .sect4-hidden-icons a {
   background-color: #fff;
 }
 .sect4-items:hover .sect4-hidden-icons a:hover i {
   color: #f52029;
-  transition: 0.5s ease-in-out;
 }
 
 @keyframes appear {
@@ -1382,7 +1382,14 @@ header {
   }
   to {
     opacity: 1;
-    transform: translateY(-50%);
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 @media only screen and (max-width: 768px) {

@@ -35,6 +35,8 @@
         border-radius: 50%;
         background-color: $bg-grey;
         margin: 0 auto;
+        transition: .6s ease-in-out;
+        cursor: pointer;
 
         i {
             color: $primary-color;
@@ -47,10 +49,7 @@
 
     .services-icon {
         background-color: $primary-color;
-        transition: 0.6s ease-in-out;
-        cursor: pointer;
 
-        
         i {
             color: $bg-color;
         }

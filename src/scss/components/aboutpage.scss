@@ -170,7 +170,7 @@ header {
     background-image: url(../img/about/banner1.jpg);
     max-width: 100vw;
     min-height: 35rem;
-    margin: 0 0;
+    margin: 0;
     padding: 5rem 4rem;
     justify-content: space-around;
     align-items: center;
@@ -256,18 +256,21 @@ header {
 .sect4-hidden-icons {
     position: absolute;
     justify-content: center;
-    bottom: 0%;
+    bottom: 10%;
     flex-wrap: nowrap;
-    display: none;
+    opacity: 0;
+    animation: disappear .5s ease-in-out alternate both;
 
     .media-icons {
+
         a {
-            width: clamp(2.5rem, 4vw, 4rem);
-            height: clamp(2.5rem, 4vw, 4rem);
-            margin: 0 .5rem;
+            width: clamp(3.8rem, 4vw, 4.5rem);
+            height: clamp(3.8rem, 4vw, 4.5rem);
+            margin: 0 .35rem;
             
             i {
                 color: $heading-color;
+                transition: .5s ease-in-out;
             }
         }
     }
@@ -279,13 +282,11 @@ header {
 
 .sect4-items:hover {
     a {
-        transition: .5s ease-in-out;
         color: $primary-color;
     }
 
     .sect4-hidden-icons {
-        display: flex;
-        animation: appear .5s ease-in-out both;
+        animation: appear .5s ease-in-out alternate both;
 
         a {
             background-color: $bg-color;            
@@ -294,7 +295,6 @@ header {
         a:hover {
             i {
                 color: $primary-color;
-                transition: .5s ease-in-out;
             }
         }
     }
@@ -303,10 +303,20 @@ header {
 @keyframes appear {
     from {
         opacity: 0;
+        
     }
     to {
         opacity: 1;
-        transform: translateY(-50%);
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+        
+    }
+    to {
+        opacity: 0;
     }
 }
 

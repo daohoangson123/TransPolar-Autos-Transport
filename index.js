@@ -1,15 +1,37 @@
 // Sticky Nav
 var navbar = document.querySelector('nav')
 
-window.onscroll = function() {
-
-  // pageYOffset or scrollY
+window.onscroll = function () {
   if (window.pageYOffset > 0) {
     navbar.classList.add('scrolled')
   } else {
     navbar.classList.remove('scrolled')
   }
 }
+
+// window.onscroll = function () {
+//   scrollDown();
+//   counterNum();
+// }
+
+// function scrollDown() {
+//   if (window.pageYOffset > 0) {
+//     navbar.classList.add('scrolled')
+//   } else {
+//     navbar.classList.remove('scrolled')
+//   }
+// }
+
+// // Counter
+// var counterUp = document.querySelectorAll('.about-sect2-counter')[3];
+
+// function counterNum() {
+//   if (window.pageYOffset > 500) {
+//     counterUp.classList.add('counter-4')
+//   } else {
+//     counterUp.classList.remove('counter-4')
+//   }
+// }
 
 // Dropdown Btn on Full
 function myFunction() {
