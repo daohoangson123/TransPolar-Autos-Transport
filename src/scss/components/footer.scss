@@ -35,8 +35,10 @@ footer {
     }
 
     a {
+        display: inline-block;
         font-weight: 700;
         font-size: 3.2rem;
+        width: max-content;
     }
 
     p {
@@ -78,10 +80,6 @@ footer {
 //TOP RIGHT
 
 //RIGHT CONTENT
-
-.footer-top-right {
-    justify-content: space-evenly;
-}
 
 .footer-top-right-content {
     min-width: 15vw;
@@ -161,10 +159,12 @@ hr {
 
     .footer-top-right {
         flex-wrap: wrap;
+        min-width: 90vw;
     }
 
     .footer-top-right-content {
-        min-width: 20vw;
+        min-width: 30vw;
+        margin-right: 2rem;
 
         a {
             display: inline-block;
@@ -187,7 +187,7 @@ hr {
     }
 
     .footer-top-right {
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     //BOT

@@ -91,12 +91,6 @@ nav.scrolled .dropdown-item:hover i {
 .dropbtn:focus,
 .dropdown-item:hover {
   color: #f52029;
-  transition: 1s ease-in-out;
-}
-.dropbtn:hover i,
-.dropbtn:focus i,
-.dropdown-item:hover i {
-  color: #fff;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -106,7 +100,7 @@ nav.scrolled .dropdown-item:hover i {
   position: absolute;
   background-color: #fff;
   border: 0.1rem solid #e4e6e5;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   min-width: 15rem;
   margin-top: 1rem;
   margin-left: -4rem;
@@ -162,7 +156,7 @@ nav.scrolled .dropdown-item:hover i {
   color: #fff;
   font-size: 2rem;
   padding: 0.7rem 1.1rem;
-  border-radius: 6px;
+  border-radius: 0.6rem;
 }
 
 .dropbtn-hidden {
@@ -176,8 +170,10 @@ nav.scrolled .dropdown-item:hover i {
 }
 
 .drop-content-hidden {
-  width: 100%;
-  right: 0;
+  position: absolute;
+  width: 90vw;
+  top: 6rem;
+  right: 2.1rem;
   text-align: center;
 }
 .drop-content-hidden .search-btn {
@@ -428,7 +424,7 @@ nav.scrolled .dropdown-item:hover i {
   background: #f7f7f9;
   margin-top: 3rem;
   padding: 4rem;
-  border-radius: 6px;
+  border-radius: 0.6rem;
 }
 
 .about-bot-right-icon {
@@ -760,7 +756,7 @@ nav.scrolled .dropdown-item:hover i {
   margin: 1.5rem;
   padding-bottom: 3rem;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 0.6rem;
 }
 
 .date-relative {
@@ -770,8 +766,8 @@ nav.scrolled .dropdown-item:hover i {
 .article-wrapper {
   width: inherit;
   height: 40vh;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
   overflow: hidden;
 }
 
@@ -809,7 +805,7 @@ nav.scrolled .dropdown-item:hover i {
   position: absolute;
   background-color: #f52029;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   font-size: 2rem;
   bottom: -1rem;
   left: 3rem;
@@ -835,7 +831,7 @@ nav.scrolled .dropdown-item:hover i {
   background-image: url(../img/article/banner3.jpg);
   background-size: cover;
   background-position: center;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   max-width: 90vw;
   min-height: 30rem;
   margin: 5rem auto;
@@ -861,7 +857,7 @@ nav.scrolled .dropdown-item:hover i {
 .article-input input {
   font-size: 1.6rem;
   color: #b5b4b4;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   padding: 0 1.5rem;
   background: #fff;
   height: 5.2rem;
@@ -875,7 +871,7 @@ nav.scrolled .dropdown-item:hover i {
   line-height: 1.8rem;
   font-weight: 600;
   border: #f52029;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 .article-input button:hover {
@@ -933,8 +929,10 @@ footer {
   font-size: 3rem;
 }
 .footer-top-left-content a {
+  display: inline-block;
   font-weight: 700;
   font-size: 3.2rem;
+  width: max-content;
 }
 .footer-top-left-content p {
   font-size: 1.8rem;
@@ -959,10 +957,6 @@ footer {
   transition: 0.5s ease-in-out;
   background-color: #f52029;
   color: #fff;
-}
-
-.footer-top-right {
-  justify-content: space-evenly;
 }
 
 .footer-top-right-content {
@@ -1018,9 +1012,11 @@ hr {
   }
   .footer-top-right {
     flex-wrap: wrap;
+    min-width: 90vw;
   }
   .footer-top-right-content {
-    min-width: 20vw;
+    min-width: 30vw;
+    margin-right: 2rem;
   }
   .footer-top-right-content a {
     display: inline-block;
@@ -1034,7 +1030,7 @@ hr {
     padding-left: 2rem;
   }
   .footer-top-right {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   hr {
     margin: 0 2rem;
@@ -1129,7 +1125,7 @@ li {
   display: inline-block;
   background-color: #f52029;
   font-size: 1.5rem;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   width: fit-content;
   padding: 1.8rem 4rem;
   transition: 0.2s ease-in-out;
@@ -1212,7 +1208,7 @@ header {
 
 .about-sect1-exyears {
   background: #f52029;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   color: #fff;
   text-align: center;
   box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.2);
@@ -1367,7 +1363,7 @@ header {
   line-height: 1.8rem;
   font-weight: 600;
   border: #f52029;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 .about-sect3-right button:hover {
@@ -1395,7 +1391,7 @@ header {
 }
 .sect4-items-img img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 0.6rem;
 }
 
 .sect4-hidden-icons {
@@ -1477,7 +1473,7 @@ header {
 }
 .contact-form-top input {
   outline: none;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   min-height: 6rem;
   padding: 1.3rem 2rem;
   border: 0.1rem solid #e4e6e5;
@@ -1495,7 +1491,7 @@ header {
   resize: none;
   width: 100%;
   height: 12.5rem;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   border: 0.1rem solid #e4e6e5;
   font-size: 1.8rem;
   font-weight: 300;
@@ -1518,7 +1514,7 @@ header {
 
 .imap-content {
   background: #fff;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   padding: 4rem;
   right: 10%;
   top: 20%;
