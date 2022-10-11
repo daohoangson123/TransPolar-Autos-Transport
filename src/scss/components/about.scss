@@ -193,21 +193,51 @@
     .about-video-left {
         width: 50vw;
 
-        a {
+        #container {
             display: flex;
-            justify-content: center;
             align-items: center;
-            width: 5.5rem;
-            height: 5.5rem;
-            border-radius: 50%;
-            background-color: $bg-color;
-            margin: 0 auto;
-            cursor: pointer;
+            justify-content: center;
+            position: relative;
 
-                i {
-                    font-size: 2rem;
-                    color: $primary-color;
+            .circle {
+                border-radius: $border-radius-full;
+                background-color: $font-color;
+                width: 5rem;
+                height: 5rem;
+                position: absolute;
+                opacity: 0;
+                animation: scaleIn 6s infinite ease-in;
+            }
+
+            @keyframes scaleIn {
+                from {
+                transform: scale(.5, .5);
+                opacity: .7;
                 }
+                to {
+                transform: scale(3, 3);
+                opacity: 0;
+                }
+            }
+
+            
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 5.5rem;
+                height: 5.5rem;
+                border-radius: 50%;
+                background-color: $bg-color;
+                margin: 0 auto;
+                cursor: pointer;
+                z-index: 1;
+    
+                    i {
+                        font-size: 2rem;
+                        color: $primary-color;
+                    }
+            }
         }
     }
 

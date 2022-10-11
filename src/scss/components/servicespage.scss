@@ -1,1 +1,16 @@
 @import "../globals/variables.scss";
+
+//SECT1
+
+//SECT2
+.ser-sect2 {
+    background-color: $bg-grey;
+}
+//SECT3
+.ser-sect3__content {
+
+    &--layout {
+        justify-content: space-evenly;
+    }
+
+}
