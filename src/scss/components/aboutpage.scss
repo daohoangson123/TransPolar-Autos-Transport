@@ -1,19 +1,5 @@
 @import "../globals/variables.scss";
 
-//Same header for all sub-pages
-
-header {
-    position: relative;
-    background-image: url(../img/about/banner2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 35rem;
-    color: $bg-color;
-    padding-bottom: 3rem;
-    margin-bottom: 10rem;
-}
-
 .about-grid {
     display: grid;
 }

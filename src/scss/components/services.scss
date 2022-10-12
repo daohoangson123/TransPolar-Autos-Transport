@@ -1,38 +1,68 @@
 @import "../globals/variables.scss";
 
-
 //SERVICES
 
 .services {
     background-color: $bg-grey;
 }
 
-.services-flex {
-    display: flex;
-    flex-wrap: wrap;
+
+//TOP 
+
+.ser-top__body {
+    
+    &--layout {
+        margin: 10rem 0;
+    }
+
 }
 
-//TOP
+//REPEATABLE LAYOUT
 
-.services-top {
-    justify-content: space-evenly;
+.ser-layout1__body {
+
+    &--layout {
+        justify-content: space-evenly;
+    }
 }
 
-.services-top-content {
-    text-align: center;
-    background-color: $bg-color;
-    border-radius: 0.8rem;
-    width: 30%;
-    margin: 1rem;
-    padding: 6rem 4rem;
+.ser-layout1__items {
 
-    .services-icon {
+    &--layout {
+        text-align: center;
+        background-color: $bg-color;
+        border-radius: $border-radius;
+        width: 33%;
+        padding: 6rem 4rem;
+    }
+
+    &--content {
+
+        a {
+            color: $heading-color;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            font-weight: $font-weight;
+        }
+    
+        p {
+            color: $font-color;
+            font-size: clamp(1.6rem, 4vw, 1.8rem);
+        }
+    
+        a:hover {
+            color: $primary-color;
+            transition: .3s ease-in-out;
+        }
+    }
+
+    .ser-l1-items__icon {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 10rem;
         width: 10rem;
-        border-radius: 50%;
+        border-radius: $border-radius-full;
         background-color: $bg-grey;
         margin: 0 auto;
         transition: .6s ease-in-out;
@@ -45,9 +75,9 @@
     }
 }
 
-.services-top-content:hover {
+.ser-layout1__items:hover {
 
-    .services-icon {
+    .ser-l1-items__icon {
         background-color: $primary-color;
 
         i {
@@ -56,134 +86,98 @@
     }
 }
 
-.services-content {
-    a {
-        display: inline-block;
-        color: $heading-color;
-        font-size: 2.2rem;
-        line-height: 2.6rem;
-        font-weight: 700;
-        margin: 1.5rem 0;
-    }
-
-    p {
-        color: $font-color;
-        font-size: 1.8rem;
-    }
-
-    a:hover {
-        color: $primary-color;
-        transition: 0.6s ease-in-out;
-    }
-}
-
 //BOT
 
-.services-bot {
-    justify-content: center;
-    text-align: left;
-    background-color: $bg-color;
-    margin-top: 10rem;
-    padding-top: 10rem;
+.ser-bot__body {
+
+    &--layout {
+        padding: 10rem 0;
+    }
+
 }
 
-.services-cover {
-    width: 20vw;
-    margin: 0 1.5rem;
+//REPEATABLE LAYOUT
+
+.ser-layout2__body {
+
+    &--layout {
+        text-align: left;
+        background-color: $bg-color;
+    }
 }
 
-.services-wrapper {
-    width: 20vw;
+.ser-layout2__items {
+    width: 22vw;
+}
+
+.ser-l2__items-wrapper {
     height: 30vh;
-    border-radius: 0.7rem;
+    border-radius: $border-radius;
     overflow: hidden;
 }
 
-.services-bot-img {
+.ser-l2__items-img {
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    transition: 0.6s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
 
     a {
-        display: block;
         width: 100%;
         height: 100%;
     }
 }
 
-.services-content-1 {
+.ser-l2__items-img:hover {
+    transform: scale(1.1);
+}
+
+//
+
+.ser-l2__items-img {
+
+    &--bot1 {
     background-image: url(../img/services/g1.jpg);
-}
+    }
 
-.services-content-2 {
-    background-image: url(../img/services/g6.jpg);
-}
+    &--bot2 {
+        background-image: url(../img/services/g6.jpg);
+    }
 
-.services-content-3 {
-    background-image: url(../img/services/g2.jpg);
-}
+    &--bot3 {
+        background-image: url(../img/services/g2.jpg);
+    }
 
-.services-content-4 {
-    background-image: url(../img/services/g5.jpg);
-}
-
-.services-bot-img:hover {
-    transform: scale(1.2);
-    border-radius: 0.7rem;
+    &--bot4 {
+        background-image: url(../img/services/g5.jpg);
+    }
 }
 
 // BUTTON
 
 .services-button{
     background-color: $bg-color;
-    padding: 7rem;
+    text-align: center;
 }
 
 //RESPONSIVE
 
-@media only screen and (max-width: 990px) {
-    //TOP
+// @media only screen and (max-width: 768px) {
+//     //TOP
 
-    .services-top-content {
-        min-width: 45%;
-    }
+//     .ser-layout1__items {
+//         min-width: 90%;
+//     }
 
-    //BOT
+//     //BOT
 
-    .services-cover {
-        width: 40vw;
-        margin: 1.5rem;
-    }
+//     .ser-layout2__items {
+//         width: 42vw;
+//     }
 
-    .services-wrapper {
-        width: 40vw;
-        height: 20rem;
-    }
-    }
-
-@media only screen and (max-width: 768px) {
-    //TOP
-
-    //BOT
-
-    .services-wrapper {
-        width: 40vw;
-        height: 15rem;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    //TOP
-    
-    .services-top-content {
-        min-width: 90%;
-    }
-
-    //BOT
-
-    .services-wrapper {
-        height: 10rem;
-    }
-    }
+//     .ser-l2__items-wrapper {
+//         max-height: 28vw;
+//     }
+// }

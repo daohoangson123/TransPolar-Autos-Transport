@@ -163,21 +163,23 @@
         <a class="next" onclick="plusSlides(1)">
           &nbsp; <i class="fa fa-angle-right"></i
         ></a>
-      </div>
-      <!-- JS DOT-->
-      <div class="dot-mng">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+        <!-- JS DOT-->
+        <div class="dot-mng">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
       </div>
     </header>
     <main>
       <!-- ABOUT -->
       <section class="about">
-        <h3>ABOUT US</h3>
+        <div class="sect-heading">
+          <h3>ABOUT US</h3>
+        </div>
         <!-- ABOUT TOP -->
-        <div class="about-top about-flex container">
+        <div class="about-top flex">
           <div class="about-top-left">
             <img src="img/about/g2.jpg" alt="" />
           </div>
@@ -196,7 +198,7 @@
           </div>
         </div>
         <!-- ABOUT MID -->
-        <div class="about-mid about-flex container">
+        <div class="about-mid flex">
           <div class="about-mid-cover">
             <div class="mid-content-wrapper wrapper-left">
               <div class="mid-content-left about-mid-content"></div>
@@ -217,7 +219,7 @@
           </div>
         </div>
         <!-- ABOUT BOT -->
-        <div class="about-bot about-flex container">
+        <div class="about-bot flex">
           <div class="about-bot-left about-flex-content">
             <h6>SECURE COURIER.</h6>
             <h4>Secure Courier For Small & Big Packages</h4>
@@ -229,8 +231,8 @@
             </p>
             <a class="button about-bot-btn" href="">Learn More</a>
           </div>
-          <div class="about-bot-right about-flex">
-            <div class="about-flex about-bot-content-right">
+          <div class="about-bot-right flex">
+            <div class="flex about-bot-content-right">
               <div class="about-bot-right-icon">
                 <i class="fas fa-truck-loading"></i>
               </div>
@@ -242,7 +244,7 @@
                 </p>
               </div>
             </div>
-            <div class="about-flex about-bot-content-right">
+            <div class="flex about-bot-content-right">
               <div class="about-bot-right-icon">
                 <i class="fas fa-boxes"></i>
               </div>
@@ -287,29 +289,37 @@
         </div>
       </section>
       <!-- SERVICES -->
-      <section class="services title">
-        <span>WHAT WE DO</span>
-        <h3>OUR SERVICES</h3>
+      <section class="services">
+        <div class="sect-heading">
+          <span>WHAT WE DO</span>
+          <h3>OUR SERVICES</h3>
+        </div>
         <!-- SERVICES TOP -->
-        <div class="services-top services-flex">
-          <div class="services-top-content services-content">
-            <div class="services-icon">
+        <div class="ser-top__body--layout ser-layout1__body--layout flex">
+          <div
+            class="ser-layout1__items ser-layout1__items--layout ser-layout1__items--content"
+          >
+            <div class="ser-l1-items__icon">
               <i class="fas fa-truck"></i>
             </div>
             <br />
             <a href="">Transportation</a>
             <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
           </div>
-          <div class="services-top-content services-content">
-            <div class="services-icon">
+          <div
+            class="ser-layout1__items ser-layout1__items--layout ser-layout1__items--content"
+          >
+            <div class="ser-l1-items__icon">
               <i class="fas fa-chalkboard-teacher"></i>
             </div>
             <br />
             <a href="">Live Monitoring</a>
             <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
           </div>
-          <div class="services-top-content services-content">
-            <div class="services-icon">
+          <div
+            class="ser-layout1__items ser-layout1__items--layout ser-layout1__items--content"
+          >
+            <div class="ser-l1-items__icon">
               <i class="fas fa-people-carry"></i>
             </div>
             <br />
@@ -318,47 +328,47 @@
           </div>
         </div>
         <!-- SERVICES BOT -->
-        <div class="services-bot services-flex">
-          <div class="services-cover">
-            <div class="services-wrapper">
-              <div class="services-bot-img services-content-1">
+        <div class="ser-bot__body--layout ser-layout2__body--layout flex">
+          <div class="ser-layout2__items">
+            <div class="ser-l2__items-wrapper">
+              <div class="ser-l2__items-img ser-l2__items-img--bot1">
                 <a href=""></a>
               </div>
             </div>
-            <div class="services-bot-content services-content">
+            <div class="ser-layout1__items--content">
               <a href="">Road Freight</a>
               <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
             </div>
           </div>
-          <div class="services-cover">
-            <div class="services-wrapper">
-              <div class="services-bot-img services-content-2">
+          <div class="ser-layout2__items">
+            <div class="ser-l2__items-wrapper">
+              <div class="ser-l2__items-img ser-l2__items-img--bot2">
                 <a href=""></a>
               </div>
             </div>
-            <div class="services-bot-content services-content">
+            <div class="ser-layout1__items--content">
               <a href="">Air Shipping </a>
               <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
             </div>
           </div>
-          <div class="services-cover">
-            <div class="services-wrapper">
-              <div class="services-bot-img services-content-3">
+          <div class="ser-layout2__items">
+            <div class="ser-l2__items-wrapper">
+              <div class="ser-l2__items-img ser-l2__items-img--bot3">
                 <a href=""></a>
               </div>
             </div>
-            <div class="services-bot-content services-content">
+            <div class="ser-layout1__items--content">
               <a href="">Logistic Service</a>
               <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
             </div>
           </div>
-          <div class="services-cover">
-            <div class="services-wrapper">
-              <div class="services-bot-img services-content-4">
+          <div class="ser-layout2__items">
+            <div class="ser-l2__items-wrapper">
+              <div class="ser-l2__items-img ser-l2__items-img--bot4">
                 <a href=""></a>
               </div>
             </div>
-            <div class="services-bot-content services-content">
+            <div class="ser-layout1__items--content">
               <a href="">Ground Shipping</a>
               <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
             </div>
@@ -394,12 +404,14 @@
         </div>
       </section>
       <!-- ARTICLE-->
-      <section class="article title">
-        <span>OUR ARTICLE </span>
-        <h3>STAY UPDATED WITH OUR NEWS FEED</h3>
+      <section class="article">
+        <div class="sect-heading">
+          <span>OUR ARTICLE </span>
+          <h3>STAY UPDATED WITH OUR NEWS FEED</h3>
+        </div>
         <!-- ARTICLE TOP -->
         <div class="article-top">
-          <div class="article-top-items article-flex">
+          <div class="article-top-items flex">
             <div class="article-cover">
               <div class="date-relative">
                 <div class="article-wrapper">
@@ -461,7 +473,7 @@
         </div>
         <!-- ARTICLE BOT -->
         <div class="article-bot">
-          <div class="article-bot-content article-flex">
+          <div class="article-bot-content flex">
             <p>Don't Miss Our Future Updates! Get Subscribed Today!</p>
             <form action="" class="article-input">
               <input

@@ -2,11 +2,6 @@
 
 // ABOUT
 
-.about-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .about-flex-content {
     display: flex;
     flex-direction: column;
@@ -21,14 +16,12 @@
         font-size: 1.8rem;
         line-height: 2.8rem;
         color: $font-color;
-        margin-bottom: 3rem;
     }
 }
 
 // TOP
 
 .about-top {
-    justify-content: space-evenly;
 
     .about-top-left {
         min-width: 45vw;
@@ -42,7 +35,6 @@
 
     .about-top-right {
         height: auto;
-        margin-left: 3rem;
 
         .about-top-right-content {
             justify-content: space-between;
@@ -59,10 +51,7 @@
 }
 
 .about-mid {
-    justify-content: space-around;
     background: $bg-grey;
-    margin-top: 3rem;
-    padding-top: 5rem;
 }
 
 .mid-content-wrapper {
@@ -100,7 +89,6 @@
         font-size: clamp(2.3rem, 4vw, 4rem);
         font-weight: 600;
         color: $bg-color;
-        margin-bottom: 2rem;
     }
 
     .about-mid-btn {
@@ -112,28 +100,25 @@
 
 .about-mid-content:hover {
     transform: scale(1.2);
-    border-radius: 0.7rem;
+    border-radius: $border-radius;
 }
 
 .about-mid-cover:hover {
     .about-mid-btn {
         transform: scale(1);
         background-color: $primary-color;
-        transition: 0.6s ease-in-out;
+        transition: .6s ease-in-out;
     }
 }
 
 // BOT
 .about-bot {
     justify-content: space-evenly;
-    margin-top: 5rem;
 }
 
 .about-bot-left {
     justify-content: space-evenly;
     width: 45vw;
-    margin-right: 3rem;
-    margin-bottom: 4rem;
 }
 
 .about-bot-right {
@@ -144,15 +129,12 @@
 .about-bot-content-right {
     flex-wrap: nowrap;
     background: $bg-grey;
-    margin-top: 3rem;
-    padding: 4rem;
     border-radius: $border-radius;
 }
 
 .about-bot-right-icon {
     color: $primary-color;
     font-size: 3rem;
-    margin-right: 2rem;
 }
 
 .about-bot-right-content {
@@ -166,12 +148,11 @@
     p {
         font-size: 1.8rem;
         color: $font-color;
-        margin-top: 1.5rem;
     }
 
     a:hover {
         color: $primary-color;
-        transition: 0.6s ease-in-out;
+        transition: .6s ease-in-out;
     }
 }
 
@@ -206,16 +187,16 @@
                 height: 5rem;
                 position: absolute;
                 opacity: 0;
-                animation: scaleIn 6s infinite ease-in;
+                animation: scaleIn 6s ease-in infinite;
             }
 
             @keyframes scaleIn {
                 from {
-                transform: scale(.5, .5);
+                transform: scale(.5);
                 opacity: .7;
                 }
                 to {
-                transform: scale(3, 3);
+                transform: scale(3);
                 opacity: 0;
                 }
             }
@@ -230,13 +211,18 @@
                 border-radius: 50%;
                 background-color: $bg-color;
                 margin: 0 auto;
-                cursor: pointer;
+                transition: .2s;
                 z-index: 1;
+                cursor: pointer;
     
                     i {
                         font-size: 2rem;
                         color: $primary-color;
                     }
+            }
+
+            a:hover {
+                transform: scale(1.2);
             }
         }
     }
@@ -260,60 +246,43 @@
 }
 
 //RESPONSIVE
-@media only screen and (max-width: 1310px) {
 
-    .about-flex-content {
-        width: 100%;
-    }
+// @media only screen and (max-width: 900px) {
 
-// TOP
+//     .about-flex-content {
+//         width: 100%;
+//     }
 
-.about-top {
+// // TOP
 
-    .about-top-right {
-        min-width: 100%;
-        margin-top: 3rem;
-        margin-left: 0;
+// .about-top {
 
-        .about-top-right-content {
-        justify-content: space-evenly;
-        min-height: auto;
-        }
-    }
-}
+//     .about-top-right {
+//         min-width: 100%;
 
-// MID
+//         .about-top-right-content {
+//             justify-content: space-evenly;
+//             min-height: auto;
+//         }
+//     }
+// }
 
-.mid-content-wrapper {
-    width: 90vw;
-    height: 30rem;
-}
+// // MID
 
-.wrapper-left {
-    margin-bottom: 2rem;
-}
+// .mid-content-wrapper {
+//     width: 90vw;
+//     height: 30rem;
+// }
 
-// BOT
-.about-bot {
-    justify-content: space-around;
-}
+// // BOT
+// .about-bot {
+//     justify-content: space-around;
+// }
 
-.about-bot-left {
-    margin-right: 0;
-}
+// .about-bot-right {
+//     width: 95vw;
+// }
 
-.about-bot-right {
-    width: 95vw;
-}
+// // VIDEO
 
-// VIDEO
-
-}
-
-@media only screen and (max-width: 600px) {
-    
-}
-    
-@media only screen and (max-width: 425px) {
-    
-}
+// }

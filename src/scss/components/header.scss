@@ -263,8 +263,7 @@ nav.scrolled {
 .dot-mng {
     position: relative;
     text-align: center;
-    margin-top: -5rem;
-    z-index: 2;
+    bottom: 5rem;
 }
 
 .dot {
@@ -274,6 +273,7 @@ nav.scrolled {
     margin: 0 .5rem;
     background-color: $bg-color;
     border-radius: $border-radius-full;
+    transition: .3s ease-in-out;
     cursor: pointer;
 }
 

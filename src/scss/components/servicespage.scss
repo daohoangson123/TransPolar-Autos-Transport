@@ -3,14 +3,45 @@
 //SECT1
 
 //SECT2
+
 .ser-sect2 {
     background-color: $bg-grey;
 }
-//SECT3
-.ser-sect3__content {
+
+.ser-sect2__body {
 
     &--layout {
-        justify-content: space-evenly;
+        padding: 5rem 0;
+    }
+
+}
+
+//SECT3
+
+.ser-sect3__body {
+    
+    &--layout {
+        margin: 5rem 0;
+    }
+
+}
+
+.ser-l2__items-img {
+
+    &--sect3-1 {
+        background-image: url(../img/services/sv.jpg);
+    }
+
+    &--sect3-2 {
+        background-image: url(../img/services/g6.jpg);
+    }
+    
+    &--sect3-3 {
+        background-image: url(../img/services/g1.jpg);
+    }
+    
+    &--sect3-4 {
+        background-image: url(../img/services/g5.jpg);
     }
 
 }
