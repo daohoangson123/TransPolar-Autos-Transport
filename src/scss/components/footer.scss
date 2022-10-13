@@ -4,30 +4,20 @@ footer {
     background-color: $footer-bg;
     margin-bottom: -120vh;
     overflow: hidden;
-
-}
-
-.footer-flex {
-    display: flex;
 }
 
 //TOP
 
-.footer-top {
-    padding: 7rem 9rem;
-}
-
 // TOP LEFT
 
-.footer-top-left {
-    width: 40rem;
+.fter-top__left {
+    width: 40%;
+    margin-right: 2rem;
 }
 
 //LEFT CONTENT
 
-.footer-top-left-content {
-    margin-right: 5rem;
-    margin-bottom: 3rem;
+.fter-tl__content {
 
     i {
         color: $primary-color;
@@ -36,7 +26,7 @@ footer {
 
     a {
         display: inline-block;
-        font-weight: 700;
+        font-weight: $font-weight;
         font-size: 3.2rem;
         width: max-content;
     }
@@ -54,24 +44,25 @@ footer {
     
 // }
 
-.media-icons {
+.fter__icons {
     a {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 4rem;
         height: 4rem;
-        border-radius: 50%;
+        border-radius: $border-radius-full;
         background-color: $bg-color;
         font-size: 1.6rem;
         color: $primary-color;
+        margin-top: 2rem;
         margin-right: 1rem;
+        transition: .5s ease-in-out;
     }
 }
 
-.media-icons:hover {
+.fter__icons:hover {
     a {
-        transition: 0.5s ease-in-out;
         background-color: $primary-color;
         color: $bg-color;
     }
@@ -79,9 +70,13 @@ footer {
 
 //TOP RIGHT
 
+.fter-top__right {
+    justify-content: space-around;
+}
+
 //RIGHT CONTENT
 
-.footer-top-right-content {
+.fter-tr__items {
     min-width: 15vw;
     margin-bottom: 2rem;
     font-weight: 600;
@@ -93,8 +88,8 @@ footer {
 
     a {
         display: block;
-        font-size: 1.5rem;
-        margin: 1rem;
+        font-size: 1.6rem;
+        margin: 1rem 0;
     }
 
     a:hover {
@@ -106,12 +101,11 @@ footer {
 //BOT
 
 hr {
-    border: 0.1rem solid $hr-color;
+    border: .1rem solid $hr-color;
     margin: 0 9rem;
 }
 
-.footer-bot {
-    padding: 3rem 9rem 7rem;
+.footer__bot {
 
     p {
         font-size: 1.6rem;
@@ -134,46 +128,27 @@ hr {
 @media only screen and (max-width: 900px) {
     //TOP
 
-    .footer-top {
+    .footer__top, .fter-top__right {
         flex-wrap: wrap;
     }
 
-    // TOP LEFT
-
-    .footer-top-left {
-        min-width: 80vw;
+    .fter-top__left {
+        width: 100%;
         margin-bottom: 5rem;
-    }
-
-    //LEFT CONTENT
-
-    .footer-top-left-content {
         margin-right: 0;
     }
 
-    // ICON
-
-    //TOP RIGHT
-
-    //RIGHT CONTENT
-
-    .footer-top-right {
-        flex-wrap: wrap;
-        min-width: 90vw;
+    .fter-top__right {
+        width: 100%;
     }
 
-    .footer-top-right-content {
-        min-width: 30vw;
-        margin-right: 2rem;
-
-        a {
-            display: inline-block;
-        }
+    .fter-tr__items {
+        min-width: 15rem;
     }
 
     //BOT
 
-    .footer-bot {
+    .footer__bot {
         text-align: center;
     }
 
@@ -182,21 +157,13 @@ hr {
 @media only screen and (max-width: 425px) {
     //TOP
 
-    .footer-top {
-        padding-left: 2rem;
-    }
-
-    .footer-top-right {
-        justify-content: flex-start;
-    }
-
     //BOT
 
     hr {
         margin: 0 2rem;
     }
 
-    .footer-bot {
+    .footer__bot {
         padding: 3rem 2rem 7rem;
     }
     
