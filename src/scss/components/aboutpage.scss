@@ -2,67 +2,62 @@
 
 //SECT1
 
-.about-sect1 {
-    justify-content: space-around;
+.about__sect1 {
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 //LEFT
 
-.sect1-left-bot {
+.abt-l2__subitems--sect1 {
     flex-wrap: nowrap;
-    //425 wrap - 90vw
+    min-height: fit-content;
 }
 
-.sect1-left-bot-content {
-    background: none;
-    margin-right: 2rem;
-    padding: 0;
+.abt-l2-sub__content--sect1 {
+    padding-top: 3rem;
+    padding-right: 3rem;
 }
 
 //RIGHT
 
-.about-sect1-exyears {
+.abt-l1__img--sect1 {
+    width: 35vw;
+    height: 35rem;
+    margin: auto 0;
+}
+
+.abt-sect1-r__years {
     background: $primary-color;
     border-radius: $border-radius;
     color: $bg-color;
     text-align: center;
     box-shadow: 3rem 3rem 3rem $layer2;
-    min-width: 3rem;
-    padding: 4rem 5rem;
-    left: -8.5rem;
-    top: 28rem;
+    width: fit-content;
+    padding: 3rem 4rem;
+    left: -15%;
+    bottom: 20%;
 
     span {
-        font-size: clamp(5rem, 4vw, 7rem);
+        font-size: clamp(1rem, 4vw, 6rem);
         line-height: 8rem;
         font-weight: 600;
     }
 
     p {
-        font-size: clamp(1.5rem, 4vw, 1.8rem);
-    }
-}
-
-.about-top {
-    .sect1-left {
-        margin-left: 2rem;
-    }
-
-    .sect1-right {
-        min-width: 0;
+        font-size: clamp(1.6rem, 4vw, 1.8rem);
     }
 }
 
 //SECT2
 
-.about-sect2-content {
+.abt-sect2__body {
     grid-template-columns: repeat(auto-fit, 15rem);
     gap: 3rem 0;
     justify-content: space-around;
-    padding: 10rem 0 10rem 2rem;
 }
 
-.about-sect2-counter {
+.abt-sect2__counter {
     counter-reset: num var(--n);
     font-weight: bold;
     font-size: clamp(4rem, 4vw, 5rem);
@@ -108,7 +103,7 @@
     animation: animate4 2s forwards;
 }
 
-.about-sect2-counter::before {
+.abt-sect2__counter::before {
     content: counter(num);
 }
 
@@ -150,7 +145,7 @@
 
 //SECT3
 
-.about-sect3-content {
+.about-sect3__body {
     background-image: url(../img/about/banner1.jpg);
     max-width: 100vw;
     min-height: 35rem;
@@ -160,7 +155,7 @@
     align-items: center;
 }
 
-.about-sect3-left {
+.abt-sect3__text {
     color: $bg-color;
 
     span {
@@ -174,16 +169,18 @@
     }
 }
 
-.about-sect3-right {
+.abt-sect3__btn {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
 
-    .about-sect3-btn {
-        color: $primary-color;
-        background-color: $bg-color;
+    .btn__abt {
+        &--sect3 {
+            color: $primary-color;
+            background-color: $bg-color;
     }
+}
 
-    .about-sect3-btn:hover {
+    .btn__abt--sect3:hover {
         color: $bg-color;
         background-color: $primary-color;
         transform: scale(1);
@@ -209,24 +206,33 @@
 
 //SECT4
 
-.about-sect4-content {
+.about-sect4__body {
     grid-template-columns: repeat(auto-fit, min(40vw, 37rem));
     gap: 3rem;
     justify-content: center;
 }
 
-.sect4-items {
-    height: auto;
-    margin: 0 auto;
+.abt-sect4__text {
+    margin-top: 2rem;
+    text-align: center;
 
-    .sect4-text {
-        a {
-            font-size: clamp(1.6rem, 4vw, 2.2rem);
-        }
+    a {
+        font-size: clamp(1.6rem, 4vw, 2.2rem);
+        color: $heading-color;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: $font-color;
     }
 }
 
-.sect4-items-img {
+.abt-sect4__items {
+    height: auto;
+    transition: .5s ease-in-out;
+}
+
+.abt-sect4__items-img {
     display: flex;
     position: relative;
     justify-content: center;
@@ -237,7 +243,7 @@
     }
 }
 
-.sect4-hidden-icons {
+.abt-sect4__hidden-icons {
     position: absolute;
     justify-content: center;
     bottom: 10%;
@@ -245,7 +251,8 @@
     opacity: 0;
     animation: disappear .5s ease-in-out alternate both;
 
-    .media-icons {
+    
+    .abt-sect4__icons {
 
         a {
             width: clamp(3.8rem, 4vw, 4.5rem);
@@ -260,16 +267,12 @@
     }
 }
 
-.sect4-items {
-    transition: .5s ease-in-out;
-}
-
-.sect4-items:hover {
+.abt-sect4__items:hover {
     a {
         color: $primary-color;
     }
-
-    .sect4-hidden-icons {
+    
+    .abt-sect4__hidden-icons {
         animation: appear .5s ease-in-out alternate both;
 
         a {
@@ -311,22 +314,5 @@
 
 
 @media only screen and (max-width: 768px) {
-
-    //SECT1
-
-    //LEFT
-
-    .about-bot-right {
-        flex-wrap: wrap;
-    }
-
-    //RIGHT
-
-    .about-sect1-exyears {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-top: 1.5rem;
-    }
 
 }

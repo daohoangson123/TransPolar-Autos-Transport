@@ -2,27 +2,19 @@
 
 //SERVICES
 
-.services {
+#services {
     background-color: $bg-grey;
 }
 
 
-//TOP 
-
-.ser-top__body {
-    
-    &--layout {
-        margin: 10rem 0;
-    }
-
-}
+//TOP
 
 //REPEATABLE LAYOUT
 
 .ser-layout1__body {
 
     &--layout {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 }
 
@@ -32,8 +24,9 @@
         text-align: center;
         background-color: $bg-color;
         border-radius: $border-radius;
-        width: 33%;
+        width: 31%;
         padding: 6rem 4rem;
+        margin: 1rem 0;
     }
 
     &--content {
@@ -48,6 +41,7 @@
         p {
             color: $font-color;
             font-size: clamp(1.6rem, 4vw, 1.8rem);
+            margin-top: 2rem;
         }
     
         a:hover {
@@ -88,14 +82,6 @@
 
 //BOT
 
-.ser-bot__body {
-
-    &--layout {
-        padding: 10rem 0;
-    }
-
-}
-
 //REPEATABLE LAYOUT
 
 .ser-layout2__body {
@@ -103,16 +89,18 @@
     &--layout {
         text-align: left;
         background-color: $bg-color;
+        justify-content: space-between;
     }
 }
 
 .ser-layout2__items {
-    width: 22vw;
+    width: 23%;
 }
 
 .ser-l2__items-wrapper {
-    height: 30vh;
+    height: clamp(13rem, 25vh, 30rem);
     border-radius: $border-radius;
+    margin-bottom: 2rem;
     overflow: hidden;
 }
 
@@ -164,20 +152,6 @@
 
 //RESPONSIVE
 
-// @media only screen and (max-width: 768px) {
-//     //TOP
+@media only screen and (max-width: 768px) {
 
-//     .ser-layout1__items {
-//         min-width: 90%;
-//     }
-
-//     //BOT
-
-//     .ser-layout2__items {
-//         width: 42vw;
-//     }
-
-//     .ser-l2__items-wrapper {
-//         max-height: 28vw;
-//     }
-// }
+}

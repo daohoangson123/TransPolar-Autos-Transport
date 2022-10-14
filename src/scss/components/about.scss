@@ -61,9 +61,9 @@
     position: relative;
 }
 
-.abt-mid-cover__wrapper {
+.abt-mid__cover-wrapper {
     width: 42vw;
-    height: 40rem;
+    height: 30rem;
     border-radius: $border-radius;
     overflow: hidden;
 }
@@ -73,7 +73,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    transition: .6s ease-in-out;
+    transition: .5s ease-in-out;
 
     &--left {
         background-image: url(../img/about/banner1.jpg);
@@ -86,22 +86,25 @@
 
 .abt-mid-items__content {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 10%;
+    width: 85%;
     z-index: 1;
 
     p {
         width: fit-content;
         height: fit-content;
-        font-size: clamp(2.3rem, 4vw, 4rem);
+        font-size: clamp(2rem, 3vw, 4rem);
         font-weight: 600;
         color: $bg-color;
+        margin-bottom: 3rem;
     }
 
     .btn__abt {
         &--mid {
             background-color: transparent;
             border: .1rem solid $bg-color;
+            transition: .5s ease-in-out;
         }
     }
     
@@ -117,7 +120,6 @@
         &--mid {
             transform: scale(1);
             background-color: $primary-color;
-            transition: .6s ease-in-out;
         }
     }
 }
@@ -135,7 +137,6 @@
 }
 
 .abt-l2__items {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 42vw;
@@ -154,6 +155,7 @@
 }
 
 .abt-l2__subitems {
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 42vw;
     min-height: 35rem;
@@ -163,6 +165,7 @@
     background: $bg-grey;
     border-radius: $border-radius;
     padding: 3rem;
+    margin-bottom: 2rem;
     height: fit-content;
 }
 

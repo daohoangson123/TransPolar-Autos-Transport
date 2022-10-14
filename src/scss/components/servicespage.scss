@@ -4,16 +4,14 @@
 
 //SECT2
 
-.ser-sect2 {
-    background-color: $bg-grey;
+.services__sect2 {
+    background: $bg-grey;
 }
 
 .ser-sect2__body {
-
-    &--layout {
-        padding: 5rem 0;
-    }
-
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5rem;
 }
 
 //SECT3

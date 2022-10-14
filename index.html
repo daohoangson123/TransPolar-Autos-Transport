@@ -202,7 +202,7 @@
         <!-- ABOUT MID -->
         <div class="about__mid flex container">
           <div class="about-mid__cover">
-            <div class="abt-mid-cover__wrapper">
+            <div class="abt-mid__cover-wrapper">
               <div class="abt-mid__items abt-mid__items--left"></div>
               <div class="abt-mid-items__content">
                 <p>Global Logistic Services For Business</p>
@@ -211,7 +211,7 @@
             </div>
           </div>
           <div class="about-mid__cover">
-            <div class="abt-mid-cover__wrapper">
+            <div class="abt-mid__cover-wrapper">
               <div class="abt-mid__items abt-mid__items--right"></div>
               <div class="abt-mid-items__content">
                 <p>We Give You Complete Control Of Your Shipments</p>
@@ -222,7 +222,7 @@
         </div>
         <!-- ABOUT BOT -->
         <div class="about__bot about-layout2__body flex container">
-          <div class="abt-l2__items">
+          <div class="abt-l2__items flex">
             <h6>SECURE COURIER.</h6>
             <h4>Secure Courier For Small & Big Packages</h4>
             <p>
@@ -293,13 +293,15 @@
         </div>
       </section>
       <!-- SERVICES -->
-      <section class="services">
+      <section id="services">
         <div class="sect-heading">
           <span>WHAT WE DO</span>
           <h3>OUR SERVICES</h3>
         </div>
         <!-- SERVICES TOP -->
-        <div class="ser-top__body--layout ser-layout1__body--layout flex">
+        <div
+          class="ser-top__body--layout ser-layout1__body--layout flex container"
+        >
           <div
             class="ser-layout1__items ser-layout1__items--layout ser-layout1__items--content"
           >
@@ -332,7 +334,9 @@
           </div>
         </div>
         <!-- SERVICES BOT -->
-        <div class="ser-bot__body--layout ser-layout2__body--layout flex">
+        <div
+          class="ser-bot__body--layout ser-layout2__body--layout flex container"
+        >
           <div class="ser-layout2__items">
             <div class="ser-l2__items-wrapper">
               <div class="ser-l2__items-img ser-l2__items-img--bot1">
@@ -379,7 +383,7 @@
           </div>
         </div>
         <div class="services-button">
-          <a class="button services-last-btn" href="">More Services</a>
+          <a class="button btn__ser" href="">More Services</a>
         </div>
       </section>
       <!-- CUSTOMER -->
@@ -414,72 +418,72 @@
           <h3>STAY UPDATED WITH OUR NEWS FEED</h3>
         </div>
         <!-- ARTICLE TOP -->
-        <div class="article-top">
-          <div class="article-top-items flex">
-            <div class="article-cover">
-              <div class="date-relative">
-                <div class="article-wrapper">
-                  <div class="article-top-img article-content-1">
+        <div class="article__top container">
+          <div class="art-top__body flex">
+            <div class="article__items">
+              <div class="art-items__cover">
+                <div class="art-items__cover-wrapper">
+                  <div class="art-top__img art-top__img--1">
                     <a href=""></a>
                   </div>
                 </div>
-                <div class="article-date">10 April</div>
+                <div class="art__date">10 April</div>
               </div>
-              <div class="article-link">
+              <div class="art__link">
                 <a href="">
                   <i class="fas fa-user-alt"></i>
                   by W3Layouts</a
                 >
               </div>
-              <div class="artcle-top-content article-content">
+              <div class="art-top__text">
                 <a href="">Hello World!</a>
               </div>
             </div>
-            <div class="article-cover">
-              <div class="date-relative">
-                <div class="article-wrapper">
-                  <div class="article-top-img article-content-2">
+            <div class="article__items">
+              <div class="art-items__cover">
+                <div class="art-items__cover-wrapper">
+                  <div class="art-top__img art-top__img--2">
                     <a href=""></a>
                   </div>
                 </div>
-                <div class="article-date">10 April</div>
+                <div class="art__date">10 April</div>
               </div>
-              <div class="article-link">
+              <div class="art__link">
                 <a href="">
                   <i class="fas fa-user-alt"></i>
                   by W3Layouts</a
                 >
               </div>
-              <div class="artcle-top-content article-content">
+              <div class="art-top__text">
                 <a href="">Secure Courier For Small & Big Packages</a>
               </div>
             </div>
-            <div class="article-cover">
-              <div class="date-relative">
-                <div class="article-wrapper">
-                  <div class="article-top-img article-content-3">
+            <div class="article__items">
+              <div class="art-items__cover">
+                <div class="art-items__cover-wrapper">
+                  <div class="art-top__img art-top__img--3">
                     <a href=""></a>
                   </div>
                 </div>
-                <div class="article-date">10 April</div>
+                <div class="art__date">10 April</div>
               </div>
-              <div class="article-link">
+              <div class="art__link">
                 <a href="">
                   <i class="fas fa-user-alt"></i>
                   by W3Layouts</a
                 >
               </div>
-              <div class="artcle-top-content article-content">
+              <div class="art-top__text">
                 <a href="">We Give You Complete Control Of Your Shipments.</a>
               </div>
             </div>
           </div>
         </div>
         <!-- ARTICLE BOT -->
-        <div class="article-bot">
-          <div class="article-bot-content flex">
+        <div class="article__bot container">
+          <div class="art-bot__body flex">
             <p>Don't Miss Our Future Updates! Get Subscribed Today!</p>
-            <form action="" class="article-input">
+            <form action="" class="art-bot__form">
               <input
                 type="email"
                 name="email"
