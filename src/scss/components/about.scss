@@ -7,17 +7,13 @@
 //REAPEATABLE LAYOUT
 
 .about-layout1__body {
-    justify-content: space-around;
-    margin: auto;
-    height: 40rem;
-
+    justify-content: space-between;
 }
 
 //IMG-ONLY
 
 .abt-l1__img {
-    width: 42vw;
-    height: 40rem;
+    width: 45%;
 
     img {
         width: 100%;
@@ -34,8 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 42vw;
-    min-height: 40rem;
+    width: 45%;
 
     h6 {
         font-size: 1.4rem;
@@ -54,16 +49,19 @@
 
 .about__mid {
     background: $bg-grey;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .about-mid__cover {
     position: relative;
+    width: 45%;
+    height: 30rem;
+
 }
 
 .abt-mid__cover-wrapper {
-    width: 42vw;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
     border-radius: $border-radius;
     overflow: hidden;
 }
@@ -73,7 +71,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
 
     &--left {
         background-image: url(../img/about/banner1.jpg);
@@ -104,7 +102,6 @@
         &--mid {
             background-color: transparent;
             border: .1rem solid $bg-color;
-            transition: .5s ease-in-out;
         }
     }
     
@@ -126,21 +123,17 @@
 
 // BOT
 
-.flex--wrap {
-    flex-wrap: wrap;
-}
-
 //CONTENT-ONLY
 
 .about-layout2__body{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .abt-l2__items {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 42vw;
-    min-height: 35rem;
+    width: 45%;
 
     h6 {
         font-size: 1.4rem;
@@ -154,11 +147,12 @@
     }
 }
 
+//ICON-CONTENT
+
 .abt-l2__subitems {
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 42vw;
-    min-height: 35rem;
+    justify-content: space-between;
+    width: 45%;
 }
 
 .abt-l2-sub__content {
@@ -166,6 +160,7 @@
     border-radius: $border-radius;
     padding: 3rem;
     margin-bottom: 2rem;
+    width: fit-content;
     height: fit-content;
 }
 
@@ -179,7 +174,7 @@
 
     a {
         color: $heading-color;
-        font-size: 2.5rem;
+        font-size: clamp(1.6rem, 2.5vw, 2.6rem);
         font-weight: 700;
     }
 
@@ -190,7 +185,6 @@
 
     a:hover {
         color: $primary-color;
-        transition: .6s ease-in-out;
     }
 }
 
@@ -219,9 +213,7 @@
             border-radius: 50%;
             background-color: $bg-color;
             margin: 0 auto;
-            transition: .2s;
             z-index: 1;
-            cursor: pointer;
 
                 i {
                     font-size: 2rem;
@@ -263,7 +255,7 @@
     }
 
     .about-video__content {
-        margin-left: 2rem;
+        min-height: 45rem;
 
         h6, p {
             color: $bg-grey;

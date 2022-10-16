@@ -3,7 +3,6 @@
 //SECT1
 
 .about__sect1 {
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -11,7 +10,7 @@
 
 .abt-l2__subitems--sect1 {
     flex-wrap: nowrap;
-    min-height: fit-content;
+    width: 100%;
 }
 
 .abt-l2-sub__content--sect1 {
@@ -22,7 +21,7 @@
 //RIGHT
 
 .abt-l1__img--sect1 {
-    width: 35vw;
+    width: 40%;
     height: 35rem;
     margin: auto 0;
 }
@@ -32,14 +31,14 @@
     border-radius: $border-radius;
     color: $bg-color;
     text-align: center;
-    box-shadow: 3rem 3rem 3rem $layer2;
+    box-shadow: 2rem 2rem 1rem $layer2;
     width: fit-content;
-    padding: 3rem 4rem;
-    left: -15%;
-    bottom: 20%;
+    padding: 3rem 3rem;
+    left: -20%;
+    bottom: 10%;
 
     span {
-        font-size: clamp(1rem, 4vw, 6rem);
+        font-size: clamp(1.6rem, 4vw, 6rem);
         line-height: 8rem;
         font-weight: 600;
     }
@@ -55,6 +54,7 @@
     grid-template-columns: repeat(auto-fit, 15rem);
     gap: 3rem 0;
     justify-content: space-around;
+    text-align: center;
 }
 
 .abt-sect2__counter {
@@ -64,7 +64,7 @@
     line-height: 5rem;
 }
 
-.about-sect2-text {
+.abt-sect2__text {
     font-size: 1.6rem;
     color: $primary-color;
     font-weight: bold;
@@ -249,7 +249,6 @@
     bottom: 10%;
     flex-wrap: nowrap;
     opacity: 0;
-    animation: disappear .5s ease-in-out alternate both;
 
     
     .abt-sect4__icons {
@@ -261,7 +260,7 @@
             
             i {
                 color: $heading-color;
-                transition: .5s ease-in-out;
+                transition: .4s ease-in-out;
             }
         }
     }
@@ -273,7 +272,7 @@
     }
     
     .abt-sect4__hidden-icons {
-        animation: appear .5s ease-in-out alternate both;
+        opacity: 1;
 
         a {
             background-color: $bg-color;            
@@ -286,27 +285,6 @@
         }
     }
 }
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes disappear {
-    from {
-        opacity: 1;
-        
-    }
-    to {
-        opacity: 0;
-    }
-}
-
 
 //SECT5
 

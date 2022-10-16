@@ -58,7 +58,6 @@ nav.scrolled {
 
     .navbar-item:hover > a {
         color: $primary-color;
-        transition: .3s ease-in-out;
     }
 }
 
@@ -209,7 +208,8 @@ nav.scrolled {
 
     span {
         font-size: 1.4rem;
-        color: $font-color;
+        color: $bg-color;
+        opacity: .7;
     }
 
     p {
@@ -307,9 +307,6 @@ nav.scrolled {
             width: fit-content;
         }
     }
-}
-
-@media only screen and (max-width: 600px) {
 
     .prev,
     .next {

@@ -12,7 +12,7 @@
 }
 
 .article__items {
-    width: 28%;
+    width: 30%;
     min-height: fit-content;
     background-color: $bg-color;
     border-radius: $border-radius;
@@ -24,7 +24,7 @@
 
 .art-items__cover-wrapper {
     width: inherit;
-    height: 40vh;
+    height: 35vh;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     overflow: hidden;
@@ -35,7 +35,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
 
     a {
         display: block;
@@ -78,7 +78,6 @@
 
     a {
         color: $font-color;
-        transition: .3s ease-in-out;
     
         i {
             color: $primary-color;
@@ -102,7 +101,6 @@
 
     a:hover {
         color: $primary-color;
-        transition: .3s ease-in-out;
     }
 }
 
@@ -113,14 +111,11 @@
     background-size: cover;
     background-position: center;
     border-radius: $border-radius;
-    max-width: 90vw;
     min-height: 30rem;
-    padding: 5rem 4rem;
-    justify-content: center;
+    padding: 5rem;
     align-items: center;
 
     p {
-        width: 55rem;
         font-size:clamp(2.4rem, 4vw, 3.2rem);
         font-weight: 600;
         text-align: left;
@@ -132,7 +127,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1.6rem;
-    margin: 0 2rem;
+    margin: 2rem;
+    width: 62%;
 
     input {
         font-size: 1.6rem;

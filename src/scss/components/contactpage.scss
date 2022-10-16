@@ -1,12 +1,16 @@
 @import "../globals/variables.scss";
 
-//INFO-FORM
+//SECT1
+
+.cnt-sect1__body {
+    justify-content: space-between;
+}
 
 //INFO
 
-.contact-info-left-bot {
-    h5, p {
-        margin-bottom: 1rem;
+.cnt-sect1__info {
+    p {
+        margin: 1rem 0;
     }
 
     i {
@@ -20,15 +24,16 @@
 }
 
 //FORM
+.cnt-sect1__form {
+    width: 45%;
+}
 
-
-//TOP
-
-.contact-form-top {
+.cnt-sect1__input {
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
 
     input {
+        width: 100%;
         outline: none;
         border-radius: $border-radius;
         min-height: 6rem;
@@ -42,9 +47,11 @@
     }
 }
 
+//TOP
+
 //MID
 
-.contact-form-mid {
+.cnt-sect1__textarea {
     textarea {
         font-family: inherit;
         outline: none;
@@ -66,7 +73,7 @@
 
 //SUBMIT
 
-.contact-form-submit {
+.cnt-sect1__btn {
     display: flex;
     justify-content: flex-end;
     
