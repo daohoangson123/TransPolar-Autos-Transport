@@ -13,7 +13,7 @@
 //IMG-ONLY
 
 .abt-l1__img {
-    width: 45%;
+    width: 47%;
 
     img {
         width: 100%;
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 45%;
+    width: 47%;
 
     h6 {
         font-size: 1.4rem;
@@ -54,8 +54,8 @@
 
 .about-mid__cover {
     position: relative;
-    width: 45%;
-    height: 30rem;
+    width: 47%;
+    min-height: 30rem;
 
 }
 
@@ -107,12 +107,12 @@
     
 }
 
-.abt-mid__items:hover {
-    transform: scale(1.2);
-    border-radius: $border-radius;
-}
-
 .about-mid__cover:hover {
+    .abt-mid__items {
+        transform: scale(1.2);
+        border-radius: $border-radius;
+    }
+
     .btn__abt {
         &--mid {
             transform: scale(1);
@@ -133,7 +133,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 45%;
+    width: 47%;
 
     h6 {
         font-size: 1.4rem;
@@ -152,7 +152,7 @@
 .abt-l2__subitems {
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 45%;
+    width: 47%;
 }
 
 .abt-l2-sub__content {
@@ -269,6 +269,6 @@
 
 //RESPONSIVE
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 
 }

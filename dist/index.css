@@ -24,7 +24,7 @@ h1 i {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: clamp(3rem, 4vw, 4rem);
   text-align: center;
 }
 
@@ -103,9 +103,14 @@ section {
 
 .container {
   margin: auto;
-  padding: 5rem;
+  padding: 5rem 8rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 2rem;
+  }
+}
 .header-banner {
   position: relative;
   background-image: url(../img/about/banner2.jpg);
@@ -129,6 +134,7 @@ section {
   color: #fff;
   font-size: 1.6rem;
   margin-top: 2rem;
+  width: max-content;
 }
 
 .sect-heading {
@@ -434,7 +440,7 @@ nav.scrolled .dropdown-item:hover i {
 }
 
 .abt-l1__img {
-  width: 45%;
+  width: 47%;
 }
 .abt-l1__img img {
   width: 100%;
@@ -448,7 +454,7 @@ nav.scrolled .dropdown-item:hover i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 45%;
+  width: 47%;
 }
 .abt-l1__items h6 {
   font-size: 1.4rem;
@@ -467,8 +473,8 @@ nav.scrolled .dropdown-item:hover i {
 
 .about-mid__cover {
   position: relative;
-  width: 45%;
-  height: 30rem;
+  width: 47%;
+  min-height: 30rem;
 }
 
 .abt-mid__cover-wrapper {
@@ -512,11 +518,10 @@ nav.scrolled .dropdown-item:hover i {
   border: 0.1rem solid #fff;
 }
 
-.abt-mid__items:hover {
+.about-mid__cover:hover .abt-mid__items {
   transform: scale(1.2);
   border-radius: 0.6rem;
 }
-
 .about-mid__cover:hover .btn__abt--mid {
   transform: scale(1);
   background-color: #f52029;
@@ -530,7 +535,7 @@ nav.scrolled .dropdown-item:hover i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 45%;
+  width: 47%;
 }
 .abt-l2__items h6 {
   font-size: 1.4rem;
@@ -545,7 +550,7 @@ nav.scrolled .dropdown-item:hover i {
 .abt-l2__subitems {
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 45%;
+  width: 47%;
 }
 
 .abt-l2-sub__content {
@@ -703,12 +708,12 @@ nav.scrolled .dropdown-item:hover i {
 
 .ser-layout2__items {
   width: 23%;
+  position: relative;
 }
 
 .ser-l2__items-wrapper {
   height: clamp(13rem, 25vh, 30rem);
   border-radius: 0.6rem;
-  margin-bottom: 2rem;
   overflow: hidden;
 }
 
@@ -720,12 +725,8 @@ nav.scrolled .dropdown-item:hover i {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.ser-l2__items-img a {
-  width: 100%;
-  height: 100%;
-}
 
-.ser-l2__items-img:hover {
+.ser-layout2__items:hover .ser-l2__items-img {
   transform: scale(1.1);
 }
 
@@ -832,11 +833,6 @@ nav.scrolled .dropdown-item:hover i {
   width: 100%;
   height: 100%;
   transition: 0.4s ease-in-out;
-}
-.art-top__img a {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 .art-top__img--1 {
   background-image: url(../img/article/g6.jpg);
@@ -984,7 +980,7 @@ footer {
 }
 
 .fter-top__right {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .fter-tr__items {
@@ -1001,6 +997,7 @@ footer {
   font-size: 1.6rem;
   width: max-content;
   margin: 1rem 0;
+  transition: 0.1s ease-in-out;
 }
 .fter-tr__items a:hover {
   transform: scale(1.1);
@@ -1243,7 +1240,7 @@ hr {
 }
 
 .about-sect4__body {
-  grid-template-columns: repeat(auto-fit, min(40vw, 37rem));
+  grid-template-columns: repeat(auto-fit, clamp(12rem, 30vw, 35rem));
   gap: 3rem;
   justify-content: center;
 }
@@ -1331,6 +1328,44 @@ hr {
 }
 .ser-l2__items-img--sect3-4 {
   background-image: url(../img/services/g5.jpg);
+}
+
+.ser-sect3__items-content {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.ser-sect3__items-content i {
+  font-size: 4rem;
+}
+.ser-sect3__items-content .up {
+  width: max-content;
+  font-size: 2.6rem;
+  transition: 0.3s ease-in-out;
+  margin-top: 3rem;
+}
+
+.ser-l2__items-img--sect3::after {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 60%, rgba(0, 0, 0, 0.8));
+}
+
+.ser-l2__items-img::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6rem;
+}
+
+.ser-layout2__items:hover .up {
+  transform: translateY(-2.5rem);
+}
+.ser-layout2__items:hover .ser-l2__items-img--sect3::after {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 20%, rgba(0, 0, 0, 0.8));
 }
 
 .cnt-sect1__body {

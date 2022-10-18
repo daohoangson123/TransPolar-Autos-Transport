@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: clamp(3rem, 4vw, 4rem);
     text-align: center;
 }
 
@@ -101,7 +101,13 @@ section {
 
 .container {
     margin: auto;
-    padding: 5rem;
+    padding: 5rem 8rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 2rem;
+    }
 }
 
 //HEADER BANNER for all sub-pages
@@ -131,6 +137,7 @@ section {
         color: $bg-color;
         font-size: 1.6rem;
         margin-top: 2rem;
+        width: max-content;
     }
 }
 

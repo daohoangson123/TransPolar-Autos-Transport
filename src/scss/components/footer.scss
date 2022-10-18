@@ -70,7 +70,7 @@ footer {
 //TOP RIGHT
 
 .fter-top__right {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 //RIGHT CONTENT
@@ -90,6 +90,7 @@ footer {
         font-size: 1.6rem;
         width: max-content;
         margin: 1rem 0;
+        transition: .1s ease-in-out;
     }
 
     a:hover {
