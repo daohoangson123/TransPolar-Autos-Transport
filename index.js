@@ -1,56 +1,58 @@
-// // window.onscroll = function () {
-// //   scrollDown();
-// //   counterNum();
-// // }
+window.onscroll = function () {
+  stickyNav();
+  backTopBtn();
+  // counterNum();
+}
 
 // Sticky Nav
-var navbar = document.querySelector('nav')
-
-window.onscroll = function () {
+var navBar = document.querySelector("nav")
+function stickyNav() {
   if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled')
+    navBar.classList.add("stickyNav")
   } else {
-    navbar.classList.remove('scrolled')
+    navBar.classList.remove("stickyNav")
   }
 }
 
-function scrollDown() {
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled')
+// Back to top
+var backTop = document.querySelector(".top")
+function backTopBtn() {
+  if (window.pageYOffset > 500) {
+    backTop.classList.add("backTopBtn")
   } else {
-    navbar.classList.remove('scrolled')
+    backTop.classList.remove("backTopBtn")
   }
 }
 
 // // // Counter
-// // var counterUp = document.querySelectorAll('.about-sect2-counter')[3];
+// // var counterUp = document.querySelectorAll(".about-sect2-counter")[3];
 
 // // function counterNum() {
 // //   if (window.pageYOffset > 500) {
-// //     counterUp.classList.add('counter-4')
+// //     counterUp.classList.add("counter-4")
 // //   } else {
-// //     counterUp.classList.remove('counter-4')
+// //     counterUp.classList.remove("counter-4")
 // //   }
 // // }
 
 // // Dropdown Btn on Full
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-//   }
+function myFunction() {
+    document.querySelector("#myDropdown").classList.toggle("show");
+  }
   
-//   // Close the dropdown if the user clicks outside of it
-//   window.onclick = function(event) {
-//     if (!event.target.matches('.dropbtn')) {
-//       var dropdowns = document.getElementsByClassName("dropdown-content");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//         }
-//       }
-//     }
-//   }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches(".dropbtn")) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  }
 
 // // Dropdown Btn Hidden
 // function mineFunction() {
@@ -59,19 +61,21 @@ function scrollDown() {
 
 // // Close the dropdown if the user clicks outside of it
 // window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
+//   if (!event.target.matches(".dropbtn")) {
 //     var dropdowns = document.getElementsByClassName("dropdown-content");
 //     var i;
 //     for (i = 0; i < dropdowns.length; i++) {
 //       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
+//       if (openDropdown.classList.contains("show")) {
+//         openDropdown.classList.remove("show");
 //       }
 //     }
 //   }
 // }
 
-//Click carousel
+//
+
+// Click Slide
 
 let slides = document.querySelectorAll(".slide");
 
@@ -80,7 +84,6 @@ slides.forEach((slide, indx) => {
   slide.style.transform = `translateX(${indx * 100}%)`;
 });
 
-
 // current slide counter
 let curSlide = 0;
 // maximum number of slides
@@ -88,11 +91,6 @@ let maxSlide = slides.length - 1;
 
 // select next slide button
 let nextSlide = document.querySelector(".next");
-
-let dots = document.getElementsByClassName("dot");
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
 
 // add event listener and navigation functionality
 nextSlide.addEventListener("click", function () {
@@ -128,7 +126,7 @@ prevSlide.addEventListener("click", function () {
   });
 });
 
-//
+// Auto Slide
 
 // let slideIndex = 0;
 // showSlides();
@@ -138,14 +136,14 @@ prevSlide.addEventListener("click", function () {
 //   let slides = document.getElementsByClassName("mySlides");
 //   let dots = document.getElementsByClassName("dot");
 //   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
+//     // slides[i].style.display = "none";
 //   }
 //   slideIndex++;
 //   if (slideIndex > slides.length) {slideIndex = 1}    
 //   for (i = 0; i < dots.length; i++) {
 //     dots[i].className = dots[i].className.replace(" active", "");
 //   }
-//   slides[slideIndex-1].style.display = "block";  
+//   // slides[slideIndex-1].style.display = "block";
 //   dots[slideIndex-1].className += " active";
 //   setTimeout(showSlides, 2000); // Change image every 2 seconds
 // }

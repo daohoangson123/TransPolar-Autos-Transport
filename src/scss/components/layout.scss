@@ -50,20 +50,19 @@ section {
 // BACK TO TOP BUTTON
 
 .top {
-    --offset: 5rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    left: 95%;
-    bottom: 5%;
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
     background-color: $primary-color;
-    border-radius: 50%;
+    border-radius: $border-radius-full;
     width: 4rem;
     height: 4rem;
-    margin-top: calc(100vh + var(--offset));
-    margin-right: .5rem;
-    transition: .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    z-index: -1;
 
     i {
         font-size: 1.5rem;
@@ -71,9 +70,40 @@ section {
     }
 }
 
+a.backTopBtn {
+    opacity: 1;
+    animation: scalein .5s ease-in-out;
+    z-index: 1;
+}
+
+@keyframes scalein {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: translate(1);
+    }
+}
+
 .top:hover {
     background-color: $button-hover-color;
+    animation: bounce .5s ease-out infinite alternate;
+    transform: scale(1);
 }
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1rem);
+    }
+}
+
+//
 
 //DISPLAY
 
@@ -156,16 +186,18 @@ section {
 
 .button {
     display: inline-block;
-    background-color: $primary-color;
+    background: $primary-color;
     font-size: 1.5rem;
     border-radius: $border-radius;
     width: fit-content;
     padding: 1.8rem 4rem;
-    transition: .2s ease-in-out;
+    margin-top: 2rem;
+    transition: .3s ease-in-out;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: $button-hover-color;
+    background: $button-hover-color;
     transform: scale(1.1);
+    color: $footer-bg;
 }

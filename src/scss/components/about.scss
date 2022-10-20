@@ -202,7 +202,10 @@
     min-height: 60rem;
 
     .about-video__play {
-        width: 42vw;
+        justify-content: center;
+        align-items: center;
+        width: 47%;
+        height: 20rem;
         
         .playbtn {
             display: flex;
@@ -238,10 +241,10 @@
                 width: 5.5rem;
                 height: 5.5rem;
                 position: absolute;
-                animation: scaleIn 4s ease-in infinite;
+                animation: waveout 4s ease-in infinite;
             }
 
-            @keyframes scaleIn {
+            @keyframes waveout {
                 from {
                 transform: scale(1);
                 opacity: .5;
@@ -255,7 +258,6 @@
     }
 
     .about-video__content {
-        min-height: 45rem;
 
         h6, p {
             color: $bg-grey;
@@ -270,5 +272,70 @@
 //RESPONSIVE
 
 @media only screen and (max-width: 900px) {
+// ABOUT
+
+// TOP
+
+//REAPEATABLE LAYOUT
+
+.about-layout1__body {
+    flex-wrap: wrap;
+}
+
+//IMG-ONLY
+
+.abt-l1__img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+//CONTENT-ONLY
+
+.abt-l1__items {
+    width: 100%;
+}
+
+
+// MID
+
+.about__mid {
+flex-wrap: wrap;
+}
+
+.about-mid__cover {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+// BOT
+
+//CONTENT-ONLY
+
+.about-layout2__body{
+    flex-wrap: wrap;
+}
+
+.abt-l2__items {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+//ICON-CONTENT
+
+.abt-l2__subitems {
+    width: 100%;
+}
+
+// ABOUT-VIDEO
+
+.about__video {
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    .about-video__play {
+        width: 100%;
+
+    }
+}
 
 }

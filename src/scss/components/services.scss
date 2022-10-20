@@ -94,12 +94,12 @@
 }
 
 .ser-layout2__items {
-    width: 23%;
+    width: 24%;
     position: relative;
 }
 
 .ser-l2__items-wrapper {
-    height: clamp(13rem, 25vh, 30rem);
+    height: 18rem;
     border-radius: $border-radius;
     overflow: hidden;
 }
@@ -150,5 +150,41 @@
 //RESPONSIVE
 
 @media only screen and (max-width: 900px) {
+//SERVICES
+
+//TOP
+
+//REPEATABLE LAYOUT
+
+.ser-layout1__body {
+
+    &--layout {
+        flex-wrap: wrap;
+    }
+}
+
+.ser-layout1__items {
+    margin-bottom: 2rem;
+
+    &--layout {
+        width: 100%;
+    }
+}
+
+//BOT
+
+//REPEATABLE LAYOUT
+
+.ser-layout2__body {
+
+    &--layout {
+        flex-wrap: wrap;
+    }
+}
+
+.ser-layout2__items {
+    width: 48%;
+    margin-bottom: 2rem;
+}
 
 }
