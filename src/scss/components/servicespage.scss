@@ -59,7 +59,7 @@
     
     .up {
         width: max-content;
-        font-size: 2.6rem;
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
         transition: .3s ease-in-out;
         margin-top: 3rem;
     }
@@ -87,6 +87,26 @@
     .ser-l2__items-img {
         &--sect3::after {
             background-image: linear-gradient(rgba(255, 255, 255, 0.2) 20%, rgba(0, 0, 0, 0.8));
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) { 
+    .ser-l2__items-wrapper {
+        height: 10rem;
+    }
+
+    .ser-sect3__items-content {
+    
+        i {
+            display: none;
+        }
+        
+        .up {
+            width: fit-content;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            transition: .3s ease-in-out;
+            margin-top: 0;
         }
     }
 }

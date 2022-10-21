@@ -195,7 +195,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 0;
     min-width: 32rem;
@@ -330,7 +330,6 @@ flex-wrap: wrap;
 
 .about__video {
     flex-wrap: wrap;
-    padding: 2rem;
 
     .about-video__play {
         width: 100%;

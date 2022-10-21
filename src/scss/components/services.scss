@@ -12,20 +12,19 @@
 //REPEATABLE LAYOUT
 
 .ser-layout1__body {
-
     &--layout {
         justify-content: space-between;
     }
 }
 
 .ser-layout1__items {
-
     &--layout {
         text-align: center;
         background-color: $bg-color;
         border-radius: $border-radius;
         width: 31%;
         padding: 6rem 4rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -164,8 +163,6 @@
 }
 
 .ser-layout1__items {
-    margin-bottom: 2rem;
-
     &--layout {
         width: 100%;
     }

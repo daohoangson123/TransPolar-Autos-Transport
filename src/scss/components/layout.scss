@@ -134,9 +134,9 @@ a.backTopBtn {
     padding: 5rem 8rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .container {
-        padding: 5rem 2rem;
+        padding: 4rem 2rem;
     }
 }
 
@@ -186,9 +186,12 @@ a.backTopBtn {
 
 .button {
     display: inline-block;
+    text-align: center;
     background: $primary-color;
     font-size: 1.5rem;
+    font-weight: $font-weight;
     border-radius: $border-radius;
+    border: none;
     width: fit-content;
     padding: 1.8rem 4rem;
     margin-top: 2rem;

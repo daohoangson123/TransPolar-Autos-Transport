@@ -9,6 +9,8 @@
 //INFO
 
 .cnt-sect1__info {
+    margin-top: 2rem;
+
     p {
         margin: 1rem 0;
     }
@@ -30,7 +32,7 @@
 
 .cnt-sect1__input {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 2rem;
 
     input {
         width: 100%;
@@ -76,7 +78,10 @@
 .cnt-sect1__btn {
     display: flex;
     justify-content: flex-end;
-    
+}
+
+.btn__cnt {
+    margin-top: 0;
 }
 
 // .contactpage-btn {
@@ -116,26 +121,35 @@
 
 //RESPONSIVE
 
-@media only screen and (max-width: 768px) {
-
-    //FORM
-
-    .contact-form-top {
-        grid-template-columns: 1fr;
+@media only screen and (max-width: 900px) {
+    //SECT1
+    .cnt-sect1__body {
+        flex-wrap: wrap;
     }
 
+    //FORM
+    .cnt-sect1__form {
+        width: 100%;
+    }
+
+    //MAP
+    .imap-content {
+        padding: 3rem;
+        left: 35%;
+        top: 30%;
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (max-width: 425px) {
-    
-    //MAP
+    //FORM
 
-    .imap-content {
-        padding: 3rem;
-        left: 10%;
-        right: 10%;
-        top: 20%;
-        font-size: 1.6rem;
+    .cnt-sect1__input{
+        grid-template-columns: 1fr;
     }
 
+    //MAP
+    .imap-content {
+        left: 10%;
+    }
 }
