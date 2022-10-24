@@ -80,9 +80,9 @@ function myFunction() {
 let slides = document.querySelectorAll(".slide");
 
 // loop through slides and set each slides translateX
-// slides.forEach((slide, indx) => {
-//   slide.style.transform = `translateX(${indx * 100}%)`;
-// });
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${indx * 100}%)`;
+})
 
 // current slide counter
 let curSlide = 0;

@@ -72,26 +72,11 @@ section {
 
 a.backTopBtn {
     opacity: 1;
-    animation: scalein .5s ease-in-out;
     z-index: 1;
 }
 
-@keyframes scalein {
-    0% {
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: translate(1);
-    }
-}
-
-.top:hover {
-    background-color: $button-hover-color;
-    animation: bounce .5s ease-out infinite alternate;
-    transform: scale(1);
+.top:hover i {
+    animation: bounce .5s ease-in-out infinite alternate;
 }
 
 @keyframes bounce {
@@ -99,7 +84,7 @@ a.backTopBtn {
         transform: translateY(0);
     }
     to {
-        transform: translateY(-1rem);
+        transform: translateY(-.5rem);
     }
 }
 
@@ -186,6 +171,7 @@ a.backTopBtn {
 
 .button {
     display: inline-block;
+    position: relative;
     text-align: center;
     background: $primary-color;
     font-size: 1.5rem;

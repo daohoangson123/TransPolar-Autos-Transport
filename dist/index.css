@@ -82,25 +82,11 @@ section {
 
 a.backTopBtn {
   opacity: 1;
-  animation: scalein 0.5s ease-in-out;
   z-index: 1;
 }
 
-@keyframes scalein {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: translate(1);
-  }
-}
-.top:hover {
-  background-color: #ff5252;
-  animation: bounce 0.5s ease-out infinite alternate;
-  transform: scale(1);
+.top:hover i {
+  animation: bounce 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes bounce {
@@ -108,7 +94,7 @@ a.backTopBtn {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-1rem);
+    transform: translateY(-0.5rem);
   }
 }
 .flex {
@@ -173,6 +159,7 @@ a.backTopBtn {
 
 .button {
   display: inline-block;
+  position: relative;
   text-align: center;
   background: #f52029;
   font-size: 1.5rem;
@@ -1640,6 +1627,76 @@ hr {
   }
   .imap-content {
     left: 10%;
+  }
+}
+.btn__elm {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn__wrapper {
+  width: 15.7rem;
+  height: 7.9rem;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.btn__bg {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  height: 7rem;
+  background: black;
+  color: white;
+  border-radius: 1rem;
+}
+
+.btn__bg--1::after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 300%;
+  border-radius: 50%;
+  background: red;
+  transition: all 1s ease-in-out;
+  z-index: -1;
+  transform: scale(-1);
+}
+
+.btn__bg--1:hover::after {
+  z-index: 0;
+  transform: scale(1.5);
+}
+
+.btn__alt {
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.btn__bg--2::before {
+  position: absolute;
+  content: "";
+  width: 140%;
+  height: 140%;
+  background-image: linear-gradient(to right, yellow, blue);
+  transform-origin: center;
+  z-index: -2;
+  animation: border-line 5s infinite linear;
+}
+@keyframes border-line {
+  from {
+    transform: rotate(0) skew(25deg, 25deg);
+  }
+  to {
+    transform: rotate(360deg) skew(25deg, 25deg);
   }
 }
 
