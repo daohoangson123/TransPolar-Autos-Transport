@@ -51,6 +51,10 @@ button {
   cursor: pointer;
 }
 
+button {
+  background: transparent;
+}
+
 ul,
 li {
   list-style-type: none;
@@ -184,7 +188,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 3rem 5rem;
   transition: 0.3s ease-in-out;
   z-index: 3;
 }
@@ -194,13 +198,13 @@ nav.stickyNav {
   box-shadow: 0 2.5rem 9rem 2rem rgba(0, 0, 0, 0.2);
 }
 nav.stickyNav a {
-  color: black;
+  color: #181d2e;
 }
 nav.stickyNav .dropbtn {
-  color: black;
+  color: #181d2e;
 }
 nav.stickyNav .dark-btn {
-  color: black;
+  color: #181d2e;
 }
 nav.stickyNav .dropbtn:hover,
 nav.stickyNav .dropbtn:focus,
@@ -211,7 +215,7 @@ nav.stickyNav .dropdown-item:hover {
 nav.stickyNav .dropbtn:hover i,
 nav.stickyNav .dropbtn:focus i,
 nav.stickyNav .dropdown-item:hover i {
-  color: black;
+  color: #181d2e;
 }
 
 /* NAVBAR */
@@ -221,10 +225,11 @@ nav.stickyNav .dropdown-item:hover i {
 }
 #menu .home a {
   color: #f52029;
+  font-weight: 900;
 }
 #menu .navbar-item {
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1rem;
 }
 #menu .navbar-item:hover > a {
@@ -232,10 +237,14 @@ nav.stickyNav .dropdown-item:hover i {
 }
 
 /* Dropdown Button */
+.hidden-menu, .dropbtn-hidden {
+  width: 3rem;
+  height: 3rem;
+}
+
 .dropbtn {
   color: #fff;
   border: none;
-  background-color: transparent;
   font-size: 1.6rem;
   cursor: pointer;
 }
@@ -296,9 +305,10 @@ nav.stickyNav .dropdown-item:hover i {
 }
 
 .search-btn {
-  margin-left: 2rem;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   color: #f52029;
+  margin-left: 2rem;
 }
 
 .dark-btn {
@@ -311,21 +321,24 @@ nav.stickyNav .dropdown-item:hover i {
 }
 
 .hidden-menu {
+  position: relative;
+  top: 1rem;
   background-color: #f52029;
   color: #fff;
-  font-size: 2rem;
-  padding: 0.7rem 1.1rem;
   border-radius: 0.6rem;
+  font-size: 2rem;
+  padding: 1.2rem;
 }
 
 .dropbtn-hidden {
-  position: absolute;
-  opacity: 0;
-  top: 1.5rem;
-  right: 2.1rem;
+  position: relative;
+  top: -1.1rem;
+  right: 1.25rem;
 }
 .dropbtn-hidden i {
+  font-size: 2rem;
   color: #fff;
+  margin: 0 auto;
 }
 
 .drop-content-hidden {
