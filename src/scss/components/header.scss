@@ -169,7 +169,7 @@ nav.stickyNav {
 
 .dropbtn-hidden {
     position: relative;
-    top: -1.1rem;
+    top: -1.2rem;
     right: 1.25rem;
 
     i {
@@ -306,6 +306,9 @@ nav.stickyNav {
 //RESPONSIVE//
 
 @media only screen and (max-width: 900px) {
+    nav {
+        padding: 2rem;
+    }
 
     #menu {
         display: none;
