@@ -44,14 +44,17 @@ $(window).scroll(function(){
 // Dropdown Btn Main
 
 $("#dropbtn-main").click(function(){
-  $(".dropdown-content").slideToggle();
+  $(".dropdown-content-main").slideToggle();
 });
 
 // Dropdown Btn Hidden
 
 $("#dropbtn-hidden").click(function(){
+  $("#dropin").toggleClass();
+  $("#dropout").toggleClass("show");
   $(".drop-content-hidden").slideToggle();
 });
+
 
 //
 

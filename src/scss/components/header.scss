@@ -32,17 +32,6 @@ nav {
     .search-btn {
         background: $layer2;
     }
-
-    .dropbtn:hover,
-    .dropbtn:focus,
-    .dropdown-item:hover {
-        color: $primary-color;
-        transition: .3s ease-in-out;
-
-        i {
-            color: $nav-color;
-        }
-    }
 }
 
 /* NAVBAR */
@@ -118,7 +107,7 @@ nav {
     padding: 1rem 1.5rem;
 }
 
-.dropdown-content::before {
+.dropdown-content-main::before {
     content: '';
     position: absolute;
     top: -.7rem;
@@ -138,8 +127,16 @@ nav {
 
 /* Show the dropdown menu */
 
+.dropout {
+    display: none;
+}
+
 .show {
     display:block;
+}
+
+.hide {
+    display: none;
 }
 
 //SEARCH+DARK
@@ -193,21 +190,23 @@ nav {
     i {
         font-size: 2rem;
         color: $bg-color;
-        margin: 0 auto;
+        margin: auto;
     }
 }
 
 .drop-content-hidden {
     position: absolute;
     width: 90vw;
-    top: 6rem;
-    right: 2.1rem;
+    top: 3rem;
+    right: 0;
     text-align: center;
 
     .search-btn {
         margin: 1rem 0;
     }
 }
+
+
 
 //SLIDE
 
