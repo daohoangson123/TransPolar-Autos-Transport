@@ -55,7 +55,7 @@
 .about-mid__cover {
     position: relative;
     width: 47%;
-    min-height: 35rem;
+    height: 35rem;
 }
 
 .abt-mid__cover-wrapper {
@@ -160,7 +160,7 @@
     padding: 3rem;
     margin-bottom: 2rem;
     width: fit-content;
-    height: fit-content;
+    min-height: 17rem;
 }
 
 .abt-l2-sub__icon {
@@ -170,7 +170,6 @@
 }
 
 .abt-l2-sub__text {
-
     a {
         color: $heading-color;
         font-size: clamp(1.6rem, 2.5vw, 2.6rem);
@@ -335,5 +334,16 @@ flex-wrap: wrap;
 
     }
 }
+}
 
+@media only screen and (max-width: 600px) {
+    .about-mid__cover {
+        height: 20rem;
+    }
+
+    .abt-mid-items__content {
+        p {
+            margin-bottom: 1rem;
+        }
+    }
 }
