@@ -1,10 +1,11 @@
-window.onscroll = function () {
-  stickyNav();
-  backTopBtn();
-  // counterNum();
-}
+// khai báo nhiều hàm sử dụng cùng chức năng phải khai báo tổng
+// window.onscroll = function () { 
+//   stickyNav();
+//   backTopBtn();
+// }
 
 // Sticky Nav
+// dùng jquery có thể mix với js
 $(window).scroll(function(){
   if (window.pageYOffset > 0){
     $("nav").addClass("stickyNav");
