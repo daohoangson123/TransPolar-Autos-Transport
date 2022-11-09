@@ -38,6 +38,11 @@ button {
     cursor: pointer;
 }
 
+//Button have default bg
+button {
+    background: transparent;
+}
+
 ul,
 li {
     list-style-type: none;

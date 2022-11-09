@@ -65,10 +65,14 @@ nav.stickyNav {
 //DROPDOWN
 
 /* Dropdown Button */
+.hidden-menu, .dropbtn-hidden {
+    width: 3rem;
+    height: 3rem;
+}
+
 .dropbtn {
     color: $dropdown-color;
     border: none;
-    background-color: transparent;
     font-size: 1.6rem;
     cursor: pointer;
 
@@ -161,7 +165,6 @@ nav.stickyNav {
 
 .dropbtn-hidden {
     position: absolute;
-    opacity: 0;
     top: 1.5rem;
     right: 2.1rem;
 
@@ -322,6 +325,6 @@ nav.stickyNav {
 
     .prev,
     .next {
-        display: none;
+        // display: none;
     }
 }
