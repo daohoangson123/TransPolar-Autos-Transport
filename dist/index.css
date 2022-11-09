@@ -77,22 +77,22 @@ section {
   height: 4rem;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-  z-index: -1;
+  transform: scale(0);
 }
 .top i {
   font-size: 1.5rem;
   color: #e4e6e5;
 }
 
-a.backTopBtn {
+.backTopBtn {
   opacity: 1;
+  transform: scale(1);
   z-index: 1;
 }
 
-.top:hover i {
+.top i {
   animation: bounce 0.5s ease-in-out infinite alternate;
 }
-
 @keyframes bounce {
   from {
     transform: translateY(0);
@@ -101,6 +101,7 @@ a.backTopBtn {
     transform: translateY(-0.5rem);
   }
 }
+
 .flex {
   display: flex;
 }
@@ -304,9 +305,32 @@ nav {
   display: none;
 }
 
-.search-box {
-  height: 3rem;
-  display: none;
+#search-dialog {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  display: grid;
+  place-items: center;
+}
+#search-dialog .search__div {
+  min-width: 40vw;
+  height: 20rem;
+  padding: 2rem;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+#search-dialog .search__div span {
+  font-size: 3rem;
+}
+#search-dialog .search__div .search-box {
+  width: 30rem;
+  height: 5.5rem;
+  border-radius: 0.6rem;
+  font-size: 2rem;
 }
 
 .head-btn {
@@ -358,7 +382,7 @@ nav {
 .drop-content-hidden {
   position: absolute;
   width: 90vw;
-  top: 3rem;
+  top: 4.6rem;
   right: 0;
   text-align: center;
 }

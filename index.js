@@ -4,15 +4,30 @@
 //   backTopBtn();
 // }
 
-// Sticky Nav
-// dùng jquery có thể mix với js
-$(window).scroll(function(){
-  if (window.pageYOffset > 0){
-    $("nav").addClass("stickyNav");
-  } else {
-    $("nav").removeClass("stickyNav");
-  }
+$(document).ready(function(){
+  // dùng jquery có thể mix với js
+
+  //thêm/xóa class cho nav khi scroll
+  $(window).scroll(function(){
+    if (window.pageYOffset > 0){
+      $("nav").addClass("stickyNav");
+    } else {
+      $("nav").removeClass("stickyNav");
+    }
+  });
+
+  //thêm/xóa class cho nút backtotop
+  $(window).scroll(function(){
+    if (window.pageYOffset > 500){
+      $(".top").addClass("backTopBtn");
+    } else {
+      $(".top").removeClass("backTopBtn");
+    }
+  });
 });
+
+// Sticky Nav
+
 
 // var navBar = document.querySelector("nav")
 // function stickyNav() {
@@ -24,13 +39,6 @@ $(window).scroll(function(){
 // }
 
 // Back to top
-$(window).scroll(function(){
-  if (window.pageYOffset > 500){
-    $(".top").addClass("backTopBtn");
-  } else {
-    $(".top").removeClass("backTopBtn");
-  }
-});
 
 // var backTop = document.querySelector(".top")
 // function backTopBtn() {

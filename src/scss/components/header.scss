@@ -140,9 +140,40 @@ nav {
 }
 
 //SEARCH+DARK
+
+#search-dialog {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $layer2;
+    border: none;
+    display: grid;
+    place-items: center;
+
+    .search__div {
+        min-width: 40vw;
+        height: 20rem;
+        padding: 2rem;
+        background: $bg-color;
+        display: grid;
+        place-items: center;
+
+        span {
+            font-size: 3rem;
+        }
+
+        .search-box {
+            width: 30rem;
+            height: 5.5rem;
+            border-radius: $border-radius;
+            font-size: 2rem;
+        }
+    }
+}
+
 .search-box {
-    height: 3rem;
-    display: none;
+
 }
 
 .head-btn {
@@ -197,7 +228,7 @@ nav {
 .drop-content-hidden {
     position: absolute;
     width: 90vw;
-    top: 3rem;
+    top: 4.6rem;
     right: 0;
     text-align: center;
 
@@ -205,8 +236,6 @@ nav {
         margin: 1rem 0;
     }
 }
-
-
 
 //SLIDE
 

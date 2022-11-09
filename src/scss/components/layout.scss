@@ -67,7 +67,7 @@ section {
     height: 4rem;
     transition: all .3s ease-in-out;
     opacity: 0;
-    z-index: -1;
+    transform: scale(0);
 
     i {
         font-size: 1.5rem;
@@ -75,21 +75,22 @@ section {
     }
 }
 
-a.backTopBtn {
+.backTopBtn {
     opacity: 1;
+    transform: scale(1);
     z-index: 1;
 }
 
-.top:hover i {
+.top i {
     animation: bounce .5s ease-in-out infinite alternate;
-}
 
-@keyframes bounce {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-.5rem);
+    @keyframes bounce {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-.5rem);
+        }
     }
 }
 
