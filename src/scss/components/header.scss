@@ -15,13 +15,13 @@ nav {
 // class được add khi scrolldown
 .stickyNav {
     background: $bg-color;
-    box-shadow: 0 2.5rem 9rem 2rem $layer2;
+    box-shadow: 0 .5rem .5rem .5rem $layer2;
 
     a {
         color: $nav-color;
     }
 
-    .dropbtn {
+    #dropbtn-main {
         color: $nav-color;
     }
 
@@ -64,7 +64,7 @@ nav {
     height: 3rem;
 }
 
-.dropbtn {
+#dropbtn-main {
     color: $dropdown-color;
     border: none;
     font-size: 1.8rem;
@@ -148,7 +148,7 @@ nav {
     height: 100vh;
     background: $layer2;
     border: none;
-    display: grid;
+    // display: grid;
     place-items: center;
 
     .search__div {
@@ -209,7 +209,6 @@ nav {
     background-color: $primary-color;
     color: $dropdown-color;
     border-radius: $border-radius;
-    font-size: 2rem;
     padding: 1.2rem;
 }
 
@@ -217,6 +216,7 @@ nav {
     position: relative;
     top: -1.2rem;
     right: 1.25rem;
+    border: none;
 
     i {
         font-size: 2rem;
