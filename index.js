@@ -93,17 +93,26 @@ $(document).ready(function(){
   // });
 
   // Dropdown Btn Main
-
+  //JQ
   $("#dropbtn-main").click(function(){
     $(".dropdown-content-main").slideToggle();
   });
+  //JS
 
   // Dropdown Btn Hidden
-
+  //JQ
   $("#dropbtn-hidden").click(function(){
     $("#dropin").toggleClass();
     $("#dropout").toggleClass("show");
     $(".drop-content-hidden").slideToggle();
   });
+  //JS
+
+
+  //SEARCH
+  //JQ
+  $(".search-btn").click(function(){
+    $("#search-dialog").slideToggle();
+  })
 //
 });

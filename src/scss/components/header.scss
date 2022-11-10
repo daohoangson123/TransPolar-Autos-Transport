@@ -65,7 +65,6 @@ nav {
 }
 
 #dropbtn-main {
-    color: $dropdown-color;
     border: none;
     font-size: 1.8rem;
     cursor: pointer;
@@ -142,32 +141,53 @@ nav {
 //SEARCH+DARK
 
 #search-dialog {
-    position: absolute;
-    top: 0;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    background: $layer2;
+    background: $layer1;
     border: none;
-    // display: grid;
-    place-items: center;
+    z-index: 2;
 
     .search__div {
-        min-width: 40vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: clamp(30rem, 30vw, 40vw);
         height: 20rem;
         padding: 2rem;
         background: $bg-color;
+        border-radius: $border-radius;
         display: grid;
         place-items: center;
+        z-index: 100;
 
         span {
             font-size: 3rem;
         }
 
         .search-box {
-            width: 30rem;
+            width: clamp(12rem, 15vw, 30rem);
             height: 5.5rem;
             border-radius: $border-radius;
             font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        #dialog-dropbtn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 3rem;
+            height: 3rem;
+            background: $primary-color;
+            border: .2rem solid $nav-color;;
+            border-radius: $border-radius;
+            font-size: 2rem;
+        }
+
+        #dialog-dropbtn:hover {
+            transform: scale(1.2);
         }
     }
 }
@@ -190,6 +210,10 @@ nav {
     border-radius: $border-radius-full;
     color: $primary-color;
     margin-left: 2rem;
+}
+
+.search-btn:hover {
+    box-shadow: 0 0 .4rem .2rem  $primary-color;
 }
 
 .dark-btn {
@@ -259,6 +283,7 @@ nav {
 
     &-1 {
         background-image: url(../img/header/banner1.jpg);
+        z-index: 1;
     }
     &-2 {
         background-image: url(../img/header/banner2.jpg);
@@ -303,6 +328,7 @@ nav {
     transition: .3s ease-in-out;
     border-radius: $border-radius-full;
     background-color: $layer3;
+    z-index: 2;
 }
 
 .prev{
@@ -329,6 +355,7 @@ nav {
 .dot-mng {
     position: absolute;
     bottom: 5rem;
+    z-index: 1;
 }
 
 .dot {

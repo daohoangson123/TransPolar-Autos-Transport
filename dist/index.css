@@ -172,7 +172,7 @@ section {
   border-radius: 0.6rem;
   border: none;
   width: fit-content;
-  padding: 1.8rem 4rem;
+  padding: 1.8rem 3rem;
   margin-top: 2rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -236,7 +236,6 @@ nav {
 }
 
 #dropbtn-main {
-  color: #fff;
   border: none;
   font-size: 1.8rem;
   cursor: pointer;
@@ -306,30 +305,50 @@ nav {
 }
 
 #search-dialog {
-  position: absolute;
-  top: 0;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   border: none;
-  place-items: center;
+  z-index: 2;
 }
 #search-dialog .search__div {
-  min-width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(30rem, 30vw, 40vw);
   height: 20rem;
   padding: 2rem;
   background: #fff;
+  border-radius: 0.6rem;
   display: grid;
   place-items: center;
+  z-index: 100;
 }
 #search-dialog .search__div span {
   font-size: 3rem;
 }
 #search-dialog .search__div .search-box {
-  width: 30rem;
+  width: clamp(12rem, 15vw, 30rem);
   height: 5.5rem;
   border-radius: 0.6rem;
   font-size: 2rem;
+  margin-right: 1rem;
+}
+#search-dialog .search__div #dialog-dropbtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background: #f52029;
+  border: 0.2rem solid #181d2e;
+  border-radius: 0.6rem;
+  font-size: 2rem;
+}
+#search-dialog .search__div #dialog-dropbtn:hover {
+  transform: scale(1.2);
 }
 
 .head-btn {
@@ -346,6 +365,10 @@ nav {
   border-radius: 50%;
   color: #f52029;
   margin-left: 2rem;
+}
+
+.search-btn:hover {
+  box-shadow: 0 0 0.4rem 0.2rem #f52029;
 }
 
 .dark-btn {
@@ -409,6 +432,7 @@ nav {
 }
 .mySlides-1 {
   background-image: url(../img/header/banner1.jpg);
+  z-index: 1;
 }
 .mySlides-2 {
   background-image: url(../img/header/banner2.jpg);
@@ -450,6 +474,7 @@ nav {
   transition: 0.3s ease-in-out;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
+  z-index: 2;
 }
 
 .prev {
@@ -476,6 +501,7 @@ nav {
 .dot-mng {
   position: absolute;
   bottom: 5rem;
+  z-index: 1;
 }
 
 .dot {
@@ -1391,6 +1417,9 @@ hr {
 .abt-sect3__btn .btn__abt--sect3 {
   color: #f52029;
   background-color: #fff;
+  width: 100%;
+}
+.abt-sect3__btn .btn__abt--sect3-1 {
   width: 100%;
 }
 .abt-sect3__btn .btn__abt--sect3:hover {
