@@ -191,7 +191,7 @@ nav {
   width: 100%;
   padding: 3rem 7rem;
   transition: 0.3s ease-in-out;
-  z-index: 3;
+  z-index: 2;
 }
 
 .stickyNav {
@@ -310,6 +310,7 @@ nav {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   border: none;
+  transition: transform 0.5s ease-in-out;
   z-index: 2;
 }
 #search-dialog .search__div {
@@ -317,9 +318,9 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(30rem, 30vw, 40vw);
-  height: 20rem;
-  padding: 2rem;
+  width: clamp(30rem, 50vw, 60vw);
+  height: 25rem;
+  padding: 3rem;
   background: #fff;
   border-radius: 0.6rem;
   display: grid;
@@ -330,13 +331,13 @@ nav {
   font-size: 3rem;
 }
 #search-dialog .search__div .search-box {
-  width: clamp(12rem, 15vw, 30rem);
+  width: clamp(24rem, 15vw, 30rem);
   height: 5.5rem;
   border-radius: 0.6rem;
   font-size: 2rem;
   margin-right: 1rem;
 }
-#search-dialog .search__div #dialog-dropbtn {
+#search-dialog .search__div #dialog-closebtn {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -347,7 +348,7 @@ nav {
   border-radius: 0.6rem;
   font-size: 2rem;
 }
-#search-dialog .search__div #dialog-dropbtn:hover {
+#search-dialog .search__div #dialog-closebtn:hover {
   transform: scale(1.2);
 }
 

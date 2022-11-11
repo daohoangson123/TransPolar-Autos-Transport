@@ -9,7 +9,7 @@ nav {
     width: 100%;
     padding: 3rem 7rem;
     transition: .3s ease-in-out;
-    z-index: 3;
+    z-index: 2;
 }
 
 // class được add khi scrolldown
@@ -146,6 +146,7 @@ nav {
     height: 100vh;
     background: $layer1;
     border: none;
+    transition: transform .5s ease-in-out;
     z-index: 2;
 
     .search__div {
@@ -153,9 +154,9 @@ nav {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: clamp(30rem, 30vw, 40vw);
-        height: 20rem;
-        padding: 2rem;
+        width: clamp(30rem, 50vw, 60vw);
+        height: 25rem;
+        padding: 3rem;
         background: $bg-color;
         border-radius: $border-radius;
         display: grid;
@@ -167,14 +168,14 @@ nav {
         }
 
         .search-box {
-            width: clamp(12rem, 15vw, 30rem);
+            width: clamp(24rem, 15vw, 30rem);
             height: 5.5rem;
             border-radius: $border-radius;
             font-size: 2rem;
             margin-right: 1rem;
         }
 
-        #dialog-dropbtn {
+        #dialog-closebtn {
             position: absolute;
             top: 1rem;
             right: 1rem;
@@ -186,14 +187,10 @@ nav {
             font-size: 2rem;
         }
 
-        #dialog-dropbtn:hover {
+        #dialog-closebtn:hover {
             transform: scale(1.2);
         }
     }
-}
-
-.search-box {
-
 }
 
 .head-btn {
