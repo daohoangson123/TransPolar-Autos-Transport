@@ -84,7 +84,6 @@
             </ul>
             <!-- SEARCH-->
             <div id="search">
-              <input class="search-box" type="text" />
               <button class="head-btn search-btn">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
@@ -123,6 +122,18 @@
             </div>
           </div>
         </nav>
+        <dialog id="search-dialog">
+          <form class="search__div">
+            <span>Search here</span>
+              <div>
+                <input placeholder="Search here..." class="search-box" type="text" required/>
+                <button type="submit" id="search-btn" class="button">Search</button>
+              </div>
+              <button type="button" id="dialog-closebtn" class="">
+                <i id="dialog-dropout" class="fa-solid fa-x"></i>
+              </button>
+          </form>
+        </dialog>
         <div class="header-content">
           <h2>Elements</h2>
           <span> <a href="index.html">Home</a> >> Elements page</span>
@@ -277,6 +288,7 @@
     </footer>
     <!-- BACK TO TOP -->
     <a href="#" class="top"><i class="fa-solid fa-turn-up"></i></a>
+    <div class="next prev"></div>
     <script src="index.js"></script>
   </body>
 </html>
