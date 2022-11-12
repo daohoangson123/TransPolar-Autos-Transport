@@ -168,7 +168,15 @@ $(document).ready(function(){
   // $("#dialog-closebtn").click(function(){
   //   $("#search-dialog").slideUp();
   // });
-//
+
+  //mở coplapse content
+  //JQ
+  $(".coplapse__btn").click(function(){
+    $(this).toggleClass("coplapse__btn--gb");
+    $(this).children(".coplapse__down").toggleClass("hide");
+    $(this).children(".coplapse__up").toggleClass("show");
+    $(this).next().slideToggle();
+  });
 });
 
 //mở search dialog = JS =

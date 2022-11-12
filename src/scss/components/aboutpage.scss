@@ -278,6 +278,43 @@
 }
 
 //SECT5
+.about__sect5 {
+    background: $bg-grey;
+    justify-content: space-between;
+}
+
+.ser-sect5__coplapse {
+    width: 47%;
+}
+
+.abt-sect5__left-item {
+    max-height: 35rem;
+}
+
+.coplapse {
+    font-size: 2rem;
+    border: .1rem solid $font-color;
+    cursor: pointer;
+}
+
+.coplapse__btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-weight: $font-weight;
+}
+
+.coplapse__btn--gb {
+    background: $layer2;
+}
+
+.coplapse__up {
+    color: $primary-color;
+}
+
+.coplapse__content {
+    margin: 2rem;
+}
 
 //RESPONSIVE
 
@@ -344,6 +381,19 @@
 }
 
 //SECT4
+
+//SECT5
+.about__sect5 {
+    flex-wrap: wrap;
+}
+
+.ser-sect5__coplapse {
+    width: 100%;
+}
+
+.abt-sect5__left-item {
+    max-height: fit-content;
+}
 
 }
 
