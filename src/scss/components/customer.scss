@@ -65,6 +65,26 @@
     color: $bg-color;
 }
 
+.customer-dot__control {
+    display: flex;
+    position: absolute;
+    top: 45rem;
+    left: 20rem;
+}
+
+.ctm__dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $bg-color;
+    border-radius: $border-radius-full;
+    margin: .5rem;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.ctm__dot:hover {
+    background: $primary-color;
+}
 //RESPONSIVE
 
 @media only screen and (max-width: 600px) {

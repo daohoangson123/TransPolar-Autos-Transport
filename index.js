@@ -67,6 +67,56 @@ prevSlide.onclick = function () {
   });
 };
 
+//
+let qouteblock = document.querySelectorAll(".customer__content");
+
+// loop through slides and set each slides translateX
+qouteblock.forEach((qoute, indx) => {
+  qoute.style.transform = `translateX(${indx * 100}%)`;
+})
+
+// current slide counter
+let curQoute = 0;
+// maximum number of slides
+let maxQoute = qouteblock.length - 1;
+
+// select next slide button
+let nextQoute = document.querySelector(".ctm__dot--2");
+
+// add event listener and navigation functionality
+nextQoute.onclick = function () {
+
+  // check if current slide is the last and reset current slide
+  if (curQoute === maxQoute) {
+    curQoute = 0;
+  } else {
+    curQoute++;
+  }
+
+  //   move slide by -100%
+  qouteblock.forEach((qoute, indx) => {
+    qoute.style.transform = `translateX(${100 * (indx - curQoute)}%)`;
+  });
+};
+
+// select next slide button
+let prevQoute = document.querySelector(".ctm__dot--1");
+
+// add event listener and navigation functionality
+prevQoute.onclick = function () {
+  // check if current slide is the first and reset current slide to last
+  if (curQoute === 0) {
+    curQoute = maxQoute;
+  } else {
+    curQoute--;
+  }
+
+  //   move slide by 100%
+  qouteblock.forEach((qoute, indx) => {
+    qoute.style.transform = `translateX(${100 * (indx - curQoute)}%)`;
+  });
+};
+
 // Auto Slide
 
 //
