@@ -29,6 +29,11 @@ h5 {
     font-size: 2rem;
 }
 
+h6 {
+    font-size: 1.8rem;
+    color: $font-color;
+}
+
 a,
 button {
     font-family: 'Sarabun', sans-serif;
@@ -168,7 +173,7 @@ section {
     text-align: center;
 
     span {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $font-color;
     }
 }
