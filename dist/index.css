@@ -1521,7 +1521,7 @@ hr {
   justify-content: space-between;
 }
 
-.ser-sect5__coplapse {
+.ser-sect5__copllapse {
   width: 47%;
 }
 
@@ -1529,28 +1529,28 @@ hr {
   max-height: 40rem;
 }
 
-.coplapse {
+.copllapse {
   font-size: 2rem;
   border: 0.1rem solid #636466;
   cursor: pointer;
 }
 
-.coplapse__btn {
+.copllapse__btn {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   font-weight: 700;
 }
 
-.coplapse__btn--gb {
+.copllapse__btn--gb {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.coplapse__up {
+.copllapse__up {
   color: #f52029;
 }
 
-.coplapse__content {
+.copllapse__content {
   margin: 2rem;
 }
 
@@ -1596,7 +1596,7 @@ hr {
   .about__sect5 {
     flex-wrap: wrap;
   }
-  .ser-sect5__coplapse {
+  .ser-sect5__copllapse {
     width: 100%;
   }
   .abt-sect5__left-item {

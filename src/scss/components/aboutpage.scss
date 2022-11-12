@@ -283,7 +283,7 @@
     justify-content: space-between;
 }
 
-.ser-sect5__coplapse {
+.ser-sect5__copllapse {
     width: 47%;
 }
 
@@ -291,28 +291,28 @@
     max-height: 40rem;
 }
 
-.coplapse {
+.copllapse {
     font-size: 2rem;
     border: .1rem solid $font-color;
     cursor: pointer;
 }
 
-.coplapse__btn {
+.copllapse__btn {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
     font-weight: $font-weight;
 }
 
-.coplapse__btn--gb {
+.copllapse__btn--gb {
     background: $layer2;
 }
 
-.coplapse__up {
+.copllapse__up {
     color: $primary-color;
 }
 
-.coplapse__content {
+.copllapse__content {
     margin: 2rem;
 }
 
@@ -387,7 +387,7 @@
     flex-wrap: wrap;
 }
 
-.ser-sect5__coplapse {
+.ser-sect5__copllapse {
     width: 100%;
 }
 
