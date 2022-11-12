@@ -1,6 +1,27 @@
 @import "../globals/variables.scss";
 
 //SECT1
+.ser-sect1__services-list--layout {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        font-size: 1.8rem;
+        margin: 2rem 0;
+
+        .ser-sect1-ser-list__item {
+            width: max-content;
+            font-weight: $font-weight;
+
+            span {
+                color: $primary-color;
+            }
+        }
+}
+
+.ser-sect1-body__img {
+    margin: 0;
+    width: 47%;
+    min-height: 45rem;
+}
 
 //SECT2
 
@@ -91,7 +112,22 @@
     }
 }
 
-@media only screen and (max-width: 425px) { 
+@media only screen and (max-width: 900px) {
+//SECT1
+    .ser-sect1-body__img {
+        margin-bottom: 2rem;
+        width: 100%;
+        min-height: 30rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    //SECT1
+    .ser-sect1__services-list--layout {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        font-size: 1.6rem;
+    } 
+    //
     .ser-l2__items-wrapper {
         height: 10rem;
     }

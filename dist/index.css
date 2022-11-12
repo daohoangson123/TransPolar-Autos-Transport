@@ -120,7 +120,7 @@ section {
 
 .container {
   margin: auto;
-  padding: 5rem 9rem;
+  padding: 5rem 10rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,8 +180,7 @@ section {
 
 .button:hover {
   background: #ff5252;
-  transform: scale(1.1);
-  color: #181d2e;
+  box-shadow: 0 0 0.5rem 0.5rem #636466;
 }
 
 nav {
@@ -349,7 +348,8 @@ nav {
   font-size: 2rem;
 }
 #search-dialog .search__div #dialog-closebtn:hover {
-  transform: scale(1.2);
+  background: #ff5252;
+  box-shadow: 0 0 0.2rem 0.2rem #636466;
 }
 
 .head-btn {
@@ -1543,6 +1543,26 @@ hr {
     width: 100%;
   }
 }
+.ser-sect1__services-list--layout {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+.ser-sect1__services-list--layout .ser-sect1-ser-list__item {
+  width: max-content;
+  font-weight: 700;
+}
+.ser-sect1__services-list--layout .ser-sect1-ser-list__item span {
+  color: #f52029;
+}
+
+.ser-sect1-body__img {
+  margin: 0;
+  width: 47%;
+  min-height: 45rem;
+}
+
 .services__sect2 {
   background: #f1f1f7;
 }
@@ -1608,7 +1628,19 @@ hr {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2) 20%, rgba(0, 0, 0, 0.8));
 }
 
+@media only screen and (max-width: 900px) {
+  .ser-sect1-body__img {
+    margin-bottom: 2rem;
+    width: 100%;
+    min-height: 30rem;
+  }
+}
 @media only screen and (max-width: 425px) {
+  .ser-sect1__services-list--layout {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    font-size: 1.6rem;
+  }
   .ser-l2__items-wrapper {
     height: 10rem;
   }

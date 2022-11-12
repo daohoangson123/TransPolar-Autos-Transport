@@ -188,7 +188,8 @@ nav {
         }
 
         #dialog-closebtn:hover {
-            transform: scale(1.2);
+            background: $button-hover-color;
+            box-shadow: 0 0 .2rem .2rem $font-color;
         }
     }
 }
