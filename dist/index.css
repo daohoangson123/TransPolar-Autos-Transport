@@ -949,20 +949,22 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 50rem;
+  position: relative;
 }
 
 .customer__wrapper {
   position: relative;
   display: flex;
-  max-width: 800px;
-  height: 100%;
-  overflow: hidden;
+  max-width: 80%;
+  height: 80%;
   padding: 10rem 0 0 8rem;
+  overflow: hidden;
 }
 
 .customer__content {
   position: absolute;
+  width: 100%;
   transition: all 0.5s ease-in-out;
 }
 
@@ -971,12 +973,12 @@ nav {
 }
 
 .ctm-ctn__icon {
-  font-size: 6rem;
+  font-size: clamp(3rem, 4vw, 6rem);
   color: #fff;
 }
 
 .customer__quote {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 4vw, 2rem);
   color: #fff;
   margin-bottom: 2rem;
 }
@@ -1005,8 +1007,7 @@ nav {
 .customer-dot__control {
   display: flex;
   position: absolute;
-  top: 55rem;
-  left: 15rem;
+  left: 20%;
 }
 
 .ctm__dot {
@@ -1026,12 +1027,10 @@ nav {
 @media only screen and (max-width: 600px) {
   .customer__wrapper {
     padding: 2rem;
+    max-width: 100%;
   }
   .ctm-ctn__top {
-    padding: 5rem 2rem;
-  }
-  .customer-dot__control {
-    top: 60rem;
+    padding: 2rem 1rem;
   }
 }
 .article {
