@@ -212,11 +212,17 @@ nav {
 }
 
 .search-btn:hover {
-    box-shadow: 0 0 .4rem .2rem  $primary-color;
+    box-shadow: 0 0 .4rem .2rem  $border-color-light;
+}
+
+.dark-btn:hover {
+    box-shadow: 0 0 .4rem .2rem  $border-color-light;
+    background: $layer2;
 }
 
 .dark-btn {
-    background-color: transparent;
+    border-radius: $border-radius-full;
+    background: transparent;
     color: $dropdown-color;
 }
 
@@ -327,7 +333,7 @@ nav {
     transition: .3s ease-in-out;
     border-radius: $border-radius-full;
     background-color: $layer3;
-    z-index: 2;
+    z-index: 1;
 }
 
 .prev{

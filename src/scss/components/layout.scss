@@ -57,6 +57,12 @@ section {
     padding-top: 5rem;
 }
 
+//
+.dark-theme {
+    color: $bg-color !important;
+    background: $footer-bglight !important;
+}
+
 // BACK TO TOP BUTTON
 
 .top {

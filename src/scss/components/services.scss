@@ -14,6 +14,7 @@
 .ser-layout1__body {
     &--layout {
         justify-content: space-between;
+        gap: 3rem;
     }
 }
 
@@ -24,7 +25,6 @@
         border-radius: $border-radius;
         width: 31%;
         padding: 6rem 4rem;
-        margin-bottom: 2rem;
     }
 }
 
@@ -89,6 +89,7 @@
         text-align: left;
         background-color: $bg-color;
         justify-content: space-between;
+        gap: 1.5rem;
     }
 }
 
@@ -148,7 +149,7 @@
 
 //RESPONSIVE
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 //SERVICES
 
 //TOP
@@ -181,7 +182,6 @@
 
 .ser-layout2__items {
     width: 48%;
-    margin-bottom: 2rem;
 }
 
 }

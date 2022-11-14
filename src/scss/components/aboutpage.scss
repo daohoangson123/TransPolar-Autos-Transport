@@ -4,6 +4,7 @@
 
 .about__sect1 {
     justify-content: space-between;
+    gap: 3rem;
 }
 
 //LEFT
@@ -15,7 +16,7 @@
 
 .abt-l2-sub__content--sect1 {
     padding-top: 3rem;
-    padding-right: 3rem;
+    gap: 2rem;
 }
 
 //RIGHT
@@ -65,7 +66,7 @@
 }
 
 .abt-sect2__text {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: $primary-color;
     font-weight: bold;
     line-height: 5rem;
@@ -319,7 +320,7 @@
 //RESPONSIVE
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 //SECT1
 
 .about__sect1 {

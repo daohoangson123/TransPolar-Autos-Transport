@@ -8,6 +8,7 @@
 
 .about-layout1__body {
     justify-content: space-between;
+    gap: 5rem;
 }
 
 //IMG-ONLY
@@ -45,6 +46,7 @@
 .about__mid {
     background: $bg-grey;
     justify-content: space-between;
+    gap: 5rem;
 }
 
 .about-mid__cover {
@@ -121,6 +123,7 @@
 
 .about-layout2__body{
     justify-content: space-between;
+    gap: 5rem;
 }
 
 .abt-l2__items {
@@ -139,24 +142,24 @@
 //ICON-CONTENT
 
 .abt-l2__subitems {
+    width: 47%;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 47%;
+    gap: 3rem;
 }
 
 .abt-l2-sub__content {
     background: $bg-grey;
     border-radius: $border-radius;
     padding: 3rem;
-    margin-bottom: 2rem;
-    width: fit-content;
+    width: 100%;
     min-height: 17rem;
+    gap: 2rem;
 }
 
 .abt-l2-sub__icon {
     color: $primary-color;
     font-size: 3rem;
-    margin-right: 2rem;
 }
 
 .abt-l2-sub__text {
@@ -259,7 +262,7 @@
 
 //RESPONSIVE
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 // ABOUT
 
 // TOP
@@ -274,7 +277,6 @@
 
 .abt-l1__img {
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 //CONTENT-ONLY
@@ -292,7 +294,6 @@ flex-wrap: wrap;
 
 .about-mid__cover {
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 // BOT
@@ -305,7 +306,6 @@ flex-wrap: wrap;
 
 .abt-l2__items {
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 //ICON-CONTENT

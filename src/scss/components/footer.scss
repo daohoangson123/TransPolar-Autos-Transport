@@ -69,13 +69,13 @@ footer {
 
 .fter-top__right {
     justify-content: space-between;
+    gap: 4rem;
 }
 
 //RIGHT CONTENT
 
 .fter-tr__items {
     min-width: 15vw;
-    margin-bottom: 2rem;
     font-weight: 600;
 
     span {
@@ -123,7 +123,7 @@ hr {
 
 // RESPONSIVE
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     //TOP
 
     .footer__top, .fter-top__right {
@@ -138,6 +138,8 @@ hr {
 
     .fter-top__right {
         width: 100%;
+        justify-content: unset;
+        gap: 1rem;
     }
 
     .fter-tr__items {
@@ -152,7 +154,8 @@ hr {
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
+
     hr {
         margin: 0 2rem;
     }
