@@ -74,6 +74,10 @@ section {
   background: #222 !important;
 }
 
+nav.dark-theme {
+  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
+}
+
 .top {
   display: inline-flex;
   justify-content: center;
@@ -193,6 +197,11 @@ section {
   box-shadow: 0 0 0.5rem 0.5rem #636466;
 }
 
+h1 span {
+  text-shadow: 0.2rem 0.2rem #f52029;
+  -webkit-text-stroke: 0.1rem #fff;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -206,6 +215,10 @@ nav {
 .stickyNav {
   background: #fff;
   box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.stickyNav h1 span {
+  text-shadow: none;
+  -webkit-text-stroke: unset;
 }
 .stickyNav a {
   color: #181d2e;
@@ -420,8 +433,8 @@ nav {
 
 .drop-content-hidden {
   position: absolute;
-  width: 90vw;
-  top: 4.6rem;
+  width: 28rem;
+  top: 5rem;
   right: 0;
   text-align: center;
 }
@@ -872,7 +885,7 @@ nav {
   text-align: left;
   background-color: #fff;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .ser-layout2__items {
@@ -1194,15 +1207,17 @@ footer {
   margin-right: 4rem;
 }
 
-.fter-tl__content i {
-  color: #f52029;
-  font-size: 3rem;
-}
 .fter-tl__content a {
-  display: inline-block;
   font-weight: 700;
   font-size: 3.2rem;
   width: max-content;
+}
+.fter-tl__content a i {
+  color: #f52029;
+  font-size: 3rem;
+}
+.fter-tl__content a span {
+  text-shadow: 0.3rem 0.3rem #f52029;
 }
 .fter-tl__content p {
   font-size: 1.8rem;
@@ -1241,6 +1256,7 @@ footer {
 .fter-tr__items span {
   font-size: 2rem;
   color: #fff;
+  text-shadow: 0.2rem 0.2rem #f52029;
 }
 .fter-tr__items a {
   display: block;

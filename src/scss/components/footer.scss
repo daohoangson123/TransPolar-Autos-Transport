@@ -17,16 +17,19 @@ footer {
 
 .fter-tl__content {
 
-    i {
-        color: $primary-color;
-        font-size: 3rem;
-    }
-
     a {
-        display: inline-block;
         font-weight: $font-weight;
         font-size: 3.2rem;
         width: max-content;
+
+        i {
+            color: $primary-color;
+            font-size: 3rem;
+        }
+
+        span {
+            text-shadow: .3rem .3rem $primary-color;
+        }
     }
 
     p {
@@ -81,6 +84,7 @@ footer {
     span {
         font-size: 2rem;
         color: $bg-color;
+        text-shadow: .2rem .2rem $primary-color;
     }
 
     a {
