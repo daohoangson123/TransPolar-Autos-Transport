@@ -46,7 +46,6 @@
 }
 
 .content__bot--img {
-
     img {
         width: 8rem;
         height: 8rem;
@@ -68,8 +67,8 @@
 .customer-dot__control {
     display: flex;
     position: absolute;
-    top: 55rem;
-    left: 15rem;
+    top: 45rem;
+    left: 20rem;
 }
 
 .ctm__dot {
@@ -85,19 +84,15 @@
 .ctm__dot:hover {
     background: $primary-color;
 }
+
 //RESPONSIVE
 
 @media only screen and (max-width: 600px) {
-
     .customer__wrapper {
         padding: 2rem;
     }
     
     .ctm-ctn__top {
         padding: 5rem 2rem;
-    }
-
-    .customer-dot__control {
-        top: 60rem;
     }
 }

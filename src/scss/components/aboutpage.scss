@@ -4,6 +4,7 @@
 
 .about__sect1 {
     justify-content: space-between;
+    min-height: 53rem;
     gap: 3rem;
 }
 
@@ -63,6 +64,7 @@
     font-weight: bold;
     font-size: clamp(4rem, 4vw, 5rem);
     line-height: 5rem;
+    transition: 1s ease-in-out;
 }
 
 .abt-sect2__text {
@@ -73,13 +75,6 @@
 }
 
 //COUNT-ANIMATION
-:root {
-    --from: 0;
-    --to2500: 2500;
-    --to1500: 1500;
-    --to1280: 1280;
-    --to3020: 3020;
-}
 
 @property --n {
     syntax: "<integer>";
@@ -88,59 +83,20 @@
     
 }
 
-.counter-1 {
-    animation: animate1 2s forwards;
-}
-
-.counter-2 {
-    animation: animate2 2s forwards;
-}
-
-.counter-3 {
-    animation: animate3 2s forwards;
-}
-
-.counter-4 {
-    animation: animate4 2s forwards;
+.counter {
+    animation: count-animate 2s forwards;
 }
 
 .abt-sect2__counter::before {
     content: counter(num);
 }
 
-@keyframes animate1 {
+@keyframes count-animate {
     from {
         --n: var(--from);
     }
     to {
-        --n: var(--to2500);
-    }
-}
-
-@keyframes animate2 {
-    from {
-        --n: var(--from);
-    }
-    to {
-        --n: var(--to1500);
-    }
-}
-
-@keyframes animate3 {
-    from {
-        --n: var(--from);
-    }
-    to {
-        --n: var(--to1280);
-    }
-}
-
-@keyframes animate4 {
-    from {
-        --n: var(--from);
-    }
-    to {
-        --n: var(--to3020);
+        --n: var(--to);
     }
 }
 

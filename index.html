@@ -70,7 +70,7 @@
             </li>
             <li id="" class="navbar-item">
               <!-- DROPDOWN MENU-->
-              <button id="dropbtn-main" class="dropbtn">
+              <button type="menu" id="dropbtn-main" class="dropbtn">
                 Pages &nbsp; <i class="fa fa-angle-down"></i>
               </button>
               <div class="dropdown-content dropdown-content-main">
@@ -86,13 +86,13 @@
           </ul>
           <!-- SEARCH-->
           <div id="search">
-            <button class="head-btn search-btn">
+            <button type="menu" class="head-btn search-btn">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
           <!-- DARKMODE -->
           <div id="darkmode">
-            <button class="head-btn dark-btn">
+            <button type="button" class="head-btn dark-btn">
               <i class="fa-regular fa-moon"></i>
               <i class="fa-regular fa-sun hide"></i>
             </button>
@@ -101,14 +101,14 @@
         <div class="hidden-nav">
           <!-- DARKMODE RES-->
           <div id="darkmode1">
-            <button class="head-btn dark-btn">
+            <button type="button" class="head-btn dark-btn">
               <i class="fa-regular fa-moon"></i>
               <i class="fa-regular fa-sun hide"></i>
             </button>
           </div>
           <!-- HIDDEN MENU-->
           <div class="hidden-menu">
-            <button id="dropbtn-hidden" class="dropbtn dropbtn-hidden">
+            <button type="menu" id="dropbtn-hidden" class="dropbtn dropbtn-hidden">
               <i id="dropin" class="fa fa-bars"></i>
               <i id="dropout" class="fa-solid fa-x dropout"></i>
             </button>
@@ -118,7 +118,7 @@
               <a href="" class="dropdown-item">Pages</a>
               <a href="contact.html" class="dropdown-item">Contact</a>
               <div id="search">
-                <button class="head-btn search-btn">
+                <button type="menu" class="head-btn search-btn">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
@@ -187,11 +187,11 @@
     <main>
       <!-- ABOUT -->
       <section id="about">
-        <div class="sect-heading">
+        <div class="sect-heading reveal">
           <h3>ABOUT US</h3>
         </div>
         <!-- ABOUT TOP -->
-        <div class="about__top container">
+        <div class="about__top container reveal">
           <div class="about-layout1__body flex">
             <div class="abt-l1__img">
               <img src="img/about/g2.jpg" alt="" />
@@ -223,7 +223,7 @@
           </div>
         </div>
         <!-- ABOUT MID -->
-        <div class="about__mid flex container">
+        <div class="about__mid flex container reveal">
           <div class="about-mid__cover">
             <div class="abt-mid__cover-wrapper">
               <div class="abt-mid__items abt-mid__items--left"></div>
@@ -244,7 +244,7 @@
           </div>
         </div>
         <!-- ABOUT BOT -->
-        <div class="about__bot about-layout2__body flex container">
+        <div class="about__bot about-layout2__body flex container reveal">
           <div class="abt-l2__items">
             <h6>SECURE COURIER.</h6>
             <h4>Secure Courier For Small & Big Packages</h4>
@@ -286,7 +286,7 @@
           </div>
         </div>
         <!-- ABOUT VIDEO -->
-        <div class="about__video flex container">
+        <div class="about__video flex container reveal">
           <div class="about-video__play flex">
             <div class="wave-animation flex">
               <div class="circle"></div>
@@ -316,13 +316,13 @@
       </section>
       <!-- SERVICES -->
       <section id="services">
-        <div class="sect-heading">
+        <div class="sect-heading reveal">
           <span>WHAT WE DO</span>
           <h3>OUR SERVICES</h3>
         </div>
         <!-- SERVICES TOP -->
         <div
-          class="ser-top__body--layout ser-layout1__body--layout flex container"
+          class="ser-top__body--layout ser-layout1__body--layout flex container reveal"
         >
           <div class="ser-layout1__items ser-layout1__items--layout">
             <div class="ser-l1-items__icon">
@@ -354,7 +354,7 @@
         </div>
         <!-- SERVICES BOT -->
         <div
-          class="ser-bot__body--layout ser-layout2__body--layout flex container"
+          class="ser-bot__body--layout ser-layout2__body--layout flex container reveal"
         >
           <div class="ser-layout2__items">
             <div class="ser-l2__items-wrapper">
@@ -406,7 +406,7 @@
         </div>
       </section>
       <!-- CUSTOMER -->
-      <section class="customer">
+      <section class="customer reveal">
         <div class="customer__background">
           <div class="customer__wrapper">
             <div class="customer__content customer__content--content-1">
@@ -484,12 +484,12 @@
       </section>
       <!-- ARTICLE-->
       <section class="article container">
-        <div class="sect-heading">
+        <div class="sect-heading reveal">
           <span>OUR ARTICLE </span>
           <h3>STAY UPDATED WITH OUR NEWS FEED</h3>
         </div>
         <!-- ARTICLE TOP -->
-        <div class="article__top">
+        <div class="article__top reveal">
           <div class="art-top__body flex">
             <div class="article__items">
               <div class="art-items__cover">
@@ -551,7 +551,7 @@
           </div>
         </div>
         <!-- ARTICLE BOT -->
-        <div class="article__bot">
+        <div class="article__bot reveal">
           <div class="art-bot__body flex">
             <p>Don't Miss Our Future Updates! Get Subscribed Today!</p>
             <form action="" class="art-bot__form">
@@ -561,14 +561,14 @@
                 placeholder="Type Your Email Address"
                 required
               />
-              <button>Subscrible</button>
+              <button type="submit">Subscrible</button>
             </form>
           </div>
         </div>
       </section>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer class="reveal">
       <!-- FOOTER TOP -->
       <div class="footer__top flex container">
         <!-- TOP LEFT -->

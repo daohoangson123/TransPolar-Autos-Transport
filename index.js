@@ -23,6 +23,7 @@ window.onscroll = function () {
 
 
 //Open Search dialog
+let searchDialog = document.getElementById("search-dialog");
 
 let searchBtn = document.getElementsByClassName("search-btn");
 //dùng loop để lấy tất cả các search-btn
@@ -40,7 +41,6 @@ for (let i = 0; i < searchBtn.length; i++) {
 //đóng search dialog bằng nút trong dialog = JS =
 
 let closeDialog = document.getElementById("dialog-closebtn");
-let searchDialog = document.getElementById("search-dialog");
 
 closeDialog.onclick = function () {
   if (window.innerWidth < 900) {
@@ -163,6 +163,44 @@ prevQoute.onclick = function () {
 // Auto Slide
 
 //
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("showcontent");
+    } else {
+      reveals[i].classList.remove("showcontent");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+//
+
+function counterRun() {
+  var counterUp = document.querySelectorAll(".abt-sect2__counter");
+  console.log(counterUp);
+
+  for (var i = 0; i < counterUp.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = counterUp[0].getBoundingClientRect().top;
+    let elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      counterUp[i].classList.add("counter");
+    } else {
+      counterUp[i].classList.remove("counter");
+    }
+  }
+}
+
+window.addEventListener("scroll", counterRun);
 
 // ===JQ=== jquery có thể mix với js
 $(document).ready(function(){
