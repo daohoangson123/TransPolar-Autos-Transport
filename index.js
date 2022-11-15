@@ -77,25 +77,28 @@ let maxSlide = slides.length - 1;
 let nextSlide = document.querySelector(".next");
 
 // add event listener and navigation functionality
+if (nextSlide) {
 nextSlide.onclick = function () {
+// check if current slide is the last and reset current slide
+if (curSlide === maxSlide) {
+  curSlide = 0;
+} else {
+  curSlide++;
+}
 
-  // check if current slide is the last and reset current slide
-  if (curSlide === maxSlide) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
-
-  // move slide by -100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-  });
+// move slide by -100%
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+});
 };
+};
+
 
 // select next slide button
 let prevSlide = document.querySelector(".prev");
 
 // add event listener and navigation functionality
+if (prevSlide) {
 prevSlide.onclick = function () {
   // check if current slide is the first and reset current slide to last
   if (curSlide === 0) {
@@ -108,6 +111,7 @@ prevSlide.onclick = function () {
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
+};
 };
 
 // Click Testimonial
@@ -123,12 +127,11 @@ let curQoute = 0;
 // maximum number of slides
 let maxQoute = qouteblock.length - 1;
 
-// select next slide button
+
 let nextQoute = document.querySelector(".ctm__dot--2");
 
-// add event listener and navigation functionality
+if (nextQoute) {
 nextQoute.onclick = function () {
-
   // check if current slide is the last and reset current slide
   if (curQoute === maxQoute) {
     curQoute = 0;
@@ -141,11 +144,12 @@ nextQoute.onclick = function () {
     qoute.style.transform = `translateX(${100 * (indx - curQoute)}%)`;
   });
 };
+};
 
 // select next slide button
 let prevQoute = document.querySelector(".ctm__dot--1");
 
-// add event listener and navigation functionality
+if (prevQoute) {
 prevQoute.onclick = function () {
   // check if current slide is the first and reset current slide to last
   if (curQoute === 0) {
@@ -159,7 +163,7 @@ prevQoute.onclick = function () {
     qoute.style.transform = `translateX(${100 * (indx - curQoute)}%)`;
   });
 };
-
+};
 // Auto Slide
 
 //
@@ -266,3 +270,4 @@ $(document).ready(function(){
     $(this).next().slideToggle();
   });
 });
+

@@ -151,7 +151,7 @@ nav.dark-theme {
 
 @media only screen and (max-width: 1600px) {
   .container {
-    padding: 5rem 15rem;
+    padding: 5rem 10rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1048,7 +1048,7 @@ nav {
     max-width: 100%;
   }
   .ctm-ctn__top {
-    padding: 2rem 1rem;
+    padding: 5rem 2rem;
   }
 }
 .article {
@@ -1316,7 +1316,7 @@ hr {
   .fter-top__right {
     width: 100%;
     justify-content: unset;
-    gap: 1rem;
+    gap: 2rem;
   }
   .fter-tr__items {
     min-width: 15rem;
