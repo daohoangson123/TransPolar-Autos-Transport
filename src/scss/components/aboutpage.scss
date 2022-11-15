@@ -4,7 +4,7 @@
 
 .about__sect1 {
     justify-content: space-between;
-    min-height: 53rem;
+    min-height: 50rem;
     gap: 3rem;
 }
 
@@ -24,7 +24,8 @@
 
 .abt-l1__img--sect1 {
     width: 40%;
-    height: 35rem;
+    // height: 35rem;
+    height: max-content;
     margin: auto 0;
 }
 
@@ -53,8 +54,8 @@
 //SECT2
 
 .abt-sect2__body {
-    grid-template-columns: repeat(auto-fit, 15rem);
-    gap: 3rem 0;
+    grid-template-columns: repeat(auto-fit, min(45%, 20rem));
+    gap: 3rem;
     justify-content: space-around;
     text-align: center;
 }
@@ -65,6 +66,7 @@
     font-size: clamp(4rem, 4vw, 5rem);
     line-height: 5rem;
     transition: 1s ease-in-out;
+    -webkit-text-stroke: .1rem black;
 }
 
 .abt-sect2__text {
@@ -92,11 +94,28 @@
 }
 
 @keyframes count-animate {
-    from {
+    0% {
         --n: var(--from);
+        color: red;
+        transform: scale(.5);
     }
-    to {
+    20% {
+        color: orange;
+    }
+    40% {
+        color: yellow;
+        transform: scale(1.2);
+    }
+    60% {
+        color: green;
+    }
+    80% {
+        color: blue;
+    }
+    100% {
         --n: var(--to);
+        color: black;
+        transform: scale(1);
     }
 }
 
@@ -106,6 +125,7 @@
     background-image: url(../img/about/banner1.jpg);
     min-height: 35rem;
     justify-content: space-around;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -238,6 +258,7 @@
 .about__sect5 {
     background: $bg-grey;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .ser-sect5__copllapse {

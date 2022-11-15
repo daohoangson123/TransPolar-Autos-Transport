@@ -195,7 +195,7 @@ function counterRun() {
   for (var i = 0; i < counterUp.length; i++) {
     let windowHeight = window.innerHeight;
     let elementTop = counterUp[0].getBoundingClientRect().top;
-    let elementVisible = 50;
+    let elementVisible = 10;
 
     if (elementTop < windowHeight - elementVisible) {
       counterUp[i].classList.add("counter");
