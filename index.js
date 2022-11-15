@@ -173,9 +173,10 @@ function reveal() {
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("showcontent");
-    } else {
-      reveals[i].classList.remove("showcontent");
     }
+    // else {
+    //   reveals[i].classList.remove("showcontent");
+    // }
   }
 }
 
