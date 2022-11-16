@@ -191,6 +191,7 @@
     z-index: 0;
     min-width: 32rem;
     min-height: 60rem;
+    position: relative;
 
     .about-video__play {
         justify-content: center;
@@ -256,6 +257,46 @@
 
         h4 {
             color: $bg-color;
+        }
+    }
+}
+
+.abt-video__popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: $layer;
+    border: none;
+    top: 0;
+    transform: scale(0);
+    transition: transform .5s ease-in-out;
+    z-index: 2;
+
+    #video-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: min(90vw, 100rem);
+        height: 50rem;
+
+        .video-popup__close-btn {
+            display: flex;
+            justify-content: end;
+
+            i {
+                font-size: 2rem;
+                color: $bg-color;
+            }
+
+            i:hover {
+                cursor: pointer;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 70%;
         }
     }
 }
@@ -334,6 +375,12 @@ flex-wrap: wrap;
     .abt-mid-items__content {
         p {
             margin-bottom: 1rem;
+        }
+    }
+
+    .abt-video__popup {
+        #video-content {
+            height: 30rem;
         }
     }
 }

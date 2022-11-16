@@ -301,7 +301,7 @@
               <div class="circle" style="animation-delay: 2s"></div>
               <div class="circle" style="animation-delay: 3s"></div>
               <div class="circle" style="animation-delay: 4s"></div>
-              <a class="playbtn">
+              <a id="open-video" class="playbtn">
                 <i class="fa-solid fa-play"></i>
               </a>
             </div>
@@ -320,6 +320,14 @@
             </div>
           </div>
         </div>
+        <dialog id="video-dialog" class="abt-video__popup" open="">
+          <div id="video-content">
+            <div id="close-video" class="video-popup__close-btn">
+              <i id="video-close" class="fa-solid fa-x"></i>
+            </div>
+            <iframe src="https://player.vimeo.com/video/395483299?h=f7c7d5cb59" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+        </dialog>
       </section>
       <!-- SERVICES -->
       <section id="services">

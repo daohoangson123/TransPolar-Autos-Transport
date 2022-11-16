@@ -34,7 +34,7 @@ for (let i = 0; i < searchBtn.length; i++) {
     let showSearchDialog = function () {
       searchDialog.style.transform = "translateY(0%)";
     };
-    setTimeout(showSearchDialog , 0)
+    setTimeout(showSearchDialog , 0);
   }
 }
 
@@ -54,7 +54,25 @@ closeDialog.onclick = function () {
       searchDialog.style.transform = "translateY(0%)";
     }
   }
-  setTimeout(resetTransform , 1000)
+  setTimeout(resetTransform , 1000);
+}
+
+// Mở video dialog
+let videoDialog = document.getElementById("video-dialog");
+let openVideoDialog = document.getElementById("open-video");
+
+if (openVideoDialog) {
+  openVideoDialog.onclick = function () {
+      videoDialog.style.transform = "scale(1)";
+  }
+}
+
+let closeVideoDialog = document.getElementById("video-close");
+
+if (closeVideoDialog) {
+  closeVideoDialog.onclick = function () {
+    videoDialog.style.transform = "scale(0)";
+  }
 }
 
 //Copllapsible content
@@ -167,9 +185,9 @@ prevQoute.onclick = function () {
 // Auto Slide
 
 //
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+let reveals = document.querySelectorAll(".reveal");
 
+function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight;
     let elementTop = reveals[i].getBoundingClientRect().top;
@@ -184,14 +202,15 @@ function reveal() {
   }
 }
 
-window.addEventListener("scroll", reveal);
+if (reveals) {
+  window.addEventListener("scroll", reveal);
+}
 
 //
 
-function counterRun() {
-  var counterUp = document.querySelectorAll(".abt-sect2__counter");
-  console.log(counterUp);
+let counterUp = document.querySelectorAll(".abt-sect2__counter");
 
+function counterRun() {
   for (var i = 0; i < counterUp.length; i++) {
     let windowHeight = window.innerHeight;
     let elementTop = counterUp[0].getBoundingClientRect().top;
@@ -205,7 +224,9 @@ function counterRun() {
   }
 }
 
-window.addEventListener("scroll", counterRun);
+if (counterUp) {
+  window.addEventListener("scroll", counterRun);
+}
 
 // ===JQ=== jquery có thể mix với js
 $(document).ready(function(){
