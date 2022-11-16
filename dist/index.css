@@ -253,6 +253,7 @@ nav {
 /* NAVBAR */
 #menu {
   display: flex;
+  gap: 2rem;
   align-items: baseline;
 }
 #menu .home a {
@@ -397,15 +398,17 @@ nav {
   height: 4rem;
   border: none;
   font-size: 2rem;
-  margin: 0 0.5rem;
   cursor: pointer;
+}
+
+#search, #darkmode, #darkmode1 {
+  border-radius: 50%;
 }
 
 .search-btn {
   background: #fff;
   border-radius: 50%;
   color: #f52029;
-  margin-left: 2rem;
 }
 
 .search-btn:hover {
@@ -425,6 +428,7 @@ nav {
 
 .hidden-nav {
   display: none;
+  gap: 2rem;
 }
 
 .hidden-menu {
@@ -807,17 +811,17 @@ nav {
   background: rgba(0, 0, 0, 0.8);
   border: none;
   top: 0;
-  transform: scale(0);
-  transition: transform 0.5s ease-in-out;
   z-index: 2;
 }
 .abt-video__popup #video-content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: min(90vw, 100rem);
   height: 50rem;
+  transform-origin: top left;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
 }
 .abt-video__popup #video-content .video-popup__close-btn {
   display: flex;
@@ -917,7 +921,7 @@ nav {
 }
 .ser-l1-items__content a {
   color: #181d2e;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 4vw, 2rem);
   line-height: 2.6rem;
   font-weight: 700;
 }
@@ -940,12 +944,12 @@ nav {
 .ser-layout2__body--layout {
   text-align: left;
   background-color: #fff;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .ser-layout2__items {
-  width: 24%;
+  width: min(45%, 30rem);
   position: relative;
 }
 
@@ -995,9 +999,6 @@ nav {
   }
   .ser-layout2__body--layout {
     flex-wrap: wrap;
-  }
-  .ser-layout2__items {
-    width: 48%;
   }
 }
 .customer__background {
@@ -1095,13 +1096,15 @@ nav {
 }
 
 .art-top__body {
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
   text-align: left;
   padding: 5rem 0;
 }
 
 .article__items {
-  width: 30%;
+  width: clamp(30rem, 45vw, 30%);
   min-height: fit-content;
   background-color: #fff;
   border-radius: 0.6rem;
@@ -1226,9 +1229,6 @@ nav {
 }
 
 @media only screen and (max-width: 900px) {
-  .art-top__body {
-    flex-wrap: wrap;
-  }
   .article__items {
     width: 100%;
     margin-bottom: 2rem;

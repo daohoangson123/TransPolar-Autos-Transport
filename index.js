@@ -60,14 +60,15 @@ closeDialog.onclick = function () {
 // Mở video dialog
 let videoDialog = document.getElementById("video-dialog");
 let openVideoDialog = document.getElementById("open-video");
+let videoContent = document.getElementById("video-content");
 
 if (openVideoDialog) {
   openVideoDialog.onclick = function () {
       videoDialog.style.display = "block";
       let showVideo = function () {
-        videoDialog.style.transform = "scale(1)";
+        videoContent.style.transform = "scale(1) translate(-50%, -50%)";
       };
-      setTimeout(showVideo, 10);
+      setTimeout(showVideo, 100);
   } 
 }
 
@@ -75,12 +76,12 @@ let closeVideoDialog = document.getElementById("video-close");
 
 if (closeVideoDialog) {
   closeVideoDialog.onclick = function () {
-    videoDialog.style.transform = "scale(0)";
+    videoContent.style.transform = "scale(0)";
 
     let resetDisplay = function () {
       videoDialog.style.display = "none";
     };
-    setTimeout(resetDisplay, 1000);
+    setTimeout(resetDisplay, 500);
   }
 }
 

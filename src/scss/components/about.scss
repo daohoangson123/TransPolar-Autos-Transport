@@ -268,17 +268,17 @@
     background: $layer;
     border: none;
     top: 0;
-    transform: scale(0);
-    transition: transform .5s ease-in-out;
     z-index: 2;
 
     #video-content {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         width: min(90vw, 100rem);
         height: 50rem;
+        transform-origin: top left;
+        transform: scale(0);
+        transition: transform .5s ease-in-out;
 
         .video-popup__close-btn {
             display: flex;
