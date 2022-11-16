@@ -63,8 +63,12 @@ let openVideoDialog = document.getElementById("open-video");
 
 if (openVideoDialog) {
   openVideoDialog.onclick = function () {
-      videoDialog.style.transform = "scale(1)";
-  }
+      videoDialog.style.display = "block";
+      let showVideo = function () {
+        videoDialog.style.transform = "scale(1)";
+      };
+      setTimeout(showVideo, 10);
+  } 
 }
 
 let closeVideoDialog = document.getElementById("video-close");
@@ -72,6 +76,11 @@ let closeVideoDialog = document.getElementById("video-close");
 if (closeVideoDialog) {
   closeVideoDialog.onclick = function () {
     videoDialog.style.transform = "scale(0)";
+
+    let resetDisplay = function () {
+      videoDialog.style.display = "none";
+    };
+    setTimeout(resetDisplay, 1000);
   }
 }
 
