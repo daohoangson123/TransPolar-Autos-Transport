@@ -1677,6 +1677,9 @@ hr {
   }
 }
 @media only screen and (max-width: 600px) {
+  .abt-l1__img--sect1 img {
+    height: unset;
+  }
   .abt-sect3__btn {
     width: 100%;
   }
