@@ -6,11 +6,14 @@ footer {
 
 //TOP
 
+.footer__top {
+    gap: 10rem;
+}
+
 // TOP LEFT
 
 .fter-top__left {
     width: 40%;
-    margin-right: 4rem;
 }
 
 //LEFT CONTENT
@@ -70,15 +73,10 @@ footer {
 
 //TOP RIGHT
 
-.fter-top__right {
-    justify-content: space-between;
-    gap: 4rem;
-}
-
 //RIGHT CONTENT
 
 .fter-tr__items {
-    min-width: 15vw;
+    min-width: 15rem;
     font-weight: 600;
 
     span {
@@ -130,6 +128,10 @@ hr {
 @media only screen and (max-width: 1200px) {
     //TOP
 
+    .footer__top {
+        gap: 2rem;
+    }
+
     .footer__top, .fter-top__right {
         flex-wrap: wrap;
     }
@@ -137,7 +139,6 @@ hr {
     .fter-top__left {
         width: 100%;
         margin-bottom: 5rem;
-        margin-right: 0;
     }
 
     .fter-top__right {

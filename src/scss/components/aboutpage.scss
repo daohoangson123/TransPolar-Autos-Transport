@@ -4,6 +4,7 @@
 
 .about__sect1 {
     justify-content: space-between;
+    flex-direction: row-reverse;
     min-height: 50rem;
     gap: 3rem;
 }
@@ -24,8 +25,7 @@
 
 .abt-l1__img--sect1 {
     width: 40%;
-    // height: 35rem;
-    height: max-content;
+    height: 50rem;
     margin: auto 0;
 }
 
@@ -177,7 +177,7 @@
 .about-sect4__body {
     grid-template-columns: repeat(auto-fit, clamp(12rem, 30vw, 35rem));
     gap: 3rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .abt-sect4__text {
@@ -319,8 +319,11 @@
 
 .abt-l1__img--sect1 {
     width: 100%;
-    height: 35rem;
-    margin: 2rem auto;
+    height: unset;
+}
+
+.abt-l1__img--sect1 img {
+    height: 50rem;
 }
 
 .abt-sect1-r__years {
@@ -339,9 +342,9 @@
 
 //SECT2
 
-.about__sect2 {
-    margin-top: 20rem;
-}
+// .about__sect2 {
+
+// }
 
 //SECT3
 
@@ -359,6 +362,10 @@
 }
 
 //SECT4
+
+.about-sect4__body {
+    justify-content: center;
+}
 
 //SECT5
 .about__sect5 {

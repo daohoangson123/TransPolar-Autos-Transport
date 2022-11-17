@@ -15,8 +15,7 @@
 }
 
 .article__items {
-    width: clamp(30rem, 45vw, 30%);
-    min-height: fit-content;
+    width: clamp(30rem, 25vw, 30%);
     background-color: $bg-color;
     border-radius: $border-radius;
 }
@@ -27,7 +26,7 @@
 
 .art-items__cover-wrapper {
     width: inherit;
-    height: 35vh;
+    height: 30rem;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     overflow: hidden;
@@ -162,7 +161,6 @@
 
 .article__items {
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 //BOT

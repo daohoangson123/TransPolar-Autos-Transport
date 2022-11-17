@@ -109,6 +109,11 @@ nav.dark-theme {
     z-index: 1;
 }
 
+.backTopBtn:hover {
+    background: $button-hover-color;
+    box-shadow: 0 0 .5rem .5rem $font-color;
+}
+
 .top i {
     animation: bounce .5s ease-in-out infinite alternate;
 
@@ -152,7 +157,7 @@ nav.dark-theme {
     margin: auto;
     padding: 5rem 30rem;
     // padding: 5rem;
-    // width: min(100%, 1200px);
+    // width: min(90%, 1200px);
 }
 
 @media only screen and (max-width: 1600px) {
@@ -213,16 +218,14 @@ nav.dark-theme {
 
 .button {
     display: inline-block;
-    position: relative;
     text-align: center;
     background: $primary-color;
     font-size: 1.5rem;
     font-weight: $font-weight;
     border-radius: $border-radius;
     border: none;
-    width: fit-content;
-    padding: 1.8rem 3rem;
-    margin-top: 2rem;
+    width: max-content;
+    padding: 2rem 3rem;
     transition: .3s ease-in-out;
     cursor: pointer;
 }

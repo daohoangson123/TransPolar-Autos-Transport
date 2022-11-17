@@ -2,7 +2,7 @@
 
 //NAV
 
-h1 span {
+#logo a {
     text-shadow: .2rem .2rem $primary-color;
     -webkit-text-stroke: .1rem $bg-color;
 }
@@ -12,7 +12,7 @@ nav {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    padding: 3rem 7rem;
+    padding: 3rem 8rem;
     transition: .3s ease-in-out;
     z-index: 2;
 }
@@ -22,8 +22,8 @@ nav {
     background: $bg-color;
     box-shadow: 0 .5rem .5rem .5rem $layer2;
 
-    h1 span {
-        text-shadow: none;
+    #logo a {
+        text-shadow: unset;
         -webkit-text-stroke: unset;
     }
 
@@ -34,6 +34,11 @@ nav {
     #dropbtn-main {
         color: $nav-color;
     }
+
+    #dropbtn-main:hover {
+        color: $primary-color;
+    }
+
 
     .dark-btn {
         color: $nav-color;
