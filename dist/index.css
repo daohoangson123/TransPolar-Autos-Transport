@@ -118,7 +118,6 @@ nav.dark-theme {
 
 .backTopBtn:hover {
   background: #ff5252;
-  box-shadow: 0 0 0.5rem 0.5rem #636466;
 }
 
 .top i {
@@ -174,6 +173,14 @@ nav.dark-theme {
   color: #fff;
 }
 
+.header-banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .header-content {
   position: absolute;
   top: 50%;
@@ -214,12 +221,6 @@ nav.dark-theme {
 
 .button:hover {
   background: #ff5252;
-  box-shadow: 0 0 0.5rem 0.5rem #636466;
-}
-
-#logo a {
-  text-shadow: 0.2rem 0.2rem #f52029;
-  -webkit-text-stroke: 0.1rem #fff;
 }
 
 nav {
@@ -499,6 +500,14 @@ nav {
 }
 .mySlides-4 {
   background-image: url(../img/header/banner4.jpg);
+}
+
+.mySlides::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .slide-content {
@@ -1015,10 +1024,18 @@ nav {
   position: relative;
 }
 
+.customer__background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .customer__wrapper {
   position: relative;
   display: flex;
-  max-width: 80%;
+  width: 70%;
   height: 100%;
   padding: 10rem 0 0 8rem;
   overflow: hidden;
@@ -1031,7 +1048,7 @@ nav {
 }
 
 .ctm-ctn__top {
-  width: min(90%, 50rem);
+  width: min(95%, 50rem);
 }
 
 .ctm-ctn__icon {
@@ -1093,7 +1110,7 @@ nav {
     max-width: 100%;
   }
   .ctm-ctn__top {
-    padding: 5rem 2rem;
+    padding: 1rem;
   }
 }
 .article {
@@ -1185,6 +1202,19 @@ nav {
   color: #f52029;
 }
 
+.article__bot {
+  position: relative;
+}
+
+.article__bot::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.6rem;
+}
+
 .art-bot__body {
   background-image: url(../img/article/banner3.jpg);
   background-size: cover;
@@ -1199,6 +1229,7 @@ nav {
   font-weight: 600;
   text-align: left;
   color: #fff;
+  z-index: 1;
 }
 
 .art-bot__form {
@@ -1207,6 +1238,7 @@ nav {
   grid-gap: 1.6rem;
   margin-left: 2rem;
   width: 60%;
+  z-index: 1;
 }
 .art-bot__form input {
   font-size: 1.6rem;
@@ -1278,9 +1310,6 @@ footer {
   color: #f52029;
   font-size: 3rem;
 }
-.fter-tl__content a span {
-  text-shadow: 0.3rem 0.3rem #f52029;
-}
 .fter-tl__content p {
   font-size: 1.8rem;
   color: #636466;
@@ -1313,7 +1342,6 @@ footer {
 .fter-tr__items span {
   font-size: 2rem;
   color: #fff;
-  text-shadow: 0.2rem 0.2rem #f52029;
 }
 .fter-tr__items a {
   display: block;
@@ -1435,7 +1463,7 @@ hr {
 }
 
 .abt-sect2__text {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
   color: #f52029;
   font-weight: bold;
   line-height: 5rem;
@@ -1457,38 +1485,38 @@ hr {
 @keyframes count-animate {
   0% {
     --n: var(--from);
-    color: red;
     transform: scale(0.5);
   }
-  20% {
-    color: orange;
-  }
-  40% {
-    color: yellow;
+  50% {
     transform: scale(1.2);
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: blue;
   }
   100% {
     --n: var(--to);
-    color: black;
     transform: scale(1);
   }
 }
 .about-sect3__body {
   background-image: url(../img/about/banner1.jpg);
+  background-size: cover;
+  background-position: center;
   min-height: 35rem;
   justify-content: space-around;
   gap: 3rem;
   align-items: center;
+  position: relative;
+}
+
+.about-sect3__body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .abt-sect3__text {
   color: #fff;
+  z-index: 1;
 }
 .abt-sect3__text span {
   font-size: 1.6rem;
@@ -1502,6 +1530,7 @@ hr {
 .abt-sect3__btn {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
+  z-index: 1;
 }
 .abt-sect3__btn .btn__abt--sect3 {
   color: #f52029;

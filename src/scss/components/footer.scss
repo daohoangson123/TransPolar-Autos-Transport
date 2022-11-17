@@ -29,10 +29,6 @@ footer {
             color: $primary-color;
             font-size: 3rem;
         }
-
-        span {
-            text-shadow: .3rem .3rem $primary-color;
-        }
     }
 
     p {
@@ -82,7 +78,6 @@ footer {
     span {
         font-size: 2rem;
         color: $bg-color;
-        text-shadow: .2rem .2rem $primary-color;
     }
 
     a {

@@ -102,6 +102,19 @@
 
 //BOT
 
+.article__bot {
+    position: relative;
+}
+
+.article__bot::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $layer1;
+    border-radius: $border-radius;
+}
+
 .art-bot__body {
     background-image: url(../img/article/banner3.jpg);
     background-size: cover;
@@ -116,6 +129,7 @@
         font-weight: 600;
         text-align: left;
         color: $bg-color;
+        z-index: 1;
     }
 }
 
@@ -125,6 +139,7 @@
     grid-gap: 1.6rem;
     margin-left: 2rem;
     width: 60%;
+    z-index: 1;
 
     input {
         font-size: 1.6rem;
