@@ -29,12 +29,12 @@ let searchBtn = document.getElementsByClassName("search-btn");
 //dùng loop để lấy tất cả các search-btn
 for (let i = 0; i < searchBtn.length; i++) {
   searchBtn[i].onclick = function () {
-    searchDialog.style.transform = "translateY(-100%)"; // đưa về Y-100%
-    searchDialog.style.display = "block"; // chuyển display
+    searchDialog.style.transform = "translateY(-100%)"; // khởi tạo đưa về Y-100%
+    searchDialog.style.display = "block"; // chuyển display sang block vì thẻ dialog default display none
     let showSearchDialog = function () {
       searchDialog.style.transform = "translateY(0%)"; // trả về Y 0%
     };
-    setTimeout(showSearchDialog , 0); // setTimeout để nhận transition
+    setTimeout(showSearchDialog , 0); // dùng bất đồng bộ để nhận transition
   }
 }
 
@@ -43,18 +43,18 @@ for (let i = 0; i < searchBtn.length; i++) {
 let closeDialog = document.getElementById("dialog-closebtn");
 
 closeDialog.onclick = function () {
-  if (window.innerWidth < 900) {
-    searchDialog.style.transform = "translateY(-100%)"; // đưa về Y-100%
-  } else {
+  if (window.innerWidth > 900) {
     searchDialog.style.transform = "translateX(100%)"; // đưa về X 100%
+  } else {
+    searchDialog.style.transform = "translateY(-100%)"; // đưa về Y-100%
   }
-  let resetTransform = function () { // reset lại display và Y
+  let resetTransform = function () { // reset lại display và translate
     searchDialog.style.display = "none";
     if (searchDialog.style.display == "none") {
-      searchDialog.style.transform = "translateY(0%)";
+      searchDialog.style.transform = "translateX(0%)";
     }
   }
-  setTimeout(resetTransform , 1000);
+  setTimeout(resetTransform , 500); // dùng bất đồng bộ để nhận transition
 }
 
 // Mở video dialog
@@ -199,10 +199,14 @@ let reveals = document.querySelectorAll(".reveal");
 function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
+    // console.log(windowHeight);
+    let elementTop = reveals[0].getBoundingClientRect().top; // trả về khoảng cách từ top của window đến top của element
+    // console.log(elementTop);
     let elementVisible = 150;
+    console.log(windowHeight - elementVisible);
 
-    if (elementTop < windowHeight - elementVisible) {
+    if (elementTop < (windowHeight - elementVisible)) {
+      // console.log("hello");
       reveals[i].classList.add("showcontent");
     }
     // else {

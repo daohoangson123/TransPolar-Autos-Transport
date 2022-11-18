@@ -236,11 +236,7 @@ nav {
 
 .stickyNav {
   background: #fff;
-  box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.stickyNav #logo a {
-  text-shadow: unset;
-  -webkit-text-stroke: unset;
+  box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 .stickyNav a {
   color: #181d2e;
@@ -1058,7 +1054,7 @@ nav {
 .customer__wrapper {
   position: relative;
   display: flex;
-  width: 70%;
+  max-width: 70%;
   height: 100%;
   padding-top: 15rem;
   padding-left: 13rem;
@@ -1729,10 +1725,7 @@ hr {
     grid-template-columns: 1fr 1fr;
     width: 70%;
   }
-  .about-sect4__body {
-    justify-content: center;
-  }
-  .about__sect5 {
+  .about-sect5 {
     flex-wrap: wrap;
   }
   .ser-sect5__copllapse {

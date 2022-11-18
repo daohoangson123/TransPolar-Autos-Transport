@@ -15,12 +15,7 @@ nav {
 // class được add khi scrolldown
 .stickyNav {
     background: $bg-color;
-    box-shadow: 0 .5rem .5rem .5rem $layer2;
-
-    #logo a {
-        text-shadow: unset;
-        -webkit-text-stroke: unset;
-    }
+    box-shadow: 0 .2rem .2rem .2rem $layer2;
 
     a {
         color: $nav-color;
