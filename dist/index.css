@@ -1488,7 +1488,6 @@ hr {
   font-size: clamp(4rem, 4vw, 5rem);
   line-height: 5rem;
   transition: 1s ease-in-out;
-  -webkit-text-stroke: 0.1rem black;
 }
 
 .abt-sect2__text {
