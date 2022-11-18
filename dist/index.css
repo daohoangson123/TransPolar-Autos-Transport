@@ -1034,16 +1034,12 @@ nav {
     flex-wrap: wrap;
   }
 }
-.customer__background {
-  background-image: url(../img/customer/banner6.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 60rem;
+.customer {
   position: relative;
+  height: 60rem;
 }
 
-.customer__background::before {
+.customer::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1051,12 +1047,21 @@ nav {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.customer__background {
+  background-image: url(../img/customer/banner6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60rem;
+}
+
 .customer__wrapper {
   position: relative;
   display: flex;
   width: 70%;
   height: 100%;
-  padding: 10rem 0 0 8rem;
+  padding-top: 15rem;
+  padding-left: 13rem;
   overflow: hidden;
 }
 
@@ -1105,7 +1110,7 @@ nav {
 .customer-dot__control {
   display: flex;
   position: absolute;
-  top: 45rem;
+  bottom: 5rem;
   left: 20%;
 }
 
@@ -1123,13 +1128,22 @@ nav {
   background: #f52029;
 }
 
+@media only screen and (max-width: 900px) {
+  .customer__wrapper {
+    padding-left: 3rem;
+    max-width: 100%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .customer__wrapper {
-    padding: 2rem;
-    max-width: 100%;
+    padding-left: 2rem;
   }
   .ctm-ctn__top {
     padding: 1rem;
+  }
+  .customer-dot__control {
+    bottom: -2rem;
+    left: 45%;
   }
 }
 .article {
