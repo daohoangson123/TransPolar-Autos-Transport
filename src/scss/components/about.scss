@@ -43,8 +43,11 @@
 
 // MID
 
-.about__mid {
+.about-mid {
     background: $bg-grey;
+}
+
+.about__mid {
     justify-content: space-between;
     gap: 5rem;
 }
@@ -202,6 +205,7 @@
     z-index: 0;
     min-width: 32rem;
     min-height: 60rem;
+    margin-bottom: 5rem;
     position: relative;
 
     .about-video__play {

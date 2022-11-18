@@ -284,7 +284,7 @@ $(document).ready(function(){
   $(".dark-btn").click(function(){
     $(".fa-moon").toggleClass("hide");
     $(".fa-sun").toggleClass("show");
-    $("body, #navbar, .dropdown-content a, #search, .search__div, .about__mid, #services, .ser-layout2__items .ser-l1-items__content a, .ser-layout2__body--layout, .services-button, .article, .abt-l2-sub__content--sect1 .abt-l2-sub__text a, .abt-sect4__text a, .about__sect5, .services__sect2").toggleClass("dark-theme");
+    $("body, #navbar, .dropdown-content a, #search, .search__div, .about-mid, #services, .ser-bot, .ser-layout2__items .ser-l1-items__content a, .ser-layout2__body--layout, .services-button, .article, .abt-l2-sub__content--sect1 .abt-l2-sub__text a, .abt-sect4__text a, .about__sect5, .services__sect2").toggleClass("dark-theme");
     if ($("#navbar").hasClass("dark-theme")){
       $("#navbar").removeClass("stickyNav");
     } else if (window.pageYOffset > 0) {

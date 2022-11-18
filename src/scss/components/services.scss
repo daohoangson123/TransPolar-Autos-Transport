@@ -79,14 +79,16 @@
 }
 
 //BOT
-
+.ser-bot {
+    background: $bg-color;
+}
 //REPEATABLE LAYOUT
 
 .ser-layout2__body {
 
     &--layout {
         text-align: left;
-        background-color: $bg-color;
+        background: $bg-color;
         justify-content: center;
         gap: 2rem;
     }

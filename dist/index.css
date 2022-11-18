@@ -151,6 +151,7 @@ nav.dark-theme {
 .container {
   margin: auto;
   padding: 5rem 30rem;
+  max-width: 2000px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -640,8 +641,11 @@ nav {
   color: #636466;
 }
 
-.about__mid {
+.about-mid {
   background: #f1f1f7;
+}
+
+.about__mid {
   justify-content: space-between;
   gap: 5rem;
 }
@@ -773,6 +777,7 @@ nav {
   z-index: 0;
   min-width: 32rem;
   min-height: 60rem;
+  margin-bottom: 5rem;
   position: relative;
 }
 .about__video .about-video__play {
@@ -965,9 +970,13 @@ nav {
   color: #fff;
 }
 
+.ser-bot {
+  background: #fff;
+}
+
 .ser-layout2__body--layout {
   text-align: left;
-  background-color: #fff;
+  background: #fff;
   justify-content: center;
   gap: 2rem;
 }
@@ -1563,8 +1572,8 @@ hr {
 
 .about-sect4__body {
   grid-template-columns: repeat(auto-fit, clamp(12rem, 30vw, 35rem));
-  gap: 3rem;
-  justify-content: space-between;
+  gap: 5rem;
+  justify-content: center;
 }
 
 .abt-sect4__text {
@@ -1627,6 +1636,10 @@ hr {
 
 .about__sect5 {
   background: #f1f1f7;
+  padding-top: 0;
+}
+
+.about-sect5 {
   justify-content: space-between;
   gap: 2rem;
 }
@@ -1641,7 +1654,7 @@ hr {
 
 .copllapse {
   font-size: 2rem;
-  border: 0.1rem solid #636466;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
