@@ -2,7 +2,7 @@
 window.onscroll = function () {
 // StickyNav
   let navBar = document.getElementById("navbar");
-  if (window.pageYOffset > 0 && (!navBar.classList.contains("dark-theme"))) {
+  if (window.pageYOffset > 0 && (!navBar.classList.contains("dark-theme"))) { //kiểm tra navbar có đang ở darkmode ko
     navBar.classList.add("stickyNav");
   } else {
     navBar.classList.remove("stickyNav");
@@ -29,12 +29,12 @@ let searchBtn = document.getElementsByClassName("search-btn");
 //dùng loop để lấy tất cả các search-btn
 for (let i = 0; i < searchBtn.length; i++) {
   searchBtn[i].onclick = function () {
-    searchDialog.style.transform = "translateY(-100%)";
-    searchDialog.style.display = "block";
+    searchDialog.style.transform = "translateY(-100%)"; // đưa về Y-100%
+    searchDialog.style.display = "block"; // chuyển display
     let showSearchDialog = function () {
-      searchDialog.style.transform = "translateY(0%)";
+      searchDialog.style.transform = "translateY(0%)"; // trả về Y 0%
     };
-    setTimeout(showSearchDialog , 0);
+    setTimeout(showSearchDialog , 0); // setTimeout để nhận transition
   }
 }
 
@@ -44,11 +44,11 @@ let closeDialog = document.getElementById("dialog-closebtn");
 
 closeDialog.onclick = function () {
   if (window.innerWidth < 900) {
-    searchDialog.style.transform = "translateY(-100%)";
+    searchDialog.style.transform = "translateY(-100%)"; // đưa về Y-100%
   } else {
-    searchDialog.style.transform = "translateX(100%)";
+    searchDialog.style.transform = "translateX(100%)"; // đưa về X 100%
   }
-  let resetTransform = function () {
+  let resetTransform = function () { // reset lại display và Y
     searchDialog.style.display = "none";
     if (searchDialog.style.display == "none") {
       searchDialog.style.transform = "translateY(0%)";
@@ -75,9 +75,8 @@ if (openVideoDialog) {
 let closeVideoDialog = document.getElementById("video-close");
 
 if (closeVideoDialog) {
-  closeVideoDialog.onclick = function () {
+  closeVideoDialog.onclick = function () { // reset display
     videoContent.style.transform = "scale(0)";
-
     let resetDisplay = function () {
       videoDialog.style.display = "none";
     };
