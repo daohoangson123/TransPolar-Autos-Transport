@@ -90,6 +90,10 @@ if (closeVideoDialog) {
 
 let slides = document.querySelectorAll(".slide");
 
+// for (let i = 0; i < slides.length; i++) {
+//   slides.style.transform = `translateX(${i * 100}%)`;
+// }
+
 // loop through slides and set each slides translateX
 slides.forEach((slide, indx) => {
   slide.style.transform = `translateX(${indx * 100}%)`;
