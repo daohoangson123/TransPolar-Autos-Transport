@@ -149,6 +149,7 @@ nav {
 
 #search-dialog {
     position: fixed;
+    place-content: center;
     width: 100vw;
     height: 100vh;
     background: $layer1;
@@ -157,10 +158,6 @@ nav {
     z-index: 2;
 
     .search__div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: clamp(30rem, 50vw, 60vw);
         height: 25rem;
         padding: 3rem;

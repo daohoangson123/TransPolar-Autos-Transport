@@ -278,6 +278,7 @@
 
 .abt-video__popup {
     position: fixed;
+    place-content: center;
     width: 100vw;
     height: 100vh;
     background: $layer;
@@ -286,12 +287,12 @@
     z-index: 2;
 
     #video-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
         width: min(90vw, 100rem);
         height: 50rem;
-        transform-origin: top left;
+        // transform-origin: top left;
         transform: scale(0);
         transition: transform .5s ease-in-out;
 

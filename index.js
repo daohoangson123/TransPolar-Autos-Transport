@@ -30,7 +30,7 @@ let searchBtn = document.getElementsByClassName("search-btn");
 for (let i = 0; i < searchBtn.length; i++) {
   searchBtn[i].onclick = function () {
     searchDialog.style.transform = "translateY(-100%)"; // khởi tạo đưa về Y-100%
-    searchDialog.style.display = "block"; // chuyển display sang block vì thẻ dialog default display none
+    searchDialog.style.display = "grid"; // chuyển display sang block vì thẻ dialog default display none
     let showSearchDialog = function () {
       searchDialog.style.transform = "translateY(0%)"; // trả về Y 0%
     };
@@ -57,16 +57,16 @@ closeDialog.onclick = function () {
   setTimeout(resetTransform , 500); // dùng bất đồng bộ để nhận transition
 }
 
-// Mở video dialog
+// M
 let videoDialog = document.getElementById("video-dialog");
 let openVideoDialog = document.getElementById("open-video");
 let videoContent = document.getElementById("video-content");
 
 if (openVideoDialog) {
   openVideoDialog.onclick = function () {
-      videoDialog.style.display = "block";
+      videoDialog.style.display = "grid";
       let showVideo = function () {
-        videoContent.style.transform = "scale(1) translate(-50%, -50%)";
+        videoContent.style.transform = "scale(1)";
       };
       setTimeout(showVideo, 100);
   } 

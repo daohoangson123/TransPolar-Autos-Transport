@@ -350,6 +350,7 @@ nav {
 
 #search-dialog {
   position: fixed;
+  place-content: center;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
@@ -358,10 +359,6 @@ nav {
   z-index: 2;
 }
 #search-dialog .search__div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: clamp(30rem, 50vw, 60vw);
   height: 25rem;
   padding: 3rem;
@@ -832,6 +829,7 @@ nav {
 
 .abt-video__popup {
   position: fixed;
+  place-content: center;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -840,12 +838,8 @@ nav {
   z-index: 2;
 }
 .abt-video__popup #video-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: min(90vw, 100rem);
   height: 50rem;
-  transform-origin: top left;
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
 }
