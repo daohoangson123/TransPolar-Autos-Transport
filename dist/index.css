@@ -260,7 +260,11 @@ nav {
   gap: 2rem;
   align-items: baseline;
 }
-#menu .home a {
+#menu .home a,
+#menu .about a,
+#menu .services a,
+#menu .page,
+#menu .contact a {
   color: #f52029;
   font-weight: 900;
 }
@@ -364,6 +368,7 @@ nav {
   padding: 3rem;
   background: #fff;
   border-radius: 0.6rem;
+  position: relative;
   display: grid;
   place-items: center;
   z-index: 100;

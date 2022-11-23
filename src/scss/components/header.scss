@@ -46,7 +46,11 @@ nav {
     gap: 2rem;
     align-items: baseline;
 
-    .home a {
+    .home a,
+    .about a,
+    .services a,
+    .page,
+    .contact a {
         color: $primary-color;
         font-weight: 900;
     }
@@ -163,6 +167,7 @@ nav {
         padding: 3rem;
         background: $bg-color;
         border-radius: $border-radius;
+        position: relative;
         display: grid;
         place-items: center;
         z-index: 100;

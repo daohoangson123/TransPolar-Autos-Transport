@@ -7,8 +7,7 @@ window.onscroll = function () {
   } else {
     navBar.classList.remove("stickyNav");
   }
-  
-  
+
 // Backtotop
   let backTop = document.getElementsByClassName("top")[0];
   if (window.pageYOffset > 500) {
@@ -18,11 +17,11 @@ window.onscroll = function () {
   }
 }
 
-//Drop Menu Main/ Hidden
+// Drop Menu Main/ Hidden
 
 
 
-//Open Search dialog
+// Search dialog
 let searchDialog = document.getElementById("search-dialog");
 
 let searchBtn = document.getElementsByClassName("search-btn");
@@ -38,7 +37,7 @@ for (let i = 0; i < searchBtn.length; i++) {
   }
 }
 
-//đóng search dialog bằng nút trong dialog = JS =
+//đóng search dialog bằng nút trong dialog
 
 let closeDialog = document.getElementById("dialog-closebtn");
 
@@ -57,7 +56,7 @@ closeDialog.onclick = function () {
   setTimeout(resetTransform , 500); // dùng bất đồng bộ để nhận transition
 }
 
-// M
+// Video dialog
 let videoDialog = document.getElementById("video-dialog");
 let openVideoDialog = document.getElementById("open-video");
 let videoContent = document.getElementById("video-content");
@@ -84,15 +83,17 @@ if (closeVideoDialog) {
   }
 }
 
-//Copllapsible content
+//Copllapsible content - updating
 
-// Click Slide
+// Click Slide next/prev button only
 
 let slides = document.querySelectorAll(".slide");
 
 // for (let i = 0; i < slides.length; i++) {
 //   slides.style.transform = `translateX(${i * 100}%)`;
 // }
+
+// dùng forEach thay thế vòng lặp for
 
 // loop through slides and set each slides translateX
 slides.forEach((slide, indx) => {
@@ -109,19 +110,19 @@ let nextSlide = document.querySelector(".next");
 
 // add event listener and navigation functionality
 if (nextSlide) {
-nextSlide.onclick = function () {
-// check if current slide is the last and reset current slide
-if (curSlide === maxSlide) {
-  curSlide = 0;
-} else {
-  curSlide++;
-}
+  nextSlide.onclick = function () {
+  // check if current slide is the last and reset current slide
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
 
-// move slide by -100%
-slides.forEach((slide, indx) => {
-  slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-});
-};
+  // move slide by -100%
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+  };
 };
 
 
@@ -195,19 +196,19 @@ prevQoute.onclick = function () {
   });
 };
 };
-// Auto Slide
+// Auto Slide - under development
 
-//
+// reveal content animation
 let reveals = document.querySelectorAll(".reveal");
 
 function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight;
     // console.log(windowHeight);
-    let elementTop = reveals[0].getBoundingClientRect().top; // trả về khoảng cách từ top của window đến top của element
+    let elementTop = reveals[i].getBoundingClientRect().top; // trả về khoảng cách từ top của window đến top của element
     // console.log(elementTop);
     let elementVisible = 150;
-    console.log(windowHeight - elementVisible);
+    // console.log(windowHeight - elementVisible);
 
     if (elementTop < (windowHeight - elementVisible)) {
       // console.log("hello");
@@ -223,7 +224,7 @@ if (reveals) {
   window.addEventListener("scroll", reveal);
 }
 
-//
+// counting number animation
 
 let counterUp = document.querySelectorAll(".abt-sect2__counter");
 
