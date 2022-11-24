@@ -266,6 +266,7 @@ nav {
 #menu .page,
 #menu .contact a {
   color: #f52029;
+  font-size: 2.4rem;
   font-weight: 900;
 }
 #menu .navbar-item {
@@ -328,7 +329,7 @@ nav {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  display: inline-block;
+  display: block;
   color: #181d2e;
   padding: 1rem 1.5rem;
 }
@@ -421,6 +422,10 @@ nav {
 
 #search, #darkmode, #darkmode1 {
   border-radius: 50%;
+}
+
+#search-hidden {
+  transition: 0.3s ease-in-out;
 }
 
 .search-btn {
@@ -1591,7 +1596,7 @@ hr {
 }
 
 .about-sect4__body {
-  grid-template-columns: repeat(auto-fit, clamp(12rem, 30vw, 35rem));
+  grid-template-columns: repeat(auto-fit, clamp(15rem, 25vw, 28rem));
   gap: 5rem;
   justify-content: center;
 }

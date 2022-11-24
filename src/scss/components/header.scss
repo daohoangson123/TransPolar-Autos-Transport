@@ -52,6 +52,7 @@ nav {
     .page,
     .contact a {
         color: $primary-color;
+        font-size: 2.4rem;
         font-weight: 900;
     }
 
@@ -124,7 +125,7 @@ nav {
 /* Links inside the dropdown */
 
 .dropdown-content a {
-    display: inline-block;
+    display: block;
     color: $heading-color;
     padding: 1rem 1.5rem;
 }
@@ -226,6 +227,10 @@ nav {
 
 #search, #darkmode, #darkmode1 {
     border-radius: $border-radius-full;
+}
+
+#search-hidden {
+    transition: .3s ease-in-out;
 }
 
 .search-btn {
