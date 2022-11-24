@@ -313,10 +313,22 @@ nav {
   margin-top: 1rem;
   margin-left: -4rem;
 }
+.dropdown-content .home a,
+.dropdown-content .about a,
+.dropdown-content .services a,
+.dropdown-content .page,
+.dropdown-content .contact a,
+.dropdown-content .blog a,
+.dropdown-content .pagenotfound a,
+.dropdown-content .landing a,
+.dropdown-content .element a {
+  color: #f52029;
+  font-weight: 900;
+}
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  display: block;
+  display: inline-block;
   color: #181d2e;
   padding: 1rem 1.5rem;
 }

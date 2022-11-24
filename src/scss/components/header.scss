@@ -106,12 +106,25 @@ nav {
     min-width: 15rem;
     margin-top: 1rem;
     margin-left: -4rem;
+
+    .home a,
+    .about a,
+    .services a,
+    .page,
+    .contact a,
+    .blog a,
+    .pagenotfound a,
+    .landing a,
+    .element a {
+        color: $primary-color;
+        font-weight: 900;
+    }
 }
 
 /* Links inside the dropdown */
 
 .dropdown-content a {
-    display: block;
+    display: inline-block;
     color: $heading-color;
     padding: 1rem 1.5rem;
 }
