@@ -1,6 +1,11 @@
-@import "../globals/variables.scss";
+@import '../globals/variables.scss';
 
 // ELEMENTS
+
+html,
+body {
+    min-width: 320px;
+}
 
 h1 {
     font-size: 3rem;
@@ -39,7 +44,7 @@ button {
     font-family: 'Sarabun', sans-serif;
     text-decoration: none;
     color: $dropdown-color;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -64,18 +69,18 @@ section {
 }
 
 nav.dark-theme {
-    box-shadow: 0 .2rem .2rem .2rem $layer3;
+    box-shadow: 0 0.2rem 0.2rem 0.2rem $layer3;
 }
 
 //Reveal content animation
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(100px);
     opacity: 0;
-    transition: .6s all ease;
+    transition: 0.6s all ease;
 }
-  
-.reveal.showcontent{
+
+.reveal.showcontent {
     transform: translateY(0);
     opacity: 1;
 }
@@ -93,7 +98,7 @@ nav.dark-theme {
     border-radius: $border-radius-full;
     width: 4rem;
     height: 4rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     opacity: 0;
     transform: scale(0);
 
@@ -114,14 +119,14 @@ nav.dark-theme {
 }
 
 .top i {
-    animation: bounce .5s ease-in-out infinite alternate;
+    animation: bounce 0.5s ease-in-out infinite alternate;
 
     @keyframes bounce {
         from {
             transform: translateY(0);
         }
         to {
-            transform: translateY(-.5rem);
+            transform: translateY(-0.5rem);
         }
     }
 }
@@ -152,13 +157,11 @@ nav.dark-theme {
 
 //CONTAINER
 
-    .container {
-        margin: auto;
-        padding: 5rem 30rem;
-        max-width: 2000px;
-        // padding: 5rem;
-        // width: min(90%, 1200px);
-    }
+.container {
+    margin: auto;
+    padding: 4rem 20rem;
+    max-width: 1900px;
+}
 
 @media only screen and (max-width: 1600px) {
     .container {
@@ -200,7 +203,7 @@ nav.dark-theme {
     transform: translate(-50%, -50%);
     text-align: center;
     margin: 0 auto;
-    
+
     span {
         display: block;
         color: $bg-color;
@@ -233,7 +236,7 @@ nav.dark-theme {
     border: none;
     width: max-content;
     padding: 2rem 3rem;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 

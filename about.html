@@ -1,525 +1,692 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transpolar - Autos & Transport</title>
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <!-- CSS -->
-    <link rel="stylesheet" href="dist/index.css" />
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <div class="header-banner">
-        <!-- NAV -->
-        <nav id="navbar">
-          <div id="logo">
-            <h1>
-              <a href="index.html">
-                <i class="fas fa-truck-moving logo"></i>
-                  <span> Transpolar </span>
-              </a>
-            </h1>
-          </div>
-          <!-- NAV-BAR -->
-          <div id="menu" class="navbar">
-            <ul id="" class="">
-              <li id="" class="navbar-item">
-                <a href="index.html">Home</a>
-              </li>
-              <li id="" class="navbar-item about"><a href="about.html">About</a></li>
-              <li id="" class="navbar-item">
-                <a href="services.html">Services</a>
-              </li>
-              <li id="" class="navbar-item">
-                <!-- DROPDOWN MENU-->
-                <button id="dropbtn-main" class="dropbtn">
-                  Pages &nbsp; <i class="fa fa-angle-down"></i>
-                </button>
-                <div class="dropdown-content dropdown-content-main">
-                  <ul>
-                    <li class=""><a href="blog.html" class="dropdown-item">Blog page</a></li>
-                    <li class=""><a href="404.html" class="dropdown-item">404 page</a></li>
-                    <li class=""><a href="landing.html" class="dropdown-item">Landing page</a></li>
-                    <li class=""><a href="element.html" class="dropdown-item">Elements page</a></li>
-                  </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Transpolar - Autos & Transport</title>
+        <!-- Font -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
+            rel="stylesheet" />
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicon/android-chrome-192x192.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon/favicon-16x16.png" />
+        <link
+            rel="manifest"
+            href="img/favicon/site.webmanifest" />
+        <!-- CSS -->
+        <link
+            rel="stylesheet"
+            href="dist/index.css" />
+        <!-- JQUERY -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-banner">
+                <!-- NAV -->
+                <nav id="navbar">
+                    <div id="logo">
+                        <h1>
+                            <a href="index.html">
+                                <i class="fas fa-truck-moving logo"></i>
+                                <span> Transpolar </span>
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- NAV-BAR -->
+                    <div
+                        id="menu"
+                        class="navbar">
+                        <ul
+                            id=""
+                            class="">
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item about">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <!-- DROPDOWN MENU-->
+                                <button
+                                    id="dropbtn-main"
+                                    class="dropbtn">
+                                    Pages &nbsp;
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <div
+                                    class="dropdown-content dropdown-content-main">
+                                    <ul>
+                                        <li class="">
+                                            <a
+                                                href="blog.html"
+                                                class="dropdown-item"
+                                                >Blog page</a
+                                            >
+                                        </li>
+                                        <li class="">
+                                            <a
+                                                href="404.html"
+                                                class="dropdown-item"
+                                                >404 page</a
+                                            >
+                                        </li>
+                                        <li class="">
+                                            <a
+                                                href="landing.html"
+                                                class="dropdown-item"
+                                                >Landing page</a
+                                            >
+                                        </li>
+                                        <li class="">
+                                            <a
+                                                href="element.html"
+                                                class="dropdown-item"
+                                                >Elements page</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- SEARCH-->
+                        <div id="search">
+                            <button class="head-btn search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- DARKMODE -->
+                        <div id="darkmode">
+                            <button class="head-btn dark-btn">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun hide"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden-nav">
+                        <!-- DARKMODE RES-->
+                        <div id="darkmode1">
+                            <button class="head-btn dark-btn">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun hide"></i>
+                            </button>
+                        </div>
+                        <!-- HIDDEN MENU-->
+                        <div class="hidden-menu">
+                            <button
+                                id="dropbtn-hidden"
+                                class="dropbtn dropbtn-hidden">
+                                <i
+                                    id="dropin"
+                                    class="fa fa-bars"></i>
+                                <i
+                                    id="dropout"
+                                    class="fa-solid fa-x dropout"></i>
+                            </button>
+                            <div class="dropdown-content drop-content-hidden">
+                                <ul>
+                                    <li class="about">
+                                        <a
+                                            href="about.html"
+                                            class="dropdown-item"
+                                            >About</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="services.html"
+                                            class="dropdown-item"
+                                            >Services</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href=""
+                                            class="dropdown-item"
+                                            >Pages</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="contact.html"
+                                            class="dropdown-item"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                                <div id="search-hidden">
+                                    <button class="head-btn search-btn">
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <dialog id="search-dialog">
+                    <form class="search__div">
+                        <span>Search here</span>
+                        <div>
+                            <input
+                                placeholder="Search here..."
+                                class="search-box"
+                                type="text"
+                                required />
+                            <button
+                                type="submit"
+                                id="search-btn"
+                                class="button">
+                                Search
+                            </button>
+                        </div>
+                        <button
+                            type="button"
+                            id="dialog-closebtn"
+                            class="">
+                            <i
+                                id="dialog-dropout"
+                                class="fa-solid fa-x"></i>
+                        </button>
+                    </form>
+                </dialog>
+                <div class="header-content">
+                    <h2>About Us</h2>
+                    <span> <a href="index.html">Home</a> >> About page</span>
                 </div>
-              </li>
-              <li id="" class="navbar-item">
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <!-- SEARCH-->
-            <div id="search">
-              <button class="head-btn search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
             </div>
-            <!-- DARKMODE -->
-            <div id="darkmode">
-              <button class="head-btn dark-btn">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun hide"></i>
-              </button>
-            </div>
-          </div>
-          <div class="hidden-nav">
-            <!-- DARKMODE RES-->
-            <div id="darkmode1">
-              <button class="head-btn dark-btn">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun hide"></i>
-              </button>
-            </div>
-            <!-- HIDDEN MENU-->
-            <div class="hidden-menu">
-              <button id="dropbtn-hidden" class="dropbtn dropbtn-hidden">
-                <i id="dropin" class="fa fa-bars"></i>
-                <i id="dropout" class="fa-solid fa-x dropout"></i>
-              </button>
-              <div class="dropdown-content drop-content-hidden">
-                <ul>
-                  <li class="about"><a href="about.html" class="dropdown-item">About</a></li>
-                  <li class=""><a href="services.html" class="dropdown-item">Services</a></li>
-                  <li class=""><a href="" class="dropdown-item">Pages</a></li>
-                  <li class=""><a href="contact.html" class="dropdown-item">Contact</a></li>
-                </ul>
-                <div id="search-hidden">
-                  <button class="head-btn search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
+        </header>
+        <main>
+            <!-- SECT1 -->
+            <section class="about__sect1 flex container">
+                <div
+                    class="abt-sect1__right abt-l1__img abt-l1__img--sect1 relative">
+                    <img
+                        src="img/about/ab.jpg"
+                        alt="ab.jpg" />
+                    <div class="abt-sect1-r__years absolute">
+                        <span>16+</span>
+                        <p>YEARS OF EXPERIENCE</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <dialog id="search-dialog">
-          <form class="search__div">
-            <span>Search here</span>
-              <div>
-                <input placeholder="Search here..." class="search-box" type="text" required/>
-                <button type="submit" id="search-btn" class="button">Search</button>
-              </div>
-              <button type="button" id="dialog-closebtn" class="">
-                <i id="dialog-dropout" class="fa-solid fa-x"></i>
-              </button>
-          </form>
-        </dialog>
-        <div class="header-content">
-          <h2>About Us</h2>
-          <span> <a href="index.html">Home</a> >> About page</span>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- SECT1 -->
-      <section class="about__sect1 flex container">
-        <div class="abt-sect1__right abt-l1__img abt-l1__img--sect1 relative">
-          <img src="img/about/ab.jpg" alt="ab.jpg" />
-          <div class="abt-sect1-r__years absolute">
-            <span>16+</span>
-            <p>YEARS OF EXPERIENCE</p>
-          </div>
-        </div>
-        <div class="abt-l2__items">
-          <h6>OUR INFO</h6>
-          <h4>We Give You Complete Control Of Your Shipments.</h4>
-          <p>
-            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
-            in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Non quae, fugiat.
-          </p>
-          <div class="abt-l2__subitems abt-l2__subitems--sect1 flex">
-            <div class="abt-l2-sub__content--sect1 flex">
-              <div class="abt-l2-sub__icon">
-                <i class="fas fa-chalkboard-teacher"></i>
-              </div>
-              <div class="abt-l2-sub__text">
-                <a href="">Live Monitoring</a>
-                <p>Lorem ipsum viverra feugiat libero.</p>
-              </div>
-            </div>
-            <div class="abt-l2-sub__content--sect1 flex">
-              <div class="abt-l2-sub__icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <div class="abt-l2-sub__text">
-                <a href="">Worldwide Service</a>
-                <p>Lorem ipsum viverra feugiat libero.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- SECT2 -->
-      <section class="about__sect2 container">
-        <div class="abt-sect2__body grid">
-          <div class="counter-items">
-            <div class="abt-sect2__counter" style="--from: 0; --to: 2500;"></div>
-            <div class="abt-sect2__text">Delivered Goods</div>
-          </div>
-          <div class="counter-items">
-            <div class="abt-sect2__counter" style="--from: 0; --to: 1500;"></div>
-            <div class="abt-sect2__text">Miles Driven</div>
-          </div>
-          <div class="counter-items">
-            <div class="abt-sect2__counter" style="--from: 0; --to: 1280;"></div>
-            <div class="abt-sect2__text">Business Success</div>
-          </div>
-          <div class="counter-items">
-            <div class="abt-sect2__counter" style="--from: 0; --to: 3020;"></div>
-            <div class="abt-sect2__text">Happy Clients</div>
-          </div>
-        </div>
-      </section>
-      <!-- SECT3 -->
-      <section class="about__sect3">
-        <div class="about-sect3__body flex container">
-          <div class="abt-sect3__text">
-            <span> GET FREE ESTIMATE </span>
-            <p>Your Gateway To Any Destination In The World.</p>
-          </div>
-          <div class="abt-sect3__btn grid">
-            <a class="button btn__abt--sect3" href="">Read More</a>
-            <button class="button btn__abt--sect3-1">Contact us</button>
-          </div>
-        </div>
-      </section>
-      <!-- SECT4 -->
-      <section class="about__sect4">
-        <div class="sect-heading">
-          <span>OUR TEAM</span>
-          <h2>Who Worked With Us.</h2>
-        </div>
-        <div class="about-sect4__body grid container">
-          <div class="abt-sect4__items abt-sect4__items">
-            <div class="abt-sect4__items-img">
-              <img src="img/about/team1.jpg" alt="team1.jpg" />
-              <div class="abt-sect4__hidden-icons flex">
-                <!--FB-->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
+                <div class="abt-l2__items">
+                    <h6>OUR INFO</h6>
+                    <h4>We Give You Complete Control Of Your Shipments.</h4>
+                    <p>
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut
+                        justo, ultrices in ligula. Semper at tempufddfel. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Non
+                        quae, fugiat.
+                    </p>
+                    <div class="abt-l2__subitems abt-l2__subitems--sect1 flex">
+                        <div class="abt-l2-sub__content--sect1 flex">
+                            <div class="abt-l2-sub__icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="abt-l2-sub__text">
+                                <a href="">Live Monitoring</a>
+                                <p>Lorem ipsum viverra feugiat libero.</p>
+                            </div>
+                        </div>
+                        <div class="abt-l2-sub__content--sect1 flex">
+                            <div class="abt-l2-sub__icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="abt-l2-sub__text">
+                                <a href="">Worldwide Service</a>
+                                <p>Lorem ipsum viverra feugiat libero.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- IN -->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
+            </section>
+            <!-- SECT2 -->
+            <section class="about__sect2 container">
+                <div class="abt-sect2__body grid">
+                    <div class="counter-items">
+                        <div
+                            class="abt-sect2__counter"
+                            style="--from: 0; --to: 2500"></div>
+                        <div class="abt-sect2__text">Delivered Goods</div>
+                    </div>
+                    <div class="counter-items">
+                        <div
+                            class="abt-sect2__counter"
+                            style="--from: 0; --to: 1500"></div>
+                        <div class="abt-sect2__text">Miles Driven</div>
+                    </div>
+                    <div class="counter-items">
+                        <div
+                            class="abt-sect2__counter"
+                            style="--from: 0; --to: 1280"></div>
+                        <div class="abt-sect2__text">Business Success</div>
+                    </div>
+                    <div class="counter-items">
+                        <div
+                            class="abt-sect2__counter"
+                            style="--from: 0; --to: 3020"></div>
+                        <div class="abt-sect2__text">Happy Clients</div>
+                    </div>
                 </div>
-                <!-- TWITTER -->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
+            </section>
+            <!-- SECT3 -->
+            <section class="about__sect3">
+                <div class="about-sect3__body flex container">
+                    <div class="abt-sect3__text">
+                        <span> GET FREE ESTIMATE </span>
+                        <p>Your Gateway To Any Destination In The World.</p>
+                    </div>
+                    <div class="abt-sect3__btn grid">
+                        <a
+                            class="button btn__abt--sect3"
+                            href=""
+                            >Read More</a
+                        >
+                        <button class="button btn__abt--sect3-1">
+                            Contact us
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="abt-sect4__text">
-              <a href="">Lawrence Petrie</a>
-              <p>Selling Agent</p>
-            </div>
-          </div>
-          <div class="abt-sect4__items abt-sect4__items">
-            <div class="abt-sect4__items-img">
-              <img src="img/about/team2.jpg" alt="team2.jpg" />
-              <div class="abt-sect4__hidden-icons flex">
-                <!--FB-->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
+            </section>
+            <!-- SECT4 -->
+            <section class="about__sect4">
+                <div class="sect-heading">
+                    <span>OUR TEAM</span>
+                    <h2>Who Worked With Us.</h2>
                 </div>
-                <!-- IN -->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
+                <div class="about-sect4__body grid container">
+                    <div class="abt-sect4__items abt-sect4__items">
+                        <div class="abt-sect4__items-img">
+                            <img
+                                src="img/about/team1.jpg"
+                                alt="team1.jpg" />
+                            <div class="abt-sect4__hidden-icons flex">
+                                <!--FB-->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <!-- IN -->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <!-- TWITTER -->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="abt-sect4__text">
+                            <a href="">Lawrence Petrie</a>
+                            <p>Selling Agent</p>
+                        </div>
+                    </div>
+                    <div class="abt-sect4__items abt-sect4__items">
+                        <div class="abt-sect4__items-img">
+                            <img
+                                src="img/about/team2.jpg"
+                                alt="team2.jpg" />
+                            <div class="abt-sect4__hidden-icons flex">
+                                <!--FB-->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <!-- IN -->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <!-- TWITTER -->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="abt-sect4__text">
+                            <a href="">Jack Peters</a>
+                            <p>Selling Agent</p>
+                        </div>
+                    </div>
+                    <div class="abt-sect4__items abt-sect4__items">
+                        <div class="abt-sect4__items-img">
+                            <img
+                                src="img/about/team3.jpg"
+                                alt="team3.jpg" />
+                            <div class="abt-sect4__hidden-icons flex">
+                                <!--FB-->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <!-- IN -->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <!-- TWITTER -->
+                                <div class="fter__icons abt-sect4__icons">
+                                    <a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="abt-sect4__text">
+                            <a href="">Anna Phillips</a>
+                            <p>Selling Agent</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- TWITTER -->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
+            </section>
+            <section class="about__sect5">
+                <div class="about-sect5 flex container">
+                    <div class="abt-l2__items abt-sect5__left-item">
+                        <h6>ASK BY CLIENT</h6>
+                        <h4>Frequently Asked Questions</h4>
+                        <p>
+                            Lorem ipsum viverra feugiat. Pellen tesque libero ut
+                            justo, ultrices in ligula. Semper at tempufddfel.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Non quae, fugiat.
+                            <br />
+                            Lorem ipsum viverra feugiat. Pellen tesque libero ut
+                            justo, ultrices in ligula. Semper at tempufddfel.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Non quae, fugiat.
+                        </p>
+                    </div>
+                    <div class="ser-sect5__copllapse">
+                        <div class="copllapse copllapse--1">
+                            <span class="copllapse__btn">
+                                01. Lorem ipsum viverra feugiat?
+                                <span class="copllapse__down">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                                <span class="copllapse__up hide">
+                                    <i
+                                        class="fa-sharp fa-solid fa-chevron-up"></i>
+                                </span>
+                            </span>
+                            <div
+                                class="copllapse__content copllapse__content--1 hide">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. In impedit modi consequatur
+                                nulla aliquam quisquam fugiat est? Ipsa
+                                reprehenderit ullam laborum rem perferendis
+                                atque adipisci pariatur eum accusantium. In, ad?
+                            </div>
+                        </div>
+                        <div class="copllapse copllapse--2">
+                            <span class="copllapse__btn">
+                                02.Lorem ipsum viverra feugiat?
+                                <span class="copllapse__down">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                                <span class="copllapse__up hide">
+                                    <i
+                                        class="fa-sharp fa-solid fa-chevron-up"></i>
+                                </span>
+                            </span>
+                            <div
+                                class="copllapse__content copllapse__content--2 hide">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. In impedit modi consequatur
+                                nulla aliquam quisquam fugiat est? Ipsa
+                                reprehenderit ullam laborum rem perferendis
+                                atque adipisci pariatur eum accusantium. In, ad?
+                            </div>
+                        </div>
+                        <div class="copllapse copllapse--3">
+                            <span class="copllapse__btn">
+                                03.Sed ut perspiciatis unde?
+                                <span class="copllapse__down">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                                <span class="copllapse__up hide">
+                                    <i
+                                        class="fa-sharp fa-solid fa-chevron-up"></i>
+                                </span>
+                            </span>
+                            <div
+                                class="copllapse__content copllapse__content--3 hide">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. In impedit modi consequatur
+                                nulla aliquam quisquam fugiat est? Ipsa
+                                reprehenderit ullam laborum rem perferendis
+                                atque adipisci pariatur eum accusantium. In, ad?
+                            </div>
+                        </div>
+                        <div class="copllapse copllapse--4">
+                            <span class="copllapse__btn">
+                                04.Deserunt mollit anim id est laborum?
+                                <span class="copllapse__down">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                                <span class="copllapse__up hide">
+                                    <i
+                                        class="fa-sharp fa-solid fa-chevron-up"></i>
+                                </span>
+                            </span>
+                            <div
+                                class="copllapse__content copllapse__content--3 hide">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. In impedit modi consequatur
+                                nulla aliquam quisquam fugiat est? Ipsa
+                                reprehenderit ullam laborum rem perferendis
+                                atque adipisci pariatur eum accusantium. In, ad?
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="abt-sect4__text">
-              <a href="">Jack Peters</a>
-              <p>Selling Agent</p>
-            </div>
-          </div>
-          <div class="abt-sect4__items abt-sect4__items">
-            <div class="abt-sect4__items-img">
-              <img src="img/about/team3.jpg" alt="team3.jpg" />
-              <div class="abt-sect4__hidden-icons flex">
-                <!--FB-->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <!-- FOOTER TOP -->
+            <div class="footer__top flex container">
+                <!-- TOP LEFT -->
+                <div class="fter-top__left">
+                    <div class="fter-tl__content">
+                        <a href=""
+                            ><i class="fas fa-truck-moving logo"></i
+                            >Transpolar</a
+                        >
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ute dolor
+                            sit.
+                        </p>
+                    </div>
+                    <!-- ICON -->
+                    <div class="fter-tl__icons flex">
+                        <!--FB-->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <!-- IN -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <!-- TWITTER -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <!-- GG -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- IN -->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
+                <!-- TOP RIGHT -->
+                <div class="fter-top__right flex">
+                    <div class="fter-tr__items">
+                        <span>Who We Are</span>
+                        <ul>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="">New & Media</a>
+                            </li>
+                            <li>
+                                <a href="">Work With Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>What We Do</span>
+                        <ul>
+                            <li>
+                                <a href="">Road Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Air Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Ocean Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Vacation Freight</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>Our Company</span>
+                        <ul>
+                            <li>
+                                <a href="">Locations</a>
+                            </li>
+                            <li>
+                                <a href="">Tracking</a>
+                            </li>
+                            <li>
+                                <a href="">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>More Info </span>
+                        <ul>
+                            <li>
+                                <a href="tel:12324016694"
+                                    ><i class="fa-solid fa-phone"></i> :+12
+                                    324-016-694</a
+                                >
+                            </li>
+                            <li>
+                                <a href="mailto:Office@example.com"
+                                    ><i class="fa-solid fa-envelope"></i>
+                                    :Office@example.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.google.com/maps/dir//New+York+USA/@40.7127753,-74.0059728,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2m2!1d-74.0059728!2d40.7127753"
+                                    ><i
+                                        class="fa-solid fa-map-location-dot"></i>
+                                    :New York - 1060, <br />
+                                    Honey Avenue</a
+                                >
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- TWITTER -->
-                <div class="fter__icons abt-sect4__icons">
-                  <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </div>
-              </div>
             </div>
-            <div class="abt-sect4__text">
-              <a href="">Anna Phillips</a>
-              <p>Selling Agent</p>
+            <!-- FOOTER BOT -->
+            <hr />
+            <div class="footer__bot container">
+                <p>
+                    © 2022 Transpolar. All Rights Reserved | WordPress Theme by
+                    <a href="">W3Layouts.</a>
+                </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="about__sect5">
-        <div class="about-sect5 flex container">
-          <div class="abt-l2__items abt-sect5__left-item">
-            <h6>ASK BY CLIENT</h6>
-            <h4>Frequently Asked Questions</h4>
-            <p>
-              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
-              in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Non quae, fugiat.
-              <br>
-              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
-              in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Non quae, fugiat.
-            </p>
-          </div>
-          <div class="ser-sect5__copllapse">
-            <div class="copllapse copllapse--1">
-              <span class="copllapse__btn">
-                01. Lorem ipsum viverra feugiat?
-                <span class="copllapse__down">
-                <i class="fa-solid fa-chevron-down"></i>
-                </span>
-                <span class="copllapse__up hide">
-                <i class="fa-sharp fa-solid fa-chevron-up"></i>
-                </span>
-              </span>
-              <div class="copllapse__content copllapse__content--1 hide">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              In impedit modi consequatur nulla aliquam quisquam fugiat est?
-              Ipsa reprehenderit ullam laborum rem perferendis atque adipisci pariatur eum accusantium. In, ad?
-              </div>
-            </div>
-            <div class="copllapse copllapse--2">
-              <span class="copllapse__btn">
-                02.Lorem ipsum viverra feugiat?                            
-                <span class="copllapse__down">
-                <i class="fa-solid fa-chevron-down"></i>
-                </span>
-                <span class="copllapse__up hide">
-                <i class="fa-sharp fa-solid fa-chevron-up"></i>
-                </span>
-                </span>
-              <div class="copllapse__content copllapse__content--2 hide">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              In impedit modi consequatur nulla aliquam quisquam fugiat est?
-              Ipsa reprehenderit ullam laborum rem perferendis atque adipisci pariatur eum accusantium. In, ad?
-              </div>
-            </div>
-            <div class="copllapse copllapse--3">
-              <span class="copllapse__btn">
-                03.Sed ut perspiciatis unde?                            
-                <span class="copllapse__down">
-                <i class="fa-solid fa-chevron-down"></i>
-                </span>
-                <span class="copllapse__up hide">
-                <i class="fa-sharp fa-solid fa-chevron-up"></i>
-                </span>
-              </span>
-              <div class="copllapse__content copllapse__content--3 hide">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              In impedit modi consequatur nulla aliquam quisquam fugiat est?
-              Ipsa reprehenderit ullam laborum rem perferendis atque adipisci pariatur eum accusantium. In, ad?
-              </div>
-            </div>
-            <div class="copllapse copllapse--4">
-              <span class="copllapse__btn">
-                04.Deserunt mollit anim id est laborum?                                                       
-                <span class="copllapse__down">
-                <i class="fa-solid fa-chevron-down"></i>
-                </span>
-                <span class="copllapse__up hide">
-                <i class="fa-sharp fa-solid fa-chevron-up"></i>
-                </span>
-              </span>
-              <div class="copllapse__content copllapse__content--3 hide">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              In impedit modi consequatur nulla aliquam quisquam fugiat est?
-              Ipsa reprehenderit ullam laborum rem perferendis atque adipisci pariatur eum accusantium. In, ad?
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- FOOTER -->
-    <footer>
-      <!-- FOOTER TOP -->
-      <div class="footer__top flex container">
-        <!-- TOP LEFT -->
-        <div class="fter-top__left">
-          <div class="fter-tl__content">
-            <a href=""><i class="fas fa-truck-moving logo"></i>Transpolar</a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ute dolor sit.
-            </p>
-          </div>
-          <!-- ICON -->
-          <div class="fter-tl__icons flex">
-            <!--FB-->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </div>
-            <!-- IN -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-            <!-- TWITTER -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </div>
-            <!-- GG -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-google-plus-g"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- TOP RIGHT -->
-        <div class="fter-top__right flex">
-          <div class="fter-tr__items">
-            <span>Who We Are</span>
-            <ul>
-              <li>
-                <a href="">About Us</a>
-              </li>
-              <li>
-                <a href="">Our Team</a>
-              </li>
-              <li>
-                <a href="">New & Media</a>
-              </li>
-              <li>
-                <a href="">Work With Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>What We Do</span>
-            <ul>
-              <li>
-                <a href="">Road Freight</a>
-              </li>
-              <li>
-                <a href="">Air Freight</a>
-              </li>
-              <li>
-                <a href="">Ocean Freight</a>
-              </li>
-              <li>
-                <a href="">Vacation Freight</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>Our Company</span>
-            <ul>
-              <li>
-                <a href="">Locations</a>
-              </li>
-              <li>
-                <a href="">Tracking</a>
-              </li>
-              <li>
-                <a href="">Jobs</a>
-              </li>
-              <li>
-                <a href="">Support</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>More Info </span>
-            <ul>
-              <li>
-                <a href="tel:12324016694"
-                  ><i class="fa-solid fa-phone"></i> :+12 324-016-694</a
-                >
-              </li>
-              <li>
-                <a href="mailto:Office@example.com"
-                  ><i class="fa-solid fa-envelope"></i> :Office@example.com</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.google.com/maps/dir//New+York+USA/@40.7127753,-74.0059728,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2m2!1d-74.0059728!2d40.7127753"
-                  ><i class="fa-solid fa-map-location-dot"></i> :New York -
-                  1060, <br />
-                  Honey Avenue</a
-                >
-              </li>
-              <li>
-                <a href=""></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- FOOTER BOT -->
-      <hr />
-      <div class="footer__bot container">
-        <p>
-          © 2022 Transpolar. All Rights Reserved | WordPress Theme by
-          <a href="">W3Layouts.</a>
-        </p>
-      </div>
-    </footer>
-    <!-- BACK TO TOP -->
-    <a href="#" class="top"><i class="fa-solid fa-turn-up"></i></a>
-    <script src="index.js"></script>
-  </body>
+        </footer>
+        <!-- BACK TO TOP -->
+        <a
+            href="#"
+            class="top"
+            ><i class="fa-solid fa-turn-up"></i
+        ></a>
+        <script src="index.js"></script>
+    </body>
 </html>

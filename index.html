@@ -1,715 +1,967 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transpolar - Autos & Transport</title>
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <!-- CSS -->
-    <link rel="stylesheet" href="dist/index.css" />
-    <!-- JQUERY -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <!-- NAV -->
-      <nav id="navbar">
-        <div id="logo">
-          <h1>
-            <a href="index.html">
-              <i class="fas fa-truck-moving logo"></i>
-                <span> Transpolar </span>
-            </a>
-          </h1>
-        </div>
-        <!-- NAV-BAR -->
-        <div id="menu" class="navbar">
-          <ul id="" class="">
-            <li id="" class="navbar-item home">
-              <a href="index.html">Home</a>
-            </li>
-            <li id="" class="navbar-item"><a href="about.html">About</a></li>
-            <li id="" class="navbar-item">
-              <a href="services.html">Services</a>
-            </li>
-            <li id="" class="navbar-item">
-              <!-- DROPDOWN MENU-->
-              <button type="menu" id="dropbtn-main" class="dropbtn">
-                Pages &nbsp; <i class="fa fa-angle-down"></i>
-              </button>
-              <div class="dropdown-content dropdown-content-main">
-                <ul>
-                  <li class=""><a href="blog.html" class="dropdown-item">Blog page</a></li>
-                  <li class=""><a href="404.html" class="dropdown-item">404 page</a></li>
-                  <li class=""><a href="landing.html" class="dropdown-item">Landing page</a></li>
-                  <li class=""><a href="element.html" class="dropdown-item">Elements page</a></li>
-                </ul>
-              </div>
-            </li>
-            <li id="" class="navbar-item">
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <!-- SEARCH-->
-          <div id="search">
-            <button type="menu" class="head-btn search-btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-          <!-- DARKMODE -->
-          <div id="darkmode">
-            <button type="button" class="head-btn dark-btn">
-              <i class="fa-regular fa-moon"></i>
-              <i class="fa-regular fa-sun hide"></i>
-            </button>
-          </div>
-        </div>
-        <div class="hidden-nav">
-          <!-- DARKMODE RES-->
-          <div id="darkmode1">
-            <button type="button" class="head-btn dark-btn">
-              <i class="fa-regular fa-moon"></i>
-              <i class="fa-regular fa-sun hide"></i>
-            </button>
-          </div>
-          <!-- HIDDEN MENU-->
-          <div class="hidden-menu">
-            <button type="menu" id="dropbtn-hidden" class="dropbtn dropbtn-hidden">
-              <i id="dropin" class="fa fa-bars"></i>
-              <i id="dropout" class="fa-solid fa-x dropout"></i>
-            </button>
-            <div class="dropdown-content drop-content-hidden">
-              <ul>
-                <li class=""><a href="about.html" class="dropdown-item">About</a></li>
-                <li class=""><a href="services.html" class="dropdown-item">Services</a></li>
-                <li class=""><a href="" class="dropdown-item">Pages</a></li>
-                <li class=""><a href="contact.html" class="dropdown-item">Contact</a></li>
-              </ul>
-              <div id="search-hidden">
-                <button type="menu" class="head-btn search-btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <dialog id="search-dialog">
-        <form class="search__div">
-          <span>Search here</span>
-          <div>
-            <input
-              placeholder="Search here..."
-              class="search-box"
-              type="text"
-              required
-            />
-            <button type="submit" id="search-btn" class="button">Search</button>
-          </div>
-          <button type="button" id="dialog-closebtn" class="">
-            <i id="dialog-dropout" class="fa-solid fa-x"></i>
-          </button>
-        </form>
-      </dialog>
-      <!-- CAROUSEL -->
-      <div class="slideshow-container slider">
-        <div class="mySlides mySlides-1 slide">
-          <div class="slide-content">
-            <span>MAKE THE RIGHT MOVE.</span>
-            <p>Moving Your Products Across All Borders.</p>
-            <a class="button btn__header" href="">Learn More</a>
-          </div>
-        </div>
-        <div class="mySlides mySlides-2 slide">
-          <div class="slide-content">
-            <span>GO SMOOTHLY WITH SAFETY.</span>
-            <p>We Are Here To Move Your Business.</p>
-            <a class="button btn__header" href="">Learn More</a>
-          </div>
-        </div>
-        <div class="mySlides mySlides-3 slide">
-          <div class="slide-content">
-            <span>MAKE THE RIGHT MOVE.</span>
-            <p>Moving Your Products Across All Borders.</p>
-            <a class="button btn__header" href="">Learn More</a>
-          </div>
-        </div>
-        <div class="mySlides mySlides-4 slide">
-          <div class="slide-content">
-            <span>GO SMOOTHLY WITH SAFETY.</span>
-            <p>We Are Here To Move Your Business.</p>
-            <a class="button btn__header" href="">Learn More</a>
-          </div>
-        </div>
-        <!-- SWITCH BTN -->
-        <a class="prev btn btn-prev">
-          &nbsp; <i class="fa fa-angle-left"></i
-        ></a>
-        <a class="next btn btn-next">
-          &nbsp; <i class="fa fa-angle-right"></i
-        ></a>
-        <!-- JS DOT-->
-        <div class="dot-mng">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- ABOUT -->
-      <section id="about">
-        <div class="sect-heading">
-          <h3>ABOUT US</h3>
-        </div>
-        <!-- ABOUT TOP -->
-        <div class="about__top container">
-          <div class="about-layout1__body flex">
-            <div class="abt-l1__img">
-              <img src="img/about/g2.jpg" alt="g2.jpg" />
-            </div>
-            <div class="abt-l1__items">
-              <div>
-                <h6>WE'RE SAFE MOVERS.</h6>
-                <h4>Fast And Reliable Shipping Services</h4>
-              </div>
-              <p>
-                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                ultrices in ligula. Semper at tempufddfel.Lorem ipsum dolor sit,
-                amet consectetur ante ipsum elit.
-                <br />
-                Faucibus orci luctus et ultrices posuere cubilia Curae; Nulla
-                mollis dapibus nunc.
-                <br />
-                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                ultrices in ligula. Semper at tempufddfel.
-              </p>
-              <div>
-                <a class="button btn__abt--top" href="">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ABOUT MID -->
-        <div class="about-mid">
-          <div class="about__mid flex container">
-            <div class="about-mid__cover">
-              <div class="abt-mid__cover-wrapper">
-                <div class="abt-mid__items abt-mid__items--left"></div>
-                <div class="abt-mid-items__content">
-                  <p>Global Logistic Services For Business</p>
-                  <a class="button btn__abt--mid" href="">Explore Property</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Transpolar - Autos & Transport</title>
+        <!-- Font -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
+            rel="stylesheet" />
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicon/android-chrome-192x192.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon/favicon-16x16.png" />
+        <link
+            rel="manifest"
+            href="img/favicon/site.webmanifest" />
+        <!-- CSS -->
+        <link
+            rel="stylesheet"
+            href="dist/index.css" />
+        <!-- JQUERY -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <!-- NAV -->
+            <nav id="navbar">
+                <div id="logo">
+                    <h1>
+                        <a href="index.html">
+                            <i class="fas fa-truck-moving logo"></i>
+                            <span> Transpolar </span>
+                        </a>
+                    </h1>
                 </div>
-              </div>
-            </div>
-            <div class="about-mid__cover">
-              <div class="abt-mid__cover-wrapper">
-                <div class="abt-mid__items abt-mid__items--right"></div>
-                <div class="abt-mid-items__content">
-                  <p>We Give You Complete Control Of Your Shipments</p>
-                  <a class="button btn__abt--mid" href="">Explore Property</a>
+                <!-- NAV-BAR -->
+                <div
+                    id="menu"
+                    class="navbar">
+                    <ul
+                        id=""
+                        class="">
+                        <li
+                            id=""
+                            class="navbar-item home">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li
+                            id=""
+                            class="navbar-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li
+                            id=""
+                            class="navbar-item">
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li
+                            id=""
+                            class="navbar-item">
+                            <!-- DROPDOWN MENU-->
+                            <button
+                                type="menu"
+                                id="dropbtn-main"
+                                class="dropbtn">
+                                Pages &nbsp; <i class="fa fa-angle-down"></i>
+                            </button>
+                            <div class="dropdown-content dropdown-content-main">
+                                <ul>
+                                    <li class="">
+                                        <a
+                                            href="blog.html"
+                                            class="dropdown-item"
+                                            >Blog page</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="404.html"
+                                            class="dropdown-item"
+                                            >404 page</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="landing.html"
+                                            class="dropdown-item"
+                                            >Landing page</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="element.html"
+                                            class="dropdown-item"
+                                            >Elements page</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li
+                            id=""
+                            class="navbar-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- SEARCH-->
+                    <div id="search">
+                        <button
+                            type="menu"
+                            class="head-btn search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <!-- DARKMODE -->
+                    <div id="darkmode">
+                        <button
+                            type="button"
+                            class="head-btn dark-btn">
+                            <i class="fa-regular fa-moon"></i>
+                            <i class="fa-regular fa-sun hide"></i>
+                        </button>
+                    </div>
                 </div>
-              </div>
+                <div class="hidden-nav">
+                    <!-- DARKMODE RES-->
+                    <div id="darkmode1">
+                        <button
+                            type="button"
+                            class="head-btn dark-btn">
+                            <i class="fa-regular fa-moon"></i>
+                            <i class="fa-regular fa-sun hide"></i>
+                        </button>
+                    </div>
+                    <!-- HIDDEN MENU-->
+                    <div class="hidden-menu">
+                        <button
+                            type="menu"
+                            id="dropbtn-hidden"
+                            class="dropbtn dropbtn-hidden">
+                            <i
+                                id="dropin"
+                                class="fa fa-bars"></i>
+                            <i
+                                id="dropout"
+                                class="fa-solid fa-x dropout"></i>
+                        </button>
+                        <div class="dropdown-content drop-content-hidden">
+                            <ul>
+                                <li class="">
+                                    <a
+                                        href="about.html"
+                                        class="dropdown-item"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="services.html"
+                                        class="dropdown-item"
+                                        >Services</a
+                                    >
+                                </li>
+                                <li class="">
+                                    <a
+                                        href=""
+                                        class="dropdown-item"
+                                        >Pages</a
+                                    >
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="contact.html"
+                                        class="dropdown-item"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                            <div id="search-hidden">
+                                <button
+                                    type="menu"
+                                    class="head-btn search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <dialog id="search-dialog">
+                <form class="search__div">
+                    <span>Search here</span>
+                    <div>
+                        <input
+                            placeholder="Search here..."
+                            class="search-box"
+                            type="text"
+                            required />
+                        <button
+                            type="submit"
+                            id="search-btn"
+                            class="button">
+                            Search
+                        </button>
+                    </div>
+                    <button
+                        type="button"
+                        id="dialog-closebtn"
+                        class="">
+                        <i
+                            id="dialog-dropout"
+                            class="fa-solid fa-x"></i>
+                    </button>
+                </form>
+            </dialog>
+            <!-- CAROUSEL -->
+            <div class="slideshow-container slider">
+                <div class="mySlides mySlides-1 slide">
+                    <div class="slide-content">
+                        <span>MAKE THE RIGHT MOVE.</span>
+                        <p>Moving Your Products Across All Borders.</p>
+                        <a
+                            class="button btn__header"
+                            href=""
+                            >Learn More</a
+                        >
+                    </div>
+                </div>
+                <div class="mySlides mySlides-2 slide">
+                    <div class="slide-content">
+                        <span>GO SMOOTHLY WITH SAFETY.</span>
+                        <p>We Are Here To Move Your Business.</p>
+                        <a
+                            class="button btn__header"
+                            href=""
+                            >Learn More</a
+                        >
+                    </div>
+                </div>
+                <div class="mySlides mySlides-3 slide">
+                    <div class="slide-content">
+                        <span>MAKE THE RIGHT MOVE.</span>
+                        <p>Moving Your Products Across All Borders.</p>
+                        <a
+                            class="button btn__header"
+                            href=""
+                            >Learn More</a
+                        >
+                    </div>
+                </div>
+                <div class="mySlides mySlides-4 slide">
+                    <div class="slide-content">
+                        <span>GO SMOOTHLY WITH SAFETY.</span>
+                        <p>We Are Here To Move Your Business.</p>
+                        <a
+                            class="button btn__header"
+                            href=""
+                            >Learn More</a
+                        >
+                    </div>
+                </div>
+                <!-- SWITCH BTN -->
+                <a class="prev btn btn-prev">
+                    &nbsp; <i class="fa fa-angle-left"></i
+                ></a>
+                <a class="next btn btn-next">
+                    &nbsp; <i class="fa fa-angle-right"></i
+                ></a>
             </div>
-          </div>
-        </div>
-        <!-- ABOUT BOT -->
-        <div class="about__bot about-layout2__body flex container">
-          <div class="abt-l2__items">
-            <h6>SECURE COURIER.</h6>
-            <h4>Secure Courier For Small & Big Packages</h4>
-            <p>
-              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-              ultrices in ligula. Semper at tempufddfel.Lorem ipsum dolor sit,
-              amet consectetur ante ipsum elit. faucibus orci luctus et ultrices
-              posuere cubilia Curae; Nulla mollis dapibus nunc.
-            </p>
-            <div>
-              <a class="button btn__abt--bot" href="">Learn More</a>
+        </header>
+        <main>
+            <!-- ABOUT -->
+            <section id="about">
+                <div class="sect-heading">
+                    <h3>ABOUT US</h3>
+                </div>
+                <!-- ABOUT TOP -->
+                <div class="about__top container">
+                    <div class="about-layout1__body flex">
+                        <div class="abt-l1__img">
+                            <img
+                                src="img/about/g2.jpg"
+                                alt="g2.jpg" />
+                        </div>
+                        <div class="abt-l1__items">
+                            <div>
+                                <h6>WE'RE SAFE MOVERS.</h6>
+                                <h4>Fast And Reliable Shipping Services</h4>
+                            </div>
+                            <p>
+                                Lorem ipsum viverra feugiat. Pellen tesque
+                                libero ut justo, ultrices in ligula. Semper at
+                                tempufddfel.Lorem ipsum dolor sit, amet
+                                consectetur ante ipsum elit.
+                                <br />
+                                Faucibus orci luctus et ultrices posuere cubilia
+                                Curae; Nulla mollis dapibus nunc.
+                                <br />
+                                Lorem ipsum viverra feugiat. Pellen tesque
+                                libero ut justo, ultrices in ligula. Semper at
+                                tempufddfel.
+                            </p>
+                            <div>
+                                <a
+                                    class="button btn__abt--top"
+                                    href=""
+                                    >Learn More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ABOUT MID -->
+                <div class="about-mid">
+                    <div class="about__mid flex container">
+                        <div class="about-mid__cover">
+                            <div class="abt-mid__cover-wrapper">
+                                <div
+                                    class="abt-mid__items abt-mid__items--left"></div>
+                                <div class="abt-mid-items__content">
+                                    <p>Global Logistic Services For Business</p>
+                                    <a
+                                        class="button btn__abt--mid"
+                                        href=""
+                                        >Explore Property</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-mid__cover">
+                            <div class="abt-mid__cover-wrapper">
+                                <div
+                                    class="abt-mid__items abt-mid__items--right"></div>
+                                <div class="abt-mid-items__content">
+                                    <p>
+                                        We Give You Complete Control Of Your
+                                        Shipments
+                                    </p>
+                                    <a
+                                        class="button btn__abt--mid"
+                                        href=""
+                                        >Explore Property</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ABOUT BOT -->
+                <div class="about__bot about-layout2__body flex container">
+                    <div class="abt-l2__items">
+                        <h6>SECURE COURIER.</h6>
+                        <h4>Secure Courier For Small & Big Packages</h4>
+                        <p>
+                            Lorem ipsum viverra feugiat. Pellen tesque libero ut
+                            justo, ultrices in ligula. Semper at
+                            tempufddfel.Lorem ipsum dolor sit, amet consectetur
+                            ante ipsum elit. faucibus orci luctus et ultrices
+                            posuere cubilia Curae; Nulla mollis dapibus nunc.
+                        </p>
+                        <div>
+                            <a
+                                class="button btn__abt--bot"
+                                href=""
+                                >Learn More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="abt-l2__subitems flex">
+                        <div class="abt-l2-sub__content flex">
+                            <div class="abt-l2-sub__icon">
+                                <i class="fas fa-truck-loading"></i>
+                            </div>
+                            <div class="abt-l2-sub__text">
+                                <a href="">Tracking Is Easy</a>
+                                <p>
+                                    Lorem ipsum viverra feugiat. Pellen tesque
+                                    libero ut justo, ultrices in ligula
+                                    tempufddfel.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="abt-l2-sub__content flex">
+                            <div class="abt-l2-sub__icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <div class="abt-l2-sub__text">
+                                <a href="">Multiple Warehouses</a>
+                                <p>
+                                    Lorem ipsum viverra feugiat. Pellen tesque
+                                    libero ut justo, ultrices in ligula
+                                    tempufddfel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ABOUT VIDEO -->
+                <div class="about__video flex container">
+                    <div class="about-video__play flex">
+                        <div class="wave-animation flex">
+                            <div class="circle"></div>
+                            <div
+                                class="circle"
+                                style="animation-delay: 1s"></div>
+                            <div
+                                class="circle"
+                                style="animation-delay: 2s"></div>
+                            <div
+                                class="circle"
+                                style="animation-delay: 3s"></div>
+                            <div
+                                class="circle"
+                                style="animation-delay: 4s"></div>
+                            <a
+                                id="open-video"
+                                class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="abt-l1__items about-video__content">
+                        <h6>FASTEST COURIER SERVICES</h6>
+                        <h4>
+                            We Provide The Best And Fastest Courier Services
+                            Nowadays
+                        </h4>
+                        <p>
+                            Lorem ipsum viverra feugiat. Pellen tesque libero ut
+                            justo, ultrices in ligula. Semper at
+                            tempufddfel.Lorem ipsum dolor sit, amet consectetur
+                            ante ipsum elit. faucibus orci luctus et ultrices
+                            posuere cubilia Curae; Nulla mollis dapibus nunc.
+                        </p>
+                        <div>
+                            <a
+                                class="button btn__abt--vid"
+                                href=""
+                                >Learn More</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <dialog
+                    id="video-dialog"
+                    class="abt-video__popup">
+                    <div id="video-content">
+                        <div
+                            id="close-video"
+                            class="video-popup__close-btn">
+                            <i
+                                id="video-close"
+                                class="fa-solid fa-x"></i>
+                        </div>
+                        <iframe
+                            class="video__iframe"
+                            src="https://player.vimeo.com/video/395483299?h=f7c7d5cb59&mute=1"
+                            frameborder="0"
+                            allow="fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </dialog>
+            </section>
+            <!-- SERVICES -->
+            <section id="services">
+                <div class="sect-heading">
+                    <span>WHAT WE DO</span>
+                    <h3>OUR SERVICES</h3>
+                </div>
+                <!-- SERVICES TOP -->
+                <div
+                    class="ser-top__body--layout ser-layout1__body--layout flex container">
+                    <div class="ser-layout1__items ser-layout1__items--layout">
+                        <div class="ser-l1-items__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="ser-l1-items__content">
+                            <a href="">Transportation</a>
+                            <p>
+                                Lorem ipsum dolor sit amet, elit. Id ab commodi
+                                magnam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ser-layout1__items ser-layout1__items--layout">
+                        <div class="ser-l1-items__icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="ser-l1-items__content">
+                            <a href="">Live Monitoring</a>
+                            <p>
+                                Lorem ipsum dolor sit amet, elit. Id ab commodi
+                                magnam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ser-layout1__items ser-layout1__items--layout">
+                        <div class="ser-l1-items__icon">
+                            <i class="fas fa-people-carry"></i>
+                        </div>
+                        <div class="ser-l1-items__content">
+                            <a href="">Worldwide Service</a>
+                            <p>
+                                Lorem ipsum dolor sit amet, elit. Id ab commodi
+                                magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERVICES BOT -->
+                <div class="ser-bot">
+                    <div
+                        class="ser-bot__body--layout ser-layout2__body--layout flex container">
+                        <div class="ser-layout2__items">
+                            <div class="ser-l2__items-wrapper">
+                                <a href="">
+                                    <div
+                                        class="ser-l2__items-img ser-l2__items-img--bot1"></div>
+                                </a>
+                            </div>
+                            <div class="ser-l1-items__content">
+                                <a href="">Road Freight</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, elit. Id ab
+                                    commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ser-layout2__items">
+                            <div class="ser-l2__items-wrapper">
+                                <a href="">
+                                    <div
+                                        class="ser-l2__items-img ser-l2__items-img--bot2"></div>
+                                </a>
+                            </div>
+                            <div class="ser-l1-items__content">
+                                <a href="">Air Shipping </a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, elit. Id ab
+                                    commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ser-layout2__items">
+                            <div class="ser-l2__items-wrapper">
+                                <a href="">
+                                    <div
+                                        class="ser-l2__items-img ser-l2__items-img--bot3"></div>
+                                </a>
+                            </div>
+                            <div class="ser-l1-items__content">
+                                <a href="">Logistic Service</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, elit. Id ab
+                                    commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ser-layout2__items">
+                            <div class="ser-l2__items-wrapper">
+                                <a href="">
+                                    <div
+                                        class="ser-l2__items-img ser-l2__items-img--bot4"></div>
+                                </a>
+                            </div>
+                            <div class="ser-l1-items__content">
+                                <a href="">Ground Shipping</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, elit. Id ab
+                                    commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-button">
+                    <a
+                        class="button btn__ser"
+                        href=""
+                        >More Services</a
+                    >
+                </div>
+            </section>
+            <!-- CUSTOMER -->
+            <section class="customer">
+                <div class="customer__background">
+                    <div class="customer__wrapper">
+                        <div
+                            class="customer__content customer__content--content-1">
+                            <div class="ctm-ctn__top">
+                                <span class="ctm-ctn__icon">
+                                    <i class="fas fa-quote-left me-2"></i>
+                                </span>
+                                <blockquote class="customer__quote">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Laboriosam ut nemo fugiat
+                                    mollitia voluptatibus explicabo neque eos
+                                    doloribus dignissimos, labore possimus
+                                    doloremque, aut omnis, harum dolorem facere
+                                    et aperiam commodi.
+                                </blockquote>
+                            </div>
+                            <div class="ctm-ctn__bot flex">
+                                <div class="content__bot--img">
+                                    <img
+                                        src="img/customer/team1.jpg"
+                                        alt="team1.jpg" />
+                                </div>
+                                <div class="content-bot--sign">
+                                    <span class="bot-sign--name"
+                                        >John Wilson</span
+                                    >
+                                    <p class="bot-sign--sub">
+                                        Subtitle goes here
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="customer__content customer__content--content-2">
+                            <div class="ctm-ctn__top">
+                                <span class="ctm-ctn__icon">
+                                    <i class="fas fa-quote-left me-2"></i>
+                                </span>
+                                <blockquote class="customer__quote">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Laboriosam ut nemo fugiat
+                                    mollitia voluptatibus explicabo neque eos
+                                    doloribus dignissimos, labore possimus
+                                    doloremque, aut omnis, harum dolorem facere
+                                    et aperiam commodi.
+                                </blockquote>
+                            </div>
+                            <div class="ctm-ctn__bot flex">
+                                <div class="content__bot--img">
+                                    <img
+                                        src="img/customer/team2.jpg"
+                                        alt="team2.jpg" />
+                                </div>
+                                <div class="content-bot--sign">
+                                    <span class="bot-sign--name"
+                                        >John Cehna</span
+                                    >
+                                    <p class="bot-sign--sub">
+                                        Subtitle goes here
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="customer__content customer__content--content-3">
+                            <div class="ctm-ctn__top">
+                                <span class="ctm-ctn__icon">
+                                    <i class="fas fa-quote-left me-2"></i>
+                                </span>
+                                <blockquote class="customer__quote">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Laboriosam ut nemo fugiat
+                                    mollitia voluptatibus explicabo neque eos
+                                    doloribus dignissimos, labore possimus
+                                    doloremque, aut omnis, harum dolorem facere
+                                    et aperiam commodi.
+                                </blockquote>
+                            </div>
+                            <div class="ctm-ctn__bot flex">
+                                <div class="content__bot--img">
+                                    <img
+                                        src="img/customer/team3.jpg"
+                                        alt="team3.jpg" />
+                                </div>
+                                <div class="content-bot--sign">
+                                    <span class="bot-sign--name"
+                                        >John Kenedy</span
+                                    >
+                                    <p class="bot-sign--sub">
+                                        Subtitle goes here
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-dot__control">
+                        <div class="ctm__dot ctm__dot--1"></div>
+                        <div class="ctm__dot ctm__dot--2"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- ARTICLE-->
+            <section class="article">
+                <div class="container">
+                    <div class="sect-heading">
+                        <span>OUR ARTICLE </span>
+                        <h3>STAY UPDATED WITH OUR NEWS FEED</h3>
+                    </div>
+                    <!-- ARTICLE TOP -->
+                    <div class="article__top">
+                        <div class="art-top__body flex">
+                            <div class="article__items">
+                                <div class="art-items__cover">
+                                    <div class="art-items__cover-wrapper">
+                                        <a href="">
+                                            <div
+                                                class="art-top__img art-top__img--1"></div>
+                                        </a>
+                                    </div>
+                                    <div class="art__date">10 April</div>
+                                </div>
+                                <div class="art__link">
+                                    <a href="">
+                                        <i class="fas fa-user-alt"></i>
+                                        by W3Layouts</a
+                                    >
+                                </div>
+                                <div class="art-top__text">
+                                    <a href="">Hello World!</a>
+                                </div>
+                            </div>
+                            <div class="article__items">
+                                <div class="art-items__cover">
+                                    <div class="art-items__cover-wrapper">
+                                        <a href="">
+                                            <div
+                                                class="art-top__img art-top__img--2"></div>
+                                        </a>
+                                    </div>
+                                    <div class="art__date">10 April</div>
+                                </div>
+                                <div class="art__link">
+                                    <a href="">
+                                        <i class="fas fa-user-alt"></i>
+                                        by W3Layouts</a
+                                    >
+                                </div>
+                                <div class="art-top__text">
+                                    <a href=""
+                                        >Secure Courier For Small & Big
+                                        Packages</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="article__items">
+                                <div class="art-items__cover">
+                                    <div class="art-items__cover-wrapper">
+                                        <a href="">
+                                            <div
+                                                class="art-top__img art-top__img--3"></div>
+                                        </a>
+                                    </div>
+                                    <div class="art__date">10 April</div>
+                                </div>
+                                <div class="art__link">
+                                    <a href="">
+                                        <i class="fas fa-user-alt"></i>
+                                        by W3Layouts</a
+                                    >
+                                </div>
+                                <div class="art-top__text">
+                                    <a href=""
+                                        >We Give You Complete Control Of Your
+                                        Shipments.</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ARTICLE BOT -->
+                    <div class="article__bot">
+                        <div class="art-bot__body flex">
+                            <p>
+                                Don't Miss Our Future Updates! Get Subscribed
+                                Today!
+                            </p>
+                            <form
+                                action=""
+                                class="art-bot__form">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Type Your Email Address"
+                                    required />
+                                <button type="submit">Subscrible</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="">
+            <!-- FOOTER TOP -->
+            <div class="footer__top flex container">
+                <!-- TOP LEFT -->
+                <div class="fter-top__left">
+                    <div class="fter-tl__content">
+                        <a href="">
+                            <i class="fas fa-truck-moving logo"></i>
+                            <span> Transpolar </span>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ute dolor
+                            sit.
+                        </p>
+                    </div>
+                    <!-- ICON -->
+                    <div class="fter-tl__icons flex">
+                        <!--FB-->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <!-- IN -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <!-- TWITTER -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <!-- GG -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- TOP RIGHT -->
+                <div class="fter-top__right flex">
+                    <div class="fter-tr__items">
+                        <span>Who We Are</span>
+                        <ul>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="">New & Media</a>
+                            </li>
+                            <li>
+                                <a href="">Work With Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>What We Do</span>
+                        <ul>
+                            <li>
+                                <a href="">Road Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Air Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Ocean Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Vacation Freight</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>Our Company</span>
+                        <ul>
+                            <li>
+                                <a href="">Locations</a>
+                            </li>
+                            <li>
+                                <a href="">Tracking</a>
+                            </li>
+                            <li>
+                                <a href="">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>More Info </span>
+                        <ul>
+                            <li>
+                                <a href="tel:12324016694"
+                                    ><i class="fa-solid fa-phone"></i> :+12
+                                    324-016-694</a
+                                >
+                            </li>
+                            <li>
+                                <a href="mailto:Office@example.com"
+                                    ><i class="fa-solid fa-envelope"></i>
+                                    :Office@example.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.google.com/maps/dir//New+York+USA/@40.7127753,-74.0059728,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2m2!1d-74.0059728!2d40.7127753"
+                                    ><i
+                                        class="fa-solid fa-map-location-dot"></i>
+                                    :New York - 1060, <br />
+                                    Honey Avenue</a
+                                >
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="abt-l2__subitems flex">
-            <div class="abt-l2-sub__content flex">
-              <div class="abt-l2-sub__icon">
-                <i class="fas fa-truck-loading"></i>
-              </div>
-              <div class="abt-l2-sub__text">
-                <a href="">Tracking Is Easy</a>
+            <!-- FOOTER BOT -->
+            <hr />
+            <div class="footer__bot container">
                 <p>
-                  Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                  ultrices in ligula tempufddfel.
+                    © 2022 Transpolar. All Rights Reserved | WordPress Theme by
+                    <a href="">W3Layouts.</a>
                 </p>
-              </div>
             </div>
-            <div class="abt-l2-sub__content flex">
-              <div class="abt-l2-sub__icon">
-                <i class="fas fa-boxes"></i>
-              </div>
-              <div class="abt-l2-sub__text">
-                <a href="">Multiple Warehouses</a>
-                <p>
-                  Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                  ultrices in ligula tempufddfel.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ABOUT VIDEO -->
-        <div class="about__video flex container">
-          <div class="about-video__play flex">
-            <div class="wave-animation flex">
-              <div class="circle"></div>
-              <div class="circle" style="animation-delay: 1s"></div>
-              <div class="circle" style="animation-delay: 2s"></div>
-              <div class="circle" style="animation-delay: 3s"></div>
-              <div class="circle" style="animation-delay: 4s"></div>
-              <a id="open-video" class="playbtn">
-                <i class="fa-solid fa-play"></i>
-              </a>
-            </div>
-          </div>
-          <div class="abt-l1__items about-video__content">
-            <h6>FASTEST COURIER SERVICES</h6>
-            <h4>We Provide The Best And Fastest Courier Services Nowadays</h4>
-            <p>
-              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-              ultrices in ligula. Semper at tempufddfel.Lorem ipsum dolor sit,
-              amet consectetur ante ipsum elit. faucibus orci luctus et ultrices
-              posuere cubilia Curae; Nulla mollis dapibus nunc.
-            </p>
-            <div>
-              <a class="button btn__abt--vid" href="">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <dialog id="video-dialog" class="abt-video__popup">
-          <div id="video-content">
-            <div id="close-video" class="video-popup__close-btn">
-              <i id="video-close" class="fa-solid fa-x"></i>
-            </div>
-            <iframe class="video__iframe" src="https://player.vimeo.com/video/395483299?h=f7c7d5cb59&mute=1" frameborder="0" allow="fullscreen; picture-in-picture"></iframe>
-          </div>
-        </dialog>
-      </section>
-      <!-- SERVICES -->
-      <section id="services">
-        <div class="sect-heading">
-          <span>WHAT WE DO</span>
-          <h3>OUR SERVICES</h3>
-        </div>
-        <!-- SERVICES TOP -->
-        <div
-          class="ser-top__body--layout ser-layout1__body--layout flex container"
-        >
-          <div class="ser-layout1__items ser-layout1__items--layout">
-            <div class="ser-l1-items__icon">
-              <i class="fas fa-truck"></i>
-            </div>
-            <div class="ser-l1-items__content">
-              <a href="">Transportation</a>
-              <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
-            </div>
-          </div>
-          <div class="ser-layout1__items ser-layout1__items--layout">
-            <div class="ser-l1-items__icon">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </div>
-            <div class="ser-l1-items__content">
-              <a href="">Live Monitoring</a>
-              <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
-            </div>
-          </div>
-          <div class="ser-layout1__items ser-layout1__items--layout">
-            <div class="ser-l1-items__icon">
-              <i class="fas fa-people-carry"></i>
-            </div>
-            <div class="ser-l1-items__content">
-              <a href="">Worldwide Service</a>
-              <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
-            </div>
-          </div>
-        </div>
-        <!-- SERVICES BOT -->
-        <div class="ser-bot">
-          <div
-            class="ser-bot__body--layout ser-layout2__body--layout flex container"
-          >
-            <div class="ser-layout2__items">
-              <div class="ser-l2__items-wrapper">
-                <a href="">
-                  <div class="ser-l2__items-img ser-l2__items-img--bot1"></div>
-                </a>
-              </div>
-              <div class="ser-l1-items__content">
-                <a href="">Road Freight</a>
-                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
-              </div>
-            </div>
-            <div class="ser-layout2__items">
-              <div class="ser-l2__items-wrapper">
-                <a href="">
-                  <div class="ser-l2__items-img ser-l2__items-img--bot2"></div>
-                </a>
-              </div>
-              <div class="ser-l1-items__content">
-                <a href="">Air Shipping </a>
-                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
-              </div>
-            </div>
-            <div class="ser-layout2__items">
-              <div class="ser-l2__items-wrapper">
-                <a href="">
-                  <div class="ser-l2__items-img ser-l2__items-img--bot3"></div>
-                </a>
-              </div>
-              <div class="ser-l1-items__content">
-                <a href="">Logistic Service</a>
-                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
-              </div>
-            </div>
-            <div class="ser-layout2__items">
-              <div class="ser-l2__items-wrapper">
-                <a href="">
-                  <div class="ser-l2__items-img ser-l2__items-img--bot4"></div>
-                </a>
-              </div>
-              <div class="ser-l1-items__content">
-                <a href="">Ground Shipping</a>
-                <p>Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="services-button">
-          <a class="button btn__ser" href="">More Services</a>
-        </div>
-      </section>
-      <!-- CUSTOMER -->
-      <section class="customer">
-        <div class="customer__background">
-          <div class="customer__wrapper">
-            <div class="customer__content customer__content--content-1">
-              <div class="ctm-ctn__top">
-                <span class="ctm-ctn__icon">
-                  <i class="fas fa-quote-left me-2"></i>
-                </span>
-                <blockquote class="customer__quote">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Laboriosam ut nemo fugiat mollitia voluptatibus explicabo
-                  neque eos doloribus dignissimos, labore possimus doloremque,
-                  aut omnis, harum dolorem facere et aperiam commodi.
-                </blockquote>
-              </div>
-              <div class="ctm-ctn__bot flex">
-                <div class="content__bot--img">
-                  <img src="img/customer/team1.jpg" alt="team1.jpg" />
-                </div>
-                <div class="content-bot--sign">
-                  <span class="bot-sign--name">John Wilson</span>
-                  <p class="bot-sign--sub">Subtitle goes here</p>
-                </div>
-              </div>
-            </div>
-            <div class="customer__content customer__content--content-2">
-              <div class="ctm-ctn__top">
-                <span class="ctm-ctn__icon">
-                  <i class="fas fa-quote-left me-2"></i>
-                </span>
-                <blockquote class="customer__quote">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Laboriosam ut nemo fugiat mollitia voluptatibus explicabo
-                  neque eos doloribus dignissimos, labore possimus doloremque,
-                  aut omnis, harum dolorem facere et aperiam commodi.
-                </blockquote>
-              </div>
-              <div class="ctm-ctn__bot flex">
-                <div class="content__bot--img">
-                  <img src="img/customer/team2.jpg" alt="team2.jpg" />
-                </div>
-                <div class="content-bot--sign">
-                  <span class="bot-sign--name">John Cehna</span>
-                  <p class="bot-sign--sub">Subtitle goes here</p>
-                </div>
-              </div>
-            </div>
-            <div class="customer__content customer__content--content-3">
-              <div class="ctm-ctn__top">
-                <span class="ctm-ctn__icon">
-                  <i class="fas fa-quote-left me-2"></i>
-                </span>
-                <blockquote class="customer__quote">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Laboriosam ut nemo fugiat mollitia voluptatibus explicabo
-                  neque eos doloribus dignissimos, labore possimus doloremque,
-                  aut omnis, harum dolorem facere et aperiam commodi.
-                </blockquote>
-              </div>
-              <div class="ctm-ctn__bot flex">
-                <div class="content__bot--img">
-                  <img src="img/customer/team3.jpg" alt="team3.jpg" />
-                </div>
-                <div class="content-bot--sign">
-                  <span class="bot-sign--name">John Kenedy</span>
-                  <p class="bot-sign--sub">Subtitle goes here</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="customer-dot__control">
-            <div class="ctm__dot ctm__dot--1"></div>
-            <div class="ctm__dot ctm__dot--2"></div>
-          </div>
-        </div>
-      </section>
-      <!-- ARTICLE-->
-      <section class="article">
-        <div class="container">
-          <div class="sect-heading">
-            <span>OUR ARTICLE </span>
-            <h3>STAY UPDATED WITH OUR NEWS FEED</h3>
-          </div>
-          <!-- ARTICLE TOP -->
-          <div class="article__top">
-            <div class="art-top__body flex">
-              <div class="article__items">
-                <div class="art-items__cover">
-                  <div class="art-items__cover-wrapper">
-                    <a href="">
-                      <div class="art-top__img art-top__img--1"></div>
-                    </a>
-                  </div>
-                  <div class="art__date">10 April</div>
-                </div>
-                <div class="art__link">
-                  <a href="">
-                    <i class="fas fa-user-alt"></i>
-                    by W3Layouts</a
-                  >
-                </div>
-                <div class="art-top__text">
-                  <a href="">Hello World!</a>
-                </div>
-              </div>
-              <div class="article__items">
-                <div class="art-items__cover">
-                  <div class="art-items__cover-wrapper">
-                    <a href="">
-                      <div class="art-top__img art-top__img--2"></div>
-                    </a>
-                  </div>
-                  <div class="art__date">10 April</div>
-                </div>
-                <div class="art__link">
-                  <a href="">
-                    <i class="fas fa-user-alt"></i>
-                    by W3Layouts</a
-                  >
-                </div>
-                <div class="art-top__text">
-                  <a href="">Secure Courier For Small & Big Packages</a>
-                </div>
-              </div>
-              <div class="article__items">
-                <div class="art-items__cover">
-                  <div class="art-items__cover-wrapper">
-                    <a href="">
-                      <div class="art-top__img art-top__img--3"></div>
-                    </a>
-                  </div>
-                  <div class="art__date">10 April</div>
-                </div>
-                <div class="art__link">
-                  <a href="">
-                    <i class="fas fa-user-alt"></i>
-                    by W3Layouts</a
-                  >
-                </div>
-                <div class="art-top__text">
-                  <a href="">We Give You Complete Control Of Your Shipments.</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ARTICLE BOT -->
-          <div class="article__bot">
-            <div class="art-bot__body flex">
-              <p>Don't Miss Our Future Updates! Get Subscribed Today!</p>
-              <form action="" class="art-bot__form">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Type Your Email Address"
-                  required
-                />
-                <button type="submit">Subscrible</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- FOOTER -->
-    <footer class="">
-      <!-- FOOTER TOP -->
-      <div class="footer__top flex container">
-        <!-- TOP LEFT -->
-        <div class="fter-top__left">
-          <div class="fter-tl__content">
-            <a href="">
-              <i class="fas fa-truck-moving logo"></i>
-              <span> Transpolar </span>
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ute dolor sit.
-            </p>
-          </div>
-          <!-- ICON -->
-          <div class="fter-tl__icons flex">
-            <!--FB-->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </div>
-            <!-- IN -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-            <!-- TWITTER -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </div>
-            <!-- GG -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-google-plus-g"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- TOP RIGHT -->
-        <div class="fter-top__right flex">
-          <div class="fter-tr__items">
-            <span>Who We Are</span>
-            <ul>
-              <li>
-                <a href="">About Us</a>
-              </li>
-              <li>
-                <a href="">Our Team</a>
-              </li>
-              <li>
-                <a href="">New & Media</a>
-              </li>
-              <li>
-                <a href="">Work With Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>What We Do</span>
-            <ul>
-              <li>
-                <a href="">Road Freight</a>
-              </li>
-              <li>
-                <a href="">Air Freight</a>
-              </li>
-              <li>
-                <a href="">Ocean Freight</a>
-              </li>
-              <li>
-                <a href="">Vacation Freight</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>Our Company</span>
-            <ul>
-              <li>
-                <a href="">Locations</a>
-              </li>
-              <li>
-                <a href="">Tracking</a>
-              </li>
-              <li>
-                <a href="">Jobs</a>
-              </li>
-              <li>
-                <a href="">Support</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>More Info </span>
-            <ul>
-              <li>
-                <a href="tel:12324016694"
-                  ><i class="fa-solid fa-phone"></i> :+12 324-016-694</a
-                >
-              </li>
-              <li>
-                <a href="mailto:Office@example.com"
-                  ><i class="fa-solid fa-envelope"></i> :Office@example.com</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.google.com/maps/dir//New+York+USA/@40.7127753,-74.0059728,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2m2!1d-74.0059728!2d40.7127753"
-                  ><i class="fa-solid fa-map-location-dot"></i> :New York -
-                  1060, <br />
-                  Honey Avenue</a
-                >
-              </li>
-              <li>
-                <a href=""></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- FOOTER BOT -->
-      <hr />
-      <div class="footer__bot container">
-        <p>
-          © 2022 Transpolar. All Rights Reserved | WordPress Theme by
-          <a href="">W3Layouts.</a>
-        </p>
-      </div>
-    </footer>
-    <!-- BACK TO TOP -->
-    <a href="#" class="top"><i class="fa-solid fa-turn-up"></i></a>
-    <script src="index.js"></script>
-  </body>
+        </footer>
+        <!-- BACK TO TOP -->
+        <a
+            href="#"
+            class="top"
+            ><i class="fa-solid fa-turn-up"></i
+        ></a>
+        <script src="index.js"></script>
+    </body>
 </html>

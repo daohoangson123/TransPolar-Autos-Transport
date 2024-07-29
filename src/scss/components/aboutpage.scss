@@ -1,4 +1,4 @@
-@import "../globals/variables.scss";
+@import '../globals/variables.scss';
 
 //SECT1
 
@@ -78,10 +78,9 @@
 //COUNT-ANIMATION
 
 @property --n {
-    syntax: "<integer>";
+    syntax: '<integer>';
     initial-value: 0;
     inherits: false;
-    
 }
 
 .counter {
@@ -95,7 +94,7 @@
 @keyframes count-animate {
     0% {
         --n: var(--from);
-        transform: scale(.5);
+        transform: scale(0.5);
     }
     50% {
         transform: scale(1.2);
@@ -136,7 +135,7 @@
     }
 
     p {
-        font-size:clamp(2.4rem, 4vw, 3.6rem);
+        font-size: clamp(2.4rem, 4vw, 3.6rem);
         font-weight: 600;
         text-align: left;
     }
@@ -152,12 +151,12 @@
             color: $primary-color;
             background-color: $bg-color;
             width: 100%;
-        
-        &-1 {
-            width: 100%;
+
+            &-1 {
+                width: 100%;
+            }
         }
     }
-}
 
     .btn__abt--sect3:hover {
         color: $bg-color;
@@ -175,7 +174,7 @@
 //SECT4
 
 .about-sect4__body {
-    grid-template-columns: repeat(auto-fit, clamp(15rem, 25vw, 28rem));
+    grid-template-columns: repeat(auto-fit, clamp(28rem, 25vw, 30rem));
     gap: 5rem;
     justify-content: center;
 }
@@ -215,20 +214,18 @@
     justify-content: center;
     bottom: 10%;
     flex-wrap: nowrap;
-    transition: .4s ease-in-out;
+    transition: 0.4s ease-in-out;
     opacity: 0;
 
-    
     .abt-sect4__icons {
-
         a {
             width: clamp(3.4rem, 4vw, 4.5rem);
             height: clamp(3.4rem, 4vw, 4.5rem);
-            margin: 0 .35rem;
-            
+            margin: 0 0.35rem;
+
             i {
                 color: $heading-color;
-                transition: .3s ease-in-out;
+                transition: 0.3s ease-in-out;
             }
         }
     }
@@ -238,12 +235,12 @@
     a {
         color: $primary-color;
     }
-    
+
     .abt-sect4__hidden-icons {
         opacity: 1;
 
         a {
-            background-color: $bg-color;            
+            background-color: $bg-color;
         }
 
         a:hover {
@@ -275,7 +272,7 @@
 
 .copllapse {
     font-size: 2rem;
-    border: .1rem solid $layer2;
+    border: 0.1rem solid $layer2;
     cursor: pointer;
 }
 
@@ -300,86 +297,83 @@
 
 //RESPONSIVE
 
-
 @media only screen and (max-width: 1200px) {
-//SECT1
+    //SECT1
 
-.about__sect1 {
-    flex-wrap: wrap;
-}
-
-//LEFT
-
-.abt-l2__subitems--sect1 {
-    flex-wrap: wrap;
-}
-
-.abt-l2-sub__content--sect1 {
-    padding-right: 0;
-}
-
-
-//RIGHT
-
-.abt-l1__img--sect1 {
-    width: 100%;
-    height: unset;
-}
-
-.abt-l1__img--sect1 img {
-    height: 50rem;
-}
-
-.abt-sect1-r__years {
-    margin-top: 2rem;
-    width: 100%;
-    position: static;
-
-    span {
-        font-size: 5rem;
+    .about__sect1 {
+        flex-wrap: wrap;
     }
 
-    p {
-        font-size: 3rem;
+    //LEFT
+
+    .abt-l2__subitems--sect1 {
+        flex-wrap: wrap;
     }
-}
 
-//SECT2
+    .abt-l2-sub__content--sect1 {
+        padding-right: 0;
+    }
 
-// .about__sect2 {
+    //RIGHT
 
-// }
+    .abt-l1__img--sect1 {
+        width: 100%;
+        height: unset;
+    }
 
-//SECT3
+    .abt-l1__img--sect1 img {
+        height: 50rem;
+    }
 
-.about-sect3__body {
-    flex-wrap: wrap;
-}
+    .abt-sect1-r__years {
+        margin-top: 2rem;
+        width: 100%;
+        position: static;
 
-.abt-sect3__text {
-    color: $bg-color;
-}
+        span {
+            font-size: 5rem;
+        }
 
-.abt-sect3__btn {
-    grid-template-columns: 1fr 1fr;
-    width: 70%;
-}
+        p {
+            font-size: 3rem;
+        }
+    }
 
-//SECT4
+    //SECT2
 
-//SECT5
-.about-sect5 {
-    flex-wrap: wrap;
-}
+    // .about__sect2 {
 
-.ser-sect5__copllapse {
-    width: 100%;
-}
+    // }
 
-.abt-sect5__left-item {
-    max-height: fit-content;
-}
+    //SECT3
 
+    .about-sect3__body {
+        flex-wrap: wrap;
+    }
+
+    .abt-sect3__text {
+        color: $bg-color;
+    }
+
+    .abt-sect3__btn {
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+
+    //SECT4
+
+    //SECT5
+    .about-sect5 {
+        flex-wrap: wrap;
+    }
+
+    .ser-sect5__copllapse {
+        width: 100%;
+    }
+
+    .abt-sect5__left-item {
+        max-height: fit-content;
+    }
 }
 
 @media only screen and (max-width: 600px) {

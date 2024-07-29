@@ -1,11 +1,10 @@
-@import "../globals/variables.scss";
+@import '../globals/variables.scss';
 
 //SERVICES
 
 #services {
     background-color: $bg-grey;
 }
-
 
 //TOP
 
@@ -23,11 +22,10 @@
         text-align: center;
         background-color: $bg-color;
         border-radius: $border-radius;
-        width: 31%;
+        width: 32%;
         padding: 5rem;
     }
 }
-
 
 .ser-l1-items__icon {
     display: grid;
@@ -37,12 +35,13 @@
     border-radius: $border-radius-full;
     background-color: $bg-grey;
     margin: 0 auto;
-    transition: .6s ease-in-out;
+    transition: all 0.5s ease-in-out;
     cursor: pointer;
 
     i {
         color: $primary-color;
         font-size: 4rem;
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -68,7 +67,6 @@
 }
 
 .ser-layout1__items:hover {
-
     .ser-l1-items__icon {
         background-color: $primary-color;
 
@@ -85,7 +83,6 @@
 //REPEATABLE LAYOUT
 
 .ser-layout2__body {
-
     &--layout {
         text-align: left;
         background: $bg-color;
@@ -95,12 +92,12 @@
 }
 
 .ser-layout2__items {
-    width: min(45%, 35rem);
+    width: min(46%, 40rem);
     position: relative;
 }
 
 .ser-l2__items-wrapper {
-    height: 18rem;
+    height: 20rem;
     border-radius: $border-radius;
     overflow: hidden;
 }
@@ -110,7 +107,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -123,9 +120,8 @@
 //
 
 .ser-l2__items-img {
-
     &--bot1 {
-    background-image: url(../img/services/g1.jpg);
+        background-image: url(../img/services/g1.jpg);
     }
 
     &--bot2 {
@@ -143,7 +139,7 @@
 
 // BUTTON
 
-.services-button{
+.services-button {
     background-color: $bg-color;
     text-align: center;
 }
@@ -151,34 +147,32 @@
 //RESPONSIVE
 
 @media only screen and (max-width: 1200px) {
-//SERVICES
+    //SERVICES
 
-//TOP
+    //TOP
 
-//REPEATABLE LAYOUT
+    //REPEATABLE LAYOUT
 
-.ser-layout1__body {
-
-    &--layout {
-        flex-wrap: wrap;
+    .ser-layout1__body {
+        &--layout {
+            flex-wrap: wrap;
+        }
     }
-}
 
-.ser-layout1__items {
-    &--layout {
-        width: 100%;
+    .ser-layout1__items {
+        &--layout {
+            width: 100%;
+        }
     }
-}
 
-//BOT
+    //BOT
 
-//REPEATABLE LAYOUT
+    //REPEATABLE LAYOUT
 
-.ser-layout2__body {
-
-    &--layout {
-        flex-wrap: wrap;
+    .ser-layout2__body {
+        &--layout {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
-}
-
 }

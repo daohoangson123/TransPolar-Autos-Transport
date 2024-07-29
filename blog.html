@@ -1,274 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transpolar - Autos & Transport</title>
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <!-- CSS -->
-    <link rel="stylesheet" href="dist/index.css" />
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <div class="header-banner">
-        <!-- NAV -->
-        <nav id="navbar">
-          <div id="logo">
-            <h1>
-              <a href="index.html">
-                <i class="fas fa-truck-moving logo"></i>
-                  <span> Transpolar </span>
-              </a>
-            </h1>
-          </div>
-          <!-- NAV-BAR -->
-          <div id="menu" class="navbar">
-            <ul id="" class="">
-              <li id="" class="navbar-item">
-                <a href="index.html">Home</a>
-              </li>
-              <li id="" class="navbar-item"><a href="about.html">About</a></li>
-              <li id="" class="navbar-item">
-                <a href="services.html">Services</a>
-              </li>
-              <li id="" class="navbar-item">
-                <!-- DROPDOWN MENU-->
-                <button id="dropbtn-main" class="dropbtn page">
-                  Pages &nbsp; <i class="fa fa-angle-down"></i>
-                </button>
-                <div class="dropdown-content dropdown-content-main">
-                  <ul>
-                    <li class="blog"><a href="blog.html" class="dropdown-item">Blog page</a></li>
-                    <li class=""><a href="404.html" class="dropdown-item">404 page</a></li>
-                    <li class=""><a href="landing.html" class="dropdown-item">Landing page</a></li>
-                    <li class=""><a href="element.html" class="dropdown-item">Elements page</a></li>
-                  </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Transpolar - Autos & Transport</title>
+        <!-- Font -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap"
+            rel="stylesheet" />
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicon/android-chrome-192x192.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon/favicon-16x16.png" />
+        <link
+            rel="manifest"
+            href="img/favicon/site.webmanifest" />
+        <!-- CSS -->
+        <link
+            rel="stylesheet"
+            href="dist/index.css" />
+        <!-- JQUERY -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-banner">
+                <!-- NAV -->
+                <nav id="navbar">
+                    <div id="logo">
+                        <h1>
+                            <a href="index.html">
+                                <i class="fas fa-truck-moving logo"></i>
+                                <span> Transpolar </span>
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- NAV-BAR -->
+                    <div
+                        id="menu"
+                        class="navbar">
+                        <ul
+                            id=""
+                            class="">
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <!-- DROPDOWN MENU-->
+                                <button
+                                    id="dropbtn-main"
+                                    class="dropbtn page">
+                                    Pages &nbsp;
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <div
+                                    class="dropdown-content dropdown-content-main">
+                                    <ul>
+                                        <li class="blog">
+                                            <a
+                                                href="blog.html"
+                                                class="dropdown-item"
+                                                >Blog page</a
+                                            >
+                                        </li>
+                                        <li class="">
+                                            <a
+                                                href="404.html"
+                                                class="dropdown-item"
+                                                >404 page</a
+                                            >
+                                        </li>
+                                        <li class="">
+                                            <a
+                                                href="landing.html"
+                                                class="dropdown-item"
+                                                >Landing page</a
+                                            >
+                                        </li>
+                                        <li class="">
+                                            <a
+                                                href="element.html"
+                                                class="dropdown-item"
+                                                >Elements page</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li
+                                id=""
+                                class="navbar-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- SEARCH-->
+                        <div id="search">
+                            <button class="head-btn search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- DARKMODE -->
+                        <div id="darkmode">
+                            <button class="head-btn dark-btn">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun hide"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden-nav">
+                        <!-- DARKMODE RES-->
+                        <div id="darkmode1">
+                            <button class="head-btn dark-btn">
+                                <i class="fa-regular fa-moon"></i>
+                                <i class="fa-regular fa-sun hide"></i>
+                            </button>
+                        </div>
+                        <!-- HIDDEN MENU-->
+                        <div class="hidden-menu">
+                            <button
+                                id="dropbtn-hidden"
+                                class="dropbtn dropbtn-hidden">
+                                <i
+                                    id="dropin"
+                                    class="fa fa-bars"></i>
+                                <i
+                                    id="dropout"
+                                    class="fa-solid fa-x dropout"></i>
+                            </button>
+                            <div class="dropdown-content drop-content-hidden">
+                                <ul>
+                                    <li class="">
+                                        <a
+                                            href="about.html"
+                                            class="dropdown-item"
+                                            >About</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="services.html"
+                                            class="dropdown-item"
+                                            >Services</a
+                                        >
+                                    </li>
+                                    <li class="page">
+                                        <a
+                                            href=""
+                                            class="dropdown-item"
+                                            >Pages</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a
+                                            href="contact.html"
+                                            class="dropdown-item"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                                <div id="search-hidden">
+                                    <button class="head-btn search-btn">
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <dialog id="search-dialog">
+                    <form class="search__div">
+                        <span>Search here</span>
+                        <div>
+                            <input
+                                placeholder="Search here..."
+                                class="search-box"
+                                type="text"
+                                required />
+                            <button
+                                type="submit"
+                                id="search-btn"
+                                class="button">
+                                Search
+                            </button>
+                        </div>
+                        <button
+                            type="button"
+                            id="dialog-closebtn"
+                            class="">
+                            <i
+                                id="dialog-dropout"
+                                class="fa-solid fa-x"></i>
+                        </button>
+                    </form>
+                </dialog>
+                <div class="header-content">
+                    <h2>Blogs</h2>
+                    <span> <a href="index.html">Home</a> >> Blogs page</span>
                 </div>
-              </li>
-              <li id="" class="navbar-item">
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <!-- SEARCH-->
-            <div id="search">
-              <button class="head-btn search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
             </div>
-            <!-- DARKMODE -->
-            <div id="darkmode">
-              <button class="head-btn dark-btn">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun hide"></i>
-              </button>
-            </div>
-          </div>
-          <div class="hidden-nav">
-            <!-- DARKMODE RES-->
-            <div id="darkmode1">
-              <button class="head-btn dark-btn">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun hide"></i>
-              </button>
-            </div>
-            <!-- HIDDEN MENU-->
-            <div class="hidden-menu">
-              <button id="dropbtn-hidden" class="dropbtn dropbtn-hidden">
-                <i id="dropin" class="fa fa-bars"></i>
-                <i id="dropout" class="fa-solid fa-x dropout"></i>
-              </button>
-              <div class="dropdown-content drop-content-hidden">
-                <ul>
-                  <li class=""><a href="about.html" class="dropdown-item">About</a></li>
-                  <li class=""><a href="services.html" class="dropdown-item">Services</a></li>
-                  <li class="page"><a href="" class="dropdown-item">Pages</a></li>
-                  <li class=""><a href="contact.html" class="dropdown-item">Contact</a></li>
-                </ul>
-                <div id="search-hidden">
-                  <button class="head-btn search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
+        </header>
+        <main></main>
+        <!-- FOOTER -->
+        <footer>
+            <!-- FOOTER TOP -->
+            <div class="footer__top flex container">
+                <!-- TOP LEFT -->
+                <div class="fter-top__left">
+                    <div class="fter-tl__content">
+                        <a href=""
+                            ><i class="fas fa-truck-moving logo"></i
+                            >Transpolar</a
+                        >
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ute dolor
+                            sit.
+                        </p>
+                    </div>
+                    <!-- ICON -->
+                    <div class="fter-tl__icons flex">
+                        <!--FB-->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <!-- IN -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <!-- TWITTER -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <!-- GG -->
+                        <div class="fter__icons">
+                            <a href="">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- TOP RIGHT -->
+                <div class="fter-top__right flex">
+                    <div class="fter-tr__items">
+                        <span>Who We Are</span>
+                        <ul>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="">New & Media</a>
+                            </li>
+                            <li>
+                                <a href="">Work With Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>What We Do</span>
+                        <ul>
+                            <li>
+                                <a href="">Road Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Air Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Ocean Freight</a>
+                            </li>
+                            <li>
+                                <a href="">Vacation Freight</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>Our Company</span>
+                        <ul>
+                            <li>
+                                <a href="">Locations</a>
+                            </li>
+                            <li>
+                                <a href="">Tracking</a>
+                            </li>
+                            <li>
+                                <a href="">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fter-tr__items">
+                        <span>More Info </span>
+                        <ul>
+                            <li>
+                                <a href="tel:12324016694"
+                                    ><i class="fa-solid fa-phone"></i> :+12
+                                    324-016-694</a
+                                >
+                            </li>
+                            <li>
+                                <a href=""
+                                    ><i class="fa-solid fa-envelope"></i>
+                                    :Office@example.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.google.com/maps/dir//New+York+USA/@40.7127753,-74.0059728,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2m2!1d-74.0059728!2d40.7127753"
+                                    ><i
+                                        class="fa-solid fa-map-location-dot"></i>
+                                    :New York - 1060, <br />
+                                    Honey Avenue</a
+                                >
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </nav>
-        <dialog id="search-dialog">
-          <form class="search__div">
-            <span>Search here</span>
-              <div>
-                <input placeholder="Search here..." class="search-box" type="text" required/>
-                <button type="submit" id="search-btn" class="button">Search</button>
-              </div>
-              <button type="button" id="dialog-closebtn" class="">
-                <i id="dialog-dropout" class="fa-solid fa-x"></i>
-              </button>
-          </form>
-        </dialog>
-        <div class="header-content">
-          <h2>Blogs</h2>
-          <span> <a href="index.html">Home</a> >> Blogs page</span>
-        </div>
-      </div>
-    </header>
-    <main>
-      
-    </main>
-    <!-- FOOTER -->
-    <footer>
-      <!-- FOOTER TOP -->
-      <div class="footer__top flex container">
-        <!-- TOP LEFT -->
-        <div class="fter-top__left">
-          <div class="fter-tl__content">
-            <a href=""><i class="fas fa-truck-moving logo"></i>Transpolar</a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ute dolor sit.
-            </p>
-          </div>
-          <!-- ICON -->
-          <div class="fter-tl__icons flex">
-            <!--FB-->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
+            <!-- FOOTER BOT -->
+            <hr />
+            <div class="footer__bot container">
+                <p>
+                    © 2022 Transpolar. All Rights Reserved | WordPress Theme by
+                    <a href="">W3Layouts.</a>
+                </p>
             </div>
-            <!-- IN -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-            <!-- TWITTER -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </div>
-            <!-- GG -->
-            <div class="fter__icons">
-              <a href="">
-                <i class="fa-brands fa-google-plus-g"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- TOP RIGHT -->
-        <div class="fter-top__right flex">
-          <div class="fter-tr__items">
-            <span>Who We Are</span>
-            <ul>
-              <li>
-                <a href="">About Us</a>
-              </li>
-              <li>
-                <a href="">Our Team</a>
-              </li>
-              <li>
-                <a href="">New & Media</a>
-              </li>
-              <li>
-                <a href="">Work With Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>What We Do</span>
-            <ul>
-              <li>
-                <a href="">Road Freight</a>
-              </li>
-              <li>
-                <a href="">Air Freight</a>
-              </li>
-              <li>
-                <a href="">Ocean Freight</a>
-              </li>
-              <li>
-                <a href="">Vacation Freight</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>Our Company</span>
-            <ul>
-              <li>
-                <a href="">Locations</a>
-              </li>
-              <li>
-                <a href="">Tracking</a>
-              </li>
-              <li>
-                <a href="">Jobs</a>
-              </li>
-              <li>
-                <a href="">Support</a>
-              </li>
-            </ul>
-          </div>
-          <div class="fter-tr__items">
-            <span>More Info </span>
-            <ul>
-              <li>
-                <a href="tel:12324016694"
-                  ><i class="fa-solid fa-phone"></i> :+12 324-016-694</a
-                >
-              </li>
-              <li>
-                <a href=""
-                  ><i class="fa-solid fa-envelope"></i> :Office@example.com</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.google.com/maps/dir//New+York+USA/@40.7127753,-74.0059728,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2m2!1d-74.0059728!2d40.7127753"
-                  ><i class="fa-solid fa-map-location-dot"></i> :New York -
-                  1060, <br />
-                  Honey Avenue</a
-                >
-              </li>
-              <li>
-                <a href=""></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- FOOTER BOT -->
-      <hr />
-      <div class="footer__bot container">
-        <p>
-          © 2022 Transpolar. All Rights Reserved | WordPress Theme by
-          <a href="">W3Layouts.</a>
-        </p>
-      </div>
-    </footer>
-    <!-- BACK TO TOP -->
-    <a href="#" class="top"><i class="fa-solid fa-turn-up"></i></a>
-    <script src="index.js"></script>
-  </body>
+        </footer>
+        <!-- BACK TO TOP -->
+        <a
+            href="#"
+            class="top"
+            ><i class="fa-solid fa-turn-up"></i
+        ></a>
+        <script src="index.js"></script>
+    </body>
 </html>

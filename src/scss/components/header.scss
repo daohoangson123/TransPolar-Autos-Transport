@@ -1,4 +1,4 @@
-@import "../globals/variables.scss";
+@import '../globals/variables.scss';
 
 //NAV
 
@@ -8,14 +8,14 @@ nav {
     position: fixed;
     width: 100%;
     padding: 3rem 8rem;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     z-index: 2;
 }
 
 // class được add khi scrolldown
 .stickyNav {
     background: $bg-color;
-    box-shadow: 0 .2rem .2rem .2rem $layer2;
+    box-shadow: 0 0.2rem 0.2rem 0.2rem $layer2;
 
     a {
         color: $nav-color;
@@ -28,7 +28,6 @@ nav {
     #dropbtn-main:hover {
         color: $primary-color;
     }
-
 
     .dark-btn {
         color: $nav-color;
@@ -70,7 +69,8 @@ nav {
 //DROPDOWN
 
 /* Dropdown Button */
-.hidden-menu, .dropbtn-hidden {
+.hidden-menu,
+.dropbtn-hidden {
     width: 3rem;
     height: 3rem;
 }
@@ -82,8 +82,8 @@ nav {
 
     i {
         font-size: 1rem;
-        margin-top: -.5rem;
-        margin-left: -.5rem;
+        margin-top: -0.5rem;
+        margin-left: -0.5rem;
     }
 }
 
@@ -102,7 +102,7 @@ nav {
     display: none;
     position: absolute;
     background-color: $dropdown-color;
-    border: .1rem solid $border-color-light;
+    border: 0.1rem solid $border-color-light;
     border-radius: $border-radius;
     min-width: 15rem;
     margin-top: 1rem;
@@ -133,7 +133,7 @@ nav {
 .dropdown-content-main::before {
     content: '';
     position: absolute;
-    top: -.7rem;
+    top: -0.7rem;
     left: 50%;
     width: 1rem;
     height: 1rem;
@@ -159,9 +159,8 @@ nav {
 }
 
 .show {
-    display:block;
+    display: block;
 }
-
 
 //SEARCH+DARK
 
@@ -172,7 +171,7 @@ nav {
     height: 100vh;
     background: $layer1;
     border: none;
-    transition: transform .5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     z-index: 2;
 
     .search__div {
@@ -192,10 +191,11 @@ nav {
 
         .search-box {
             width: clamp(24rem, 15vw, 30rem);
-            height: 5.5rem;
+            height: 6rem;
             border-radius: $border-radius;
             font-size: 2rem;
-            margin-right: 1rem;
+            margin: 0 1rem 1rem 0;
+            padding: 1rem;
         }
 
         #dialog-closebtn {
@@ -205,14 +205,14 @@ nav {
             width: 3rem;
             height: 3rem;
             background: $primary-color;
-            border: .2rem solid $nav-color;;
+            border: 0.2rem solid $nav-color;
             border-radius: $border-radius;
             font-size: 2rem;
         }
 
         #dialog-closebtn:hover {
             background: $button-hover-color;
-            box-shadow: 0 0 .2rem .2rem $font-color;
+            box-shadow: 0 0 0.2rem 0.2rem $font-color;
         }
     }
 }
@@ -225,12 +225,14 @@ nav {
     cursor: pointer;
 }
 
-#search, #darkmode, #darkmode1 {
+#search,
+#darkmode,
+#darkmode1 {
     border-radius: $border-radius-full;
 }
 
 #search-hidden {
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .search-btn {
@@ -240,11 +242,11 @@ nav {
 }
 
 .search-btn:hover {
-    box-shadow: 0 0 .4rem .2rem  $border-color-light;
+    box-shadow: 0 0 0.4rem 0.2rem $border-color-light;
 }
 
 .dark-btn:hover {
-    box-shadow: 0 0 .4rem .2rem  $border-color-light;
+    box-shadow: 0 0 0.4rem 0.2rem $border-color-light;
     background: $layer2;
 }
 
@@ -313,11 +315,11 @@ nav {
     background-position: center;
     width: 100%;
     height: 100%;
-    transition: all .5s ease-in-out;
+    transform-origin: bottom left;
+    transition: all 0.5s ease-in-out;
 
     &-1 {
         background-image: url(../img/header/banner1.jpg);
-        z-index: 1;
     }
     &-2 {
         background-image: url(../img/header/banner2.jpg);
@@ -345,7 +347,7 @@ nav {
     span {
         font-size: 2rem;
         color: $bg-color;
-        opacity: .7;
+        opacity: 0.7;
         margin: 0;
     }
 
@@ -367,13 +369,13 @@ nav {
     padding: 1rem;
     color: $bg-color;
     font-size: 2rem;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     border-radius: $border-radius-full;
     background-color: $layer3;
     z-index: 1;
 }
 
-.prev{
+.prev {
     left: 1rem;
 }
 
@@ -389,32 +391,10 @@ nav {
     .fa-angle-left,
     .fa-angle-right {
         color: $primary-color;
-}
+    }
 }
 
 /* The dots/bullets/indicators */
-
-.dot-mng {
-    position: absolute;
-    bottom: 5rem;
-    z-index: 1;
-}
-
-.dot {
-    display: inline-block;
-    width: 1.3rem;
-    height: 1.3rem;
-    margin: 0 .5rem;
-    background-color: $bg-color;
-    border-radius: $border-radius-full;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-}
-
-.active,
-.dot:hover {
-    background-color: $primary-color;
-}
 
 //
 
@@ -449,6 +429,6 @@ nav {
 
     .prev,
     .next {
-        display: none;
+        bottom: 1rem;
     }
 }
