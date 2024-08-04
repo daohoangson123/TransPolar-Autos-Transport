@@ -1,6 +1,6 @@
 // ===JS===
 window.onscroll = function () {
-    // StickyNav
+    ////////// StickyNav //////////
     let navBar = document.getElementById('navbar');
     if (window.pageYOffset > 0 && !navBar.classList.contains('dark-theme')) {
         //kiểm tra navbar có đang ở darkmode ko
@@ -9,7 +9,7 @@ window.onscroll = function () {
         navBar.classList.remove('stickyNav');
     }
 
-    // Backtotop
+    ////////// Backtotop //////////
     let backTop = document.getElementsByClassName('top')[0];
     if (window.pageYOffset > 500) {
         backTop.classList.add('backTopBtn');
@@ -18,9 +18,7 @@ window.onscroll = function () {
     }
 };
 
-// Drop Menu Main/ Hidden
-
-// Search dialog
+/////////// Search dialog //////////
 let searchDialog = document.getElementById('search-dialog');
 
 let searchBtn = document.getElementsByClassName('search-btn');
@@ -56,7 +54,7 @@ closeDialog.onclick = function () {
     setTimeout(resetTransform, 500); // dùng bất đồng bộ để nhận transition
 };
 
-// Video dialog
+////////// Video dialog //////////
 let videoDialog = document.getElementById('video-dialog');
 let openVideoDialog = document.getElementById('open-video');
 let videoContent = document.getElementById('video-content');
@@ -96,16 +94,12 @@ if (closeVideoDialog) {
     };
 }
 
-//Copllapsible content - updating
-
-// Click Slide next/prev button only
+////////// Slide next/prev button //////////
 
 let slides = document.querySelectorAll('.slide');
 
 // loop through slides and set each slides translateX
 slides.forEach((slide, indx) => {
-    slide.style.zIndex = -indx;
-
     slide.style.transform = `translateX(${indx * 100}%)`;
 });
 
@@ -117,44 +111,72 @@ let maxSlide = slides.length - 1;
 // select next slide button
 let nextSlide = document.querySelector('.next');
 
-// add event listener and navigation functionality
+function slideNext() {
+    // check if current slide is the last and reset current slide
+    if (curSlide === maxSlide) {
+        curSlide = 0;
+    } else {
+        curSlide++;
+    }
+
+    // move slide by -100%
+    slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+        slide.style.transition = 'all ease-in-out 1s';
+    });
+}
+
+function slidePrev() {
+    // check if current slide is the first and reset current slide to last
+    if (curSlide === 0) {
+        curSlide = maxSlide;
+    } else {
+        curSlide--;
+    }
+
+    // move slide by 100%
+    slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+        slide.style.transition = 'all ease-in-out 1s';
+    });
+}
+
+// add event listener and navigation
 if (nextSlide) {
     nextSlide.onclick = function () {
-        // check if current slide is the last and reset current slide
-        if (curSlide === maxSlide) {
-            curSlide = 0;
-        } else {
-            curSlide++;
-        }
-
-        // move slide by -100%
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-        });
+        slideNext();
     };
 }
 
 // select next slide button
 let prevSlide = document.querySelector('.prev');
 
-// add event listener and navigation functionality
+// add event listener and navigation
 if (prevSlide) {
     prevSlide.onclick = function () {
-        // check if current slide is the first and reset current slide to last
-        if (curSlide === 0) {
-            curSlide = maxSlide;
-        } else {
-            curSlide--;
-        }
-
-        // move slide by 100%
-        slides.forEach((slide, indx) => {
-            slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-        });
+        slidePrev();
     };
 }
 
-// Click Testimonial
+////////// Auto Slide //////////
+let autoPlayBtn = document.querySelector('.autoPlaySlide');
+
+let autoSlideInterval;
+
+if (autoPlayBtn) {
+    autoPlayBtn.onclick = function () {
+        if (!autoSlideInterval) {
+            autoSlideInterval = setInterval(slideNext, 2000);
+            autoPlayBtn.innerHTML = 'Stop';
+        } else {
+            clearInterval(autoSlideInterval);
+            autoPlayBtn.innerHTML = 'Auto';
+            autoSlideInterval = null;
+        }
+    };
+}
+
+////////// Testimonial slide //////////
 let qouteblock = document.querySelectorAll('.customer__content');
 
 // loop through slides and set each slides translateX
@@ -203,22 +225,16 @@ if (prevQoute) {
         });
     };
 }
-// Auto Slide - under development
 
-// reveal content animation
+////////// reveal content animation //////////
 let reveals = document.querySelectorAll('.reveal');
 
 function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         let windowHeight = window.innerHeight;
-        // console.log(windowHeight);
         let elementTop = reveals[i].getBoundingClientRect().top; // trả về khoảng cách từ top của window đến top của element
-        // console.log(elementTop);
         let elementVisible = 150;
-        // console.log(windowHeight - elementVisible);
-
         if (elementTop < windowHeight - elementVisible) {
-            // console.log("hello");
             reveals[i].classList.add('showcontent');
         }
         // else {
@@ -231,7 +247,7 @@ if (reveals) {
     window.addEventListener('scroll', reveal);
 }
 
-// counting number animation
+////////// counting up number animation //////////
 
 let counterUp = document.querySelectorAll('.abt-sect2__counter');
 
@@ -253,7 +269,7 @@ if (counterUp) {
     window.addEventListener('scroll', counterRun);
 }
 
-// ===JQ=== jquery có thể mix với js
+// ===JQ=== jquery
 $(document).ready(function () {
     //StickyNavbar
     // $(window).scroll(function(){
@@ -273,29 +289,29 @@ $(document).ready(function () {
     //   }
     // });
 
-    // Dropdown Menu Main = JQ =
+    ////////// Dropdown Menu Main //////////
     $('#dropbtn-main').click(function () {
         $('.dropdown-content-main').slideToggle();
     });
 
-    // Dropdown Menu Hidden = JQ =
+    ////////// Dropdown Menu Hidden //////////
     $('#dropbtn-hidden').click(function () {
         $('#dropin').toggleClass();
         $('#dropout').toggleClass('show');
         $('.drop-content-hidden').slideToggle();
     });
 
-    //mở/đóng search dialog = JQ =
+    //search dialog toggle
     // $(".search-btn").click(function(){
     //   $("#search-dialog").slideToggle();
     // });
 
-    //đóng search dialog bằng nút trong dialog = JQ =
+    //search dialog close
     // $("#dialog-closebtn").click(function(){
     //   $("#search-dialog").slideUp();
     // });
 
-    //Dark/Light Btn
+    ////////// Dark/Light toggle //////////
     $('.dark-btn').click(function () {
         $('.fa-moon').toggleClass('hide');
         $('.fa-sun').toggleClass('show');
@@ -309,7 +325,7 @@ $(document).ready(function () {
         }
     });
 
-    //Copllapsible content
+    ////////// Copllapsible content //////////
     $('.copllapse__btn').click(function () {
         $(this).toggleClass('copllapse__btn--gb');
         $(this).children('.copllapse__down').toggleClass('hide');
