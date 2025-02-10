@@ -145,6 +145,8 @@ function slidePrev() {
 if (nextSlide) {
     nextSlide.onclick = function () {
         slideNext();
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(slideNext, 2000);
     };
 }
 
@@ -155,6 +157,8 @@ let prevSlide = document.querySelector('.prev');
 if (prevSlide) {
     prevSlide.onclick = function () {
         slidePrev();
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(slideNext, 2000);
     };
 }
 
